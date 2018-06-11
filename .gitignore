@@ -44,3 +44,5 @@ themes/mffs-theme/node_modules/*
 # ================== #
 themes/mffs-theme/gulpfile.js
 themes/mffs-theme/build/*
+
+themes/mffs-theme/package-lock.json
