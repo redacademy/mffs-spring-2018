@@ -300,7 +300,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: deepskyblue;
+  background: red;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
