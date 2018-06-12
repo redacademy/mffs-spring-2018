@@ -575,3 +575,13 @@ object {
   text-transform: lowercase;
   color: white;
   font-size: 14px; }
+
+.donate-button {
+  margin-right: .5rem; }
+  .donate-button a {
+    color: #4c6f7b;
+    border: 2px solid #f1d18a;
+    border-radius: 50px;
+    padding: 0px 10px;
+    text-transform: capitalize;
+    background: #fff; }

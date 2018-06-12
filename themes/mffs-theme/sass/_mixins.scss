@@ -16,3 +16,32 @@
     @content;
   }
 }
+//buttons
+@mixin light-border-btn ($bord-rad:50px, $pad:0px 9px) {
+    color:$color__green_main;
+    border: 2px solid $color__button-yellow;
+    border-radius: $bord-rad;
+    padding: $pad;
+    text-transform: capitalize;
+    background: $color__background-body;
+}
+
+@mixin shadow-btn-bright ($bord-rad:50px, $pad:0px 9px ,$shad-col:#ff0000) {
+  color:$color__link;
+  border-radius: $bord-rad;
+  padding: $pad;
+  text-transform: capitalize;
+  background: $color__button-dark-green;
+  box-shadow: 1px 1px $shad-col;
+}
+
+@mixin shadow-btn-dark-border ($bord-rad:5px, $pad:0px 9px ,$shad-col:#62db44) {
+  color: $color__background-body;
+  border: 1px solid black;
+  border-radius: $bord-rad;
+  padding: $pad;
+  text-transform: capitalize;
+  background: $color__button-dark-green;
+  box-shadow: 1px 1px $shad-col;
+}
+
