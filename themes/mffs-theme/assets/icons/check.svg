@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="61px" viewBox="0 0 59 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>if_sign-check_299110 (2) copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Intern" transform="translate(-317.000000, -3157.000000)" fill-rule="nonzero">
+            <g id="if_sign-check_299110-(2)-copy-2" transform="translate(317.000000, 3157.000000)">
+                <path d="M59,31.5 C59,47.79285 45.79285,61 29.5,61 C13.20774,61 0,47.79285 0,31.5 C0,15.20774 13.20774,2 29.5,2 C45.79285,2 59,15.20774 59,31.5 Z" id="Shape" fill="#27AE60"></path>
+                <path d="M59,29.5 C59,45.79285 45.79285,59 29.5,59 C13.20774,59 0,45.79285 0,29.5 C0,13.20774 13.20774,0 29.5,0 C45.79285,0 59,13.20774 59,29.5 Z" id="Shape" fill="#2ECC71"></path>
+                <polygon id="Shape" fill="#27AE60" points="41.6666667 20 23.7843137 37.6470588 16.3333333 30.2941176 10 36.4705882 17.4509804 43.8235294 23.4117647 49.7058824 23.7843137 50 48 26.1764706"></polygon>
+                <polygon id="Shape" fill="#ECF0F1" points="41.6666667 17 23.7843137 34.6470588 16.3333333 27.2941176 10 33.4705882 17.4509804 40.8235294 23.4117647 46.7058824 23.7843137 47 48 23.1764706"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
