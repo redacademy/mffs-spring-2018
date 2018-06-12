@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>if_facebook_circle_color_107175</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.0%" y="-0.2%" width="100.1%" height="100.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-3" x="17" y="12" width="25" height="37"></rect>
+        <filter x="-18.0%" y="-17.6%" width="160.0%" height="140.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="3" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-373.000000, -143.000000)">
+            <g filter="url(#filter-1)" transform="translate(0.000000, 1.000000)" id="Social-Media">
+                <g transform="translate(373.000000, 59.000000)">
+                    <g id="if_facebook_circle_color_107175" filter="url(#filter-2)" transform="translate(0.000000, 83.000000)">
+                        <g id="face">
+                            <g id="Rectangle">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <rect stroke="#979797" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="17.5" y="12.5" width="24" height="36"></rect>
+                            </g>
+                            <path d="M25.765,46.32 L32.509,46.32 L32.509,29.998 L37.008,29.998 L37.604,24.374 L32.509,24.374 L32.516,21.558 C32.516,20.092 32.656,19.305 34.76,19.305 L37.572,19.305 L37.572,13.68 L33.072,13.68 C27.667,13.68 25.765,16.409 25.765,20.997 L25.765,24.374 L22.396,24.374 L22.396,29.999 L25.765,29.999 L25.765,46.32 Z M30,60 C13.432,60 0,46.568 0,30 C0,13.431 13.432,0 30,0 C46.568,0 60,13.431 60,30 C60,46.568 46.568,60 30,60 Z" id="Shape" fill="#F1D18A" fill-rule="evenodd"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
