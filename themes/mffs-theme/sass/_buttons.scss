@@ -1,0 +1,9 @@
+.donate-button{
+    margin-right: .5rem;
+    a{
+    @include light-border-btn (50px, 0px 10px);
+    // @include shadow-btn-bright (50px, 0px 10px);
+    // @include shadow-btn-dark-border (50px, 0px 10px, $color__green_main);
+
+    }
+}
