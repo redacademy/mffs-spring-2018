@@ -1,18 +1,20 @@
 // Structure
 $base__space-unit: 1.5rem;
+// Mobile Screen Breakpoint
+$mobile_width: 620px;
 // Colors
 $color__background-body: #fff;
-$color__text-main: #0B2B34;
-$color__button-yellow: #F1D18A;
+$color__text-main: #0b2b34;
+$color__button-yellow: #f1d18a;
 $color__background-screen: #fff;
 $color__text-screen: #21759b;
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
-$color__link: #0B2B34;
-$color__link-visited: #0B2B34;
-$color__link-hover: #0B2B34;
+$color__link: #0b2b34;
+$color__link-visited: #0b2b34;
+$color__link-hover: #0b2b34;
 
 // Typography
 $font__main: Raleway, sans-serif;
