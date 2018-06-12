@@ -21,18 +21,25 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+
+			<!-- heaeder Nav -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><img src="<?php echo get_template_directory_uri()?>/assets/icons/MFFSLOGO.svg" alt=""></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<div class="nav">
+				<p>-NAV-</p>
+				</div>
 				</nav><!-- #site-navigation -->
 
+
+				<!-- header middle logo -->
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					<a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/icons/leafs.svg" alt="">
+					<p>mffs<span class="ca-tld">.ca</span></p></a>
 				</div><!-- .site-branding -->
-<div class="donate-button">
-<a href="#">donate</a>
-</div>
+
+				<!-- donate button -->
+				<div class="donate-button">
+					<a href="#">donate</a>
+				</div>
 			
 
 

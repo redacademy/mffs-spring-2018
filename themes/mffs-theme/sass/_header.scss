@@ -1,0 +1,28 @@
+// Styling for site header
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  background: $color__green_main;
+  align-items: center;
+  height: 2.75rem;
+  p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0;
+  }
+  .site-branding a {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    height: 2.5rem;
+  }
+}
+
+.ca-tld {
+  text-transform: lowercase;
+  color: white;
+  font-size: 14px;
+}
