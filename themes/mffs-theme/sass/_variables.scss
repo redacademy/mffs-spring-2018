@@ -1,20 +1,23 @@
 // Structure
 $base__space-unit: 1.5rem;
 // Colors
-$color__background-body: skyblue;
-$color__text-main: coral;
+$color__background-body: #fff;
+$color__text-main: #0B2B34;
+$color__button-yellow: #F1D18A;
 $color__background-screen: #fff;
 $color__text-screen: #21759b;
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #0B2B34;
+$color__link-visited: #0B2B34;
+$color__link-hover: #0B2B34;
+
 // Typography
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
-$font__pre: 'Courier 10 Pitch', Courier, monospace;
+$font__main: Railway, sans-serif;
+$font__title: Montserat, sans-serif;
+$font__code: $font__main;
+$font__pre: $font__main;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
