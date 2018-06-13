@@ -585,3 +585,53 @@ object {
     padding: 0px 10px;
     text-transform: capitalize;
     background: #fff; }
+
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #4c6f7b;
+  color: #fff; }
+  .site-info a {
+    color: #fff;
+    text-decoration: underline; }
+  .site-info .supporter-title {
+    margin: 20px 0;
+    font-size: 1.5rem; }
+  .site-info a.donate-button {
+    color: #4c6f7b;
+    border: 2px solid #f1d18a;
+    border-radius: 20px;
+    padding: 6px 60px;
+    text-transform: capitalize;
+    background: #fff;
+    border: 5px solid #f1d18a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none; }
+  .site-info .contact {
+    border-top: 2px solid #fff;
+    width: 100%;
+    padding: 1rem 0rem;
+    border-bottom: 2px solid #fff; }
+    .site-info .contact > p {
+      font-size: 1.5rem; }
+    .site-info .contact .fa-phone {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg); }
+  .site-info .news {
+    margin: 2rem 0rem; }
+    .site-info .news > p {
+      font-size: 1.5rem; }

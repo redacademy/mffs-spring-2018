@@ -1,0 +1,46 @@
+.site-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: $color__green_main;
+    color: $color__background-body;
+    a{
+        color: $color__background-body;
+        text-decoration: underline;
+    }
+    .supporter-title{
+        margin: 20px 0;
+        font-size: 1.5rem;
+    }
+    a.donate-button{
+        @include light-border-btn (20px, 6px 60px);
+        border: 5px solid $color__button-yellow;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+    .contact{
+        border-top: 2px solid $color__background-body;
+        width: 100%;
+        padding: 1rem 0rem;
+        border-bottom: 2px solid $color__background-body;
+        &>p{
+            font-size: 1.5rem;
+        }
+        .fa-phone {
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+        }
+    }
+    .news{
+        margin: 2rem 0rem;
+        &>p{
+            font-size: 1.5rem;
+        }
+    }
+}

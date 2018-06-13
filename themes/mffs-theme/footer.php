@@ -15,10 +15,10 @@
 					    <p class="supporter-title">
                         Become a Supporter 
                         </p>
-                        <a href="#">Donate</a>
+                        <a class = "donate-button" href="#">Donate</a>
                     </div>
                     <div class="contact">
-                        <p class="contact-title">
+                        <p>
                         Contact us
                         </p>
                         <div class="tel-info">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="contact-address">
                             <i class="fas fa-phone"></i>
-                            <p class="address"></p>
+                            <p class="address">103 – 12827 76th Avenue Surrey, BC</p>
                         </div>
                     </div>
                     <div class="news">

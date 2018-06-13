@@ -26,18 +26,18 @@ get_header(); ?>
 			<section class="impact">
 				<h2 class="section-title">the<span> mffs </span> Impact</h2>
 				<ul class="impact-grid">
-					<li><?php echo CFS()->get('mffs_clients_served'); ?></li>
+					<li></li>
 					<li></li>
 					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
 <?php
-				$loop = CFS()->get( 'mffs_impact', 12 );
-foreach ( $loop as $row ) {
-    echo $row['	mffs_stat_value'];
-    echo $row['	mffs_stat_title'];
-} 
+// 				$loop = CFS()->get( 'mffs_impact', 12 );
+// foreach ( $loop as $row ) {
+//     echo $row['	mffs_stat_value'];
+//     echo $row['	mffs_stat_title'];
+// } 
 
 ?>
 			</section> <!-- end impact section -->
