@@ -35,6 +35,10 @@
             -moz-transform: rotateY(180deg);
             -o-transform: rotateY(180deg);
             -ms-transform: rotateY(180deg);
+            
+        }
+        .fas{
+            margin-right: 10px;
         }
     }
     .news{
@@ -42,5 +46,8 @@
         &>p{
             font-size: 1.5rem;
         }
+    }
+    .contact-address{
+        display: inline-flex;
     }
 }

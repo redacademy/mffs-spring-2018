@@ -557,7 +557,7 @@ object {
           align-items: center;
   height: 2.75rem; }
   .site-header p {
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     color: white;
     margin-bottom: 0; }
@@ -569,7 +569,7 @@ object {
         -ms-flex-align: center;
             align-items: center; }
   .site-header img {
-    height: 2.5rem; }
+    height: 1.1rem; }
 
 .ca-tld {
   text-transform: lowercase;
@@ -577,12 +577,13 @@ object {
   font-size: 14px; }
 
 .donate-button {
-  margin-right: .5rem; }
+  margin-right: .5rem;
+  font-weight: 700; }
   .donate-button a {
     color: #4c6f7b;
     border: 2px solid #f1d18a;
     border-radius: 50px;
-    padding: 0px 10px;
+    padding: 1px 12px;
     text-transform: capitalize;
     background: #fff; }
 
@@ -631,7 +632,13 @@ object {
       -moz-transform: rotateY(180deg);
       -o-transform: rotateY(180deg);
       -ms-transform: rotateY(180deg); }
+    .site-info .contact .fas {
+      margin-right: 10px; }
   .site-info .news {
     margin: 2rem 0rem; }
     .site-info .news > p {
       font-size: 1.5rem; }
+  .site-info .contact-address {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }

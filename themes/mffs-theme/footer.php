@@ -26,7 +26,7 @@
                             <a href="tel:123456789">778-321-3054</a>
                         </div>
                         <div class="contact-address">
-                            <i class="fas fa-phone"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                             <p class="address">103 – 12827 76th Avenue Surrey, BC</p>
                         </div>
                     </div>
