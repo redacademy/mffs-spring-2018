@@ -11,6 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
+                    <div class="support">
 					    <p class="supporter-title">
                         Become a Supporter 
                         </p>
@@ -30,8 +31,8 @@
                         </div>
                     </div>
                     <div class="news">
-                            <p class="news-title">Newsletter</p>
-                            <a href="#" class="news-subscribe">Click here to Subscribe!</a>
+                        <p class="news-title">Newsletter</p>
+                        <a href="#" class="news-subscribe">Click here to Subscribe!</a>
                     </div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

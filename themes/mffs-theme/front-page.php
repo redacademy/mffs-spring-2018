@@ -26,7 +26,7 @@ get_header(); ?>
 			<section class="impact">
 				<h2 class="section-title">the<span> mffs </span> Impact</h2>
 				<ul class="impact-grid">
-					<li><?php echo CFS()->get( 'mffs_clients_served', 12 ); ?></li>
+					<li><?php echo CFS()->get('mffs_clients_served'); ?></li>
 					<li></li>
 					<li></li>
 					<li></li>
@@ -63,7 +63,7 @@ foreach ( $loop as $row ) {
 						<div class="green-img-bar">
 
 						</div>
-						<img src="<?php echo get_template_directory_uri()?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
 					</div>
 					<p>Moving Forward Family Services uses a client-centered, anti-oppressive approach to provide safe, accessible, affordable counselling to all.</p>
 				</div>
