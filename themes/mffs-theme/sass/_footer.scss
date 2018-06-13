@@ -1,13 +1,16 @@
 .site-info{
+    font-family: 'Montserrat' sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: $color__green_main;
     color: $color__background-body;
+    
     a{
         color: $color__background-body;
-        text-decoration: underline;
+        border-bottom: 1.2px solid white;
+        padding-bottom: 1px;
     }
     .supporter-title{
         margin: 20px 0;
@@ -17,7 +20,7 @@
         @include light-border-btn (20px, 6px 60px);
         border: 5px solid $color__button-yellow;
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: 600;
         display: inline-block;
         margin-bottom: 20px;
         text-decoration: none;
@@ -25,7 +28,7 @@
     .contact{
         border-top: 2px solid $color__background-body;
         width: 100%;
-        padding: 1rem 0rem;
+        padding-top: 1rem;
         border-bottom: 2px solid $color__background-body;
         &>p{
             font-size: 1.5rem;
@@ -35,11 +38,9 @@
             -moz-transform: rotateY(180deg);
             -o-transform: rotateY(180deg);
             -ms-transform: rotateY(180deg);
-            
+            margin-right: 10px; 
         }
-        .fas{
-            margin-right: 10px;
-        }
+       
     }
     .news{
         margin: 2rem 0rem;
@@ -49,5 +50,8 @@
     }
     .contact-address{
         display: inline-flex;
+        &>p{
+            width: 208px;
+        }
     }
 }
