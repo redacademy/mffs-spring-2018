@@ -3,3 +3,21 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+h2{
+    text-align: center;
+    font-size: 2rem;
+    color: $color__text-main;
+    transform:scale(1,.8);
+}
+.story-info>h2{
+    width: 23rem;
+    margin: 0 auto;
+
+}
+
+.section-title{
+    background: $color__green_main;
+    color: $color__background-body;
+    text-transform: capitalize;
+    
+}
