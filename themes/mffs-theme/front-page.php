@@ -42,9 +42,8 @@ get_header(); ?>
 
 			<!-- third section inititiaves-->
 			<section class="initiatives">
-				<h2 class="section-title"><?php echo CFS()->get( 'mffs_initiatives_title', 12 ) ?></h2>
-
-				<div class="section-wrapper">
+				<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title', 12 ) ?></h2>
+				<div class="initiatives-content-wrapper">
 					<div class="initiatives-img">
 						<!-- place inititaves photo here -->
 					</div>

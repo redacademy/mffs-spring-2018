@@ -557,11 +557,11 @@ h2 {
 
 .story-info P:nth-of-type(2) {
   margin: 0 auto;
-  max-width: 349px;
-  font-size: 1.2rem;
-  font-weight: 400; }
+  max-width: 424px;
+  font-weight: 400;
+  font-size: 1.7rem; }
 
-.section-title {
+.section-title, .initiatives h2 {
   background: #4c6f7b;
   color: #fff;
   padding: .7rem 0rem;
@@ -580,6 +580,18 @@ h2 {
   background: #819aa2;
   margin: 5rem 0;
   top: 300px; }
+
+.initiatives-content-wrapper {
+  margin: 0 auto;
+  max-width: 560px;
+  font-weight: 400;
+  font-size: 1.7rem; }
+
+.mission p {
+  margin: 0 auto;
+  max-width: 528px;
+  font-weight: 400;
+  font-size: 1.7rem; }
 
 .site-header {
   display: -webkit-box;
