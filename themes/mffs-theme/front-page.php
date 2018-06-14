@@ -84,7 +84,7 @@ get_header(); ?>
 				</ul>
 
 				<div class="language-img">
-					<?php echo CFS()->get( 'mffs_language_img', 12 ) ?>
+					<img src="<?php echo CFS()->get( 'mffs_language_img', 12 ) ?>" alt="">
 				</div>
 
 			</section><!-- end languages -->

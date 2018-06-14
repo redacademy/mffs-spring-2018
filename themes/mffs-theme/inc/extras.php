@@ -24,7 +24,6 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 
 // Adding the SVG Format to the Allowed File Types
 
-//add SVG to allowed file uploads
 function add_file_types_to_uploads($file_types){
 
     $new_filetypes = array();
@@ -33,4 +32,4 @@ function add_file_types_to_uploads($file_types){
 
     return $file_types;
 }
-add_action('upload_mimes', 'add_file_types_to_uploads');
+add_action( 'upload_mimes', 'add_file_types_to_uploads' );
