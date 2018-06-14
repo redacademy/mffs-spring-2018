@@ -561,11 +561,20 @@ h2 {
   font-weight: 400;
   font-size: 1.7rem; }
 
+.impact-grid {
+  list-style-type: none; }
+
 .section-title, .initiatives h2 {
   background: #4c6f7b;
   color: #fff;
   padding: .7rem 0rem;
   text-transform: capitalize; }
+
+.initiatives-content-wrapper {
+  margin: 0 auto;
+  max-width: 560px;
+  font-weight: 400;
+  font-size: 1.7rem; }
 
 .mission-img {
   width: 250px;
@@ -580,12 +589,6 @@ h2 {
   background: #819aa2;
   margin: 5rem 0;
   top: 300px; }
-
-.initiatives-content-wrapper {
-  margin: 0 auto;
-  max-width: 560px;
-  font-weight: 400;
-  font-size: 1.7rem; }
 
 .mission p {
   margin: 0 auto;

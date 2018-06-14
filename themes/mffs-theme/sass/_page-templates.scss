@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-h2, {
+h2, {//titles
     text-align: center;
     font-size: 2.4rem;
     color: $color__text-main;
@@ -22,16 +22,25 @@ h2, {
     }
 
 }
+.impact-grid{
+list-style-type: none;
+}
 
-.section-title, .initiatives h2{
+.section-title, .initiatives h2{//our initiatives
     background: $color__green_main;
     color: $color__background-body;
     padding: .7rem 0rem;
     text-transform: capitalize;
     
 }
+.initiatives-content-wrapper{
+    margin: 0 auto;
+    max-width: 560px;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
 
-.mission-img {
+.mission-img {//our mission
     width:250px;
     height: 250px;
     max-height: auto;
@@ -40,18 +49,13 @@ h2, {
     top: -26px;
    
 }
-.green-img-bar{
+.green-img-bar{//background for our mission img
     height: 200px;
     background: $color__background-green-pale;
     margin: 5rem 0;
     top: 300px;
 }
-.initiatives-content-wrapper{
-    margin: 0 auto;
-    max-width: 560px;
-    font-weight: 400;
-    font-size: 1.7rem;
-}
+
 
 .mission p{
     margin: 0 auto;

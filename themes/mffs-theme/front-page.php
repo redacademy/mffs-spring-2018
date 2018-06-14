@@ -32,8 +32,8 @@ get_header(); ?>
 					$loop = CFS()->get( 'mffs_impact', 12 );
 						foreach ( $loop as $row ) { ?>
 						<li>
-							<?php echo $row['mffs_stat_value'];
-								  echo $row['mffs_stat_title'];?>
+							<div class="impact-value"><?php echo $row['mffs_stat_value'];?></div>
+							<div class="impact-title"><?php echo $row['mffs_stat_title'];?></div>
 						</li>
 						<?php } ?>
 
