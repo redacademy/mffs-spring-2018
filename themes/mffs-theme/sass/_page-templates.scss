@@ -10,6 +10,7 @@ h2, {//titles
     transform:scale(1,.8);
 }
 .story-info{
+    border-bottom: 4px solid $color__button-yellow;
     &>h2{
         width: 23rem;
         margin: 0 auto;
@@ -23,7 +24,80 @@ h2, {//titles
 
 }
 .impact-grid{
+display: grid;
+text-align: center;
+// width: 100%;
+// height: 100%;
+// grid-template-rows: repeat(12, 1fr);
+// grid-template-columns: repeat(12, 1fr);
+margin:2rem 0 2rem 0;
 list-style-type: none;
+// grid: repeat(3, 12vw) / auto-flow;
+font-size: 1.5rem;
+.impact-value{
+    font-size: 4rem;
+    font-weight: 700;
+}
+& li:nth-of-type(1){ 
+    width:200px;
+    height:200px;
+  
+    overflow-wrap: break-word;
+grid-row: 1/5;
+grid-column: 2/6;
+
+background: $color__background-ins;
+border-radius: 50%;
+}
+& li:nth-of-type(2){
+    
+    width:200px;
+    height:200px;
+    
+    overflow-wrap: break-word;
+    grid-row: 1/5;
+    grid-column: 8/12;
+    
+    background: $color__background-ins;
+    border-radius: 50%;
+    }
+    & li:nth-of-type(3){
+        
+    width:200px;
+    height:200px;
+    
+    overflow-wrap: break-word;
+        grid-row: 5/9;
+        grid-column: 5/9;
+        
+        background: $color__background-ins;
+        border-radius: 50%;
+        }
+        & li:nth-of-type(4){
+            
+    width:200px;
+    height:200px;
+    
+    overflow-wrap: break-word;
+            grid-row: 9/13;
+            grid-column: 2/6;
+            
+            background: $color__background-ins;
+            border-radius: 50%;
+            }
+             & li:nth-of-type(5){ 
+                
+                width:200px;
+                height:200px;
+                
+                overflow-wrap: break-word;
+            grid-row: 9/13;
+            grid-column: 8/12;
+            
+            background: $color__background-ins;
+            border-radius: 50%;
+            }
+          
 }
 
 .section-title, .initiatives h2{//our initiatives
@@ -31,13 +105,20 @@ list-style-type: none;
     color: $color__background-body;
     padding: .7rem 0rem;
     text-transform: capitalize;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
     
 }
 .initiatives-content-wrapper{
+    p{
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+    }
     margin: 0 auto;
-    max-width: 560px;
     font-weight: 400;
     font-size: 1.7rem;
+    border-bottom: 4px solid $color__button-yellow;
 }
 
 .mission-img {//our mission
@@ -57,9 +138,13 @@ list-style-type: none;
 }
 
 
-.mission p{
+.mission {
+    margin-bottom: 5rem;
+    
+    p{
     margin: 0 auto;
     max-width: 528px;
     font-weight: 400;
     font-size: 1.7rem;
+    }
 }
