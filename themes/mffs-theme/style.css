@@ -617,8 +617,27 @@ h2 {
   color: #fff;
   padding: .7rem 0rem;
   text-transform: capitalize;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-top: 4rem; }
+
+.languages h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  -webkit-transform: scaleY(0.8);
+          transform: scaleY(0.8);
+  margin-bottom: 3rem; }
+
+.language-grid {
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0b2b34; }
+  .language-grid li {
+    padding: 1rem; }
 
 .initiatives-content-wrapper {
   margin: 0 auto;

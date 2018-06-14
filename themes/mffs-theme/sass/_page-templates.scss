@@ -105,9 +105,32 @@ border-radius: 50%;
     color: $color__background-body;
     padding: .7rem 0rem;
     text-transform: capitalize;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     margin-top: 4rem;
     
+}
+
+.languages{
+    h3{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.8rem;
+        transform: scaleY(.8);
+        margin-bottom: 3rem;
+    }
+}
+
+.language-grid{//languages grid
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color__link-visited;
+    li{
+        padding: 1rem;
+    }
 }
 .initiatives-content-wrapper{
     p{
