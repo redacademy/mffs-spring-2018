@@ -1,0 +1,74 @@
+<?php
+/**
+ * The main template file.
+ *
+ * @package mffs_theme
+ */
+
+get_header(); ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+        <!-- first section internship title -->
+            <section class="internship-title">
+                <h2 class="section-title"><?php echo CFS()->get( 'mffs_internship_title', 19 ) ?></h2>
+                <img src="<?php echo CFS()->get( 'mffs_internship_img', 19 ) ?>" alt="">
+                <p><?php echo CFS()->get( 'mffs_internship_text', 19 ) ?></p>
+            </section> <!-- end internship title -->
+
+        <!-- second section internship contact -->
+            <section class="internship-contact">
+                <h2 class="sction-title-blue">Join our team!</h2>
+                <p>Please contact</p>
+                <a href="<?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?>"><?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?></a>
+            </section><!-- end internship contact -->
+
+        <!-- third section internship why -->
+            <section class="internship-why">
+                <h2 class="sction-title-blue">Why intern with us?</h2>
+                <p><?php echo CFS()->get( 'mffs_internship_description', 19 ) ?></p>
+
+                <ul class="why-grid">
+				<?php
+					$loop = CFS()->get( 'mffs_internship_qualities_list', 19 );
+						foreach ( $loop as $row ) { ?>
+						<li class="internship-quality-single">
+							<img src="<?php echo $row['	internship_icon'];?>" alt="">
+                            <h2 class="section-title"><?php echo $row['mffs_internship_quality_title'];?></h2>
+                            <P><?php echo $row['mffs_internship_quality_text'];?></P>
+						</li>
+						<?php } ?>
+				</ul>
+            </section><!-- end internship why -->
+
+            <!-- fourth section internship requirements -->
+            <section class="internship-requirements">
+                <h2 class="sction-title-blue">Internship-requirements</h2>
+                <p><?php echo CFS()->get( 'mffs_internship_requirement_education', 19 ) ?></p>
+
+                <ul class="requirements-grid">
+				<?php
+					$loop = CFS()->get( 'mffs_internship_requirements', 19 );
+						foreach ( $loop as $row ) { ?>
+						<li class="requirements-single">
+                            <h2 class="section-title"><?php echo $row['mffs_internship_requirement_title'];?></h2>
+                            <P><?php echo $row['mffs_internship_requirement_text'];?></P>
+						</li>
+						<?php } ?>
+				</ul>
+
+
+            </section>
+
+            <!-- fifth contact section -->
+            <section class="internship-contact">
+                <h2 class="sction-title-blue">Join our team!</h2>
+                <p>How to apply</p>
+                <a href="<?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?>"><?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?></a>
+            </section><!-- end internship contact -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<?php get_footer(); ?>
