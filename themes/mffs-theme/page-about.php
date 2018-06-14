@@ -46,7 +46,7 @@ get_header(); ?>
 			<section class="about-team">
 				<h2 class="section-title">Our Team</h2>
 
-				<ul class="language-grid">
+				<ul class="team-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_our_team', 17 );
 						foreach ( $loop as $row ) { ?>
@@ -67,7 +67,7 @@ get_header(); ?>
 					<h2 class="section-title">Awards of Recognition</h2>
 					<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_ribbon__badge__award__medal__achievement__awards__star_2528016.svg" alt="">
 				</div>
-				<ul class="language-grid">
+				<ul class="awards-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_about_awards', 17 );
 						foreach ( $loop as $row ) { ?>
@@ -81,7 +81,7 @@ get_header(); ?>
 			<!-- sixth section about-disclaimer -->
 			<section class="about-disclaimer">
 				<h2 class="section-title"></h2>
-				<ul class="language-grid">
+				<ul class="disclaimer-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_about_disclaimer', 17 );
 						foreach ( $loop as $row ) { ?>
