@@ -18,7 +18,7 @@ get_header(); ?>
 				</div>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title', 12 ) ?></h2>
-					<p><?php echo CFS()->get( 'mffs_stories_section_content', 12 ) ?></p>
+					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12 ) ?></p>
 				</div>
 			</section> <!-- end stories -->
 
@@ -57,12 +57,12 @@ get_header(); ?>
 				<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title', 12 ) ?></h2>
 
 				<div class="section-wrapper">
-					<div class="mission-img">
-						<div class="green-img-bar">
-
+					<div class="green-img-bar">
+						<div class="mission-img">
+							<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
 						</div>
-						<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
 					</div>
+					
 					<p><?php echo CFS()->get( 'mffs_mission_content', 12 ) ?></p>
 				</div>
 

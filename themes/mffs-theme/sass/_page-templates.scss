@@ -5,19 +5,42 @@
 /* Front page */
 h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: $color__text-main;
     transform:scale(1,.8);
 }
-.story-info>h2{
-    width: 23rem;
-    margin: 0 auto;
+.story-info{
+    &>h2{
+        width: 23rem;
+        margin: 0 auto;
+    }
+    & P:nth-of-type(2){
+        margin: 0 auto;
+        max-width: 349px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
 
 }
 
 .section-title{
     background: $color__green_main;
     color: $color__background-body;
+    padding: .7rem 0rem;
     text-transform: capitalize;
     
+}
+
+.mission-img{
+    max-width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: -26px;
+   
+}
+.green-img-bar{
+    height: 200px;
+    background: $color__background-green-pale;
+    margin: 5rem 0;
+    top: 300px;
 }

@@ -1,8 +1,9 @@
 .donate-button{
     margin-right: .5rem;
     font-weight: 700;
+    font-size: 1.2rem;
     a{
-    @include light-border-btn (50px, 1px 12px);
+    @include light-border-btn (50px, 4px 20px);
     
     }
 }
