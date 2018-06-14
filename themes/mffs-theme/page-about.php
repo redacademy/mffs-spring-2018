@@ -63,14 +63,39 @@ get_header(); ?>
 
 			<!-- fifth section about-awards -->
 			<section class="about-awards">
+				<div class="award-container">
+					<h2 class="section-title">Awards of Recognition</h2>
+					<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_ribbon__badge__award__medal__achievement__awards__star_2528016.svg" alt="">
+				</div>
+				<ul class="language-grid">
+				<?php
+					$loop = CFS()->get( 'mffs_about_awards', 17 );
+						foreach ( $loop as $row ) { ?>
+						<li>
+							<?php echo $row['mffs_about_awards_single'];?>
+						</li>
+				<?php } ?>
+				</ul>
 			</section> <!-- end about-awards -->
 
 			<!-- sixth section about-disclaimer -->
 			<section class="about-disclaimer">
+				<h2 class="section-title"></h2>
+				<ul class="language-grid">
+				<?php
+					$loop = CFS()->get( 'mffs_about_disclaimer', 17 );
+						foreach ( $loop as $row ) { ?>
+						<li>
+							<?php echo $row['mffs_about_disclaimer_single'];?>
+						</li>
+				<?php } ?>
+				</ul>
 			</section> <!-- end about-disclaimer -->
 
 			<!-- seventh section about-refuse -->
 			<section class="about-refuse">
+				<h2 class="section-title uppercase">Mffs right to refuse</h2>
+				<p><?php echo CFS()->get( 'mffs_about_refuse', 17 ) ?></p>
 			</section> 	<!-- end about-refuse -->
 
 		</main><!-- #main -->
