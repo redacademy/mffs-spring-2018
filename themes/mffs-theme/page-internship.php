@@ -53,7 +53,7 @@ get_header(); ?>
 						foreach ( $loop as $row ) { ?>
 						<li class="requirements-single">
                             <h2 class="title-no-bg"><?php echo $row['mffs_internship_requirement_title'];?></h2>
-                            <P><?php echo $row['mffs_internship_requirement_text'];?></P>
+                            <?php echo $row['mffs_internship_requirement_text'];?>
 						</li>
 						<?php } ?>
 				</ul>
