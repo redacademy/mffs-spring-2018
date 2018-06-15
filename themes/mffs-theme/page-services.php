@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-
+			<!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 			<?php $service_posts = get_posts(array(
 					'post_type' => 'service',
 					'service-type' => 'mental-well-being'

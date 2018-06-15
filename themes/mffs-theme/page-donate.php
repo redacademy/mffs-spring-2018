@@ -10,6 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+        <?php 
+			if(have_posts()):
+			while ( have_posts() ) : the_post(); ?>
+
             <!-- fisrt section donate testimonials -->
             <section class="donate-testimonials">
                 <!-- TODO add testimonials img, text and link button -->
@@ -72,6 +76,11 @@ get_header(); ?>
 						<?php } ?>
                 </ul>
             </section><!-- end donate info -->
+
+            	<?php endwhile;
+			else :
+		endif;
+		?>
 
 
 		</main><!-- #main -->

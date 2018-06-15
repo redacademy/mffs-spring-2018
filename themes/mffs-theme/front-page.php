@@ -10,11 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-				<?php 
-		if(have_posts()):
-			 while ( have_posts() ) : the_post(); 
-			 d(get_the_ID());
-			 ?>
+			<?php 
+			if(have_posts()):
+			while ( have_posts() ) : the_post(); ?>
 
 
 			<!-- First section with testomonials carousel -->
@@ -25,7 +23,7 @@ get_header(); ?>
 				</div>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
-					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12 ) ?></p>
+					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content') ?></p>
 				</div>
 			</section> <!-- end stories -->
 
@@ -36,7 +34,7 @@ get_header(); ?>
 				<!-- yellow stat bubbles -->
 				<ul class="impact-grid">
 				<?php
-					$loop = CFS()->get( 'mffs_impact', 12 );
+					$loop = CFS()->get( 'mffs_impact');
 						foreach ( $loop as $row ) { ?>
 						<li>
 							<div class="impact-value"><?php echo $row['mffs_stat_value'];?></div>
@@ -49,18 +47,18 @@ get_header(); ?>
 
 			<!-- third section inititiaves-->
 			<section class="initiatives">
-				<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title', 12 ) ?></h2>
+				<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title') ?></h2>
 				<div class="initiatives-content-wrapper">
 					<div class="initiatives-img">
 						<!-- place inititaves photo here -->
 					</div>
-					<p><?php echo CFS()->get( 'mffs_initiatives_content', 12 ) ?></p>
+					<p><?php echo CFS()->get( 'mffs_initiatives_content') ?></p>
 				</div>
 			</section><!-- end inititiaves -->
 
 			<!-- fourth section mission -->
 			<section class="mission">
-				<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title', 12 ) ?></h2>
+				<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title') ?></h2>
 
 				<div class="section-wrapper">
 					<div class="green-img-bar">
@@ -69,7 +67,7 @@ get_header(); ?>
 						</div>
 					</div>
 					
-					<p><?php echo CFS()->get( 'mffs_mission_content', 12 ) ?></p>
+					<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
 				</div>
 
 			</section>	<!-- end mission -->
@@ -81,7 +79,7 @@ get_header(); ?>
 
 				<ul class="language-grid">
 				<?php
-					$loop = CFS()->get( 'mffs_languages_content', 12 );
+					$loop = CFS()->get( 'mffs_languages_content');
 						foreach ( $loop as $row ) { ?>
 						<li>
 							<?php echo $row['mffs_languages_single'];?>
@@ -91,7 +89,7 @@ get_header(); ?>
 				</ul>
 
 				<div class="language-img">
-					<img src="<?php echo CFS()->get( 'mffs_language_img', 12 ) ?>" alt="">
+					<img src="<?php echo CFS()->get( 'mffs_language_img') ?>" alt="">
 				</div>
 
 			</section><!-- end languages -->

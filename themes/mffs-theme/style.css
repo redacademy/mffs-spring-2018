@@ -312,7 +312,6 @@ a {
   clear: both;
   display: block; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -346,12 +345,6 @@ a {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -950,7 +943,7 @@ ul.about-do-grid {
   padding: 0.7rem 0rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
-  margin-top: 4rem; }
+  margin-top: 2rem; }
 
 .page-id-21 .title-no-bg {
   margin-top: 2rem; }

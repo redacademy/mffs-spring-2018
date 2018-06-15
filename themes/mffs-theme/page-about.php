@@ -9,6 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area about">
 		<main id="main" class="site-main" role="main">
+
+		<?php 
+			if(have_posts()):
+			while ( have_posts() ) : the_post(); ?>
 			
 		<!-- first section with carousel -->
 			<section class="about-carousel">
@@ -97,6 +101,11 @@ get_header(); ?>
 				<h2 class="section-title uppercase">Mffs right to refuse</h2>
 				<p><?php echo CFS()->get( 'mffs_about_refuse', 17 ) ?></p>
 			</section> 	<!-- end about-refuse -->
+
+				<?php endwhile;
+			else :
+		endif;
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

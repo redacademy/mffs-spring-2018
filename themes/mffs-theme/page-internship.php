@@ -9,6 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main internship" role="main">
+        <?php 
+			if(have_posts()):
+			while ( have_posts() ) : the_post(); ?>
 
         <!-- first section internship title -->
             <section class="internship-title">
@@ -68,6 +71,10 @@ get_header(); ?>
                 <p>How to apply</p>
                 <a href="<?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?>"><?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?></a>
             </section><!-- end internship contact -->
+                  <?php endwhile;
+			else :
+		endif;
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
