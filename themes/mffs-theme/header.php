@@ -32,7 +32,7 @@
 
 				<!-- header middle logo -->
 				<div class="site-branding">
-					<a href="#"><img src="<?php echo get_template_directory_uri()?>/assets/icons/leafs.svg" alt="">
+					<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/icons/leafs.svg" alt="">
 					<p>mffs<span class="ca-tld">.ca</span></p></a>
 				</div><!-- .site-branding -->
 
