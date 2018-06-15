@@ -36,7 +36,7 @@ get_header(); ?>
 						<li class="internship-quality-single">
 							<img src="<?php echo $row['internship_icon'];?>" alt="">
                             <h2 class="title-no-bg"><?php echo $row['mffs_internship_quality_title'];?></h2>
-                            <P><?php echo $row['mffs_internship_quality_text'];?></P>
+                            <?php echo $row['mffs_internship_quality_text'];?>
 						</li>
 						<?php } ?>
 				</ul>
