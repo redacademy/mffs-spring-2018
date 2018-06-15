@@ -88,7 +88,7 @@ function red_starter_scripts() {
 	// enqueue Font Awesome style
 	wp_enqueue_style( 'mffs-fontawesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
 
-	wp_enqueue_style('mffs-google-fonts', "https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Raleway");
+	wp_enqueue_style('mffs-google-fonts', "https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Raleway:400,600,700");
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

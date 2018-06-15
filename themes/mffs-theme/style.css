@@ -794,6 +794,9 @@ h2 {
     background: none;
     color: #0b2b34; }
 
+ul.about-go-grid {
+  margin: 0; }
+
 .about-go-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,8 +808,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .about-go-grid ul {
-    margin: 0; }
   .about-go-grid li {
     list-style-type: none;
     width: 250px;
@@ -835,3 +836,44 @@ h2 {
     margin-top: 3rem; }
     .team-grid li:nth-of-type(5) {
       margin-bottom: 4rem; }
+
+.about-team > p {
+  text-align: center;
+  margin: 8rem 3rem; }
+
+.award-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8rem; }
+  .award-container h2 {
+    text-align: left;
+    margin-left: 5rem; }
+  .award-container img {
+    width: 300px;
+    height: 300px;
+    margin-right: 3rem; }
+
+.awards-grid li {
+  position: relative;
+  margin: 2rem .5rem;
+  list-style-type: none; }
+  .awards-grid li:before {
+    content: '\2022';
+    font-size: 70px;
+    position: absolute;
+    top: -34px;
+    left: -34px; }
+
+.disclaimer-grid li {
+  margin: 4rem 0; }
+
+.about-refuse h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; }
+
+.about-refuse p {
+  text-align: center;
+  margin: 2rem 2rem 8rem; }

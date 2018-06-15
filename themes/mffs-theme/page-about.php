@@ -80,8 +80,8 @@ get_header(); ?>
 
 			<!-- sixth section about-disclaimer -->
 			<section class="about-disclaimer">
-				<h2 class="section-title"></h2>
-				<ul class="disclaimer-grid">
+				<h2 class="section-title">Disclaimer</h2>
+				<ol class="disclaimer-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_about_disclaimer', 17 );
 						foreach ( $loop as $row ) { ?>
@@ -89,7 +89,7 @@ get_header(); ?>
 							<?php echo $row['mffs_about_disclaimer_single'];?>
 						</li>
 				<?php } ?>
-				</ul>
+				</ol>
 			</section> <!-- end about-disclaimer -->
 
 			<!-- seventh section about-refuse -->
