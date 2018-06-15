@@ -35,7 +35,10 @@
     margin-bottom: 6rem;
     text-align: center;
     a{
-        text-decoration: underline;
+        color: $color__text-main;
+    border-bottom: 1.2px solid $color__text-main;
+    padding-bottom: 1px;
+        // text-decoration: underline;
     }
 }
 .internship-why{
@@ -50,7 +53,7 @@
 }
 
 .why-grid {
-    li:nth-of-type(1){
+    li{
         h2{
             margin: 2rem 0;
         }
@@ -61,12 +64,21 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
+        
+        p  {
+                width: 41rem;
+                margin: 0 auto;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+            }
     }
-    li p:nth-of-type(1)
-    {
+    
+}
+.internship-requirements{
+    p{
         width: 41rem;
         margin: 0 auto;
-        padding-bottom: 6rem;
+        padding-bottom: 2rem;
         padding-top: 2rem;
     }
 }
