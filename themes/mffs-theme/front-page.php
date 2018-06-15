@@ -10,6 +10,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+				<?php 
+		if(have_posts()):
+			 while ( have_posts() ) : the_post(); 
+			 d(get_the_ID());
+			 ?>
+
+
 			<!-- First section with testomonials carousel -->
 			<section class="stories">
 				<h2 class="story-title">Moving Forward Family Services</h2>
@@ -17,7 +24,7 @@ get_header(); ?>
 					carousel
 				</div>
 				<div class="story-info">
-					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title', 12 ) ?></h2>
+					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
 					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12 ) ?></p>
 				</div>
 			</section> <!-- end stories -->
@@ -88,6 +95,11 @@ get_header(); ?>
 				</div>
 
 			</section><!-- end languages -->
+
+				<?php endwhile;
+			else :
+		endif;
+		?>
 
 
 		</main><!-- #main -->
