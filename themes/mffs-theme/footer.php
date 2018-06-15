@@ -17,7 +17,7 @@
                         </p>
                         <a class = "donate-button" href="#">Donate</a>
                     </div>
-                    <div class="contact">
+                    <address class="contact">
                         <p>
                         Contact us
                         </p>
@@ -29,7 +29,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                             <p class="address">103 – 12827 76th Avenue Surrey, BC</p>
                         </div>
-                    </div>
+                    </address>
                     <div class="news">
                         <p class="news-title">Newsletter</p>
                         <a href="#" class="news-subscribe">Click here to Subscribe!</a>
