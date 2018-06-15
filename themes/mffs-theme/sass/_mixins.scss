@@ -24,6 +24,13 @@
     padding: $pad;
     text-transform: capitalize;
     background: $color__background-body;
+    &:hover{
+      background-color: lighten($color__button-yellow, 10%);
+      
+      transition: all .2s ease-in-out;
+      // transition: background-color 1s ease-in-out;
+      // transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
 }
 
 @mixin shadow-btn-bright ($bord-rad:50px, $pad:0px 9px ,$shad-col:#ff0000) {

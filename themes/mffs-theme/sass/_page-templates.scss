@@ -9,6 +9,10 @@ h2, {//titles
     color: $color__text-main;
     transform:scale(1,.8);
 }
+
+ul{
+    list-style-type: none;
+}
 .story-info{
     border-bottom: 4px solid $color__button-yellow;
     &>h2{
@@ -31,7 +35,7 @@ text-align: center;
 // grid-template-rows: repeat(12, 1fr);
 // grid-template-columns: repeat(12, 1fr);
 margin:2rem 0 2rem 0;
-list-style-type: none;
+
 // grid: repeat(3, 12vw) / auto-flow;
 font-size: 1.5rem;
 .impact-value{
@@ -172,7 +176,7 @@ border-radius: 50%;
 }
 
 .language-grid{//languages grid
-    list-style-type: none;
+   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.5rem;

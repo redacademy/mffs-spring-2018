@@ -1,0 +1,60 @@
+.internship{
+    font-size: 1.6rem;
+    font-weight: 600;
+    h2{
+    font-weight: 200;
+    }
+    ul{
+        margin: 0;
+    }
+    
+}
+
+.internship-title {
+    h2{
+        margin-top: 1rem;
+    }
+    img{
+    max-width:450px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    }
+    p{
+        text-align: center;
+        width: 33rem;
+        margin: 0 auto;
+    }
+}
+
+.internship-contact{
+    h2{
+        margin-bottom: 3rem;
+    }
+    margin-bottom: 6rem;
+    text-align: center;
+    a{
+        text-decoration: underline;
+    }
+}
+.internship-why{
+    text-align: center;
+    p:nth-last-of-type(1){
+        width: 33rem;
+        width: 33rem;
+        margin: 0 auto;
+        padding-bottom: 6rem;
+        padding-top: 2rem;
+    }
+}
+
+.why-grid li:nth-of-type(1){
+    img{
+        max-width:300px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
