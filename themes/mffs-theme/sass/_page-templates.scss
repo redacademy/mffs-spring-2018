@@ -172,7 +172,6 @@ border-radius: 50%;
 }
 
 .language-grid{//languages grid
-    margin: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -181,6 +180,7 @@ border-radius: 50%;
     color: $color__link-visited;
     width: 90%;
     margin: 0 auto;
+    text-align: center;
     li{
         padding: 1rem;
     }
