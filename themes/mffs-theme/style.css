@@ -794,10 +794,10 @@ h2 {
     background: none;
     color: #0b2b34; }
 
-ul.about-go-grid {
+ul.about-do-grid {
   margin: 0; }
 
-.about-go-grid {
+.about-do-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +808,7 @@ ul.about-go-grid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .about-go-grid li {
+  .about-do-grid li {
     list-style-type: none;
     width: 250px;
     height: 250px;

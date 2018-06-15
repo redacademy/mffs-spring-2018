@@ -20,7 +20,7 @@ get_header(); ?>
 		<!-- second section about-do -->
 			<section class="about-do">
 				<h2 class="section-title">What We Do</h2>
-				<ul class="about-go-grid">
+				<ul class="about-do-grid">
 					<li>
 						<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-balloons-mother-daughter_3272439.svg" alt="">
 						<p>Awesome internship program</p>

@@ -7,10 +7,10 @@
     }
    
 }
-ul.about-go-grid{
+ul.about-do-grid{
     margin: 0;
 }
-.about-go-grid{ //aligning images
+.about-do-grid{ //aligning images
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -80,8 +80,7 @@ ul.about-go-grid{
             font-size:70px;
             position: absolute;
             top: -34px;
-            left: -34px;
-            
+            left: -34px; 
         }
         list-style-type: none;
     }
