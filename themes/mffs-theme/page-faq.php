@@ -10,6 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area about">
 		<main id="main" class="site-main" role="main">
 
+            <h2 class="title-no-bg">Frequently Asked Questions</h2>
              <ul class="faq-section-grid">
 
 				    <?php
