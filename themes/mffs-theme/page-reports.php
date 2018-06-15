@@ -41,8 +41,8 @@ get_header(); ?>
                         <img src="<?php echo CFS()->get( 'mffs_reports_image', 99 ) ?>" alt="">
                     </div>
                     <div>
-                        <p><?php echo CFS()->get( 'mffs_reports_info', 99 ) ?></p>
-                        <button>Download</button>
+                        <p><?php echo CFS()->get( 'mffs_reports_archive_info', 99 ) ?></p>
+                        <a href="<?php echo CFS()->get( 'mffs_annual_report', 99 ) ?>" download>Download</a>
                     </div>
                 </div>
 
