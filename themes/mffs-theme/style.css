@@ -552,6 +552,9 @@ h2 {
   -webkit-transform: scale(1, 0.8);
           transform: scale(1, 0.8); }
 
+ul {
+  list-style-type: none; }
+
 .story-info {
   border-bottom: 4px solid #f1d18a; }
   .story-info > h2 {
@@ -567,7 +570,6 @@ h2 {
   display: grid;
   text-align: center;
   margin: 2rem 0 2rem 0;
-  list-style-type: none;
   font-size: 1.5rem; }
   .impact-grid .impact-value {
     font-size: 4rem;
@@ -672,7 +674,6 @@ h2 {
     border-radius: 50%; }
 
 .language-grid {
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-size: 1.5rem;
@@ -727,6 +728,10 @@ h2 {
     padding: 4px 20px;
     text-transform: capitalize;
     background: #fff; }
+    .donate-button a:hover {
+      background-color: #f6e3b8;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
@@ -763,6 +768,10 @@ h2 {
     display: inline-block;
     margin-bottom: 20px;
     text-decoration: none; }
+    .site-info a.donate-button:hover {
+      background-color: #f6e3b8;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
   .site-info .contact {
     border-top: 2px solid #fff;
     width: 100%;
@@ -809,7 +818,6 @@ ul.about-do-grid {
       -ms-flex-align: center;
           align-items: center; }
   .about-do-grid li {
-    list-style-type: none;
     width: 250px;
     height: 250px;
     text-align: center;
@@ -830,7 +838,6 @@ ul.about-do-grid {
   margin: 0 auto;
   display: grid;
   grid-template: 3fr/ 1fr 1fr;
-  list-style-type: none;
   text-align: center; }
   .team-grid li {
     margin-top: 3rem; }
@@ -856,8 +863,7 @@ ul.about-do-grid {
 
 .awards-grid li {
   position: relative;
-  margin: 2rem .5rem;
-  list-style-type: none; }
+  margin: 2rem .5rem; }
   .awards-grid li:before {
     content: '\2022';
     font-size: 70px;
@@ -877,3 +883,50 @@ ul.about-do-grid {
 .about-refuse p {
   text-align: center;
   margin: 2rem 2rem 8rem; }
+
+.internship {
+  font-size: 1.6rem;
+  font-weight: 600; }
+  .internship h2 {
+    font-weight: 200; }
+  .internship ul {
+    margin: 0; }
+
+.internship-title h2 {
+  margin-top: 1rem; }
+
+.internship-title img {
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.internship-title p {
+  text-align: center;
+  width: 33rem;
+  margin: 0 auto; }
+
+.internship-contact {
+  margin-bottom: 6rem;
+  text-align: center; }
+  .internship-contact h2 {
+    margin-bottom: 3rem; }
+  .internship-contact a {
+    text-decoration: underline; }
+
+.internship-why {
+  text-align: center; }
+  .internship-why p:nth-last-of-type(1) {
+    width: 33rem;
+    width: 33rem;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    padding-top: 2rem; }
+
+.why-grid li:nth-of-type(1) img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
