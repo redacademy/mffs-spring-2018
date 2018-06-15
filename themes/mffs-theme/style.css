@@ -785,3 +785,7 @@ h2 {
     display: inline-flex; }
     .site-info .contact-address > p {
       width: 208px; }
+
+.about-do h2 {
+  background: none;
+  color: black; }
