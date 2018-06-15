@@ -910,7 +910,9 @@ ul.about-do-grid {
   .internship-contact h2 {
     margin-bottom: 3rem; }
   .internship-contact a {
-    text-decoration: underline; }
+    color: #0b2b34;
+    border-bottom: 1.2px solid #0b2b34;
+    padding-bottom: 1px; }
 
 .internship-why {
   text-align: center; }
@@ -921,20 +923,26 @@ ul.about-do-grid {
     padding-bottom: 6rem;
     padding-top: 2rem; }
 
-.why-grid li:nth-of-type(1) h2 {
+.why-grid li h2 {
   margin: 2rem 0; }
 
-.why-grid li:nth-of-type(1) img {
+.why-grid li img {
   max-width: 300px;
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.why-grid li p:nth-of-type(1) {
+.why-grid li p {
   width: 41rem;
   margin: 0 auto;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+.internship-requirements p {
+  width: 41rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
   padding-top: 2rem; }
 
 .page-id-21 .section-title {
