@@ -1,6 +1,55 @@
-.about-do{
+.about{
+    font-size: 1.6rem;
+    font-weight: 600;
     h2{
-        background: none;
-        color: black;
+    background: none;
+    color: $color__text-main;
+    }
+   
+}
+
+.about-go-grid{ //aligning images
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   ul{
+    margin: 0;
+}
+    li{
+        list-style-type: none;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+    }
+}
+.team-member-single{
+    p{
+        margin-bottom: 0;
+    }
+    
+}
+
+.about-values{
+    p{
+        text-align: center;
+        margin: 0 3rem;
+    }
+}
+.team-grid{
+    background: #bfccd0;
+    border-radius: 2rem;
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 3fr/ 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
+    li{
+        margin-top: 3rem;
+        &:nth-of-type(5){
+            margin-bottom: 4rem;
+        }
     }
 }

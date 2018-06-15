@@ -180,7 +180,8 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  color: #0b2b34; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -786,6 +787,51 @@ h2 {
     .site-info .contact-address > p {
       width: 208px; }
 
-.about-do h2 {
-  background: none;
-  color: black; }
+.about {
+  font-size: 1.6rem;
+  font-weight: 600; }
+  .about h2 {
+    background: none;
+    color: #0b2b34; }
+
+.about-go-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about-go-grid ul {
+    margin: 0; }
+  .about-go-grid li {
+    list-style-type: none;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem; }
+
+.team-member-single p {
+  margin-bottom: 0; }
+
+.about-values p {
+  text-align: center;
+  margin: 0 3rem; }
+
+.team-grid {
+  background: #bfccd0;
+  border-radius: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 3fr/ 1fr 1fr;
+  list-style-type: none;
+  text-align: center; }
+  .team-grid li {
+    margin-top: 3rem; }
+    .team-grid li:nth-of-type(5) {
+      margin-bottom: 4rem; }
