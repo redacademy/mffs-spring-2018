@@ -671,7 +671,6 @@ h2 {
     border-radius: 50%; }
 
 .language-grid {
-  margin: 0;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -679,7 +678,8 @@ h2 {
   font-weight: 600;
   color: #0b2b34;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .language-grid li {
     padding: 1rem; }
 
