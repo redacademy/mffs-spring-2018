@@ -16,7 +16,7 @@ ul {
 .story-info {
   border-bottom: 4px solid $color__button-yellow;
   & > h2 {
-    width: 23rem;
+    max-width: 23rem;
     margin: 0 auto;
   }
   & p:nth-of-type(2) {
@@ -26,14 +26,13 @@ ul {
     font-size: 1.7rem;
   }
 }
-.impact-grid {
+.impact-grid {//grid for impact circles
   display: grid;
   text-align: center;
-  // width: 100%;
-  // height: 100%;
-  // grid-template-rows: repeat(12, 1fr);
-  // grid-template-columns: repeat(12, 1fr);
-  margin: 2rem 0 2rem 0;
+  max-width: 620px;
+  margin: 0 auto;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 
   // grid: repeat(3, 12vw) / auto-flow;
   font-size: 1.5rem;
@@ -44,55 +43,45 @@ ul {
   & li:nth-of-type(1) {
     width: 200px;
     height: 200px;
-
     overflow-wrap: break-word;
     grid-row: 1/5;
     grid-column: 2/6;
-
     background: $color__background-ins;
     border-radius: 50%;
   }
   & li:nth-of-type(2) {
     width: 200px;
     height: 200px;
-
     overflow-wrap: break-word;
     grid-row: 1/5;
     grid-column: 8/12;
-
     background: $color__background-ins;
     border-radius: 50%;
   }
   & li:nth-of-type(3) {
     width: 200px;
     height: 200px;
-
     overflow-wrap: break-word;
     grid-row: 5/9;
     grid-column: 5/9;
-
     background: $color__background-ins;
     border-radius: 50%;
   }
   & li:nth-of-type(4) {
     width: 200px;
     height: 200px;
-
     overflow-wrap: break-word;
     grid-row: 9/13;
     grid-column: 2/6;
-
     background: $color__background-ins;
     border-radius: 50%;
   }
   & li:nth-of-type(5) {
     width: 200px;
     height: 200px;
-
     overflow-wrap: break-word;
     grid-row: 9/13;
     grid-column: 8/12;
-
     background: $color__background-ins;
     border-radius: 50%;
   }
@@ -150,6 +139,9 @@ ul {
 }
 
 .languages {
+  ul{
+    margin: 0;
+  }
   h3 {
     margin: 0 auto;
     text-align: center;
@@ -173,14 +165,14 @@ ul {
   //languages grid
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   font-size: 1.5rem;
   font-weight: 600;
   color: $color__link-visited;
-  width: 90%;
   margin: 0 auto;
   text-align: center;
   li {
-    padding: 1rem;
+    padding: 1.5rem;
+    overflow: auto;
   }
 }

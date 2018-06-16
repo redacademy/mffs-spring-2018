@@ -549,7 +549,7 @@ ul {
 .story-info {
   border-bottom: 4px solid #f1d18a; }
   .story-info > h2 {
-    width: 23rem;
+    max-width: 23rem;
     margin: 0 auto; }
   .story-info p:nth-of-type(2) {
     margin: 0 auto;
@@ -560,7 +560,10 @@ ul {
 .impact-grid {
   display: grid;
   text-align: center;
-  margin: 2rem 0 2rem 0;
+  max-width: 620px;
+  margin: 0 auto;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   font-size: 1.5rem; }
   .impact-grid .impact-value {
     font-size: 4rem;
@@ -647,6 +650,9 @@ ul {
     font-weight: 400;
     font-size: 1.7rem; }
 
+.languages ul {
+  margin: 0; }
+
 .languages h3 {
   margin: 0 auto;
   text-align: center;
@@ -665,15 +671,15 @@ ul {
 
 .language-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   font-size: 1.5rem;
   font-weight: 600;
   color: #0b2b34;
-  width: 90%;
   margin: 0 auto;
   text-align: center; }
   .language-grid li {
-    padding: 1rem; }
+    padding: 1.5rem;
+    overflow: auto; }
 
 .site-header {
   display: -webkit-box;
