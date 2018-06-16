@@ -195,18 +195,13 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5rem 3rem; }
+  margin: 0; }
 
 ul {
   list-style: disc; }
 
 ol {
   list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
 
 dt {
   font-weight: bold; }
@@ -313,7 +308,6 @@ a {
   display: block; }
   .main-navigation ul {
     list-style: none;
-    margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -650,9 +644,6 @@ ul {
     font-weight: 400;
     font-size: 1.7rem; }
 
-.languages ul {
-  margin: 0; }
-
 .languages h3 {
   margin: 0 auto;
   text-align: center;
@@ -723,11 +714,11 @@ ul {
     border-radius: 50px;
     padding: 4px 20px;
     text-transform: capitalize;
-    background: #fff; }
+    background: #fff;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     .donate-button a:hover {
-      background-color: #f6e3b8;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
+      background-color: #f4daa1; }
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
@@ -758,6 +749,8 @@ ul {
     padding: 6px 60px;
     text-transform: capitalize;
     background: #fff;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     border: 5px solid #f1d18a;
     font-size: 1.5rem;
     font-weight: 600;
@@ -765,9 +758,7 @@ ul {
     margin-bottom: 20px;
     text-decoration: none; }
     .site-info a.donate-button:hover {
-      background-color: #f6e3b8;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
+      background-color: #f4daa1; }
   .site-info .contact {
     border-top: 2px solid #fff;
     width: 100%;
@@ -798,9 +789,6 @@ ul {
   .about h2 {
     background: none;
     color: #0b2b34; }
-
-ul.about-do-grid {
-  margin: 0; }
 
 .about-do-grid {
   display: -webkit-box;
@@ -885,8 +873,6 @@ ul.about-do-grid {
   font-weight: 600; }
   .internship h2 {
     font-weight: 200; }
-  .internship ul {
-    margin: 0; }
 
 .internship-title h2 {
   margin-top: 1rem; }
@@ -973,4 +959,4 @@ ul.about-do-grid {
   border-radius: 50%;
   text-align: center; }
   .faq-bubble p {
-    padding-top: 1rem; }
+    padding-top: .8rem; }
