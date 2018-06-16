@@ -10,6 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area about">
 		<main id="main" class="site-main" role="main">
 
+        <?php 
+			if(have_posts()):
+			while ( have_posts() ) : the_post(); ?>
+
             <!-- first section annual reports -->
 			<section class="reports-info-img">
 
@@ -61,6 +65,11 @@ get_header(); ?>
                     </ul>
                 </div>
             </section><!-- end reports version -->
+
+                     <?php endwhile;
+			else :
+		endif;
+		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
