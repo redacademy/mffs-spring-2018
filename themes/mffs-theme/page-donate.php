@@ -29,7 +29,7 @@ get_header(); ?>
                     <option value="grief counselling">Grief counselling</option>
                     <option value="body image counselling">Body image counselling</option>
                 </select>
-                <button class="donate-button" type="button">Donate</button>
+                <a href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/">Donate</a>
             </section> <!-- end donate dropdown button -->
 
             <!-- third section where donation money is going -->
