@@ -54,7 +54,7 @@ get_header(); ?>
 						<li class="requirements-single">
                             <h2 class="title-no-bg"><?php echo $row['mffs_internship_requirement_title'];?></h2>
                             <?php echo $row['mffs_internship_requirement_text'];?>
-                            <div class="yellow-dots"> . . . . . . . </div>
+                            <div class="yellow-dots"> &bull; &bull; &bull; </div>
                         </li>
 						<?php } ?>
 				</ul>

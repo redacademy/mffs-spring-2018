@@ -15,10 +15,13 @@
   }
 }
 
-// .faq-bubble {
-//   width: 20%;
-// }
-
-// .faq-content {
-//   width: 80%;
-// }
+.faq-bubble {
+  background: green;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  text-align: center;
+  p {
+    padding-top: 1rem;
+  }
+}

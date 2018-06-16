@@ -893,7 +893,7 @@ ul.about-do-grid {
   margin-top: 1rem; }
 
 .internship-title img {
-  max-width: 450px;
+  max-width: 430px;
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
@@ -901,7 +901,7 @@ ul.about-do-grid {
 
 .internship-title p {
   text-align: center;
-  width: 33rem;
+  max-width: 33rem;
   margin: 0 auto; }
 
 .internship-contact {
@@ -917,7 +917,7 @@ ul.about-do-grid {
 .internship-why {
   text-align: center; }
   .internship-why p:nth-last-of-type(1) {
-    width: 33rem;
+    max-width: 33rem;
     margin: 0 auto;
     padding-bottom: 6rem;
     padding-top: 2rem; }
@@ -933,16 +933,25 @@ ul.about-do-grid {
   margin-bottom: 2rem; }
 
 .why-grid li p {
-  width: 41rem;
+  max-width: 35rem;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-top: 2rem; }
 
 .internship-requirements p {
-  width: 41rem;
+  max-width: 35rem;
   margin: 0 auto;
   padding-bottom: 2rem;
   padding-top: 2rem; }
+
+.internship-requirements .yellow-dots {
+  text-align: center;
+  color: #f1d18a;
+  font-size: 3rem;
+  letter-spacing: -4px; }
+
+.yellow-dots div:last-of-type {
+  display: none; }
 
 .page-id-21 .section-title {
   background: #4c6f7b;
@@ -950,10 +959,19 @@ ul.about-do-grid {
   padding: 0.7rem 0rem;
   text-transform: capitalize;
   margin-bottom: 2rem;
-  margin-top: 4rem; }
+  margin-top: 2rem; }
 
 .page-id-21 .title-no-bg {
   margin-top: 2rem; }
 
 .page-id-21 .faq-section-grid {
   margin-left: 0; }
+
+.faq-bubble {
+  background: green;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  text-align: center; }
+  .faq-bubble p {
+    padding-top: 1rem; }
