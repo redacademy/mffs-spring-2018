@@ -1,9 +1,16 @@
 .donate-button{
-    margin-right: .5rem;
+    // margin-right: .5rem;
     font-weight: 700;
     font-size: 1.2rem;
     a{
     @include light-border-btn (50px, 4px 20px);
-    
     }
+}
+a.donate-button{//larger buttons
+    @include light-border-btn (20px, 6px 60px);
+    border: 5px solid $color__button-yellow;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
 }

@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area donate-page">
 		<main id="main" class="site-main" role="main">
 
         <?php 
@@ -29,7 +29,7 @@ get_header(); ?>
                     <option value="grief counselling">Grief counselling</option>
                     <option value="body image counselling">Body image counselling</option>
                 </select>
-                <a href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/">Donate</a>
+                <a class ="donate-button" href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/">Donate</a>
             </section> <!-- end donate dropdown button -->
 
             <!-- third section where donation money is going -->

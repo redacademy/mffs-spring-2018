@@ -219,6 +219,10 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+select {
+  margin: 0 auto;
+  display: block; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -705,7 +709,6 @@ ul {
   font-size: 14px; }
 
 .donate-button {
-  margin-right: .5rem;
   font-weight: 700;
   font-size: 1.2rem; }
   .donate-button a {
@@ -719,6 +722,23 @@ ul {
     transition: all .5s ease-in-out; }
     .donate-button a:hover {
       background-color: #f4daa1; }
+
+a.donate-button {
+  color: #4c6f7b;
+  border: 2px solid #f1d18a;
+  border-radius: 20px;
+  padding: 6px 60px;
+  text-transform: capitalize;
+  background: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: 5px solid #f1d18a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px; }
+  a.donate-button:hover {
+    background-color: #f4daa1; }
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
@@ -735,30 +755,13 @@ ul {
   text-align: center;
   background: #4c6f7b;
   color: #fff; }
-  .site-info a {
+  .site-info .tel-info a, .site-info .news a {
     color: #fff;
     border-bottom: 1.2px solid white;
     padding-bottom: 1px; }
   .site-info .supporter-title {
     margin: 20px 0;
     font-size: 1.5rem; }
-  .site-info a.donate-button {
-    color: #4c6f7b;
-    border: 2px solid #f1d18a;
-    border-radius: 20px;
-    padding: 6px 60px;
-    text-transform: capitalize;
-    background: #fff;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    border: 5px solid #f1d18a;
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: none; }
-    .site-info a.donate-button:hover {
-      background-color: #f4daa1; }
   .site-info .contact {
     border-top: 2px solid #fff;
     width: 100%;
