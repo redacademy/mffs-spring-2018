@@ -112,7 +112,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Montserat", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /* Copy */
 p {
@@ -573,40 +573,50 @@ ul {
     overflow-wrap: break-word;
     grid-row: 1/span 5;
     grid-column: 2/span 6;
-    background: #fff9c0;
-    border-radius: 50%; }
+    background: #f1d18a;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 4px 6px 25px #fff;
+            box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(2) {
     width: 200px;
     height: 200px;
     overflow-wrap: break-word;
     grid-row: 1/span 5;
     grid-column: 8/span 12;
-    background: #fff9c0;
-    border-radius: 50%; }
+    background: #f1d18a;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 4px 6px 25px #fff;
+            box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(3) {
     width: 200px;
     height: 200px;
     overflow-wrap: break-word;
     grid-row: 5/span 9;
     grid-column: 5/span 9;
-    background: #fff9c0;
-    border-radius: 50%; }
+    background: #f1d18a;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 4px 6px 25px #fff;
+            box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(4) {
     width: 200px;
     height: 200px;
     overflow-wrap: break-word;
     grid-row: 9/span 13;
     grid-column: 2/span 6;
-    background: #fff9c0;
-    border-radius: 50%; }
+    background: #f1d18a;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 4px 6px 25px #fff;
+            box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(5) {
     width: 200px;
     height: 200px;
     overflow-wrap: break-word;
     grid-row: 9/span 13;
     grid-column: 8/span 12;
-    background: #fff9c0;
-    border-radius: 50%; }
+    background: #f1d18a;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 4px 6px 25px #fff;
+            box-shadow: inset 4px 6px 25px #fff; }
 
 .section-title,
 .initiatives h2 {
@@ -711,7 +721,7 @@ header .donate-button a {
   font-size: 14px; }
 
 .donate-button {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2rem; }
   .donate-button a {
     color: #4c6f7b;
@@ -720,8 +730,9 @@ header .donate-button a {
     padding: 4px 20px;
     text-transform: capitalize;
     background: #fff;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
+    font-family: "Montserrat", sans-serif;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     .donate-button a:hover {
       background-color: #f4daa1; }
 
@@ -732,8 +743,9 @@ a.donate-button {
   padding: 6px 60px;
   text-transform: capitalize;
   background: #fff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border: 5px solid #f1d18a;
   font-size: 1.5rem;
   font-weight: 600;
@@ -754,6 +766,7 @@ a.donate-button {
           box-shadow: 2px 2px #0b2b34;
   display: block;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 600; }
 
@@ -969,17 +982,45 @@ a.donate-button {
 .page-id-21 .title-no-bg {
   margin-top: 2rem; }
 
-.page-id-21 .faq-section-grid {
-  margin-left: 0; }
+.page-id-21 .faq-section-grid h2 {
+  text-align: left; }
+
+.page-id-21 .faq-section-grid .section-title {
+  padding-left: 2.5rem;
+  font-size: 2rem;
+  font-weight: 400; }
+
+.faq-single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem; }
+
+.faq-qest-ans-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem; }
 
 .faq-bubble {
-  background: green;
-  width: 12vw;
-  height: 12vw;
+  background: #f1d18a;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  text-align: center; }
+  position: relative;
+  margin-top: 0.5rem;
+  padding: 3rem; }
   .faq-bubble p {
-    padding-top: .8rem; }
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem; }
 
 .donate-dropdown-button {
   text-align: center; }

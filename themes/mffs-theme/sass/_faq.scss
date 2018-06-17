@@ -11,17 +11,41 @@
     margin-top: 2rem;
   }
   .faq-section-grid {
-    margin-left: 0;
+    h2 {
+      text-align: left;
+    }
+    .section-title {
+      padding-left: 2.5rem;
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
 }
 
+.faq-single-item {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.faq-qest-ans-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
 .faq-bubble {
-  background: green;
-  width: 12vw;
-  height: 12vw;
+  background: $color__button-yellow;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  text-align: center;
+  position: relative;
+  margin-top: 0.5rem;
+  padding: 3rem;
   p {
-    padding-top: .8rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 4rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
 }

@@ -17,37 +17,48 @@
   }
 }
 //buttons
-@mixin light-border-btn ($bord-rad:50px, $pad:0px 9px) {
-    color:$color__green_main;
-    border: 2px solid $color__button-yellow;
-    border-radius: $bord-rad;
-    padding: $pad;
-    text-transform: capitalize;
-    background: $color__background-body;
-    transition: all .5s ease-in-out;
-    &:hover{
-      background-color: lighten($color__button-yellow, 5%);
-      
-      // transition: all .2s ease-in-out;
-      // transition: background-color 1s ease-in-out;
-      // transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
-}
-
-@mixin shadow-btn-bright ($bord-rad:50px, $pad:0px 9px ,$shad-col:#ff0000 ,$bcg-col:$color__button-yellow) {
-  color:$color__link;
+@mixin light-border-btn($bord-rad: 50px, $pad: 0px 9px) {
+  color: $color__green_main;
+  border: 2px solid $color__button-yellow;
   border-radius: $bord-rad;
   padding: $pad;
   text-transform: capitalize;
-  background:$bcg-col ;
+  background: $color__background-body;
+  font-family: $font__title;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: lighten($color__button-yellow, 5%);
+
+    // transition: all .2s ease-in-out;
+    // transition: background-color 1s ease-in-out;
+    // transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+}
+
+@mixin shadow-btn-bright(
+  $bord-rad: 50px,
+  $pad: 0px 9px,
+  $shad-col: #ff0000,
+  $bcg-col: $color__button-yellow
+) {
+  color: $color__link;
+  border-radius: $bord-rad;
+  padding: $pad;
+  text-transform: capitalize;
+  background: $bcg-col;
   box-shadow: 2px 2px $shad-col;
   display: block;
   margin: 0 auto;
+  font-family: $font__title;
   font-size: 2rem;
   font-weight: 600;
 }
 
-@mixin shadow-btn-dark-border ($bord-rad:5px, $pad:0px 9px ,$shad-col:#62db44) {
+@mixin shadow-btn-dark-border(
+  $bord-rad: 5px,
+  $pad: 0px 9px,
+  $shad-col: #62db44
+) {
   color: $color__background-body;
   border: 1px solid black;
   border-radius: $bord-rad;
@@ -57,14 +68,17 @@
   box-shadow: 1px 1px $shad-col;
   display: block;
   margin: 0 auto;
+  font-family: $font__title;
 }
 
-@mixin impact-grid-circle ($row, $col){//using mixin for impact grid circles
+@mixin impact-grid-circle($row, $col) {
+  //using mixin for impact grid circles
   width: 200px;
   height: 200px;
   overflow-wrap: break-word;
   grid-row: $row;
   grid-column: $col;
-  background: $color__background-ins;
+  background: $color__button-yellow;
   border-radius: 50%;
+  box-shadow: inset 4px 6px 25px #fff; //inner shadow effect
 }

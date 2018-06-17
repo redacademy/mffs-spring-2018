@@ -52,11 +52,12 @@ get_header(); ?>
                                         </div>
 
                                         <!-- faq single question title -->
+                                        <div class="faq-qest-ans-wrapper">
                                         <h2 class="faq-question"><?php echo $row2['mffs_faq_question_single'];?></h2>
 
                                         <!-- faq single answer -->
                                         <p class="faq-answer"><?php echo $row2['mffs_faq_answer_single'];?></p>
-
+                                        </div>
                                     </li> <!-- end faq content -->
                                 <?php } ?>
                                 </div> <!-- end faq content -->
