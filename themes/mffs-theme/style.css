@@ -614,8 +614,8 @@ ul {
   color: #fff;
   padding: 0.7rem 0rem;
   text-transform: capitalize;
-  margin-bottom: 2rem;
-  margin-top: 4rem; }
+  margin-bottom: 6rem;
+  margin-top: 6rem; }
 
 .initiatives-content-wrapper {
   margin: 0 auto;
@@ -671,11 +671,9 @@ ul {
   font-size: 1.5rem;
   font-weight: 600;
   color: #0b2b34;
-  margin: 0 auto;
   text-align: center; }
   .language-grid li {
-    padding: 1.5rem;
-    overflow: auto; }
+    padding: 1rem; }
 
 header .donate-button a {
   margin-right: 1rem; }
@@ -1033,3 +1031,6 @@ a.donate-button {
 
 .donate-help h2:nth-child(1) {
   margin: 10rem 0 5rem; }
+
+.donate-info-single a {
+  color: #08b3f6; }
