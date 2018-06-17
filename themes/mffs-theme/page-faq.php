@@ -42,7 +42,7 @@ get_header(); ?>
                                     foreach ( $loop2 as $row2 ) { ?>
                                 
                                 <!-- container for single questions/ answer -->
-                                <div class="faq-content">
+                                
 
                                     <li class="faq-single-item">
                                         
@@ -60,7 +60,7 @@ get_header(); ?>
                                         </div>
                                     </li> <!-- end faq single item -->
                                 <?php } ?>
-                                </div> <!-- end faq content -->
+                                
                             </ul><!-- end faq single grid -->
 						</li><!-- end faq section single -->
 						<?php } ?>

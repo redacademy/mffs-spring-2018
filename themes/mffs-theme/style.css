@@ -878,18 +878,20 @@ a.donate-button {
     height: 300px;
     margin-right: 3rem; }
 
-.awards-grid li {
-  position: relative;
-  margin: 2rem .5rem; }
-  .awards-grid li:before {
-    content: '\2022';
-    font-size: 70px;
-    position: absolute;
-    top: -34px;
-    left: -34px; }
+.awards-grid {
+  margin-left: 3rem; }
+  .awards-grid li {
+    position: relative;
+    margin: 2rem .5rem; }
+    .awards-grid li:before {
+      content: '\2022';
+      font-size: 70px;
+      position: absolute;
+      top: -34px;
+      left: -34px; }
 
 .disclaimer-grid li {
-  margin: 4rem 0; }
+  margin: 4rem 3rem; }
 
 .about-refuse h2 {
   text-transform: uppercase;
@@ -981,6 +983,9 @@ a.donate-button {
 
 .page-id-21 .title-no-bg {
   margin-top: 2rem; }
+
+.page-id-21 .faq-section-grid .faq-section-single:nth-last-child(1) .faq-single-item:nth-last-child(1) .faq-qest-ans-wrapper:nth-last-child(1) p {
+  margin-bottom: 4rem; }
 
 .page-id-21 .faq-section-grid h2 {
   text-align: left; }
