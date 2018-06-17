@@ -1022,6 +1022,10 @@ a.donate-button {
     top: 1rem;
     left: 1rem; }
 
+p.faq-answer {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
 .donate-dropdown-button {
   text-align: center; }
   .donate-dropdown-button h2 {
