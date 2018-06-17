@@ -23,11 +23,15 @@
 .doate-where-grid{
     .donate-where-single{
         margin: 8rem 0;
+       
         p{
             font-size: 1.6rem;
             text-align: center;
             margin: 2rem 3rem;
             font-weight: 600;
+        }
+        &:nth-child(3) p{
+            margin-bottom: 10rem;
         }
     }
 li img{
@@ -49,5 +53,10 @@ li img{
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 6rem;
+    }
+}
+.donate-help{
+    & h2:nth-child(1){
+        margin: 10rem 0 5rem;
     }
 }
