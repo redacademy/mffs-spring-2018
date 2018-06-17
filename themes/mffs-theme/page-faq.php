@@ -58,7 +58,7 @@ get_header(); ?>
                                         <!-- faq single answer -->
                                         <p class="faq-answer"><?php echo $row2['mffs_faq_answer_single'];?></p>
                                         </div>
-                                    </li> <!-- end faq content -->
+                                    </li> <!-- end faq single item -->
                                 <?php } ?>
                                 </div> <!-- end faq content -->
                             </ul><!-- end faq single grid -->
