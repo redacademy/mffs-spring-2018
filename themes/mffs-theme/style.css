@@ -740,6 +740,21 @@ a.donate-button {
   a.donate-button:hover {
     background-color: #f4daa1; }
 
+.donate-where a {
+  text-align: center;
+  max-width: 30rem;
+  color: #0b2b34;
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-transform: capitalize;
+  background: #f1d18a;
+  -webkit-box-shadow: 2px 2px #0b2b34;
+          box-shadow: 2px 2px #0b2b34;
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 600; }
+
 .site-info {
   font-family: 'Montserrat' sans-serif;
   display: -webkit-box;
@@ -982,26 +997,30 @@ a.donate-button {
     -webkit-appearance: none;
     background-position-x: 270px; }
 
+.doate-where-grid .donate-where-single {
+  margin: 8rem 0; }
+  .doate-where-grid .donate-where-single p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2rem 3rem;
+    font-weight: 600; }
+
+.doate-where-grid li img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1rem; }
+
 .doate-where-grid li:nth-child(1) {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 6rem; }
-  .doate-where-grid li:nth-child(1) img {
-    width: 250px;
-    height: 250px; }
 
 .doate-where-grid li:nth-child(2) {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 6rem; }
-  .doate-where-grid li:nth-child(2) img {
-    width: 250px;
-    height: 250px; }
 
 .doate-where-grid li:nth-child(3) {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 6rem; }
-  .doate-where-grid li:nth-child(3) img {
-    width: 250px;
-    height: 250px; }

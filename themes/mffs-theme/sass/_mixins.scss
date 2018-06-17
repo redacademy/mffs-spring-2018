@@ -34,13 +34,17 @@
     }
 }
 
-@mixin shadow-btn-bright ($bord-rad:50px, $pad:0px 9px ,$shad-col:#ff0000) {
+@mixin shadow-btn-bright ($bord-rad:50px, $pad:0px 9px ,$shad-col:#ff0000 ,$bcg-col:$color__button-yellow) {
   color:$color__link;
   border-radius: $bord-rad;
   padding: $pad;
   text-transform: capitalize;
-  background: $color__button-dark-green;
-  box-shadow: 1px 1px $shad-col;
+  background:$bcg-col ;
+  box-shadow: 2px 2px $shad-col;
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 @mixin shadow-btn-dark-border ($bord-rad:5px, $pad:0px 9px ,$shad-col:#62db44) {

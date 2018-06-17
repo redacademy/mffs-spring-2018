@@ -14,3 +14,9 @@ a.donate-button{//larger buttons
     display: inline-block;
     margin-bottom: 20px;
 }
+
+.donate-where a{//view annual reports btn
+    text-align: center;
+    max-width: 30rem;
+    @include shadow-btn-bright(12px, 10px 16px, $color__text-main)
+}
