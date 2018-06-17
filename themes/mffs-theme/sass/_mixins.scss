@@ -55,5 +55,16 @@
   text-transform: capitalize;
   background: $color__button-dark-green;
   box-shadow: 1px 1px $shad-col;
+  display: block;
+  margin: 0 auto;
 }
 
+@mixin impact-grid-circle ($row, $col){//using mixin for impact grid circles
+  width: 200px;
+  height: 200px;
+  overflow-wrap: break-word;
+  grid-row: $row;
+  grid-column: $col;
+  background: $color__background-ins;
+  border-radius: 50%;
+}
