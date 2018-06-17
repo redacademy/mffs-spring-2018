@@ -79,8 +79,8 @@
     font-size: 3rem;
     letter-spacing: -4px;
   }
-  
 }
-.requirements-grid li:nth-last-child(1) div{//removing last 3 dots from the list
+.requirements-grid li:nth-last-child(1) div {
+  //removing last 3 dots from the list
   display: none;
 }
