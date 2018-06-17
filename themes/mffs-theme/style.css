@@ -955,7 +955,7 @@ a.donate-button {
   font-size: 3rem;
   letter-spacing: -4px; }
 
-.yellow-dots div:last-of-type {
+.requirements-grid li:nth-last-child(1) div {
   display: none; }
 
 .page-id-21 .section-title {

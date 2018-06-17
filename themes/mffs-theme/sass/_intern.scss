@@ -4,9 +4,6 @@
   h2 {
     font-weight: 200;
   }
-  // ul {
-  //   margin: 0;
-  // }
 }
 
 .internship-title {
@@ -37,14 +34,12 @@
     color: $color__text-main;
     border-bottom: 1.2px solid $color__text-main;
     padding-bottom: 1px;
-    // text-decoration: underline;
   }
 }
 .internship-why {
   text-align: center;
   p:nth-last-of-type(1) {
     max-width: 33rem;
-
     margin: 0 auto;
     padding-bottom: 6rem;
     padding-top: 2rem;
@@ -63,7 +58,6 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
-
     p {
       max-width: 35rem;
       margin: 0 auto;
@@ -85,8 +79,8 @@
     font-size: 3rem;
     letter-spacing: -4px;
   }
+  
 }
-
-.yellow-dots div:last-of-type {
+.requirements-grid li:nth-last-child(1) div{//removing last 3 dots from the list
   display: none;
 }
