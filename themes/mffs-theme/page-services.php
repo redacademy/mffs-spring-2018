@@ -23,14 +23,14 @@ get_header(); ?>
 
 						<?php $service_posts = get_posts(array(
 							'post_type' => 'service',
-							'service-type' => 'mental-well-being'
-						)); d($service_posts); 
+							'service_type' => 'mental-well-being',
+							'posts_per_page' => 10
+						)); 
 						if (! empty( $service_posts) && ! is_wp_error( $service_posts )) : ?>
 
 						
 						
 						<?php foreach($service_posts as $term) : ?>
-						
 								<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
 					<?php endforeach; ?>
 
@@ -45,8 +45,10 @@ get_header(); ?>
 
 					<?php $family_posts = get_posts(array(
 						'post_type' => 'service',
-						'service-type' => 'family-services'
-					)); d($family_posts); 
+						'service_type' => 'family-services',
+						'posts_per_page' => 10
+					)); 
+
 					if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
 
 					

@@ -52,7 +52,7 @@
 
 				<!-- donate button -->
 				<div class="donate-button">
-					<a href="#">donate</a>
+					<a href="<?php echo home_url("/donate") ?>">donate</a>
 				</div>
 			
 
