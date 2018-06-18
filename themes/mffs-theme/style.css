@@ -295,7 +295,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #0b2b34; }
+  color: #0b2b34;
+  text-decoration: none; }
   a:visited {
     color: #0b2b34; }
   a:hover, a:focus, a:active {
@@ -1152,7 +1153,7 @@ p.faq-answer {
 
 .testimonial-single p {
   margin-right: auto;
-  margin-top: 1rem;
+  margin: 1rem 0;
   text-align: right; }
 
 .testimonial-single:nth-child(odd) {
@@ -1161,17 +1162,24 @@ p.faq-answer {
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 200;
-  padding: 1.5rem 1.5rem 2rem 1.5rem; }
+  padding: 1.5rem 1.5rem 1rem 1.5rem; }
 
 .testimonial-single:nth-child(even) {
   max-width: 30rem;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 200;
-  padding: 1.5rem 1.5rem 2rem 1.5rem; }
+  padding: 1.5rem 1.5rem 1rem 1.5rem; }
+
+.testimonial-single:nth-last-child(1) {
+  margin-bottom: 6rem; }
 
 .testimonial-single .dash {
   margin-right: .5rem; }
+
+.testimonials h2 {
+  font-weight: 600;
+  margin-bottom: 4rem; }
 
 /*!
  * Hamburgers

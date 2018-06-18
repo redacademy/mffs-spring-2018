@@ -2,7 +2,7 @@
     // position: relative;
     p{
 margin-right: auto;
-margin-top: 1rem;
+margin: 1rem 0;
 text-align: right;
         // position: absolute;
     }
@@ -12,16 +12,23 @@ text-align: right;
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 200;
-    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
   &:nth-child(even) {
     max-width: 30rem;
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 200;
-    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+  }
+  &:nth-last-child(1){
+      margin-bottom: 6rem;
   }
   .dash{
       margin-right: .5rem;
   }
+}
+.testimonials h2{
+    font-weight: 600;
+    margin-bottom: 4rem;
 }
