@@ -21,6 +21,66 @@ get_header(); ?>
 			<h2 class="section-title"><?php echo the_title() ?></h2>
 			<p><?php echo the_content() ?></p>
 		</section>
+		
+						<!-- third section fees -->
+				<section class="services-fees">
+					<h2 class="section-title">Fees</h2>
+
+					<div class="fees-top">
+						<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
+						<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+					</div>
+
+					<div class="fees-bottom">
+						<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
+					</div>
+
+				</section>
+				<!-- end seciton fees -->
+
+				<!-- fourth section get counselling -->
+				<section class="services-get">
+					<h2 class="section-title">Get Counselling</h2>
+
+					<p>Provide us with your email and we’ll send you the pre-intake form.</p>
+					<input type="email">
+					<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Download</a>
+					<p>Next, fill out the form then proceed to choose one of the following</p>
+				
+				</section>
+				<!-- end forurth secton get counselling -->
+
+				<!-- fifth section services info -->
+				<section class="services-info">
+					<h2 class="title-no-bg">Choose one of the following</h2>
+					<div class="services-info-bubbles">
+						<ul>
+							<li>
+								<i class="fas fa-phone"></i>
+								<p>Text or call us</p>
+                            	<a href="tel:123456789">778-321-3054</a>
+							</li>
+							<li>
+								<i class="fas fa-fax"></i>
+								<p>Fax us</p>
+                            	<a href="tel:123456789">778-321-3054</a>
+							</li>
+							<li>
+								<i class="far fa-envelope"></i>
+								<p>Email us</p>
+                            	<a href="tel:123456789">778-321-3054</a>
+							</li>
+							<li>
+								<i class="fas fa-male"></i>
+								<p>Drop in</p>
+                            	<p>103 – 12827 76th Avenue, Surrey
+									Fri. & Sun. 12pm-2pm for</p>
+							</li>
+						</ul>
+					</div>
+				
+				</section>
+				<!-- end fifth section services info -->
 
 
 		<?php endwhile; // End of the loop. ?>
