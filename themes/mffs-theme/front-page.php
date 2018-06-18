@@ -19,7 +19,26 @@ get_header(); ?>
 			<section class="stories">
 				<h2 class="story-title">Moving Forward Family Services</h2>
 				<div class="carousel">
-					carousel
+					<ul class="carousel-inner" role="listbox">
+
+                        <?php $args = array('post_type' => 'story'); ?>
+                        <?php $loop = new WP_Query($args); ?>
+                        <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                        <li class="item">
+                            <img src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
+							<a href="<?php echo the_permalink() ?>" class="btn">Read More</a>
+
+                        </li>
+
+                        <?php endwhile; ?>
+
+                        <?php else: ?>
+                            <h1>No posts here!</h1>
+                        <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
+
+                    </ul>
 				</div>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
