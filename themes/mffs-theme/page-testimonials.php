@@ -25,7 +25,7 @@ get_header(); ?>
                             <li class="testimonial-single">
                                 <i class="fas fa-quote-left"></i>
                                 <blockquote><?php echo $row['mffs_testimonial_text'];?></blockquote>
-                                <p><?php echo $row['mffs_testimonial_author'];?></p>
+                                <p><span class= "dash">&#8213;</span><?php echo $row['mffs_testimonial_author'];?></p>
                             </li>
 
 

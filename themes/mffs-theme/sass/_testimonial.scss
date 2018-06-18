@@ -1,6 +1,10 @@
 .testimonial-single {
+    // position: relative;
     p{
-        margin: 0 0 0 22rem;
+margin-right: auto;
+margin-top: 1rem;
+text-align: right;
+        // position: absolute;
     }
   &:nth-child(odd) {
     background: $color__button-yellow;
@@ -8,14 +12,16 @@
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 200;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
   }
   &:nth-child(even) {
     max-width: 30rem;
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 200;
-    background: red;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  .dash{
+      margin-right: .5rem;
   }
 }

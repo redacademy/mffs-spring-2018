@@ -1151,7 +1151,9 @@ p.faq-answer {
   color: #08b3f6; }
 
 .testimonial-single p {
-  margin: 0 0 0 22rem; }
+  margin-right: auto;
+  margin-top: 1rem;
+  text-align: right; }
 
 .testimonial-single:nth-child(odd) {
   background: #f1d18a;
@@ -1159,15 +1161,17 @@ p.faq-answer {
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 200;
-  padding: 1.5rem; }
+  padding: 1.5rem 1.5rem 2rem 1.5rem; }
 
 .testimonial-single:nth-child(even) {
   max-width: 30rem;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 200;
-  background: red;
-  padding: 1.5rem; }
+  padding: 1.5rem 1.5rem 2rem 1.5rem; }
+
+.testimonial-single .dash {
+  margin-right: .5rem; }
 
 /*!
  * Hamburgers
