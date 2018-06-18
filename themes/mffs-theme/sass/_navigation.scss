@@ -31,7 +31,7 @@ a {
   // clear: both;
   display: block;
   // float: left;
-  width: 100%;
+  width: 15%;
 
   ul {
     // display: none;
@@ -47,7 +47,7 @@ a {
     transition: 0.3s;
 
     position: fixed;
-    top: 0;
+    top:106px;//dani: pushing bckground with opacity down
     left: 0;
     right: 0;
     bottom: 0;
@@ -102,7 +102,7 @@ a {
     // float: left;
     // position: relative;
     &:nth-child(1){//dani: tomake menu items pushed down
-      margin-top: 8rem;
+      margin-top: 4rem;
     }
     &:hover > a,
     &.focus > a {
@@ -133,7 +133,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 106px;//dani: pushing bckground with opacity down
   left: 0;
   right: 0;
   bottom: 0;

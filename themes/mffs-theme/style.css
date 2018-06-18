@@ -309,7 +309,7 @@ a {
 /* Menus */
 .main-navigation {
   display: block;
-  width: 100%; }
+  width: 15%; }
   .main-navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -323,7 +323,7 @@ a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: fixed;
-    top: 0;
+    top: 106px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -351,7 +351,7 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li:nth-child(1) {
-    margin-top: 8rem; }
+    margin-top: 4rem; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -368,7 +368,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 106px;
   left: 0;
   right: 0;
   bottom: 0;
