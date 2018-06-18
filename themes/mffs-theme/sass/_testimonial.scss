@@ -1,0 +1,21 @@
+.testimonial-single {
+    p{
+        margin: 0 0 0 22rem;
+    }
+  &:nth-child(odd) {
+    background: $color__button-yellow;
+    max-width: 30rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 1.5rem;
+  }
+  &:nth-child(even) {
+    max-width: 30rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background: red;
+    padding: 1.5rem;
+  }
+}
