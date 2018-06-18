@@ -295,8 +295,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #0b2b34;
-  text-decoration: none; }
+  color: #0b2b34; }
   a:visited {
     color: #0b2b34; }
   a:hover, a:focus, a:active {
@@ -308,41 +307,109 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block; }
+  display: block;
+  width: 100%; }
   .main-navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
-    padding-left: 0; }
+    margin: 0;
+    padding-left: 0;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(255, 255, 255, 0.9); }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
+      top: 1.5rem; }
       .main-navigation ul ul ul {
-        left: -999rem;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
 
-/* Small menu. */
-.menu-toggle,
+.menu-toggle {
+  position: relative;
+  z-index: 100; }
+
+/* Menu Toggled */
 .main-navigation.toggled ul {
-  display: block; }
+  opacity: 1;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media screen and (min-width: 620px) {
+    .main-navigation.toggled ul {
+      position: static;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      height: auto; } }
+
+@media screen and (min-width: 620px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    opacity: 1;
+    height: auto;
+    overflow: auto;
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -353,13 +420,11 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
 

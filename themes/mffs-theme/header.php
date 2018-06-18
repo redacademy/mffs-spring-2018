@@ -30,14 +30,16 @@
 						<button class="hamburger hamburger--collapse" type="button" aria-expanded="false" aria-controls="primary-menu">
 						<?php esc_html('Primary Menu');?>
 							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
+								<span class="hamburger-inner">
+								<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+								</span>
 							</span>
 							<span class="hamburger-label">Menu</span>
 						</button>
 
 					</div>
 
-						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+						
 
 				</nav><!-- #site-navigation -->
 

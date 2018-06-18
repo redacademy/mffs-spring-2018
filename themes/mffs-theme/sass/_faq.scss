@@ -11,9 +11,9 @@
     margin-top: 2rem;
   }
   .faq-section-grid {
-    .faq-section-single:nth-last-child(1){
-      .faq-single-item:nth-last-child(1){
-        .faq-qest-ans-wrapper:nth-last-child(1) p{
+    .faq-section-single:nth-last-child(1) {
+      .faq-single-item:nth-last-child(1) {
+        .faq-qest-ans-wrapper:nth-last-child(1) p {
           margin-bottom: 4rem;
         }
       }
@@ -38,7 +38,6 @@
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
-  
 }
 .faq-bubble {
   background: $color__button-yellow;
@@ -57,7 +56,7 @@
     left: 1rem;
   }
 }
-p.faq-answer{
+p.faq-answer {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
