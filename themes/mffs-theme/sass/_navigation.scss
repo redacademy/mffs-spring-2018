@@ -81,6 +81,7 @@ a {
 
       a {
         width: 200px;
+
       }
 
       :hover > a,
@@ -100,14 +101,19 @@ a {
   li {
     // float: left;
     // position: relative;
-
+    &:nth-child(1){//dani: tomake menu items pushed down
+      margin-top: 8rem;
+    }
     &:hover > a,
     &.focus > a {
     }
   }
-  a {
+  a {//dani: to format links of menu
     display: block;
     text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
   }
 
   .current_page_item > a,
@@ -133,7 +139,7 @@ a {
   bottom: 0;
   z-index: 99;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;//dani: making menu items move up
   align-items: center;
   @media screen and (min-width: $mobile_width) {
     position: static;

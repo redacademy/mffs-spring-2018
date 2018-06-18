@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		
+
 	<?php wp_head(); ?>
 	</head>
 
@@ -33,13 +33,13 @@
 								<span class="hamburger-inner">
 								</span>
 							</span>
-							<span class="hamburger-label">Menu</span>
+							<span class="hamburger-label"></span>
 						</button>
 
 					</div>
 
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
-						
+
 
 				</nav><!-- #site-navigation -->
 
@@ -54,7 +54,7 @@
 				<div class="donate-button">
 					<a href="<?php echo home_url("/donate") ?>">donate</a>
 				</div>
-			
+
 
 
 			</header><!-- #masthead -->
