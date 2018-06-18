@@ -24,10 +24,22 @@
 
 			<!-- heaeder Nav -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="nav">
-					<p><?php echo wp_nav_menu()?></p>
-				</div>
-			</nav><!-- #site-navigation -->
+
+					<div class="menu-toggle">
+
+						<button class="hamburger hamburger--collapse" type="button" aria-expanded="false" aria-controls="primary-menu">
+						<?php esc_html('Primary Menu');?>
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+							<span class="hamburger-label">Menu</span>
+						</button>
+
+					</div>
+
+						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+
+				</nav><!-- #site-navigation -->
 
 
 				<!-- header middle logo -->
