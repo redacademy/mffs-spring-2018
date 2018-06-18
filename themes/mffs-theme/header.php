@@ -25,9 +25,9 @@
 			<!-- heaeder Nav -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="nav">
-				<p><?php echo wp_nav_menu()?></p>
+					<p><?php echo wp_nav_menu()?></p>
 				</div>
-				</nav><!-- #site-navigation -->
+			</nav><!-- #site-navigation -->
 
 
 				<!-- header middle logo -->
