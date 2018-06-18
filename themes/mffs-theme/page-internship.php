@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The internship template file.
  *
  * @package mffs_theme
  */

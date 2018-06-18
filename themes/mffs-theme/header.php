@@ -31,7 +31,6 @@
 						<?php esc_html('Primary Menu');?>
 							<span class="hamburger-box">
 								<span class="hamburger-inner">
-								<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
 								</span>
 							</span>
 							<span class="hamburger-label">Menu</span>
@@ -39,6 +38,7 @@
 
 					</div>
 
+					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
 						
 
 				</nav><!-- #site-navigation -->

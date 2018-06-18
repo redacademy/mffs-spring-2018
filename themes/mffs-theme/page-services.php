@@ -10,11 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
 
-		
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
 			<!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 			
@@ -35,7 +31,7 @@ get_header(); ?>
 						
 						<?php foreach($service_posts as $term) : ?>
 						
-								<a href="<?php echo get_permalink($service_posts) ?>" class="btn"><?php echo the_title() ?></a>
+								<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
 					<?php endforeach; ?>
 
 					<?php  endif; ?>
@@ -57,7 +53,7 @@ get_header(); ?>
                     
                     <?php foreach($family_posts as $term) : ?>
 					
-                            <a href="<?php echo get_permalink($family_posts) ?>" class="btn"><?php echo the_title() ?></a>
+                            <a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
                 <?php endforeach; ?>
 
                 <?php  endif; ?>
@@ -126,9 +122,6 @@ get_header(); ?>
 
 
 
-            
-			<?php endwhile; ?>
-		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
