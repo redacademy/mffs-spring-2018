@@ -1,5 +1,29 @@
 .error-404{
-    .page-content{
-        background-color: $color__background-green-more-pale;
+    margin: 2rem;
+    .page-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-content h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }    
+    .home-button{
+        text-align: center;
+        width: 100%;
+        @extend.donate-button;
+        padding: 6px 60px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: inline-block;
+        & a{
+            padding: .5rem 2rem;
+            border-radius: 20px;
+            border: 5px solid #f1d18a;
+        }
     }
 }
