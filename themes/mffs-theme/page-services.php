@@ -7,14 +7,13 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area services-fees">
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 				<h2 class="title-no-bg">Services</h2>
 				<!-- first section mental well being -->
+				<h2 class="section-title">Mental well-being</h2>
 				<section class="services-mwb">
-					<h2 class="section-title">Mental well-being</h2>
-
 						<?php $service_posts = get_posts(array(
 							'post_type' => 'service',
 							'service_type' => 'mental-well-being',
@@ -31,9 +30,8 @@ get_header(); ?>
 
 
 				<!-- second section family -->
+				<h2 class="section-title">Family Servies</h2>
 				<section class="services-family">
-					<h2 class="section-title">Family Servies</h2>
-
 					<?php $family_posts = get_posts(array(
 						'post_type' => 'service',
 						'service_type' => 'family-services',
@@ -41,14 +39,10 @@ get_header(); ?>
 					));
 
 					if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
-
-
-
                     <?php foreach($family_posts as $term) : ?>
 
                             <a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
                 <?php endforeach; ?>
-
                 <?php  endif; ?>
 				</section><!-- end family secion -->
 
@@ -60,14 +54,12 @@ get_header(); ?>
 						<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
 						<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
 					</div>
-
 					<div class="fees-bottom">
 						<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
 					</div>
 
 				</section>
 				<!-- end seciton fees -->
-
 				<!-- fourth section get counselling -->
 				<section class="services-get">
 					<h2 class="section-title">Get Counselling</h2>

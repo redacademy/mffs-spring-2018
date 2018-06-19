@@ -2267,7 +2267,12 @@ p.faq-answer {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
 
-.services-mwb, .services-family {
+.services-fees h2 {
+  margin-top: 2rem; }
+
+.services-mwb,
+.services-family {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2278,8 +2283,10 @@ p.faq-answer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .8rem; }
-  .services-mwb .btn, .services-family .btn {
+  font-size: 0.8rem;
+  margin-top: -3rem; }
+  .services-mwb .btn,
+  .services-family .btn {
     color: #0b2b34;
     border-radius: 5px;
     padding: 10px 16px;
@@ -2296,5 +2303,5 @@ p.faq-answer {
     font-weight: 200;
     color: #fff;
     background: #245865;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     width: 24rem; }
