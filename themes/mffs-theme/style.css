@@ -339,7 +339,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: rgba(255, 255, 255, 0.9); }
+    background: white; }
   .main-navigation ul ul {
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -352,11 +352,11 @@ a {
   .main-navigation ul li.focus > ul {
     left: auto; }
   .main-navigation li:nth-child(1) {
-    margin-top: 4rem; }
+    margin-top: 1rem; }
   .main-navigation a {
     display: block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600; }
 
@@ -364,26 +364,20 @@ a {
   position: relative;
   z-index: 100; }
 
+.menu-nav-container {
+  text-align: center; }
+
 /* Menu Toggled */
 .main-navigation.toggled .nav-menu-container {
   opacity: 1;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 106px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  height: 28rem; }
 
 @media screen and (min-width: 620px) {
   .main-navigation.toggled ul {
@@ -498,7 +492,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -544,6 +538,28 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.social-links {
+  background: #4c6f7b;
+  width: 100%;
+  height: 20vh; }
+  .social-links a {
+    font-weight: 100;
+    font-size: 2rem;
+    color: #fff;
+    width: 5rem;
+    cursor: pointer; }
+  .social-links .widget-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 2rem 3rem; }
+    .social-links .widget-area .custom-html-widget {
+      background: #f1d18a;
+      border-radius: 50%;
+      text-align: center; }
 
 /*--------------------------------------------------------------
 # Media

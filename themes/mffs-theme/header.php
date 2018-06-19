@@ -21,35 +21,29 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-
 			<!-- heaeder Nav -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-
-					<div class="menu-toggle">
-						<button class="hamburger hamburger--collapse" type="button" aria-expanded="false" aria-controls="primary-menu">
-						<?php esc_html('Primary Menu');?>
-							<span class="hamburger-box">
-								<span class="hamburger-inner">
-								</span>
+				<div class="menu-toggle">
+					<button class="hamburger hamburger--collapse" type="button" aria-expanded="false" aria-controls="primary-menu">
+					<?php esc_html('Primary Menu');?>
+						<span class="hamburger-box">
+							<span class="hamburger-inner">
 							</span>
-							<span class="hamburger-label"></span>
-						</button>
+						</span>
+						<span class="hamburger-label"></span>
+					</button>
+				</div>
 
+				<div class="nav-menu-container">
+					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+					<div class="social-links">
+						<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
+							<div  class="widget-area">
+								<?php dynamic_sidebar( 'sidebar-custom' ); ?>
+							</div>
+						<?php endif; ?>
 					</div>
-
-					<div class="nav-menu-container">
-						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
-
-						<div class="social-links">
-							<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
-								<div  class="widget-area">
-									<?php dynamic_sidebar( 'sidebar-custom' ); ?>
-								</div>
-							<?php endif; ?>
-						</div>
-					</div>
-
-
+				</div>
 				</nav><!-- #site-navigation -->
 
 

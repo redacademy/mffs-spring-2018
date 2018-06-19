@@ -56,7 +56,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    background: rgba(white, 0.9);//background color for hamburger menu
+    background: rgba(white, 1);//background color for hamburger menu
   }
   .social-links {
     // display: none;
@@ -109,7 +109,7 @@ a {
     // float: left;
     // position: relative;
     &:nth-child(1){//dani: tomake menu items pushed down
-      margin-top: 4rem;
+      margin-top: 1rem;
     }
     &:hover > a,
     &.focus > a {
@@ -118,7 +118,7 @@ a {
   a {//dani: to format links of menu
     display: block;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600;
   }
@@ -133,22 +133,24 @@ a {
   position: relative;
   z-index: 100;
 }
-
+.menu-nav-container{
+  text-align: center;
+}
 /* Menu Toggled */
 .main-navigation.toggled {
   .nav-menu-container {
  // Animate
  opacity: 1;
  height: 100vh;
- position: fixed;
+ position: absolute;
  top: 106px;//dani: pushing bckground with opacity down
  left: 0;
  right: 0;
  bottom: 0;
  z-index: 99;
- flex-direction: column;
- justify-content: start;//dani: making menu items move up
- align-items: center;
+//  justify-content: start;//dani: making menu items move up
+//  align-items: center;
+ height: 28rem;
   }
   .social-links {
     // display: block;
