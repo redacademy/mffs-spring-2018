@@ -2302,7 +2302,7 @@ p.faq-answer {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 200;
     color: #fff;
     background: #245865;
@@ -2316,7 +2316,8 @@ p.faq-answer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .fees-top .fees-single, .fees-top .fees-family {
+  .fees-top .fees-single,
+  .fees-top .fees-family {
     padding: 4rem 2rem; }
   .fees-top .fees-single {
     border-right: 3px solid #4c6f7b; }
@@ -2326,6 +2327,11 @@ p.faq-answer {
   padding: 4rem 2rem 0;
   text-align: center; }
 
-.services-fees > h2 {
-  margin-bottom: 0;
+.services-fees {
   font-size: 1.2rem; }
+  .services-fees > h2 {
+    margin-bottom: 0; }
+
+.services-get {
+  font-size: 1.2rem;
+  text-align: center; }

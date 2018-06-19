@@ -66,7 +66,7 @@ get_header(); ?>
 
 					<p>Provide us with your email and we’ll send you the pre-intake form.</p>
 					<input type="email">
-					<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Download</a>
+					<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Submit</a>
 					<p>Next, fill out the form then proceed to choose one of the following</p>
 
 				</section>
