@@ -2431,6 +2431,20 @@ p.faq-answer {
       font-size: 2.5rem;
       margin-bottom: 1rem; }
 
+.single-service .site-content nav {
+  margin: 1rem 0 0 1rem; }
+  .single-service .site-content nav .fas {
+    font-size: 1.5rem;
+    padding-top: .2rem; }
+  .single-service .site-content nav a {
+    font-size: 1.2rem;
+    color: #4A90E2; }
+
+.single-service-content p {
+  margin: 0 5rem;
+  font-size: 1.2rem;
+  text-align: center; }
+
 .error-404 {
   margin: 2rem; }
   .error-404 .page-header {

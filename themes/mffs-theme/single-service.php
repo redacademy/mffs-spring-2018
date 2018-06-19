@@ -12,16 +12,17 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<nav><a href="<?php echo home_url("/services") ?>">Services</a>
+		<nav>
+			 <a href="<?php echo home_url("/services") ?>">Services</a>
 			 <i class="fas fa-caret-right"></i>
 			 <a href="<?php echo the_permalink() ?>"><?php echo the_title()?></a>
 		</nav>
 
 		<section class="single-service-content">
 			<h2 class="section-title"><?php echo the_title() ?></h2>
-			<p><?php echo the_content() ?></p>
+			<?php echo the_content()?>
 		</section>
-		
+
 				<!-- third section fees -->
 				<section class="services-fees">
 					<h2 class="section-title">Fees</h2>
