@@ -2336,6 +2336,9 @@ p.faq-answer {
   font-size: 1.2rem;
   text-align: center; }
 
+.error-404 .page-content {
+  background-color: #bfccd0; }
+
 .main-carousel {
   height: 25rem; }
 

@@ -44,6 +44,8 @@
       options
     );
     return this.each(function(i, obj) {
+      console.log(i);
+      console.log(obj);
       $(this).addClass('scrollzip');
       if ($.isFunction(settings.showFunction)) {
         if (
