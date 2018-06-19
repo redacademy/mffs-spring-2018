@@ -1,7 +1,9 @@
-.services-fees h2{
+.services-fees-container .title-no-bg{
     margin-top: 2rem;
 }
-
+.services-fees-container .site-main h2:nth-child(2){
+    margin-top: 1.5rem;
+}
 .services-mwb,
 .services-family {
   text-align: center;
@@ -19,4 +21,26 @@
     margin: 0.5rem 0;
     width: 24rem;
   }
+}
+.fees-top{
+    display: flex;
+justify-content: center;
+    .fees-single, .fees-family{
+        padding: 4rem 2rem;
+    }
+    .fees-single{
+        border-right: 3px solid $color__green_main;
+    }
+}
+.fees-bottom{
+
+    p:nth-child(1){
+    border-top: 3px solid $color__green_main;
+    padding: 4rem 2rem 0;
+    text-align: center;
+    }
+}
+.services-fees>h2{
+    margin-bottom: 0;
+    font-size: 1.2rem;
 }

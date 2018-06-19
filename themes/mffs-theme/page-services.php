@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area services-fees">
+	<div id="primary" class="content-area services-fees-container">
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 				<h2 class="title-no-bg">Services</h2>
