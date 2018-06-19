@@ -25,10 +25,14 @@
   text-transform: capitalize;
   background: $color__background-body;
   font-family: $font__title;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: lighten($color__button-yellow, 5%);
   }
+  &:active{
+    color:#fff;
+  }
+
 }
 
 @mixin shadow-btn-bright(

@@ -822,10 +822,12 @@ header .donate-button a {
     text-transform: capitalize;
     background: #fff;
     font-family: "Montserrat", sans-serif;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
     .donate-button a:hover {
       background-color: #f4daa1; }
+    .donate-button a:active {
+      color: #fff; }
 
 a.donate-button {
   color: #4c6f7b;
@@ -835,8 +837,8 @@ a.donate-button {
   text-transform: capitalize;
   background: #fff;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 5px solid #f1d18a;
   font-size: 1.5rem;
   font-weight: 600;
@@ -844,6 +846,8 @@ a.donate-button {
   margin-bottom: 20px; }
   a.donate-button:hover {
     background-color: #f4daa1; }
+  a.donate-button:active {
+    color: #fff; }
 
 .donate-where a {
   text-align: center;
@@ -2262,3 +2266,35 @@ p.faq-answer {
     bottom: 0;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
+
+.services-mwb, .services-family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .8rem; }
+  .services-mwb .btn, .services-family .btn {
+    color: #0b2b34;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-transform: capitalize;
+    background: #f1d18a;
+    -webkit-box-shadow: 2px 2px #4c6f7b;
+            box-shadow: 2px 2px #4c6f7b;
+    display: block;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #fff;
+    background: #245865;
+    margin: .5rem 0;
+    width: 24rem; }

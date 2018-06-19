@@ -1,0 +1,15 @@
+.services-mwb, .services-family{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+.btn{
+    @include shadow-btn-bright(5px, 10px 16px, $color__green_main);
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #fff;
+    background: $color__button-dark-green;
+    margin: .5rem 0;
+    width: 24rem;
+}
+}
