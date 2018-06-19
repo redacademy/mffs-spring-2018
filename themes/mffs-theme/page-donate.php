@@ -70,10 +70,10 @@ get_header(); ?>
                 <h2 class="section-title">How else can you help?</h2>
                 <h2 class="title-no-bg"> <?php echo CFS()->get( 'mffs_donation_help_title', 23 ) ?> </h2>
 
-                <a href="<?php echo CFS()->get( 'mffs_donation_partner_url', 23 ) ?>" target="_blank">Link!
+                <a href="<?php echo CFS()->get( 'mffs_donation_partner_url', 23 ) ?>" target="_blank">
                 <img src="<?php echo CFS()->get( 'mffs_donation_partner_img', 23 ) ?>" alt=""/>
                 </a>
-                <p><?php echo CFS()->get( 'mffs_donation_partner_description_text', 23 ) ?></p>
+                <?php echo CFS()->get( 'mffs_donation_partner_description_text', 23 ) ?>
             </section><!-- end donate help -->
 
             <!-- fifthe section donation info -->
