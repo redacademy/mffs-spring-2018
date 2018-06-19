@@ -26,7 +26,6 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 
 					<div class="menu-toggle">
-
 						<button class="hamburger hamburger--collapse" type="button" aria-expanded="false" aria-controls="primary-menu">
 						<?php esc_html('Primary Menu');?>
 							<span class="hamburger-box">
@@ -38,7 +37,17 @@
 
 					</div>
 
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+					<div class="nav-menu-container">
+						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+
+						<div class="social-links">
+							<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
+								<div  class="widget-area">
+									<?php dynamic_sidebar( 'sidebar-custom' ); ?>
+								</div>
+							<?php endif; ?>
+						</div>
+					</div>
 
 
 				</nav><!-- #site-navigation -->

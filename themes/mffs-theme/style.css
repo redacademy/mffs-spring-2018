@@ -309,8 +309,9 @@ a {
 /* Menus */
 .main-navigation {
   display: block;
-  width: 15%; }
-  .main-navigation ul {
+  width: 15%;
+  overflow: hidden; }
+  .main-navigation .nav-menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,17 +340,17 @@ a {
         -ms-flex-align: center;
             align-items: center;
     background: rgba(255, 255, 255, 0.9); }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      top: 1.5rem; }
-      .main-navigation ul ul ul {
-        top: 0; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
+  .main-navigation ul ul {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    top: 1.5rem; }
+    .main-navigation ul ul ul {
+      top: 0; }
+    .main-navigation ul ul a {
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
   .main-navigation li:nth-child(1) {
     margin-top: 4rem; }
   .main-navigation a {
@@ -364,7 +365,7 @@ a {
   z-index: 100; }
 
 /* Menu Toggled */
-.main-navigation.toggled ul {
+.main-navigation.toggled .nav-menu-container {
   opacity: 1;
   height: 100vh;
   position: fixed;
@@ -383,28 +384,29 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media screen and (min-width: 620px) {
-    .main-navigation.toggled ul {
-      position: static;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      height: auto; } }
+
+@media screen and (min-width: 620px) {
+  .main-navigation.toggled ul {
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: auto; } }
 
 @media screen and (min-width: 620px) {
   .menu-toggle {
     display: none; }
-  .main-navigation ul {
+  .main-navigation .nav-menu-container {
     opacity: 1;
     height: auto;
-    overflow: auto;
+    overflow: hidden;
     position: static;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

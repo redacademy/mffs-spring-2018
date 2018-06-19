@@ -32,9 +32,9 @@ a {
   display: block;
   // float: left;
   width: 15%;
+  overflow: hidden;
 
-  ul {
-    // display: none;
+  .nav-menu-container {
     display: flex;
     list-style: none;
     margin: 0;
@@ -56,7 +56,14 @@ a {
     justify-content: center;
     align-items: center;
 
-    background: rgba(white, 0.9);
+    background: rgba(white, 0.9);//background color for hamburger menu
+  }
+  .social-links {
+    // display: none;
+  }
+  ul {
+    // display: none;
+
 
     ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -128,25 +135,33 @@ a {
 }
 
 /* Menu Toggled */
-.main-navigation.toggled ul {
-  // Animate
-  opacity: 1;
-  height: 100vh;
-  position: fixed;
-  top: 106px;//dani: pushing bckground with opacity down
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  flex-direction: column;
-  justify-content: start;//dani: making menu items move up
-  align-items: center;
-  @media screen and (min-width: $mobile_width) {
-    position: static;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: auto;
+.main-navigation.toggled {
+  .nav-menu-container {
+ // Animate
+ opacity: 1;
+ height: 100vh;
+ position: fixed;
+ top: 106px;//dani: pushing bckground with opacity down
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 99;
+ flex-direction: column;
+ justify-content: start;//dani: making menu items move up
+ align-items: center;
+  }
+  .social-links {
+    // display: block;
+  }
+  ul {
+
+    @media screen and (min-width: $mobile_width) {
+      position: static;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: auto;
+    }
   }
 }
 
@@ -156,17 +171,23 @@ a {
     display: none;
   }
   // Primary Navigation
-  .main-navigation ul {
-    // Animate
-    opacity: 1;
-    height: auto;
-    overflow: auto;
+  .main-navigation {
 
-    position: static;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+    .nav-menu-container {
+      // Animate
+      opacity: 1;
+      height: auto;
+      overflow: hidden;//dani: hiding overflow for sizes larger than mobile
+
+      position: static;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    ul {
+    }
+}
+
 }
 
 .comment-navigation,
