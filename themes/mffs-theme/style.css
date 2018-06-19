@@ -777,7 +777,7 @@ ul {
   .language-grid li {
     padding: 1rem; }
 
-header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header .mc-email-form .mc-submit a, .mc-email-form header .mc-submit a, header .mc-email-form .mc-back a, .mc-email-form header .mc-back a {
+header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
 
 .site-header {
@@ -812,10 +812,10 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
   color: white;
   font-size: 14px; }
 
-.donate-button, .email-counseling a, .error-404 .home-button, .mc-email-form .mc-submit, .mc-email-form .mc-back {
+.donate-button, .email-counseling a, .error-404 .home-button, #mc_embed_signup input.button, .site-main .mc-back {
   font-weight: 400;
   font-size: 1.2rem; }
-  .donate-button a, .email-counseling a a, .error-404 .home-button a, .mc-email-form .mc-submit a, .mc-email-form .mc-back a {
+  .donate-button a, .email-counseling a a, .error-404 .home-button a, #mc_embed_signup input.button a, .site-main .mc-back a {
     color: #4c6f7b;
     border: 2px solid #f1d18a;
     border-radius: 50px;
@@ -825,12 +825,12 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
     font-family: "Montserrat", sans-serif;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-    .donate-button a:hover, .email-counseling a a:hover, .error-404 .home-button a:hover, .mc-email-form .mc-submit a:hover, .mc-email-form .mc-back a:hover {
+    .donate-button a:hover, .email-counseling a a:hover, .error-404 .home-button a:hover, #mc_embed_signup input.button a:hover, .site-main .mc-back a:hover {
       background-color: #f4daa1; }
-    .donate-button a:active, .email-counseling a a:active, .error-404 .home-button a:active, .mc-email-form .mc-submit a:active, .mc-email-form .mc-back a:active {
+    .donate-button a:active, .email-counseling a a:active, .error-404 .home-button a:active, #mc_embed_signup input.button a:active, .site-main .mc-back a:active {
       color: #fff; }
 
-a.donate-button, .email-counseling a, .error-404 a.home-button, .mc-email-form a.mc-submit, .mc-email-form a.mc-back {
+a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-back {
   color: #4c6f7b;
   border: 2px solid #f1d18a;
   border-radius: 20px;
@@ -845,9 +845,9 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .mc-email-form a
   font-weight: 600;
   display: inline-block;
   margin-bottom: 20px; }
-  a.donate-button:hover, .email-counseling a:hover, .error-404 a.home-button:hover, .mc-email-form a.mc-submit:hover, .mc-email-form a.mc-back:hover {
+  a.donate-button:hover, .email-counseling a:hover, .error-404 a.home-button:hover, .site-main a.mc-back:hover {
     background-color: #f4daa1; }
-  a.donate-button:active, .email-counseling a:active, .error-404 a.home-button:active, .mc-email-form a.mc-submit:active, .mc-email-form a.mc-back:active {
+  a.donate-button:active, .email-counseling a:active, .error-404 a.home-button:active, .site-main a.mc-back:active {
     color: #fff; }
 
 .donate-where a {
@@ -2495,39 +2495,47 @@ p.faq-answer {
 .flickity-page-dots {
   display: none; }
 
-.mc-email-form {
+#mc_embed_signup input.email {
+  margin-bottom: 3rem !important;
+  width: 90% !important;
+  padding: 1rem !important;
+  border: 4px solid #245865;
+  border-radius: 5px !important;
   text-align: center;
-  height: 100vh; }
-  .mc-email-form input {
-    margin-top: 4rem; }
-    .mc-email-form input:nth-last-child(1) {
-      margin-top: 50vh; }
-  .mc-email-form .mc-input {
-    width: 90%;
-    padding: 1rem;
-    border: 4px solid #245865;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 2rem; }
-    @media only screen and (min-width: 620px) {
-      .mc-email-form .mc-input {
-        width: 60%; } }
-  .mc-email-form .mc-submit {
-    background: none;
-    border: 4px solid #f1d18a;
-    border-radius: 20px;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    color: #21759b;
-    font-size: 2rem;
-    font-weight: 400; }
-  .mc-email-form .mc-back {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: none;
-    border: 4px solid #245865;
-    border-radius: 20px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: #21759b; }
+  font-size: 2rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media only screen and (min-width: 620px) {
+    #mc_embed_signup input.email {
+      width: 60% !important; } }
+
+#mc_embed_signup input.button {
+  background: none;
+  border: 4px solid #f1d18a;
+  border-radius: 20px;
+  height: 4rem !important;
+  max-width: 60%;
+  color: #21759b;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 100% !important;
+  height: auto;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  #mc_embed_signup input.button:hover {
+    background: #f1d18a !important; }
+  @media only screen and (min-width: 620px) {
+    #mc_embed_signup input.button {
+      width: 40% !important; } }
+
+.site-main .mc-back {
+  margin-top: 50vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  border: 4px solid #245865;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #21759b; }
