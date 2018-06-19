@@ -16,7 +16,20 @@ get_header(); ?>
 
             <!-- fisrt section donate testimonials -->
             <section class="donate-testimonials">
-                <!-- TODO add testimonials img, text and link button -->
+                <div class="main-carousel">
+
+                    <?php
+                    $loop = CFS()->get( 'mffs_donate_carousel');
+                    foreach ( $loop as $row ) { ?>
+
+						<div class="carousel-cell">
+                            <img class="carousel-image" src="<?php echo $row['mffs_donate_carousel_image'];?>" alt="">
+							<p><?php echo $row['mffs_donate_carousel_text'];?></p>
+                        </div>
+
+						<?php } ?>
+
+				</div>
             </section> <!-- end donate testimonials -->
 
             <!-- second section donate button wth dropdown -->
