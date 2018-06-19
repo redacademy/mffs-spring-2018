@@ -123,3 +123,21 @@
     }
   }
 }
+//styling for single service pages
+
+.single-service .site-content nav{
+  margin: 1rem 0 0 1rem;
+  .fas{
+    font-size: 1.5rem;
+    padding-top: .2rem;
+  }
+  a{
+  font-size: 1.2rem;
+  color: $color__link-color;
+  }
+}
+.single-service-content p{
+  margin: 0 5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
