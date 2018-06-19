@@ -18,18 +18,20 @@ get_header(); ?>
 			<!-- First section with testomonials carousel -->
 			<section class="stories">
 				<h2 class="story-title">Moving Forward Family Services</h2>
-				<div class="carousel">
-					<ul class="carousel-inner" role="listbox">
+
+					<div class="main-carousel">
 
                         <?php $args = array('post_type' => 'story'); ?>
                         <?php $loop = new WP_Query($args); ?>
                         <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                        <li class="item">
-                            <img src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
+                        <div class="carousel-cell">
+							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
 							<a href="<?php echo the_permalink() ?>" class="btn">Read More</a>
+							<div class="green-img-bar"></div>
+                        </div>
 
-                        </li>
+
 
                         <?php endwhile; ?>
 
@@ -38,8 +40,8 @@ get_header(); ?>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
 
-                    </ul>
-				</div>
+                    </div>
+
 				<div class="story-info">
 					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
 					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content') ?></p>
@@ -50,13 +52,15 @@ get_header(); ?>
 			<section class="impact">
 				<h2 class="section-title">the<span> mffs </span> Impact</h2>
 
+				
+
 				<!-- yellow stat bubbles -->
 				<ul class="impact-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_impact');
 						foreach ( $loop as $row ) { ?>
 						<li>
-							<div class="impact-value"><?php echo $row['mffs_stat_value'];?></div>
+							<span class='numscroller impact-value' data-min='1' data-max='<?php echo $row['mffs_stat_value'];?>' data-delay='10' data-increment='5'><?php echo $row['mffs_stat_value'];?></span>
 							<div class="impact-title"><?php echo $row['mffs_stat_title'];?></div>
 						</li>
 						<?php } ?>

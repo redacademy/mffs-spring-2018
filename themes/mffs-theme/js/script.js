@@ -1,4 +1,12 @@
 (function($) {
+  $('.main-carousel').flickity({
+    cellAlign: 'center',
+    wrapAround: true,
+    contain: true,
+    lazyLoad: 1,
+    pauseAutoPlayOnHover: false
+  });
+
   var $menuToggle = $('.menu-toggle');
   var $mainNavigation = $('.main-navigation');
   var $hamburgerMenu = $('.hamburger');

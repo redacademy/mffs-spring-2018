@@ -11,9 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 				<h2 class="title-no-bg">Services</h2>
+
+				<h2 class="section-title">Mental well-being</h2>
 				<!-- first section mental well being -->
 				<section class="services-mwb">
-					<h2 class="section-title">Mental well-being</h2>
 
 						<?php $service_posts = get_posts(array(
 							'post_type' => 'service',
@@ -30,9 +31,10 @@ get_header(); ?>
 				</section><!-- end section services -->
 
 
+				<h2 class="section-title">Family Servies</h2>
+				
 				<!-- second section family -->
 				<section class="services-family">
-					<h2 class="section-title">Family Servies</h2>
 
 					<?php $family_posts = get_posts(array(
 						'post_type' => 'service',
