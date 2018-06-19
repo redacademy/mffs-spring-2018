@@ -555,11 +555,13 @@ a {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 2rem 3rem; }
+    margin: 2rem 5rem; }
     .social-links .widget-area .custom-html-widget {
       background: #f1d18a;
       border-radius: 50%;
-      text-align: center; }
+      text-align: center;
+      -webkit-box-shadow: 2px 2px #fff;
+              box-shadow: 2px 2px #fff; }
 
 /*--------------------------------------------------------------
 # Media

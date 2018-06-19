@@ -66,11 +66,12 @@
     .widget-area{
         display: flex;
         justify-content: space-around;
-        margin: 2rem 3rem;
+        margin: 2rem 5rem;
 .custom-html-widget{
     background: $color__button-yellow;
     border-radius: 50%;
     text-align: center;
+    box-shadow: 2px 2px #fff;
 }
     }
 
