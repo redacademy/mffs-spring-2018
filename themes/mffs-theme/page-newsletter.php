@@ -18,6 +18,7 @@
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <?php get_sidebar() ?>
             <div class="newsletter-form">
                 <form class="mc-email-form">
                 <input class="mc-input "type="email" name="email-form" value="Email"><br>
