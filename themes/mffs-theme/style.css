@@ -354,7 +354,7 @@ a {
     left: auto; }
   .main-navigation li:nth-child(1) {
     margin-top: 1rem; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .main-navigation li:nth-child(1) {
         margin-top: 0; } }
   .main-navigation a {
@@ -363,7 +363,7 @@ a {
     font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .main-navigation a {
         margin-right: 4rem;
         color: white;
@@ -408,7 +408,7 @@ a {
             align-items: flex-start;
     height: auto; } }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 1280px) {
   .menu-toggle {
     display: none; }
   .main-navigation .nav-menu-container {
@@ -812,7 +812,7 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -ms-flex-align: center;
           align-items: center;
   height: 3.75rem; }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-header {
       height: 140px;
       display: grid;
@@ -829,7 +829,7 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .site-header .site-branding a {
         grid-area: a;
         -webkit-transform: scale(3);
@@ -837,11 +837,11 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
         margin-left: 6rem; } }
   .site-header img {
     height: 1.1rem; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .site-header img {
         height: 1.5rem;
         margin-left: 0.5rem; } }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-header .main-navigation {
       grid-area: b;
       width: auto;
@@ -852,16 +852,16 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly; } }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-header .main-navigation .nav-menu-container {
       background: none; } }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-header .donate-button, .site-header .email-counseling a, .email-counseling .site-header a, .site-header .error-404 .home-button, .error-404 .site-header .home-button, .site-header #mc_embed_signup input.button, #mc_embed_signup .site-header input.button, .site-header .site-main .mc-back, .site-main .site-header .mc-back {
       grid-area: c;
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       margin-right: 3rem !important; } }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-header .social-links {
       display: none; } }
 
@@ -870,7 +870,7 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
   color: white;
   font-size: 14px; }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1280px) {
   #primary-menu {
     display: -webkit-box;
     display: -ms-flexbox;
