@@ -31,7 +31,7 @@ get_header(); ?>
 						<li class="faq-section-single">
 
                             <!-- title for each faq section -->
-                            <h2 class="section-title"><?php echo $n++;?>.<?php echo $row['mffs_faq_section_title'];?></h2>
+                            <h2 class="section-title"><?php echo $n++;?>. <?php echo $row['mffs_faq_section_title'];?></h2>
 
                             <!-- list for single questions/ answers -->
                             <ul class="faq-single-grid">
