@@ -373,7 +373,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: absolute;
-  top: 59px;
+  top: 106px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -727,7 +727,7 @@ ul {
   .initiatives-content-wrapper p {
     max-width: 570px;
     margin: 0 auto;
-    padding-bottom: 1.5rem; }
+    padding: 0 1.5rem 1.5rem; }
 
 .mission-img {
   width: 250px;
@@ -749,7 +749,8 @@ ul {
     margin: 0 auto;
     max-width: 528px;
     font-weight: 400;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    padding: 0 1.5rem 1.5rem; }
 
 .languages h3 {
   margin: 0 auto;
@@ -868,20 +869,12 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
   text-align: center;
   background: #4c6f7b;
   color: #fff; }
-  .site-info .tel-info a, .site-info .news a {
+  .site-info .tel-info a,
+  .site-info .news a {
     color: #fff;
     border-bottom: 1.2px solid white;
     padding-bottom: 1px; }
@@ -911,6 +904,83 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     display: inline-flex; }
     .site-info .contact-address > p {
       width: 208px; }
+  @media only screen and (min-width: 620px) {
+    .site-info {
+      grid-template-columns: repeat(4, auto);
+      background: #4c6f7b;
+      overflow-x: scroll; }
+      .site-info .support {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 1;
+        background: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 0.75rem; }
+        .site-info .support .donate-button, .site-info .support .email-counseling a, .email-counseling .site-info .support a, .site-info .support .error-404 .home-button, .error-404 .site-info .support .home-button, .site-info .support #mc_embed_signup input.button, #mc_embed_signup .site-info .support input.button, .site-info .support .site-main .mc-back, .site-main .site-info .support .mc-back {
+          -webkit-transform: scale(0.7);
+                  transform: scale(0.7); }
+      .site-info .news {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 1;
+        background: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 1rem; }
+      .site-info .social-links {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        background: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .site-info .contact {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        background: none;
+        border: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 2rem;
+        padding: 0 1.5rem;
+        text-align: left; }
+        .site-info .contact .fas {
+          margin: 1.3rem; }
+        .site-info .contact > p {
+          margin: 0 0 0 1.2rem; } }
+
+.social-links {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .social-links {
+      display: block;
+      margin-top: 2rem; }
+      .social-links .widget-area {
+        margin: 0; }
+        .social-links .widget-area .widget {
+          width: 48px;
+          margin: 1rem 0.2rem; }
+      .social-links h2 {
+        color: #fff;
+        font-weight: 200; } }
 
 .about {
   font-size: 1.6rem;
