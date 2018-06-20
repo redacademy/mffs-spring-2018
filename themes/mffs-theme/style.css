@@ -861,7 +861,7 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       margin-right: 3rem !important; } }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     .site-header .social-links {
       display: none; } }
 
@@ -1047,24 +1047,22 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         .site-info .contact .fa-map-marker-alt:before {
           padding-right: 1rem; }
         .site-info .contact .fas {
-          padding-top: .4rem; }
+          padding-top: 0.4rem; }
         .site-info .contact > p {
           margin: 0 0 0 1.2rem; } }
 
-.social-links {
-  display: none; }
-  @media only screen and (min-width: 620px) {
-    .social-links {
-      display: block;
-      margin-top: 2rem; }
-      .social-links .widget-area {
-        margin: 0; }
-        .social-links .widget-area .widget {
-          width: 48px;
-          margin: 1rem 0.2rem; }
-      .social-links h2 {
-        color: #fff;
-        font-weight: 200; } }
+@media only screen and (min-width: 620px) {
+  .social-links {
+    display: block;
+    margin-top: 2rem; }
+    .social-links .widget-area {
+      margin: 0; }
+      .social-links .widget-area .widget {
+        width: 48px;
+        margin: 1rem 0.2rem; }
+    .social-links h2 {
+      color: #fff;
+      font-weight: 200; } }
 
 .about {
   font-size: 1.6rem;

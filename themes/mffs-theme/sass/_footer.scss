@@ -70,7 +70,7 @@
       display: flex;
       flex-direction: column;
       padding: 0 7rem;
-      a{
+      a {
         width: 12rem;
         margin: 0 auto;
       }
@@ -92,27 +92,26 @@
       margin-top: 2rem;
       padding: 0 1.5rem;
       text-align: left;
-      .contact-address{
+      .contact-address {
         width: 13rem;
         padding-top: 1rem;
       }
-      .fa-map-marker-alt:before{
+      .fa-map-marker-alt:before {
         padding-right: 1rem;
       }
       .fas {
-        padding-top: .4rem;
+        padding-top: 0.4rem;
       }
-      &>p {
+      & > p {
         margin: 0 0 0 1.2rem;
       }
-
     }
   }
 }
 
 .social-links {
   //showing social buttons for desktop size
-  display: none;
+  // display: none;
   @include desktop {
     display: block;
     margin-top: 2rem;
