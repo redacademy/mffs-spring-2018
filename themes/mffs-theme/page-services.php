@@ -109,7 +109,7 @@ get_header(); ?>
 								<p>Drop in</p>
                             	<p>103 – 12827 76th Avenue, Surrey
 									Fri. & Sun. 12pm-2pm for</p>
-								<p class="desktop-drop-in-text">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
+								<p class="desktop">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
 </p>
 							</li>
 						</ul>
