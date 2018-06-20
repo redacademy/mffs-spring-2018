@@ -576,9 +576,6 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
-  @media only screen and (min-width: 620px) {
-    .social-links {
-      display: none; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -794,6 +791,12 @@ ul {
   .language-grid li {
     padding: 1rem; }
 
+.desktop {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .desktop {
+      display: block; } }
+
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
 
@@ -848,6 +851,9 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       margin-right: 3rem !important; } }
+  @media only screen and (min-width: 620px) {
+    .site-header .social-links {
+      display: none; } }
 
 .ca-tld {
   text-transform: lowercase;
@@ -954,8 +960,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   @media only screen and (min-width: 620px) {
     .site-info {
       grid-template-columns: repeat(4, auto);
-      background: #4c6f7b;
-      overflow-x: scroll; }
+      background: #4c6f7b; }
       .site-info .support {
         grid-column: 4 / span 1;
         grid-row: 1 / span 1;
@@ -969,8 +974,22 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
                 flex-direction: column;
         margin-top: 0.75rem; }
         .site-info .support .donate-button, .site-info .support .email-counseling a, .email-counseling .site-info .support a, .site-info .support .error-404 .home-button, .error-404 .site-info .support .home-button, .site-info .support #mc_embed_signup input.button, #mc_embed_signup .site-info .support input.button, .site-info .support .site-main .mc-back, .site-main .site-info .support .mc-back {
-          -webkit-transform: scale(0.7);
-                  transform: scale(0.7); }
+          color: #4c6f7b;
+          border: 2px solid #f1d18a;
+          border-radius: 15px;
+          padding: 6px 9px;
+          text-transform: capitalize;
+          background: #fff;
+          font-family: "Montserrat", sans-serif;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          width: 12rem;
+          border-width: 5px;
+          margin: 0 auto; }
+          .site-info .support .donate-button:hover, .site-info .support .email-counseling a:hover, .email-counseling .site-info .support a:hover, .site-info .support .error-404 .home-button:hover, .error-404 .site-info .support .home-button:hover, .site-info .support #mc_embed_signup input.button:hover, #mc_embed_signup .site-info .support input.button:hover, .site-info .support .site-main .mc-back:hover, .site-main .site-info .support .mc-back:hover {
+            background-color: #f4daa1; }
+          .site-info .support .donate-button:active, .site-info .support .email-counseling a:active, .email-counseling .site-info .support a:active, .site-info .support .error-404 .home-button:active, .error-404 .site-info .support .home-button:active, .site-info .support #mc_embed_signup input.button:active, #mc_embed_signup .site-info .support input.button:active, .site-info .support .site-main .mc-back:active, .site-main .site-info .support .mc-back:active {
+            color: #fff; }
       .site-info .news {
         grid-column: 3 / span 1;
         grid-row: 1 / span 1;
@@ -982,7 +1001,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        padding: 0 1rem; }
+        padding: 0 7rem; }
+        .site-info .news a {
+          width: 12rem;
+          margin: 0 auto; }
       .site-info .social-links {
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
@@ -1009,8 +1031,13 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         margin-top: 2rem;
         padding: 0 1.5rem;
         text-align: left; }
+        .site-info .contact .contact-address {
+          width: 13rem;
+          padding-top: 1rem; }
+        .site-info .contact .fa-map-marker-alt:before {
+          padding-right: 1rem; }
         .site-info .contact .fas {
-          margin: 1.3rem; }
+          padding-top: .4rem; }
         .site-info .contact > p {
           margin: 0 0 0 1.2rem; } }
 
@@ -1182,9 +1209,6 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   color: #f1d18a;
   font-size: 3rem;
   letter-spacing: -4px; }
-
-.internship-requirements .desktop-section-title {
-  display: none; }
 
 .requirements-grid li:nth-last-child(1) div {
   display: none; }
