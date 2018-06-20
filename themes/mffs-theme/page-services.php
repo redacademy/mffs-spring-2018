@@ -31,8 +31,8 @@ get_header(); ?>
 				</section><!-- end section services -->
 
 
-				
-				
+
+
 				<!-- second section family -->
 				<h2 class="section-title">Family Servies</h2>
 				<section class="services-family">
@@ -69,8 +69,10 @@ get_header(); ?>
 					<h2 class="section-title">Get Counselling</h2>
 
 					<p>Provide us with your email and we’ll send you the pre-intake form.</p>
-					<input type="email">
-					<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Submit</a>
+					<div class="email-counseling">
+						<input type="email" placeholder="example@gmail.com" onfocus="this.value=''" onblur="this.value=''">
+						<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Submit</a>
+					</div>
 					<p>Next, fill out the form then proceed to choose one of the following</p>
 
 				</section>
@@ -94,10 +96,11 @@ get_header(); ?>
 							<li>
 								<i class="far fa-envelope"></i>
 								<p>Email us</p>
-                            	<a href="tel:123456789">778-321-3054</a>
+                            	<a href="mailto:counsellor@
+									movingforwardfamilyservices.com" >counsellor@movingforwardfamily<br>services.com</a>
 							</li>
 							<li>
-								<i class="fas fa-male"></i>
+								<i class="fas fa-user"></i>
 								<p>Drop in</p>
                             	<p>103 – 12827 76th Avenue, Surrey
 									Fri. & Sun. 12pm-2pm for</p>

@@ -32,7 +32,7 @@
                     </address>
                     <div class="news">
                         <p class="news-title">Newsletter</p>
-                        <a href="#" class="news-subscribe">Click here to Subscribe!</a>
+                        <a href="<?php echo home_url("/newsletter") ?>" class="news-subscribe">Click here to Subscribe!</a>
                     </div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
