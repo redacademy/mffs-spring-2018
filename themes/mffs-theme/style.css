@@ -393,7 +393,7 @@ a {
   z-index: 99;
   height: 28rem; }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 620px) {
   .main-navigation.toggled ul {
     position: static;
     -webkit-box-orient: horizontal;
@@ -793,7 +793,7 @@ ul {
 
 .desktop {
   display: none; }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     .desktop {
       display: block; } }
 
@@ -967,7 +967,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     display: inline-flex; }
     .site-info .contact-address > p {
       width: 208px; }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     .site-info {
       grid-template-columns: repeat(4, auto);
       background: #4c6f7b; }
@@ -1053,7 +1053,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
 
 .social-links {
   display: none; }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     .social-links {
       display: block;
       margin-top: 2rem; }
@@ -2736,7 +2736,7 @@ p.faq-answer {
   font-size: 2rem !important;
   margin-left: auto !important;
   margin-right: auto !important; }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     #mc_embed_signup input.email {
       width: 60% !important; } }
 
@@ -2755,7 +2755,7 @@ p.faq-answer {
   margin-right: auto !important; }
   #mc_embed_signup input.button:hover {
     background: #f1d18a !important; }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 620px) {
     #mc_embed_signup input.button {
       width: 40% !important; } }
 
@@ -2770,3 +2770,40 @@ p.faq-answer {
   padding-left: 2rem;
   padding-right: 2rem;
   color: #21759b; }
+
+.reports-info-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto; }
+  .reports-info-img .section-title {
+    margin: 0;
+    font-size: 3rem;
+    text-align: left; }
+  .reports-info-img .reports-info {
+    width: 50%; }
+  .reports-info-img .reports-img-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 2rem; }
+  .reports-info-img .reports-image-single {
+    margin-right: 1.5rem; }
+
+.reports-version-archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.reports-version-latest .section-title,
+.reports-archive .section-title {
+  width: 100%;
+  font-size: 3rem;
+  text-align: left; }

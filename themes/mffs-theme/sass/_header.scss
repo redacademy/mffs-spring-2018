@@ -8,7 +8,7 @@ header .donate-button a {
   background: $color__green_main;
   align-items: center;
   height: 3.75rem;
-  @include dektop {
+  @include tablet {
     height: 140px;
     display: grid;
     grid-template-areas: 'a b c';
@@ -22,7 +22,7 @@ header .donate-button a {
   .site-branding a {
     display: flex;
     align-items: center;
-    @include dektop {
+    @include tablet {
       grid-area: a;
       transform: scale(3);
       margin-left: 6rem;
@@ -30,13 +30,13 @@ header .donate-button a {
   }
   img {
     height: 1.1rem;
-    @include dektop {
+    @include tablet {
       height: 1.5rem;
       margin-left: 0.5rem;
     }
   }
   .main-navigation {
-    @include dektop {
+    @include tablet {
       grid-area: b;
       width: auto;
       margin-left: 4rem;
@@ -45,20 +45,20 @@ header .donate-button a {
       justify-content: space-evenly;
     }
     .nav-menu-container {
-      @include dektop {
+      @include tablet {
         background: none;
       }
     }
   }
   .donate-button {
-    @include dektop {
+    @include tablet {
       grid-area: c;
       transform: scale(1.5);
       margin-right: 3rem !important;
     }
   }
   .social-links {
-    @include dektop {
+    @include tablet {
       display: none;
     }
   }
@@ -71,7 +71,7 @@ header .donate-button a {
 }
 
 #primary-menu {
-  @include dektop {
+  @include tablet {
     display: flex;
   }
 }
