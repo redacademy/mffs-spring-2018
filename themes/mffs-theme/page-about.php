@@ -16,7 +16,19 @@ get_header(); ?>
 			
 		<!-- first section with carousel -->
 			<section class="about-carousel">
-				<!-- TODO add carousel -->
+				<div class="main-carousel">
+
+                    <?php
+                    $loop = CFS()->get( 'mffs_about_carousel');
+                    foreach ( $loop as $row ) { ?>
+
+						<div class="carousel-cell">
+                            <img class="carousel-image" src="<?php echo $row['mffs_about_carousel_image'];?>" alt="">
+                        </div>
+
+						<?php } ?>
+
+				</div>
 			</section> 	<!-- end about-arousel -->
 
 			<!-- TODO add button here for view annual report -->
