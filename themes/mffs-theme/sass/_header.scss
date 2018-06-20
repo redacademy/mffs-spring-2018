@@ -1,5 +1,5 @@
 // Styling for site header
-header .donate-button a{
+header .donate-button a {
   margin-right: 1rem;
 }
 .site-header {
@@ -8,6 +8,11 @@ header .donate-button a{
   background: $color__green_main;
   align-items: center;
   height: 3.75rem;
+  @include desktop {
+    height: 140px;
+    display: grid;
+    grid-template-areas: 'a b c';
+  }
   p {
     font-size: 20px;
     text-transform: uppercase;
@@ -17,9 +22,33 @@ header .donate-button a{
   .site-branding a {
     display: flex;
     align-items: center;
+    @include desktop {
+      grid-area: a;
+      transform: scale(3);
+      margin-left: 6rem;
+    }
   }
   img {
     height: 1.1rem;
+  }
+  .main-navigation {
+    @include desktop {
+      grid-area: b;
+      width: 100%;
+      margin-left: 4rem;
+    }
+    .nav-menu-container {
+      @include desktop {
+        background: none;
+      }
+    }
+  }
+  .donate-button {
+    @include desktop {
+      grid-area: c;
+      transform: scale(1.5);
+      margin-right: 3rem !important;
+    }
   }
 }
 
@@ -27,4 +56,10 @@ header .donate-button a{
   text-transform: lowercase;
   color: white;
   font-size: 14px;
+}
+
+#primary-menu {
+  @include desktop {
+    display: flex;
+  }
 }

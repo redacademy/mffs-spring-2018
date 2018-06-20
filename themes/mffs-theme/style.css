@@ -354,12 +354,25 @@ a {
     left: auto; }
   .main-navigation li:nth-child(1) {
     margin-top: 1rem; }
+    @media only screen and (min-width: 620px) {
+      .main-navigation li:nth-child(1) {
+        margin-top: 0; } }
   .main-navigation a {
     display: block;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600; }
+    @media only screen and (min-width: 620px) {
+      .main-navigation a {
+        margin-right: 5rem;
+        color: white;
+        border-bottom: 3px solid #4c6f7b;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        letter-spacing: 1px; }
+        .main-navigation a:hover, .main-navigation a:focus {
+          border-bottom: 3px solid #979797; } }
 
 .menu-toggle {
   position: relative;
@@ -563,6 +576,9 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
+  @media only screen and (min-width: 620px) {
+    .social-links {
+      display: none; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -792,6 +808,11 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -ms-flex-align: center;
           align-items: center;
   height: 3.75rem; }
+  @media only screen and (min-width: 620px) {
+    .site-header {
+      height: 140px;
+      display: grid;
+      grid-template-areas: 'a b c'; } }
   .site-header p {
     font-size: 20px;
     text-transform: uppercase;
@@ -804,13 +825,39 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media only screen and (min-width: 620px) {
+      .site-header .site-branding a {
+        grid-area: a;
+        -webkit-transform: scale(3);
+                transform: scale(3);
+        margin-left: 6rem; } }
   .site-header img {
     height: 1.1rem; }
+  @media only screen and (min-width: 620px) {
+    .site-header .main-navigation {
+      grid-area: b;
+      width: 100%;
+      margin-left: 4rem; } }
+  @media only screen and (min-width: 620px) {
+    .site-header .main-navigation .nav-menu-container {
+      background: none; } }
+  @media only screen and (min-width: 620px) {
+    .site-header .donate-button, .site-header .email-counseling a, .email-counseling .site-header a, .site-header .error-404 .home-button, .error-404 .site-header .home-button, .site-header #mc_embed_signup input.button, #mc_embed_signup .site-header input.button, .site-header .site-main .mc-back, .site-main .site-header .mc-back {
+      grid-area: c;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      margin-right: 3rem !important; } }
 
 .ca-tld {
   text-transform: lowercase;
   color: white;
   font-size: 14px; }
+
+@media only screen and (min-width: 620px) {
+  #primary-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .donate-button, .email-counseling a, .error-404 .home-button, #mc_embed_signup input.button, .site-main .mc-back {
   font-weight: 400;
