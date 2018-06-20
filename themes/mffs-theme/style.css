@@ -373,7 +373,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: absolute;
-  top: 106px;
+  top: 59px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -630,7 +630,7 @@ object {
 /* Front page */
 h2 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #0b2b34;
   font-weight: 600; }
 
@@ -738,7 +738,7 @@ ul {
   top: -26px; }
 
 .green-img-bar {
-  height: 200px;
+  height: 20px;
   background: #819aa2;
   margin: 5rem 0;
   top: 300px; }
@@ -2431,19 +2431,25 @@ p.faq-answer {
       font-size: 2.5rem;
       margin-bottom: 1rem; }
 
-.single-service .site-content nav {
-  margin: 1rem 0 0 1rem; }
-  .single-service .site-content nav .fas {
-    font-size: 1.5rem;
-    padding-top: .2rem; }
-  .single-service .site-content nav a {
-    font-size: 1.2rem;
-    color: #4A90E2; }
-
 .single-service-content p {
   margin: 0 5rem;
   font-size: 1.2rem;
   text-align: center; }
+
+.single-service .site-content nav, .single-story .site-content nav {
+  margin: 1rem 0 0 1rem; }
+  .single-service .site-content nav .fas, .single-story .site-content nav .fas {
+    font-size: 1.5rem;
+    padding-top: .2rem; }
+  .single-service .site-content nav a, .single-story .site-content nav a {
+    font-size: 1.2rem;
+    color: #4A90E2; }
+
+.story-main img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0; }
 
 .error-404 {
   margin: 2rem; }
