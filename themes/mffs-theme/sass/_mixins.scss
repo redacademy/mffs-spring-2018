@@ -16,6 +16,12 @@
     @content;
   }
 }
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet_width) {
+    @content;
+  }
+}
 //buttons
 @mixin light-border-btn($bord-rad: 50px, $pad: 0px 9px) {
   color: $color__green_main;
@@ -29,10 +35,9 @@
   &:hover {
     background-color: lighten($color__button-yellow, 5%);
   }
-  &:active{
-    color:#fff;
+  &:active {
+    color: #fff;
   }
-
 }
 
 @mixin shadow-btn-bright(

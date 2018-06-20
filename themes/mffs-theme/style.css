@@ -365,7 +365,7 @@ a {
     font-weight: 600; }
     @media only screen and (min-width: 620px) {
       .main-navigation a {
-        margin-right: 5rem;
+        margin-right: 4rem;
         color: white;
         border-bottom: 3px solid #4c6f7b;
         font-family: "Montserrat", sans-serif;
@@ -386,7 +386,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: absolute;
-  top: 106px;
+  top: 59px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -576,9 +576,6 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
-  @media only screen and (min-width: 620px) {
-    .social-links {
-      display: none; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -794,6 +791,12 @@ ul {
   .language-grid li {
     padding: 1rem; }
 
+.desktop {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .desktop {
+      display: block; } }
+
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
 
@@ -834,11 +837,21 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
         margin-left: 6rem; } }
   .site-header img {
     height: 1.1rem; }
+    @media only screen and (min-width: 620px) {
+      .site-header img {
+        height: 1.5rem;
+        margin-left: 0.5rem; } }
   @media only screen and (min-width: 620px) {
     .site-header .main-navigation {
       grid-area: b;
-      width: 100%;
-      margin-left: 4rem; } }
+      width: auto;
+      margin-left: 4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
   @media only screen and (min-width: 620px) {
     .site-header .main-navigation .nav-menu-container {
       background: none; } }
@@ -848,6 +861,9 @@ header .donate-button a, header .email-counseling a a, .email-counseling header 
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       margin-right: 3rem !important; } }
+  @media only screen and (min-width: 620px) {
+    .site-header .social-links {
+      display: none; } }
 
 .ca-tld {
   text-transform: lowercase;
@@ -1182,9 +1198,6 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   color: #f1d18a;
   font-size: 3rem;
   letter-spacing: -4px; }
-
-.internship-requirements .desktop-section-title {
-  display: none; }
 
 .requirements-grid li:nth-last-child(1) div {
   display: none; }
@@ -2563,7 +2576,7 @@ p.faq-answer {
     padding-top: .2rem; }
   .single-service .site-content nav a, .single-story .site-content nav a {
     font-size: 1.2rem;
-    color: #4A90E2; }
+    color: #4a90e2; }
 
 .single-story img {
   max-width: 300px;

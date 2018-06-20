@@ -123,7 +123,7 @@ a {
     padding: 1rem 0;
     font-weight: 600;
     @include desktop {
-      margin-right: 5rem;
+      margin-right: 4rem;
       color: white;
       border-bottom: 3px solid $color__green_main;
       font-family: $font__title;
@@ -152,18 +152,18 @@ a {
 /* Menu Toggled */
 .main-navigation.toggled {
   .nav-menu-container {
- // Animate
- opacity: 1;
- height: 100vh;
- position: absolute;
- top: 106px;//dani: pushing bckground with opacity down
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 99;
-//  justify-content: start;//dani: making menu items move up
-//  align-items: center;
- height: 28rem;
+    // Animate
+    opacity: 1;
+    height: 100vh;
+    position: absolute;
+    top: 59px; //dani: pushing bckground with opacity down
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    //  justify-content: start;//dani: making menu items move up
+    //  align-items: center;
+    height: 28rem;
   }
 
   ul {

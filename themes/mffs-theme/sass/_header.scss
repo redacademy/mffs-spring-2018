@@ -30,12 +30,19 @@ header .donate-button a {
   }
   img {
     height: 1.1rem;
+    @include desktop {
+      height: 1.5rem;
+      margin-left: 0.5rem;
+    }
   }
   .main-navigation {
     @include desktop {
       grid-area: b;
-      width: 100%;
+      width: auto;
       margin-left: 4rem;
+      // width: 100%;
+      display: flex;
+      justify-content: space-evenly;
     }
     .nav-menu-container {
       @include desktop {
