@@ -6,7 +6,7 @@
 h2 {
   //titles
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $color__text-main;
   font-weight: 600;
 }
@@ -92,7 +92,7 @@ ul {
 }
 .green-img-bar {
   //background for our mission img
-  height: 20px;//dani made its height smaller so that I can see the title behinde it
+  height: 200px;//dani made its height smaller so that I can see the title behinde it
   background: $color__background-green-pale;
   margin: 5rem 0;
   top: 300px;
