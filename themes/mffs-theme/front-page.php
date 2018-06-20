@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php 
+			<?php
 			if(have_posts()):
 			while ( have_posts() ) : the_post(); ?>
 
@@ -28,7 +28,7 @@ get_header(); ?>
                         <div class="carousel-cell">
 							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
 							<a href="<?php echo the_permalink() ?>" class="btn">Read More</a>
-							<div class="green-img-bar"></div>
+							<div class="green-carousel-bar"></div>
                         </div>
 
 
@@ -52,7 +52,7 @@ get_header(); ?>
 			<section class="impact">
 				<h2 class="section-title">the<span> mffs </span> Impact</h2>
 
-				
+
 
 				<!-- yellow stat bubbles -->
 				<ul class="impact-grid">
@@ -89,7 +89,7 @@ get_header(); ?>
 							<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
 						</div>
 					</div>
-					
+
 					<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
 				</div>
 

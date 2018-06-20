@@ -373,7 +373,7 @@ a {
   opacity: 1;
   height: 100vh;
   position: absolute;
-  top: 106px;
+  top: 59px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -630,7 +630,7 @@ object {
 /* Front page */
 h2 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   color: #0b2b34;
   font-weight: 600; }
 
@@ -2431,19 +2431,57 @@ p.faq-answer {
       font-size: 2.5rem;
       margin-bottom: 1rem; }
 
-.single-service .site-content nav {
-  margin: 1rem 0 0 1rem; }
-  .single-service .site-content nav .fas {
-    font-size: 1.5rem;
-    padding-top: .2rem; }
-  .single-service .site-content nav a {
-    font-size: 1.2rem;
-    color: #4A90E2; }
-
 .single-service-content p {
   margin: 0 5rem;
   font-size: 1.2rem;
   text-align: center; }
+
+.single-service .site-content nav, .single-story .site-content nav {
+  margin: 1rem 0 0 1rem; }
+  .single-service .site-content nav .fas, .single-story .site-content nav .fas {
+    font-size: 1.5rem;
+    padding-top: .2rem; }
+  .single-service .site-content nav a, .single-story .site-content nav a {
+    font-size: 1.2rem;
+    color: #4A90E2; }
+
+.single-story img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0; }
+
+.single-story h2 {
+  margin: 2rem 0; }
+
+.single-story .story-main p:nth-child(3) {
+  padding: 1rem; }
+
+.single-story .story-main p:nth-child(5) {
+  margin-bottom: 5rem; }
+
+.single-story .story-main h2:nth-child(2) {
+  border-top: 2px solid #f1d18a;
+  margin-top: 0rem;
+  padding-top: 2rem; }
+
+.single-story .story-main p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 4rem; }
+
+.story-mffs p:nth-child(3) {
+  border-top: 2px solid #f1d18a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 2rem 4rem; }
+
+.story-future p:nth-child(3) {
+  border-top: 2px solid #f1d18a;
+  margin-top: 0rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 2rem 4rem 8rem; }
 
 .error-404 {
   margin: 2rem; }
