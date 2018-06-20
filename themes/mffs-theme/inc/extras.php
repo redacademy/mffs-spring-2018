@@ -41,7 +41,7 @@ function remove_menus () {
 	global $menu;
 	$user = wp_get_current_user();
 		if (!current_user_can('administrator')) { // Is not administrator,
-			$restricted = array(__('Dashboard'), __('Posts'), __('Media'), __('Links'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins'));
+			$restricted = array(__('Dashboard'), __('Posts'),__('Links'),__('Appearance'), __('Tools'), __('Users'), __('Settings'),__('Plugins'), __('Field_Groups'));
 			end ($menu);
 			while (prev($menu)){
 				$value = explode(' ',$menu[key($menu)][0]);

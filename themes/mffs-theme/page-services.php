@@ -62,6 +62,11 @@ get_header(); ?>
 						<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
 					</div>
 
+					<div class="desktop">
+						<h2>We turn no one down</h2>
+						<p>Can't afford counselling fees? We offer free and low cost counselling with proof of income.</p>
+					</div>
+
 				</section>
 				<!-- end seciton fees -->
 				<!-- fourth section get counselling -->
@@ -104,6 +109,8 @@ get_header(); ?>
 								<p>Drop in</p>
                             	<p>103 – 12827 76th Avenue, Surrey
 									Fri. & Sun. 12pm-2pm for</p>
+								<p class="desktop">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
+</p>
 							</li>
 						</ul>
 					</div>

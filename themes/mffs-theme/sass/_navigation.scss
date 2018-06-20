@@ -47,7 +47,7 @@ a {
     transition: 0.3s;
 
     position: fixed;
-    top:106px;//dani: pushing bckground with opacity down
+    top: 106px; //dani: pushing bckground with opacity down
     left: 0;
     right: 0;
     bottom: 0;
@@ -56,12 +56,11 @@ a {
     justify-content: center;
     align-items: center;
 
-    background: rgba(white, 1);//background color for hamburger menu
+    background: rgba(white, 1); //background color for hamburger menu
   }
 
   ul {
     // display: none;
-
 
     ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -86,7 +85,6 @@ a {
 
       a {
         width: 200px;
-
       }
 
       :hover > a,
@@ -106,19 +104,36 @@ a {
   li {
     // float: left;
     // position: relative;
-    &:nth-child(1){//dani: tomake menu items pushed down
+    &:nth-child(1) {
+      //dani: tomake menu items pushed down
       margin-top: 1rem;
+      @include desktop {
+        margin-top: 0;
+      }
     }
     &:hover > a,
     &.focus > a {
     }
   }
-  a {//dani: to format links of menu
+  a {
+    //dani: to format links of menu
     display: block;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 1rem 0;
     font-weight: 600;
+    @include desktop {
+      margin-right: 5rem;
+      color: white;
+      border-bottom: 3px solid $color__green_main;
+      font-family: $font__title;
+      font-weight: 200;
+      letter-spacing: 1px;
+      &:hover,
+      &:focus {
+        border-bottom: 3px solid #979797;
+      }
+    }
   }
 
   .current_page_item > a,
@@ -131,7 +146,7 @@ a {
   position: relative;
   z-index: 100;
 }
-.menu-nav-container{
+.menu-nav-container {
   text-align: center;
 }
 /* Menu Toggled */
@@ -152,7 +167,6 @@ a {
   }
 
   ul {
-
     @media screen and (min-width: $mobile_width) {
       position: static;
       flex-direction: row;
@@ -170,12 +184,11 @@ a {
   }
   // Primary Navigation
   .main-navigation {
-
     .nav-menu-container {
       // Animate
       opacity: 1;
       height: auto;
-      overflow: hidden;//dani: hiding overflow for sizes larger than mobile
+      overflow: hidden; //dani: hiding overflow for sizes larger than mobile
 
       position: static;
       flex-direction: row;
@@ -184,8 +197,7 @@ a {
     }
     ul {
     }
-}
-
+  }
 }
 
 .comment-navigation,
