@@ -1066,6 +1066,9 @@ a.donate-button, .error-404 a.home-button {
   font-size: 3rem;
   letter-spacing: -4px; }
 
+.internship-requirements .desktop-section-title {
+  display: none; }
+
 .requirements-grid li:nth-last-child(1) div {
   display: none; }
 
