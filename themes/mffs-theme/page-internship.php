@@ -48,6 +48,7 @@ get_header(); ?>
             <!-- fourth section internship requirements -->
             <section class="internship-requirements">
                 <h2 class="section-title">Internship-requirements</h2>
+                <h2 class="desktop">Admissions Criteria<h2>
                 <p><?php echo CFS()->get( 'mffs_internship_requirement_education', 19 ) ?></p>
 
                 <ul class="requirements-grid">

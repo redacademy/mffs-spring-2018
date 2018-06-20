@@ -1113,6 +1113,9 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   font-size: 3rem;
   letter-spacing: -4px; }
 
+.internship-requirements .desktop-section-title {
+  display: none; }
+
 .requirements-grid li:nth-last-child(1) div {
   display: none; }
 

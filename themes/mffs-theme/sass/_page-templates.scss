@@ -141,3 +141,10 @@ ul {
     padding: 1rem;
   }
 }
+
+.desktop{
+  display: none;
+  @include desktop{
+    display: block;
+  }
+}
