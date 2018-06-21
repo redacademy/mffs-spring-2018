@@ -7,13 +7,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area services-fees-container">
+	<div id="primary" class="content-area services-all-container">
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 				<h2 class="title-no-bg">Services</h2>
 
 
 				<!-- first section mental well being -->
+				<div class="mental-wb-wrapper">
 				<h2 class="section-title">Mental well-being</h2>
 				<section class="services-mwb">
 						<?php $service_posts = get_posts(array(
@@ -29,45 +30,51 @@ get_header(); ?>
 					<?php  endif; ?>
 
 				</section><!-- end section services -->
+				</div>
 
 
 
 
 				<!-- second section family -->
-				<h2 class="section-title">Family Servies</h2>
-				<section class="services-family">
-					<?php $family_posts = get_posts(array(
-						'post_type' => 'service',
-						'service_type' => 'family-services',
-						'posts_per_page' => 10
-					));
+				<div class="family-serv-wrapper">
+					<h2 class="section-title">Family Servies</h2>
+					<section class="services-family">
+						<?php $family_posts = get_posts(array(
+							'post_type' => 'service',
+							'service_type' => 'family-services',
+							'posts_per_page' => 10
+						));
 
-					if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
-                    <?php foreach($family_posts as $term) : ?>
+						if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
+						<?php foreach($family_posts as $term) : ?>
 
-                            <a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
-                <?php endforeach; ?>
-                <?php  endif; ?>
-				</section><!-- end family secion -->
-
+								<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
+					<?php endforeach; ?>
+					<?php  endif; ?>
+					</section><!-- end family secion -->
+				</div>
+				<!-- end of family services wrapper -->
 				<!-- third section fees -->
-				<section class="services-fees">
-					<h2 class="section-title">Fees</h2>
+				<div class="services-fee-wrapper">
+					<section class="services-fees">
+						<h2 class="section-title">Fees</h2>
 
-					<div class="fees-top">
-						<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
-						<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
-					</div>
-					<div class="fees-bottom">
-						<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
-					</div>
+						<div class="fees-top">
+							<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
+							<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+						</div>
+						<div class="fees-bottom">
+							<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
+						</div>
 
-					<div class="desktop">
-						<h2>We turn no one down</h2>
-						<p>Can't afford counselling fees? We offer free and low cost counselling with proof of income.</p>
-					</div>
-
-				</section>
+						<div class="visible-desktop">
+							<!-- hidden in mobile size -->
+							<h2>We turn no one down</h2>
+							<p>Can't afford counselling fees? We offer free and low cost counselling with proof of income.</p>
+						</div>
+					</section>
+				</div>
+				<!-- end of services fee wrapper -->
 				<!-- end seciton fees -->
 				<!-- fourth section get counselling -->
 				<section class="services-get">
@@ -109,14 +116,24 @@ get_header(); ?>
 								<p class="mobile">Drop in</p>
                             	<p class="mobile">103 – 12827 76th Avenue, Surrey
 									Fri. & Sun. 12pm-2pm for</p>
-								<p class="desktop">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
+								<p class="visible-desktop">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
 							</li>
 						</ul>
 					</div>
 
 				</section>
 				<!-- end fifth section services info -->
-
+				<section class="referral-wrapper">
+					<!-- just visible in desktop size -->
+					<h2>Referrals</h2>
+					<p class="referral-form">Download and fill out the referral form, then fax to us. </p>
+					<div class="download-btn-wrapper">
+						<a href="#" class="form-download">Download Form</a>
+						<a href="3" class="refrral-terms">Terms of Service</a>
+					</div>
+					<p class="fax-icon"><i class="fas fa-fax"></i><span class="fax-no">Fax to: 778-732-0448</span></p>
+					<p class="terms-service">* by downloading this form you agree to our terms of service</p>
+				</section>
 
 
 

@@ -1,8 +1,25 @@
-.services-fees-container .title-no-bg {
+.services-all-container .title-no-bg {
   margin-top: 2rem;
 }
 .services-fees-container .site-main h2:nth-child(2) {
   margin-top: 1.5rem;
+}
+.services-fees-container{
+  @include desktop{//hiding nav for single-page services in desk
+    nav{
+      display: none;
+    }
+  }
+}
+.services-all-container{
+  @include desktop{//changing background for h2 services in desk
+    .mental-wb-wrapper h2,
+    .family-serv-wrapper h2,
+    .services-fee-wrapper h2{
+      background: none;
+      color: $color__text-main;
+    }
+  }
 }
 .services-mwb,
 .services-family {
@@ -55,6 +72,15 @@
     width: 26rem;
     margin: 0 auto;
 
+  }
+
+  @include desktop{
+    h2{
+      background: $color__background-green-pale;
+      padding: 3rem 0;
+      color: $color__text-main;
+      font-size: 3rem;
+    }
   }
 }
 .email-counseling {

@@ -192,7 +192,8 @@ ul {
   }
 }
 
-.desktop{
+.visible-desktop ,
+.referral-wrapper{
   display: none;
   @include desktop{
     display: block;

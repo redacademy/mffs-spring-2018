@@ -842,10 +842,12 @@ ul {
     .mobile {
       display: none; } }
 
-.desktop {
+.visible-desktop,
+.referral-wrapper {
   display: none; }
   @media only screen and (min-width: 620px) {
-    .desktop {
+    .visible-desktop,
+    .referral-wrapper {
       display: block; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
@@ -2524,11 +2526,22 @@ p.faq-answer {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
 
-.services-fees-container .title-no-bg {
+.services-all-container .title-no-bg {
   margin-top: 2rem; }
 
 .services-fees-container .site-main h2:nth-child(2) {
   margin-top: 1.5rem; }
+
+@media only screen and (min-width: 620px) {
+  .services-fees-container nav {
+    display: none; } }
+
+@media only screen and (min-width: 620px) {
+  .services-all-container .mental-wb-wrapper h2,
+  .services-all-container .family-serv-wrapper h2,
+  .services-all-container .services-fee-wrapper h2 {
+    background: none;
+    color: #0b2b34; } }
 
 .services-mwb,
 .services-family {
@@ -2597,6 +2610,12 @@ p.faq-answer {
   .services-get p {
     width: 26rem;
     margin: 0 auto; }
+  @media only screen and (min-width: 620px) {
+    .services-get h2 {
+      background: #819aa2;
+      padding: 3rem 0;
+      color: #0b2b34;
+      font-size: 3rem; } }
 
 .email-counseling {
   display: -webkit-box;
