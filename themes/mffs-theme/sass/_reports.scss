@@ -27,11 +27,11 @@
   width: 92%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6rem;
   .reports-version-latest {
     display: flex;
-  }
-  .reports-archive {
-    // display: flex;
+    flex-direction: column;
+    width: 63%;
   }
 }
 
@@ -41,7 +41,8 @@
     width: 100%;
     font-size: 3rem;
     text-align: left;
-    // margin-left: 2rem;
+    margin: 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -60,4 +61,26 @@
       border: white;
     }
   }
+}
+
+.reports-dl {
+  width: 40%;
+  p {
+    margin-bottom: 4rem;
+  }
+  a {
+    margin-left: 1.5rem;
+  }
+}
+
+.reports-image {
+  display: inline-block;
+  margin-right: 3rem;
+  img {
+    border: 20px solid $color__button-yellow;
+  }
+}
+
+.reports-img-dl {
+  display: inherit;
 }
