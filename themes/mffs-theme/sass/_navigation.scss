@@ -137,6 +137,10 @@ a {
     }
   }
 
+  .current_page_item a {
+    border-bottom: 3px solid #979797;
+  }
+
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
