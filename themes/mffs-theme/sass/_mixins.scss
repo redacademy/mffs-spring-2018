@@ -87,3 +87,21 @@
   border-radius: 50%;
   box-shadow: inset 4px 6px 25px #fff; //inner shadow effect
 }
+
+@mixin reset-to-link{
+  color: $color__text-main;
+  border-radius: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-align: left;
+  background: none;
+  box-shadow: none;
+  display: block;
+  margin: 1rem;
+  text-decoration: underline;
+  // width: auto;
+  // border-bottom: 2px solid $color__text-main;
+  font-family: $font__title;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

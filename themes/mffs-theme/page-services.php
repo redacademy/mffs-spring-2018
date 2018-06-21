@@ -14,67 +14,66 @@ get_header(); ?>
 
 
 				<!-- first section mental well being -->
-				<div class="mental-wb-wrapper">
-				<h2 class="section-title">Mental well-being</h2>
-				<section class="services-mwb">
-						<?php $service_posts = get_posts(array(
-							'post_type' => 'service',
-							'service_type' => 'mental-well-being',
-							'posts_per_page' => 10
-						));
-						if (! empty( $service_posts) && ! is_wp_error( $service_posts )) : ?>
-						<?php foreach($service_posts as $term) : ?>
-								<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
-					<?php endforeach; ?>
+				<div class="whole-service-grid">
+					<div class="mental-wb-wrapper">
+					<h2 class="section-title">Mental well-being</h2>
+					<section class="services-mwb">
+							<?php $service_posts = get_posts(array(
+								'post_type' => 'service',
+								'service_type' => 'mental-well-being',
+								'posts_per_page' => 10
+							));
+							if (! empty( $service_posts) && ! is_wp_error( $service_posts )) : ?>
+							<?php foreach($service_posts as $term) : ?>
+									<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
+						<?php endforeach; ?>
 
-					<?php  endif; ?>
+						<?php  endif; ?>
 
-				</section><!-- end section services -->
+					</section><!-- end section services -->
+					</div>
+					<!-- second section family -->
+					<div class="family-serv-wrapper">
+						<h2 class="section-title">Family Servies</h2>
+						<section class="services-family">
+							<?php $family_posts = get_posts(array(
+								'post_type' => 'service',
+								'service_type' => 'family-services',
+								'posts_per_page' => 10
+							));
+
+							if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
+							<?php foreach($family_posts as $term) : ?>
+
+									<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
+						<?php endforeach; ?>
+						<?php  endif; ?>
+						</section><!-- end family secion -->
+					</div>
+					<!-- end of family services wrapper -->
 				</div>
-
-
-
-
-				<!-- second section family -->
-				<div class="family-serv-wrapper">
-					<h2 class="section-title">Family Servies</h2>
-					<section class="services-family">
-						<?php $family_posts = get_posts(array(
-							'post_type' => 'service',
-							'service_type' => 'family-services',
-							'posts_per_page' => 10
-						));
-
-						if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
-						<?php foreach($family_posts as $term) : ?>
-
-								<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
-					<?php endforeach; ?>
-					<?php  endif; ?>
-					</section><!-- end family secion -->
-				</div>
-				<!-- end of family services wrapper -->
+				<!-- end of whole services grid -->
 				<!-- third section fees -->
 				<div class="services-fee-wrapper">
 					<section class="services-fees">
-						<h2 class="section-title">Fees</h2>
+							<h2 class="section-title">Fees</h2>
 
-						<div class="fees-top">
-							<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
-							<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+							<div class="fees-top">
+								<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
+								<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+							</div>
+							<div class="fees-bottom">
+								<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
+							</div>
 						</div>
-						<div class="fees-bottom">
-							<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
-						</div>
-
+				<!-- end of services fee wrapper -->
 						<div class="visible-desktop">
 							<!-- hidden in mobile size -->
 							<h2>We turn no one down</h2>
 							<p>Can't afford counselling fees? We offer free and low cost counselling with proof of income.</p>
 						</div>
 					</section>
-				</div>
-				<!-- end of services fee wrapper -->
+
 				<!-- end seciton fees -->
 				<!-- fourth section get counselling -->
 				<section class="services-get">

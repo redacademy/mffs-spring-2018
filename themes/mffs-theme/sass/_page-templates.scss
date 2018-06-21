@@ -14,6 +14,7 @@ h2 {
 ul {
   list-style-type: none;
 }
+
 .story-info {
   border-bottom: 4px solid $color__button-yellow;
   & > h2 {
@@ -27,6 +28,16 @@ ul {
     font-size: 1.7rem;
   }
 }
+
+.impact{
+  .section-title{
+    @include desktop{
+      border-bottom: none;
+    }
+  }
+}
+
+
 .impact-grid {
   //grid for impact circles
   display: grid;
@@ -58,18 +69,23 @@ ul {
   }
   @include desktop{
     display: flex;
+    justify-content: space-evenly;
     max-width: 100%;
-  }
-  &li{
-    @include desktop{
-      justify-content: space-evenly;
-    }
+    height: auto;
+    margin-bottom: 7rem;
   }
 }
 
 .initiatives{
   @include desktop{
   display: flex;
+  }
+  .desktop-initiatives-content-wrapper{
+    @include desktop{
+      display: flex;
+      flex-direction: column;
+      margin: auto 5rem;
+    }
   }
 }
 
@@ -84,12 +100,18 @@ ul {
   margin-top: 6rem;
 }
 
-.initiatives, .mission{
+.impact, .initiatives, .mission, .languages{
+  @include desktop{
+  margin: 5rem 2rem;
+  }
   h2{
     @include desktop{
       background: none;
       color: $color__text-main;
+      border-bottom: 1px solid $color__text-main;
+      font-size: 2.5rem;
       margin-bottom: 0;
+      margin-top: 0;
       text-align: left;
     }
   }
@@ -108,6 +130,7 @@ ul {
     padding:0 1.5rem 1.5rem;
     @include desktop{
       max-width: 1000px;
+      font-size: 1.5rem;
       text-align: left;
       padding: 0;
       margin: 0;
@@ -123,6 +146,12 @@ ul {
   }
 }
 
+.mission{
+  @include desktop{
+    display: flex;
+  }
+}
+
 .mission-img {
   //our mission
   width: 250px;
@@ -131,28 +160,55 @@ ul {
   margin: 0 auto;
   position: relative;
   top: -26px;
+  @include desktop{
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    text-align: right;
+  }
+  img{
+    @include desktop{
+      box-shadow: 1rem 1rem $color__button-dark-green;
+    }
+  }
 }
+
 .green-img-bar {
   //background for our mission img
   height: 200px;
   background: $color__background-green-pale;
   margin: 5rem 0;
   top: 300px;
+  @include desktop{
+    display: none;
+  }
 }
 
 .mission {
   margin-bottom: 5rem;
-
   p {
     margin: 0 auto;
     max-width: 528px;
     font-weight: 400;
     font-size: 1.7rem;
     padding:0 1.5rem 1.5rem;
+    @include desktop{
+      font-size: 1.5rem;
+    }
   }
 }
 
 .languages {
+  @include desktop{
+    display: flex;
+  }
+  h2{
+    @include desktop{
+      font-size: 2.25rem;
+      margin-left: 0;
+    }
+  }
   h3 {
     margin: 0 auto;
     text-align: center;
@@ -161,14 +217,24 @@ ul {
     margin-bottom: 3rem;
   }
 }
+
 .language-img {
   text-align: center;
   margin: 2rem 0 6rem 0;
+  @include desktop{
+    margin: 0;
+  }
   img {
     width: 40%;
     height: auto;
     box-shadow: 3px 3px 10px gray;
     border-radius: 50%;
+    @include desktop{
+      width: 75%;
+      max-width: 45rem;
+      min-width: 20rem;
+      margin: auto;
+    }
   }
 }
 
@@ -180,8 +246,17 @@ ul {
   font-weight: 600;
   color: $color__link-visited;
   text-align: center;
+  @include desktop{
+    font-size: 1.5rem;
+  }
   li {
     padding: 1rem;
+  }
+}
+
+.languages-info{
+  @include desktop{
+    flex-direction: column;
   }
 }
 
@@ -192,8 +267,7 @@ ul {
   }
 }
 
-.visible-desktop ,
-.referral-wrapper{
+.visible-desktop{
   display: none;
   @include desktop{
     display: block;
