@@ -913,16 +913,16 @@ ul {
             flex-direction: column; } }
 
 .mobile {
-  display: block; }
+  display: block !important; }
   @media only screen and (min-width: 620px) {
     .mobile {
-      display: none; } }
+      display: none !important; } }
 
 .visible-desktop {
-  display: none; }
+  display: none !important; }
   @media only screen and (min-width: 620px) {
     .visible-desktop {
-      display: block; } }
+      display: block !important; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
@@ -2796,6 +2796,10 @@ p.faq-answer {
     display: none; } }
 
 @media only screen and (min-width: 620px) {
+  .services-all-container main > h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 6rem; }
   .services-all-container .mental-wb-wrapper h2,
   .services-all-container .family-serv-wrapper h2,
   .services-all-container .services-fee-wrapper h2 {
@@ -2806,7 +2810,26 @@ p.faq-answer {
     border-radius: 20px;
     max-width: 26rem;
     -webkit-box-shadow: 3px 3px #f1d18a;
-            box-shadow: 3px 3px #f1d18a; } }
+            box-shadow: 3px 3px #f1d18a;
+    height: 31rem;
+    margin-top: 3rem;
+    margin-left: 6rem; } }
+
+.asterisk,
+.index-service {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .asterisk,
+    .index-service {
+      display: inline-block; } }
+
+.services-all-container .visible-desktop {
+  margin: 6rem 0; }
+  .services-all-container .visible-desktop h2 {
+    font-size: 2.2rem; }
+  .services-all-container .visible-desktop p {
+    text-align: center;
+    font-size: 1.2rem; }
 
 .services-mwb,
 .services-family {
@@ -2872,8 +2895,14 @@ p.faq-answer {
       font-size: 2rem; } }
 
 @media only screen and (min-width: 620px) {
+  .fee-service-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
-    margin-left: 3rem; } }
+    margin-left: 5rem; } }
 
 .fees-top {
   display: -webkit-box;
@@ -2942,11 +2971,14 @@ p.faq-answer {
     width: 26rem;
     margin: 0 auto; }
   @media only screen and (min-width: 620px) {
-    .services-get h2 {
-      background: #819aa2;
-      padding: 3rem 0;
-      color: #0b2b34;
-      font-size: 3rem; } }
+    .services-get {
+      border-bottom: none; }
+      .services-get h2 {
+        background: #819aa2;
+        padding: 3rem 0;
+        color: #0b2b34;
+        font-size: 3rem;
+        margin: 0; } }
 
 .email-counseling {
   display: -webkit-box;
@@ -3007,6 +3039,54 @@ p.faq-answer {
       color: #fff;
       font-size: 2.5rem;
       margin-bottom: 1rem; }
+
+.counselling-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .counselling-download img {
+    height: 30rem;
+    background: #245865;
+    margin: 0 12rem; }
+  .counselling-download .download-frm-btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .counselling-download .download-frm-btn-wrapper p:nth-child(1) {
+      font-size: 1.5rem;
+      width: 100%;
+      font-weight: 600;
+      margin: 3rem 0 6rem 0; }
+    .counselling-download .download-frm-btn-wrapper p:nth-child(3) {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 6rem;
+      font-weight: 600; }
+    .counselling-download .download-frm-btn-wrapper .form-btn-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .counselling-download .download-frm-btn-wrapper .form-btn-wrapper a {
+        color: #0b2b34;
+        border-radius: 8px;
+        padding: 15px 5px;
+        text-transform: capitalize;
+        background: #f1d18a;
+        -webkit-box-shadow: 2px 2px #4c6f7b;
+                box-shadow: 2px 2px #4c6f7b;
+        display: block;
+        margin: 0 auto;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0 1rem;
+        width: 18rem; }
 
 .single-service-content p {
   margin: 0 5rem;

@@ -15,18 +15,45 @@
 .services-all-container {
   @include desktop {
     //changing background for h2 services in desk
+    & main > h2 {
+      font-size: 2.5rem;
+      text-align: left;
+      margin-left: 6rem;
+    }
     .mental-wb-wrapper h2,
     .family-serv-wrapper h2,
     .services-fee-wrapper h2 {
       background: none;
       color: $color__text-main;
     }
-    .services-fee-wrapper{
+    .services-fee-wrapper {
       border: 2px solid $color__button-yellow;
       border-radius: 20px;
       max-width: 26rem;
       box-shadow: 3px 3px $color__button-yellow;
+      height: 31rem;
+      margin-top: 3rem;
+      margin-left: 6rem;
     }
+  }
+}
+.asterisk,
+.index-service {
+  //showing asterisk after fee just on desktop
+  display: none;
+  @include desktop {
+    display: inline-block;
+  }
+}
+
+.services-all-container .visible-desktop {
+  margin: 6rem 0;
+  h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
   }
 }
 .services-mwb,
@@ -62,9 +89,15 @@
     display: flex;
   }
 }
+
+@include desktop {
+  .fee-service-container {
+    display: flex;
+  }
+}
 @include desktop {
   .mental-wb-wrapper {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
 }
 .fees-top {
@@ -99,7 +132,8 @@
       max-width: 30rem;
     }
   }
-  & p:nth-child(2) {//targrting insurance text
+  & p:nth-child(2) {
+    //targrting insurance text
     @include desktop {
       text-align: left !important;
       padding: 0 1rem;
@@ -137,7 +171,9 @@
       padding: 3rem 0;
       color: $color__text-main;
       font-size: 3rem;
+      margin: 0;
     }
+    border-bottom: none;
   }
 }
 .email-counseling {
@@ -206,12 +242,44 @@
     }
   }
 }
-//styling for single service & single story pages
 
-// .single-service .site-content nav,
-// .single-story .site-content nav{
+.counselling-download {
+  display: flex;
+  img {
+    height: 30rem;
+    background: $color__button-dark-green;
+    margin: 0 12rem;
+  }
 
-// }
+  .download-frm-btn-wrapper {
+    & p:nth-child(1) {
+      font-size: 1.5rem;
+      width: 100%;
+      font-weight: 600;
+      margin: 3rem 0 6rem 0;
+    }
+    & p:nth-child(3) {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 6rem;
+      font-weight: 600;
+    }
+
+    display: flex;
+    flex-direction: column;
+    .form-btn-wrapper {
+      display: flex;
+      a {
+        @include shadow-btn-bright(8px, 15px 5px, $color__green_main);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0 1rem;
+        width: 18rem;
+      }
+    }
+  }
+}
+
 .single-service-content p {
   margin: 0 5rem;
   font-size: 1.2rem;
