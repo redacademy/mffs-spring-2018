@@ -88,8 +88,8 @@ get_header(); ?>
 							<div class="download-frm-btn-wrapper">
 								<p>Download and fill out the pre-intake form.</p>
 								<div class="form-btn-wrapper">
-									<a href="#">Download Form</a>
-									<a href="#">Terms of Service</a>
+									<a href="<?php echo CFS()->get( ‘mffs_services_pre_intake_form’, 15 )?>" download>Download Form</a>
+									<a href="<?php echo CFS()->get( ‘mffs_services_terms_of_service’, 15 )?>" download>Terms of Service</a>
 								</div>
 								<p>* by downloading this form you agree to our terms of service</p>
 							</div>
