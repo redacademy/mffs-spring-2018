@@ -15,18 +15,44 @@
 .services-all-container {
   @include desktop {
     //changing background for h2 services in desk
+    & main>h2{
+      font-size: 2.5rem;
+      text-align: left;
+      margin-left: 6rem;
+    }
     .mental-wb-wrapper h2,
     .family-serv-wrapper h2,
     .services-fee-wrapper h2 {
       background: none;
       color: $color__text-main;
     }
-    .services-fee-wrapper{
+    .services-fee-wrapper {
       border: 2px solid $color__button-yellow;
       border-radius: 20px;
       max-width: 26rem;
       box-shadow: 3px 3px $color__button-yellow;
+      height: 31rem;
+      margin-top: 3rem;
+      margin-left: 6rem;
     }
+  }
+}
+.asterisk,
+.index-service{//showing asterisk after fee just on desktop
+  display: none;
+  @include desktop{
+    display: inline-block;
+  }
+}
+
+.services-all-container .visible-desktop{
+  margin: 6rem 0;
+  h2 {
+    font-size: 2.2rem;
+  }
+  p{
+    text-align: center;
+    font-size: 1.2rem;
   }
 }
 .services-mwb,
@@ -62,9 +88,15 @@
     display: flex;
   }
 }
+
+@include desktop {
+  .fee-service-container {
+    display: flex;
+  }
+}
 @include desktop {
   .mental-wb-wrapper {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
 }
 .fees-top {
@@ -99,7 +131,8 @@
       max-width: 30rem;
     }
   }
-  & p:nth-child(2) {//targrting insurance text
+  & p:nth-child(2) {
+    //targrting insurance text
     @include desktop {
       text-align: left !important;
       padding: 0 1rem;
@@ -137,7 +170,9 @@
       padding: 3rem 0;
       color: $color__text-main;
       font-size: 3rem;
+      margin: 0;
     }
+    border-bottom: none;
   }
 }
 .email-counseling {

@@ -913,16 +913,16 @@ ul {
             flex-direction: column; } }
 
 .mobile {
-  display: block; }
+  display: block !important; }
   @media only screen and (min-width: 620px) {
     .mobile {
-      display: none; } }
+      display: none !important; } }
 
 .visible-desktop {
-  display: none; }
+  display: none !important; }
   @media only screen and (min-width: 620px) {
     .visible-desktop {
-      display: block; } }
+      display: block !important; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
@@ -2611,6 +2611,10 @@ p.faq-answer {
     display: none; } }
 
 @media only screen and (min-width: 620px) {
+  .services-all-container main > h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 6rem; }
   .services-all-container .mental-wb-wrapper h2,
   .services-all-container .family-serv-wrapper h2,
   .services-all-container .services-fee-wrapper h2 {
@@ -2621,7 +2625,26 @@ p.faq-answer {
     border-radius: 20px;
     max-width: 26rem;
     -webkit-box-shadow: 3px 3px #f1d18a;
-            box-shadow: 3px 3px #f1d18a; } }
+            box-shadow: 3px 3px #f1d18a;
+    height: 31rem;
+    margin-top: 3rem;
+    margin-left: 6rem; } }
+
+.asterisk,
+.index-service {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .asterisk,
+    .index-service {
+      display: inline-block; } }
+
+.services-all-container .visible-desktop {
+  margin: 6rem 0; }
+  .services-all-container .visible-desktop h2 {
+    font-size: 2.2rem; }
+  .services-all-container .visible-desktop p {
+    text-align: center;
+    font-size: 1.2rem; }
 
 .services-mwb,
 .services-family {
@@ -2687,8 +2710,14 @@ p.faq-answer {
       font-size: 2rem; } }
 
 @media only screen and (min-width: 620px) {
+  .fee-service-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
-    margin-left: 3rem; } }
+    margin-left: 5rem; } }
 
 .fees-top {
   display: -webkit-box;
@@ -2757,11 +2786,14 @@ p.faq-answer {
     width: 26rem;
     margin: 0 auto; }
   @media only screen and (min-width: 620px) {
-    .services-get h2 {
-      background: #819aa2;
-      padding: 3rem 0;
-      color: #0b2b34;
-      font-size: 3rem; } }
+    .services-get {
+      border-bottom: none; }
+      .services-get h2 {
+        background: #819aa2;
+        padding: 3rem 0;
+        color: #0b2b34;
+        font-size: 3rem;
+        margin: 0; } }
 
 .email-counseling {
   display: -webkit-box;
