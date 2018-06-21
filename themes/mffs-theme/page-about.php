@@ -13,6 +13,11 @@ get_header(); ?>
 		<?php 
 			if(have_posts()):
 			while ( have_posts() ) : the_post(); ?>
+
+		<div class="about-view-reports">
+			<h2>About Us  |</h2>
+			<a href="<?php echo home_url("/reports") ?>">View Annual Reports</a>
+		</div>
 			
 		<!-- first section with carousel -->
 			<section class="about-carousel">
@@ -29,9 +34,11 @@ get_header(); ?>
 						<?php } ?>
 
 				</div>
+				<div class="desktop-about-quote">
+					<h2>An inclusive place for all of us</h2>
+					<?php echo CFS()->get( 'mffs_about_quotes') ?>
+				</div>
 			</section> 	<!-- end about-arousel -->
-
-			<!-- TODO add button here for view annual report -->
 
 		<!-- second section about-do -->
 			<section class="about-do">
@@ -65,8 +72,9 @@ get_header(); ?>
 				<ul class="team-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_our_team', 17 );
+					$i =1;
 						foreach ( $loop as $row ) { ?>
-						<li class="team-member-single">
+						<li class="team-member-single team-single-<?php echo $i++; ?>">
 							<img src="<?php echo $row['mffs_team_img'];?>" alt="">
 							<p><?php echo $row['mffs_team_position'];?></p>
 							<P><?php echo $row['mffs_team_member_name'];?></P>

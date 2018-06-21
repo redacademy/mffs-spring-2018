@@ -3,7 +3,7 @@
     cellAlign: 'center',
     wrapAround: true,
     contain: true,
-    lazyLoad: 1,
+    lazyLoad: 0,
     pauseAutoPlayOnHover: false
   });
 

@@ -18,12 +18,6 @@
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <!-- <div class="newsletter-form">
-                <form class="mc-email-form">
-                <input class="mc-input "type="email" name="email-form" value="Email"><br>
-                <input class="mc-submit" type="submit" value="Submit">
-                <input class="mc-back" type="button" value="Back" onclick="history.back(-1)" />
-            </form> -->
 
             <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
