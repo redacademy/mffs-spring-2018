@@ -936,6 +936,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   text-align: center;
   background: #4c6f7b;
   color: #fff; }
+  @media only screen and (min-width: 620px) {
+    .site-info {
+      grid-template-columns: repeat(4, auto);
+      background: #4c6f7b; } }
   .site-info .tel-info a,
   .site-info .news a {
     color: #fff;
@@ -957,75 +961,26 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       -o-transform: rotateY(180deg);
       -ms-transform: rotateY(180deg);
       margin-right: 10px; }
-  .site-info .news {
-    margin: 2rem 0rem; }
-    .site-info .news > p {
-      font-size: 1.5rem; }
-  .site-info .contact-address {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
-    .site-info .contact-address > p {
-      width: 208px; }
-  @media only screen and (min-width: 620px) {
-    .site-info {
-      grid-template-columns: repeat(4, auto);
-      background: #4c6f7b; }
-      .site-info .support {
-        grid-column: 4 / span 1;
-        grid-row: 1 / span 1;
-        background: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        margin-top: 0.75rem; }
-        .site-info .support .donate-button, .site-info .support .email-counseling a, .email-counseling .site-info .support a, .site-info .support .error-404 .home-button, .error-404 .site-info .support .home-button, .site-info .support #mc_embed_signup input.button, #mc_embed_signup .site-info .support input.button, .site-info .support .site-main .mc-back, .site-main .site-info .support .mc-back {
-          color: #4c6f7b;
-          border: 2px solid #f1d18a;
-          border-radius: 15px;
-          padding: 6px 9px;
-          text-transform: capitalize;
-          background: #fff;
-          font-family: "Montserrat", sans-serif;
-          -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-          width: 12rem;
-          border-width: 5px;
-          margin: 0 auto; }
-          .site-info .support .donate-button:hover, .site-info .support .email-counseling a:hover, .email-counseling .site-info .support a:hover, .site-info .support .error-404 .home-button:hover, .error-404 .site-info .support .home-button:hover, .site-info .support #mc_embed_signup input.button:hover, #mc_embed_signup .site-info .support input.button:hover, .site-info .support .site-main .mc-back:hover, .site-main .site-info .support .mc-back:hover {
-            background-color: #f4daa1; }
-          .site-info .support .donate-button:active, .site-info .support .email-counseling a:active, .email-counseling .site-info .support a:active, .site-info .support .error-404 .home-button:active, .error-404 .site-info .support .home-button:active, .site-info .support #mc_embed_signup input.button:active, #mc_embed_signup .site-info .support input.button:active, .site-info .support .site-main .mc-back:active, .site-main .site-info .support .mc-back:active {
-            color: #fff; }
-      .site-info .news {
-        grid-column: 3 / span 1;
-        grid-row: 1 / span 1;
-        background: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        padding: 0 7rem; }
-        .site-info .news a {
-          width: 12rem;
-          margin: 0 auto; }
-      .site-info .social-links {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-        background: none;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+    .site-info .contact .contact-address {
+      width: 13rem;
+      padding-top: 1rem;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .site-info .contact .contact-address > p {
+        width: 208px; }
+      @media only screen and (min-width: 620px) {
+        .site-info .contact .contact-address {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+    .site-info .contact .fa-map-marker-alt:before {
+      padding-right: 0.3rem; }
+    .site-info .contact .fas {
+      padding-top: 0.4rem; }
+    .site-info .contact > p {
+      margin: 0 0 0 1.2rem; }
+    @media only screen and (min-width: 620px) {
       .site-info .contact {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -1040,29 +995,86 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
                 flex-direction: column;
         margin-top: 2rem;
         padding: 0 1.5rem;
-        text-align: left; }
-        .site-info .contact .contact-address {
-          width: 13rem;
-          padding-top: 1rem; }
-        .site-info .contact .fa-map-marker-alt:before {
-          padding-right: 1rem; }
-        .site-info .contact .fas {
-          padding-top: 0.4rem; }
-        .site-info .contact > p {
-          margin: 0 0 0 1.2rem; } }
+        text-align: left; } }
+  @media only screen and (min-width: 620px) {
+    .site-info .social-links {
+      display: block;
+      margin-top: 2rem; }
+      .site-info .social-links .widget-area {
+        margin: 0; }
+        .site-info .social-links .widget-area .widget {
+          width: 48px;
+          margin: 1rem 0.2rem; }
+      .site-info .social-links h2 {
+        color: #fff;
+        font-weight: 200; } }
+
+.news {
+  margin: 2rem 0rem; }
+  .news > p {
+    font-size: 1.5rem; }
+  @media only screen and (min-width: 620px) {
+    .news {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      background: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0 7rem; }
+      .news a {
+        width: 12rem;
+        margin: 0 auto; } }
 
 @media only screen and (min-width: 620px) {
-  .social-links {
-    display: block;
-    margin-top: 2rem; }
-    .social-links .widget-area {
-      margin: 0; }
-      .social-links .widget-area .widget {
-        width: 48px;
-        margin: 1rem 0.2rem; }
-    .social-links h2 {
-      color: #fff;
-      font-weight: 200; } }
+  .support {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0.75rem; } }
+
+@media only screen and (min-width: 620px) {
+  .support .donate-button, .support .email-counseling a, .email-counseling .support a, .support .error-404 .home-button, .error-404 .support .home-button, .support #mc_embed_signup input.button, #mc_embed_signup .support input.button, .support .site-main .mc-back, .site-main .support .mc-back {
+    color: #4c6f7b;
+    border: 2px solid #f1d18a;
+    border-radius: 15px;
+    padding: 6px 9px;
+    text-transform: capitalize;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 12rem;
+    border-width: 5px;
+    margin: 0 auto; }
+    .support .donate-button:hover, .support .email-counseling a:hover, .email-counseling .support a:hover, .support .error-404 .home-button:hover, .error-404 .support .home-button:hover, .support #mc_embed_signup input.button:hover, #mc_embed_signup .support input.button:hover, .support .site-main .mc-back:hover, .site-main .support .mc-back:hover {
+      background-color: #f4daa1; }
+    .support .donate-button:active, .support .email-counseling a:active, .email-counseling .support a:active, .support .error-404 .home-button:active, .error-404 .support .home-button:active, .support #mc_embed_signup input.button:active, #mc_embed_signup .support input.button:active, .support .site-main .mc-back:active, .site-main .support .mc-back:active {
+      color: #fff; } }
+
+@media only screen and (min-width: 620px) {
+  .support .social-links {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .about {
   font-size: 1.6rem;
