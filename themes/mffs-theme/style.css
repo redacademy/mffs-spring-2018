@@ -1197,6 +1197,50 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     background: none;
     color: #0b2b34; }
 
+@media only screen and (min-width: 620px) {
+  .about-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4rem; } }
+
+@media only screen and (min-width: 620px) {
+  .about-carousel .main-carousel {
+    width: 30%;
+    max-width: 100%;
+    overflow: hidden; }
+    .about-carousel .main-carousel .carousel-image {
+      width: auto; } }
+
+.desktop-about-quote {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .desktop-about-quote {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 50%;
+      margin-left: 12rem; }
+      .desktop-about-quote h2 {
+        font-size: 3rem;
+        width: 65%;
+        margin-bottom: 2rem; } }
+
+@media only screen and (min-width: 620px) {
+  .about-do h2,
+  .about-values h2 {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 10rem;
+    margin-bottom: 2rem; } }
+
 .about-do-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,13 +1258,49 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 6rem; }
+  @media only screen and (min-width: 620px) {
+    .about-do-grid {
+      -webkit-box-orient: unset;
+      -webkit-box-direction: unset;
+          -ms-flex-direction: unset;
+              flex-direction: unset;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      margin-bottom: 3rem; } }
 
-.team-member-single p {
-  margin-bottom: 0; }
+.team-member-single {
+  width: 265px; }
+  .team-member-single p {
+    margin-bottom: 0; }
+    @media only screen and (min-width: 620px) {
+      .team-member-single p {
+        max-width: 75%;
+        margin: auto; } }
+
+@media only screen and (min-width: 620px) {
+  .about-values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .about-values p {
   text-align: center;
   margin: 0 3rem; }
+  @media only screen and (min-width: 620px) {
+    .about-values p {
+      text-align: left;
+      font-size: 24px;
+      width: 70%;
+      border-bottom: 3px solid black;
+      padding-bottom: 2rem; } }
 
 .team-grid {
   background: #bfccd0;
@@ -1234,10 +1314,57 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     margin-top: 3rem; }
     .team-grid li:nth-of-type(5) {
       margin-bottom: 4rem; }
+  @media only screen and (min-width: 620px) {
+    .team-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      background: none;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
+
+@media only screen and (min-width: 620px) {
+  .about-team h2 {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 10rem;
+    margin-bottom: 2rem; } }
 
 .about-team > p {
   text-align: center;
   margin: 8rem 3rem; }
+  @media only screen and (min-width: 620px) {
+    .about-team > p {
+      text-align: left;
+      font-size: 24px;
+      width: 70%;
+      border-bottom: 3px solid black;
+      padding-bottom: 2rem;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      margin-bottom: 16rem; } }
+
+@media only screen and (min-width: 620px) {
+  .about-awards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .about-awards .section-title {
+      font-size: 3rem;
+      position: absolute;
+      top: -225px;
+      left: 35%; }
+    .about-awards ul {
+      width: 60%;
+      margin-right: 2rem; } }
 
 .award-container {
   display: -webkit-box;
@@ -1251,12 +1378,19 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     width: 300px;
     height: 300px;
     margin-right: 3rem; }
+    @media only screen and (min-width: 620px) {
+      .award-container img {
+        width: auto;
+        height: 700px; } }
 
 .awards-grid {
   margin-left: 3rem; }
   .awards-grid li {
     position: relative;
-    margin: 2rem .5rem; }
+    margin: 2rem 0.5rem; }
+    @media only screen and (min-width: 620px) {
+      .awards-grid li {
+        margin: 1rem; } }
     .awards-grid li:before {
       content: '\2022';
       font-size: 70px;
@@ -1276,6 +1410,57 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
 .about-refuse p {
   text-align: center;
   margin: 2rem 2rem 8rem; }
+
+.about-view-reports {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .about-view-reports {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .about-view-reports h2 {
+        font-size: 3rem;
+        letter-spacing: 1px; }
+      .about-view-reports a {
+        margin-left: 2rem;
+        border: 1px solid black;
+        border-radius: 15px;
+        background: #f1d18a;
+        padding: 1rem;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 5px 10px #888888;
+                box-shadow: 5px 10px #888888; }
+        .about-view-reports a:hover {
+          background: #e6ad2f;
+          border: none;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          -webkit-transition: 0.1s ease-in-out;
+          transition: 0.1s ease-in-out; } }
+
+@media only screen and (min-width: 620px) {
+  .about-disclaimer h2,
+  .about-refuse h2 {
+    font-size: 3rem;
+    margin: 0; }
+  .about-disclaimer ol,
+  .about-disclaimer p,
+  .about-refuse ol,
+  .about-refuse p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; } }
+
+@media only screen and (min-width: 620px) {
+  .about-refuse h2 {
+    margin-top: 10rem; } }
 
 .internship {
   font-size: 1.6rem;

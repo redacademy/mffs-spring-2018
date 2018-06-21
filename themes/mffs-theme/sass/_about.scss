@@ -1,103 +1,278 @@
-.about{
-    font-size: 1.6rem;
-    font-weight: 600;
-    h2{
+.about {
+  font-size: 1.6rem;
+  font-weight: 600;
+  h2 {
     background: none;
     color: $color__text-main;
-    }
-   
+  }
 }
-
-.about-do-grid{ //aligning images
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-    li{
-        
-        width: 250px;
-        height: 250px;
-        text-align: center;
-        margin-top: 4rem;
-        margin-bottom: 6rem;
-    }
-}
-.team-member-single{
-    p{
-        margin-bottom: 0;
-    }
-    
-}
-
-.about-values{
-    p{
-        text-align: center;
-        margin: 0 3rem;
-    }
-}
-.team-grid{
-    background: #bfccd0;
-    border-radius: 2rem;
-    max-width: 95%;
-    margin: 0 auto;
-    display: grid;
-    grid-template: 3fr/ 1fr 1fr;
-
-    text-align: center;
-    li{
-        margin-top: 3rem;
-        &:nth-of-type(5){
-            margin-bottom: 4rem;
-        }
-    }
-}
-
-.about-team>p{
-    text-align: center;
-    margin: 8rem 3rem;
-}
-.award-container{
+.about-carousel {
+  @include desktop {
     display: flex;
-    margin-bottom: 8rem;
- h2{
-     text-align: left;
-     margin-left: 5rem;
- }
-    img{
-        width: 300px;
-        height: 300px;
-        margin-right: 3rem;
+    margin-top: 4rem;
+  }
+  .main-carousel {
+    @include desktop {
+      width: 30%;
+      max-width: 100%;
+      overflow: hidden;
+      .carousel-image {
+        // height: 3rem;
+        width: auto;
+      }
     }
+  }
+}
+.desktop-about-quote {
+  display: none;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 12rem;
+    h2 {
+      font-size: 3rem;
+      width: 65%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.about-do,
+.about-values {
+  h2 {
+    @include desktop {
+      font-size: 3rem;
+      margin: 0;
+      margin-top: 10rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.about-do-grid {
+  //aligning images
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+  @include desktop {
+    flex-direction: unset;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+}
+.team-member-single {
+  width: 265px;
+  p {
+    margin-bottom: 0;
+    @include desktop {
+      max-width: 75%;
+      margin: auto;
+    }
+  }
 }
 
-.awards-grid{
+.about-values {
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    text-align: center;
+    margin: 0 3rem;
+    @include desktop {
+      text-align: left;
+      font-size: 24px;
+      width: 70%;
+      border-bottom: 3px solid black;
+      padding-bottom: 2rem;
+    }
+  }
+}
+.team-grid {
+  background: #bfccd0;
+  border-radius: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 3fr/ 1fr 1fr;
+  text-align: center;
+  li {
+    margin-top: 3rem;
+    &:nth-of-type(5) {
+      margin-bottom: 4rem;
+    }
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    // height: 200px;
+    justify-content: space-evenly;
+    .team-single-1,
+    .team-single-2,
+    .team-single-3 {
+      //   align-self: flex-start;
+    }
+    .team-single-2,
+    .team-single-4 {
+      //   align-self: flex-end;
+    }
+  }
+}
+.about-team {
+  h2 {
+    @include desktop {
+      font-size: 3rem;
+      margin: 0;
+      margin-top: 10rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.about-team > p {
+  text-align: center;
+  margin: 8rem 3rem;
+  @include desktop {
+    text-align: left;
+    font-size: 24px;
+    width: 70%;
+    border-bottom: 3px solid black;
+    padding-bottom: 2rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 16rem;
+  }
+}
+.about-awards {
+  @include desktop {
+    display: flex;
+    position: relative;
+    .section-title {
+      font-size: 3rem;
+      position: absolute;
+      top: -225px;
+      left: 35%;
+    }
+    ul {
+      width: 60%;
+      margin-right: 2rem;
+    }
+  }
+}
+.award-container {
+  display: flex;
+  margin-bottom: 8rem;
+  h2 {
+    text-align: left;
+    margin-left: 5rem;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    margin-right: 3rem;
+    @include desktop {
+      width: auto;
+      height: 700px;
+    }
+  }
+}
+
+.awards-grid {
+  margin-left: 3rem;
+  li {
+    position: relative;
+    margin: 2rem 0.5rem;
+    @include desktop {
+      margin: 1rem;
+    }
+    &:before {
+      content: '\2022';
+      font-size: 70px;
+      position: absolute;
+      top: -34px;
+      left: -34px;
+    }
+  }
+}
+.disclaimer-grid {
+  li {
+    margin: 4rem 3rem;
+  }
+}
+.about-refuse {
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: $font__main;
+    font-weight: 600;
+  }
+  p {
+    text-align: center;
+    margin: 2rem 2rem 8rem;
+  }
+}
+
+.about-view-reports {
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: center;
     margin-left: 3rem;
-    li {
-        position: relative;
-        margin: 2rem .5rem;
-        &:before{
-            content:'\2022';
-            font-size:70px;
-            position: absolute;
-            top: -34px;
-            left: -34px; 
-        }
-        
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 1px;
     }
+    a {
+      margin-left: 2rem;
+      border: 1px solid black;
+      border-radius: 15px;
+      background: $color__button-yellow;
+      padding: 1rem;
+      letter-spacing: 1px;
+      box-shadow: 5px 10px #888888;
+      &:hover {
+        background: darken($color__button-yellow, 20);
+        border: none;
+        box-shadow: none;
+        transition: 0.1s ease-in-out;
+      }
+    }
+  }
 }
-.disclaimer-grid{
-    li{
-        margin: 4rem 3rem;
+
+.about-disclaimer,
+.about-refuse {
+  @include desktop {
+    h2 {
+      font-size: 3rem;
+      margin: 0;
     }
+    ol,
+    p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+  }
 }
-.about-refuse{
-    h2{
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        font-family: $font__main;
-        font-weight: 600;
+
+.about-refuse {
+  h2 {
+    @include desktop {
+      margin-top: 10rem;
     }
-    p{
-        text-align: center;
-        margin: 2rem 2rem 8rem;
-    }
+  }
 }
