@@ -267,7 +267,7 @@ ul {
   }
 }
 
-.desktop{
+.visible-desktop{
   display: none;
   @include desktop{
     display: block;

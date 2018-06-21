@@ -664,6 +664,10 @@ ul {
     font-weight: 400;
     font-size: 1.7rem; }
 
+@media only screen and (min-width: 620px) {
+  .impact .section-title {
+    border-bottom: none; } }
+
 .impact-grid {
   display: grid;
   text-align: center;
@@ -730,18 +734,29 @@ ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      max-width: 100%; } }
-  @media only screen and (min-width: 620px) {
-    .impact-gridli {
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
-              justify-content: space-evenly; } }
+              justify-content: space-evenly;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 7rem; } }
 
 @media only screen and (min-width: 620px) {
   .initiatives {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+
+@media only screen and (min-width: 620px) {
+  .initiatives .desktop-initiatives-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 5rem; } }
 
 .section-title,
 .initiatives h2 {
@@ -753,10 +768,17 @@ ul {
   margin-top: 6rem; }
 
 @media only screen and (min-width: 620px) {
-  .initiatives h2, .mission h2 {
+  .impact, .initiatives, .mission, .languages {
+    margin: 5rem 2rem; } }
+
+@media only screen and (min-width: 620px) {
+  .impact h2, .initiatives h2, .mission h2, .languages h2 {
     background: none;
     color: #0b2b34;
+    border-bottom: 1px solid #0b2b34;
+    font-size: 2.5rem;
     margin-bottom: 0;
+    margin-top: 0;
     text-align: left; } }
 
 .initiatives img {
@@ -777,6 +799,7 @@ ul {
     @media only screen and (min-width: 620px) {
       .initiatives-content-wrapper p {
         max-width: 1000px;
+        font-size: 1.5rem;
         text-align: left;
         padding: 0;
         margin: 0; } }
@@ -787,6 +810,12 @@ ul {
       display: flex;
       border-bottom: none; } }
 
+@media only screen and (min-width: 620px) {
+  .mission {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 .mission-img {
   width: 250px;
   height: 250px;
@@ -794,12 +823,26 @@ ul {
   margin: 0 auto;
   position: relative;
   top: -26px; }
+  @media only screen and (min-width: 620px) {
+    .mission-img {
+      display: none;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      text-align: right; } }
+  @media only screen and (min-width: 620px) {
+    .mission-img img {
+      -webkit-box-shadow: 1rem 1rem #245865;
+              box-shadow: 1rem 1rem #245865; } }
 
 .green-img-bar {
   height: 200px;
   background: #819aa2;
   margin: 5rem 0;
   top: 300px; }
+  @media only screen and (min-width: 620px) {
+    .green-img-bar {
+      display: none; } }
 
 .mission {
   margin-bottom: 5rem; }
@@ -809,6 +852,20 @@ ul {
     font-weight: 400;
     font-size: 1.7rem;
     padding: 0 1.5rem 1.5rem; }
+    @media only screen and (min-width: 620px) {
+      .mission p {
+        font-size: 1.5rem; } }
+
+@media only screen and (min-width: 620px) {
+  .languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media only screen and (min-width: 620px) {
+  .languages h2 {
+    font-size: 2.25rem;
+    margin-left: 0; } }
 
 .languages h3 {
   margin: 0 auto;
@@ -819,12 +876,21 @@ ul {
 .language-img {
   text-align: center;
   margin: 2rem 0 6rem 0; }
+  @media only screen and (min-width: 620px) {
+    .language-img {
+      margin: 0; } }
   .language-img img {
     width: 40%;
     height: auto;
     -webkit-box-shadow: 3px 3px 10px gray;
             box-shadow: 3px 3px 10px gray;
     border-radius: 50%; }
+    @media only screen and (min-width: 620px) {
+      .language-img img {
+        width: 75%;
+        max-width: 45rem;
+        min-width: 20rem;
+        margin: auto; } }
 
 .language-grid {
   display: grid;
@@ -833,8 +899,18 @@ ul {
   font-weight: 600;
   color: #0b2b34;
   text-align: center; }
+  @media only screen and (min-width: 620px) {
+    .language-grid {
+      font-size: 1.5rem; } }
   .language-grid li {
     padding: 1rem; }
+
+@media only screen and (min-width: 620px) {
+  .languages-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .mobile {
   display: block; }
@@ -842,12 +918,10 @@ ul {
     .mobile {
       display: none; } }
 
-.visible-desktop,
-.referral-wrapper {
+.visible-desktop {
   display: none; }
   @media only screen and (min-width: 620px) {
-    .visible-desktop,
-    .referral-wrapper {
+    .visible-desktop {
       display: block; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {

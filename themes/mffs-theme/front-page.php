@@ -72,7 +72,7 @@ get_header(); ?>
 
 			<!-- third section inititiaves-->
 			<section class="initiatives">
-				<div class="desktop initiatives-img">
+				<div class="visible-desktop initiatives-img">
 					<img src="<?php echo CFS()->get( 'mffs_initiatives_img') ?>">
 				</div>
 				<div class="desktop-initiatives-content-wrapper">
@@ -96,7 +96,7 @@ get_header(); ?>
 
 					<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
 				</div>
-				<div class="desktop mission-img">
+				<div class="visible-desktop mission-img">
 					<img src="<?php echo CFS()->get( 'mffs_desktop_mission_image') ?>">
 				</div>
 			</section>	<!-- end mission -->
