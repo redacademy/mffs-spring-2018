@@ -55,7 +55,7 @@ get_header(); ?>
 
 
 				<!-- yellow stat bubbles -->
-				<div>
+				<div class="impact-circles">
 				<ul class="impact-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_impact');
@@ -75,9 +75,11 @@ get_header(); ?>
 				<div class="desktop initiatives-img">
 					<img src="<?php echo CFS()->get( 'mffs_initiatives_img') ?>">
 				</div>
-				<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title') ?></h2>
-				<div class="initiatives-content-wrapper">
-					<p><?php echo CFS()->get( 'mffs_initiatives_content') ?></p>
+				<div class="desktop-initiatives-content-wrapper">
+					<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title') ?></h2>
+					<div class="initiatives-content-wrapper">
+						<p><?php echo CFS()->get( 'mffs_initiatives_content') ?></p>
+					</div>
 				</div>
 			</section><!-- end inititiaves -->
 
@@ -94,25 +96,28 @@ get_header(); ?>
 
 					<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
 				</div>
-
+				<div class="desktop mission-img">
+					<img src="<?php echo CFS()->get( 'mffs_desktop_mission_image') ?>">
+				</div>
 			</section>	<!-- end mission -->
 
 			<!-- fifth section languages -->
 			<section class="languages">
-				<h2 class="section-title">We Speak Your Languages</h2>
-				<h3>Our services are offered in:</h3>
+				<div class="languages-info">
+					<h2 class="section-title">We Speak Your Languages</h2>
+					<h3>Our services are offered in:</h3>
 
-				<ul class="language-grid">
-				<?php
-					$loop = CFS()->get( 'mffs_languages_content');
-						foreach ( $loop as $row ) { ?>
-						<li>
-							<?php echo $row['mffs_languages_single'];?>
-						</li>
-						<?php } ?>
+					<ul class="language-grid">
+					<?php
+						$loop = CFS()->get( 'mffs_languages_content');
+							foreach ( $loop as $row ) { ?>
+							<li>
+								<?php echo $row['mffs_languages_single'];?>
+							</li>
+							<?php } ?>
 
-				</ul>
-
+					</ul>
+				</div>
 				<div class="language-img">
 					<img src="<?php echo CFS()->get( 'mffs_language_img') ?>" alt="">
 				</div>
