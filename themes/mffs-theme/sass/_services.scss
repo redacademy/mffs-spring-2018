@@ -4,18 +4,20 @@
 .services-fees-container .site-main h2:nth-child(2) {
   margin-top: 1.5rem;
 }
-.services-fees-container{
-  @include desktop{//hiding nav for single-page services in desk
-    nav{
+.services-fees-container {
+  @include desktop {
+    //hiding nav for single-page services in desk
+    nav {
       display: none;
     }
   }
 }
-.services-all-container{
-  @include desktop{//changing background for h2 services in desk
+.services-all-container {
+  @include desktop {
+    //changing background for h2 services in desk
     .mental-wb-wrapper h2,
     .family-serv-wrapper h2,
-    .services-fee-wrapper h2{
+    .services-fee-wrapper h2 {
       background: none;
       color: $color__text-main;
     }
@@ -37,17 +39,44 @@
     background: $color__button-dark-green;
     margin: 0.5rem 0;
     width: 24rem;
+    @include desktop {//takeing of the button format from links
+      @include reset-to-link();
+    }
+  }
+}
+@include desktop {
+  .whole-service-grid {//flex container for the whole services in desk
+    h2{
+      margin: 3.5rem 1rem;
+      text-align: left;
+      font-size: 2rem;
+    }
+    display: flex;
+  }
+}
+@include desktop{
+  .mental-wb-wrapper{
+    margin-left: 3rem;
   }
 }
 .fees-top {
   display: flex;
   justify-content: center;
+  @include desktop{
+    display: block;
+  }
   .fees-single,
   .fees-family {
     padding: 4rem 2rem;
+    @include desktop{
+      padding: 1rem 1rem;
+    }
   }
   .fees-single {
     border-right: 3px solid $color__green_main;
+    @include desktop{
+      border: none;
+    }
   }
 }
 .fees-bottom {
@@ -60,22 +89,29 @@
 .services-fees {
   & > h2 {
     margin-bottom: 0;
+    @include desktop{
+      text-align: left;
+      padding-left: 1rem;
+    }
   }
   font-size: 1.2rem;
+  @include desktop{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .services-get {
   font-size: 1.2rem;
   text-align: center;
   border-bottom: 3px solid $color__button-yellow;
   padding-bottom: 4rem;
-  p{
+  p {
     width: 26rem;
     margin: 0 auto;
-
   }
 
-  @include desktop{
-    h2{
+  @include desktop {
+    h2 {
       background: $color__background-green-pale;
       padding: 3rem 0;
       color: $color__text-main;
@@ -154,24 +190,24 @@
 // .single-service .site-content nav,
 // .single-story .site-content nav{
 
-
 // }
-.single-service-content p{
+.single-service-content p {
   margin: 0 5rem;
   font-size: 1.2rem;
   text-align: center;
 }
 
-.single-service ,.single-story{
-  .site-content nav{
+.single-service,
+.single-story {
+  .site-content nav {
     margin: 1rem 0 0 1rem;
-    .fas{
+    .fas {
       font-size: 1.5rem;
-      padding-top: .2rem;
+      padding-top: 0.2rem;
     }
-    a{
-    font-size: 1.2rem;
-    color: $color__link-color;
+    a {
+      font-size: 1.2rem;
+      color: $color__link-color;
     }
   }
 }
