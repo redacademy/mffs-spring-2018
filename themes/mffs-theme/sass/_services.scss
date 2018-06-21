@@ -21,6 +21,12 @@
       background: none;
       color: $color__text-main;
     }
+    .services-fee-wrapper{
+      border: 2px solid $color__button-yellow;
+      border-radius: 20px;
+      max-width: 26rem;
+      box-shadow: 3px 3px $color__button-yellow;
+    }
   }
 }
 .services-mwb,
@@ -39,14 +45,16 @@
     background: $color__button-dark-green;
     margin: 0.5rem 0;
     width: 24rem;
-    @include desktop {//takeing of the button format from links
+    @include desktop {
+      //takeing of the button format from links
       @include reset-to-link();
     }
   }
 }
 @include desktop {
-  .whole-service-grid {//flex container for the whole services in desk
-    h2{
+  .whole-service-grid {
+    //flex container for the whole services in desk
+    h2 {
       margin: 3.5rem 1rem;
       text-align: left;
       font-size: 2rem;
@@ -54,27 +62,27 @@
     display: flex;
   }
 }
-@include desktop{
-  .mental-wb-wrapper{
+@include desktop {
+  .mental-wb-wrapper {
     margin-left: 3rem;
   }
 }
 .fees-top {
   display: flex;
   justify-content: center;
-  @include desktop{
+  @include desktop {
     display: block;
   }
   .fees-single,
   .fees-family {
     padding: 4rem 2rem;
-    @include desktop{
+    @include desktop {
       padding: 1rem 1rem;
     }
   }
   .fees-single {
     border-right: 3px solid $color__green_main;
-    @include desktop{
+    @include desktop {
       border: none;
     }
   }
@@ -84,18 +92,31 @@
     border-top: 3px solid $color__green_main;
     padding: 4rem 2rem 0;
     text-align: center;
+    @include desktop {
+      border: none;
+      text-align: left;
+      padding: 0 1rem;
+      max-width: 30rem;
+    }
+  }
+  & p:nth-child(2) {//targrting insurance text
+    @include desktop {
+      text-align: left !important;
+      padding: 0 1rem;
+    }
   }
 }
 .services-fees {
   & > h2 {
     margin-bottom: 0;
-    @include desktop{
+    @include desktop {
       text-align: left;
       padding-left: 1rem;
+      margin-top: 1rem;
     }
   }
   font-size: 1.2rem;
-  @include desktop{
+  @include desktop {
     display: flex;
     flex-direction: column;
   }

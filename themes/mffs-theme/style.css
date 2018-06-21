@@ -2541,7 +2541,13 @@ p.faq-answer {
   .services-all-container .family-serv-wrapper h2,
   .services-all-container .services-fee-wrapper h2 {
     background: none;
-    color: #0b2b34; } }
+    color: #0b2b34; }
+  .services-all-container .services-fee-wrapper {
+    border: 2px solid #f1d18a;
+    border-radius: 20px;
+    max-width: 26rem;
+    -webkit-box-shadow: 3px 3px #f1d18a;
+            box-shadow: 3px 3px #f1d18a; } }
 
 .services-mwb,
 .services-family {
@@ -2637,6 +2643,17 @@ p.faq-answer {
   border-top: 3px solid #4c6f7b;
   padding: 4rem 2rem 0;
   text-align: center; }
+  @media only screen and (min-width: 620px) {
+    .fees-bottom p:nth-child(1) {
+      border: none;
+      text-align: left;
+      padding: 0 1rem;
+      max-width: 30rem; } }
+
+@media only screen and (min-width: 620px) {
+  .fees-bottom p:nth-child(2) {
+    text-align: left !important;
+    padding: 0 1rem; } }
 
 .services-fees {
   font-size: 1.2rem; }
@@ -2645,7 +2662,8 @@ p.faq-answer {
     @media only screen and (min-width: 620px) {
       .services-fees > h2 {
         text-align: left;
-        padding-left: 1rem; } }
+        padding-left: 1rem;
+        margin-top: 1rem; } }
   @media only screen and (min-width: 620px) {
     .services-fees {
       display: -webkit-box;
