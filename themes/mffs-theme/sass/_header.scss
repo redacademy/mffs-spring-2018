@@ -57,11 +57,11 @@ header .donate-button a {
       margin-right: 3rem !important;
     }
   }
-  .social-links {
-    @include desktop {
-      display: none;
-    }
-  }
+  // .social-links {
+  //   @include desktop {
+  //     display: none;
+  //   }
+  // }
 }
 
 .ca-tld {
