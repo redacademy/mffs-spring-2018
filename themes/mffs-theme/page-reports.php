@@ -40,8 +40,8 @@ get_header(); ?>
 
                 <!-- reports bottom left side, img, info, download -->
                 <div class="reports-version-latest">
+                    <h2 class="section-title">Latest Version</h2>
                     <div>
-                        <h2 class="section-title">Latest Version</h2>
                         <img src="<?php echo CFS()->get( 'mffs_reports_image', 99 ) ?>" alt="">
                     </div>
                     <div>
