@@ -17,8 +17,8 @@
   }
 }
 
-@mixin tablet {
-  @media only screen and (min-width: $tablet_width) {
+@mixin desktop-lg {
+  @media only screen and (min-width: $desktop-lg_width) {
     @content;
   }
 }

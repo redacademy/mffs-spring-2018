@@ -56,6 +56,21 @@ ul {
   & li:nth-of-type(5) {
     @include impact-grid-circle(9 / span 13, 8 / span 12);
   }
+  @include desktop{
+    display: flex;
+    max-width: 100%;
+  }
+  &li{
+    @include desktop{
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.initiatives{
+  @include desktop{
+  display: flex;
+  }
 }
 
 .section-title,
@@ -69,17 +84,43 @@ ul {
   margin-top: 6rem;
 }
 
+.initiatives, .mission{
+  h2{
+    @include desktop{
+      background: none;
+      color: $color__text-main;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+
+.initiatives img{
+  box-shadow: -1.5rem 1rem $color__button-yellow;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .initiatives-content-wrapper {
   p {
     max-width: 570px;
     margin: 0 auto;
     padding:0 1.5rem 1.5rem;
-
+    @include desktop{
+      max-width: 1000px;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
   }
   margin: 0 auto;
   font-weight: 400;
   font-size: 1.7rem;
   border-bottom: 4px solid $color__button-yellow;
+  @include desktop{
+    display: flex;
+    border-bottom: none;
+  }
 }
 
 .mission-img {
@@ -141,6 +182,13 @@ ul {
   text-align: center;
   li {
     padding: 1rem;
+  }
+}
+
+.mobile{
+  display: block;
+  @include desktop{
+    display: none;
   }
 }
 

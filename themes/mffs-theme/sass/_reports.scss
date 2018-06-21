@@ -1,0 +1,46 @@
+.reports-info-img {
+  display: flex;
+  margin-top: 5rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  .section-title {
+    margin: 0;
+    font-size: 3rem;
+    text-align: left;
+  }
+  .reports-info {
+    width: 50%;
+  }
+  .reports-img-grid {
+    display: flex;
+    margin-left: 2rem;
+  }
+  .reports-image-single {
+    margin-right: 1.5rem;
+  }
+}
+
+.reports-version-archive {
+  display: flex;
+  margin-top: 2rem;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  .reports-version-latest {
+    // display: flex;
+  }
+  .reports-archive {
+    // display: flex;
+  }
+}
+
+.reports-version-latest,
+.reports-archive {
+  .section-title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: left;
+    // margin-left: 2rem;
+  }
+}

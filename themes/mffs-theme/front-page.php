@@ -55,6 +55,7 @@ get_header(); ?>
 
 
 				<!-- yellow stat bubbles -->
+				<div>
 				<ul class="impact-grid">
 				<?php
 					$loop = CFS()->get( 'mffs_impact');
@@ -66,15 +67,16 @@ get_header(); ?>
 						<?php } ?>
 
 				</ul>
+				</div>
 			</section> <!-- end impact section -->
 
 			<!-- third section inititiaves-->
 			<section class="initiatives">
+				<div class="desktop initiatives-img">
+					<img src="<?php echo CFS()->get( 'mffs_initiatives_img') ?>">
+				</div>
 				<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title') ?></h2>
 				<div class="initiatives-content-wrapper">
-					<div class="initiatives-img">
-						<!-- place inititaves photo here -->
-					</div>
 					<p><?php echo CFS()->get( 'mffs_initiatives_content') ?></p>
 				</div>
 			</section><!-- end inititiaves -->
