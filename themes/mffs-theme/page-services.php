@@ -81,20 +81,26 @@ get_header(); ?>
 				<!-- fourth section get counselling -->
 				<section class="services-get">
 					<h2 class="section-title">Get Counselling</h2>
-					<section class="counselling-download visible-desktop">
-						<!-- counselling content that should only be visible in desktop view -->
-						<img class="steps-image"src="#" alt="counseling steps">
-						<p>Download and fill out the pre-intake form.</p>
-						<a href="#">Download Form</a>
-						<a href="#">Terms of Service</a>
-						<p>* by downloading this form you agree to our terms of service</p>
+					<section class="visible-desktop">
+						<div class="counselling-download">
+							<!-- counselling content that should only be visible in desktop view -->
+							<img class="steps-image"src="#" alt="counseling steps">
+							<div class="download-frm-btn-wrapper">
+								<p>Download and fill out the pre-intake form.</p>
+								<div class="form-btn-wrapper">
+									<a href="#">Download Form</a>
+									<a href="#">Terms of Service</a>
+								</div>
+								<p>* by downloading this form you agree to our terms of service</p>
+							</div>
+						</div>
 					</section>
 
 					<p class="mobile">Provide us with your email and we’ll send you the pre-intake form.</p>
 					<!-- only visible in mobile -->
 					<div class="email-counseling mobile">
 						<input class="mobile" type="email" placeholder="example@gmail.com" onfocus="this.value=''" onblur="this.value=''">
-						<a class="mobile" href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Submit</a>
+						<a class="mobile" href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 )?>" download>Submit</a>
 					</div>
 					<p class="mobile">Next, fill out the form then proceed to choose one of the following</p>
 

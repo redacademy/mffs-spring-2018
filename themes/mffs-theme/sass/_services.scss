@@ -15,7 +15,7 @@
 .services-all-container {
   @include desktop {
     //changing background for h2 services in desk
-    & main>h2{
+    & main > h2 {
       font-size: 2.5rem;
       text-align: left;
       margin-left: 6rem;
@@ -38,19 +38,20 @@
   }
 }
 .asterisk,
-.index-service{//showing asterisk after fee just on desktop
+.index-service {
+  //showing asterisk after fee just on desktop
   display: none;
-  @include desktop{
+  @include desktop {
     display: inline-block;
   }
 }
 
-.services-all-container .visible-desktop{
+.services-all-container .visible-desktop {
   margin: 6rem 0;
   h2 {
     font-size: 2.2rem;
   }
-  p{
+  p {
     text-align: center;
     font-size: 1.2rem;
   }
@@ -241,12 +242,44 @@
     }
   }
 }
-//styling for single service & single story pages
 
-// .single-service .site-content nav,
-// .single-story .site-content nav{
+.counselling-download {
+  display: flex;
+  img {
+    height: 30rem;
+    background: $color__button-dark-green;
+    margin: 0 12rem;
+  }
 
-// }
+  .download-frm-btn-wrapper {
+    & p:nth-child(1) {
+      font-size: 1.5rem;
+      width: 100%;
+      font-weight: 600;
+      margin: 3rem 0 6rem 0;
+    }
+    & p:nth-child(3) {
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 6rem;
+      font-weight: 600;
+    }
+
+    display: flex;
+    flex-direction: column;
+    .form-btn-wrapper {
+      display: flex;
+      a {
+        @include shadow-btn-bright(8px, 15px 5px, $color__green_main);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0 1rem;
+        width: 18rem;
+      }
+    }
+  }
+}
+
 .single-service-content p {
   margin: 0 5rem;
   font-size: 1.2rem;
