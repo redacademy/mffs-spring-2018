@@ -41,12 +41,14 @@ get_header(); ?>
                 <!-- reports bottom left side, img, info, download -->
                 <div class="reports-version-latest">
                     <h2 class="section-title">Latest Version</h2>
-                    <div>
-                        <img src="<?php echo CFS()->get( 'mffs_reports_image', 99 ) ?>" alt="">
-                    </div>
-                    <div>
-                        <p><?php echo CFS()->get( 'mffs_reports_archive_info', 99 ) ?></p>
-                        <a href="<?php echo CFS()->get( 'mffs_annual_report', 99 ) ?>" download>Download</a>
+                    <div class="reports-img-dl">
+                       <div class="reports-image">
+                            <img src="<?php echo CFS()->get( 'mffs_reports_image', 99 ) ?>" alt="">
+                        </div>
+                        <div class="reports-dl">
+                            <p><?php echo CFS()->get( 'mffs_reports_archive_info', 99 ) ?></p>
+                            <a href="<?php echo CFS()->get( 'mffs_annual_report', 99 ) ?>" download>Download</a>
+                        </div>
                     </div>
                 </div>
 
