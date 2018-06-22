@@ -118,9 +118,9 @@ get_header(); ?>
             </section><!-- end donate info -->
 
             <section class="donate-desktop-help">
-                <h2>How else can you help?</h2>
+                <h2 class="help-title">How else can you help?</h2>
                 <div class="donate-desktop-help-grid-top">
-                    <h2>Donate while shopping for groceries!</h2>
+                    <h2 class="count">Donate while shopping for groceries!</h2>
                     <?php echo CFS()->get( 'mffs_desktop_donation_partner_description_text', 23 ) ?>
                     <a href="<?php echo CFS()->get( 'mffs_donation_partner_url', 23 ) ?>" target="_blank">
                         <img src="<?php echo CFS()->get( 'mffs_donation_partner_img', 23 ) ?>" alt=""/>
@@ -132,7 +132,7 @@ get_header(); ?>
                         $loop = CFS()->get( 'mffs_donation_info_loop', 23 );
                             foreach ( $loop as $row ) { ?>
                             <li class="donate-info-single">
-                                <h2 class="title-no-bg"><?php echo $row['mffs_donation_info_title'];?></h2>
+                                <h2 class="title-no-bg count"><?php echo $row['mffs_donation_info_title'];?></h2>
                                 <?php echo $row['mffs_donation_info_text'];?>
                             </li>
                             <?php } ?>

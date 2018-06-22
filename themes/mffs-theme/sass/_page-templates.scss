@@ -52,6 +52,7 @@ ul {
     .carousel-cell img {
       @include desktop {
         height: 25rem;
+        margin-top: 1rem;
         box-shadow: -1.5rem -1rem $color__button-yellow;
       }
     }
