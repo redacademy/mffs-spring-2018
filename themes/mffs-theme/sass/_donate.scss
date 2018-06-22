@@ -206,10 +206,27 @@
   display: none;
   @include desktop {
     display: block;
+    counter-reset: help-counter;
+    .help-title {
+      margin-left: 5rem;
+    }
     h2 {
       font-size: 3rem;
       text-align: left;
-      margin-left: 3rem;
+      // margin-left: -4rem;
+    }
+    .count {
+      &:before {
+        font-size: 2rem;
+        text-align: left;
+        margin-right: 3rem;
+        content: counter(help-counter);
+        counter-increment: help-counter;
+        background: #ffaf3f;
+        border-radius: 50%;
+        padding: 1rem;
+        color: white;
+      }
     }
   }
 }
@@ -218,12 +235,15 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-evenly;
+  margin-left: 7rem;
+  margin-right: 2rem;
   p {
     display: inline-block;
     margin-left: 5rem;
     max-width: 50%;
     &:nth-last-child(3) {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 600;
     }
   }
@@ -231,26 +251,35 @@
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 5rem;
+    margin-left: -1rem;
   }
   img {
     position: absolute;
     top: 10%;
     left: 60%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
   }
 }
 
 .donate-desktop-help-grid-bottom {
   .donate-info-grid {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 5rem;
     margin-right: 5rem;
+    margin-bottom: 8rem;
     h2 {
       font-size: 1.5rem;
     }
     p {
-      width: 60%;
+      width: 50%;
       margin: 0;
+      margin-left: 7rem;
+    }
+    li {
+      width: 50%;
     }
   }
 }
