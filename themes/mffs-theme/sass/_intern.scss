@@ -18,7 +18,23 @@
   }
 }
 
+.internship{
+
+    .internship-contact
+    {
+      text-align: center;
+      a {
+        color: $color__text-main;
+        border-bottom: 1.2px solid $color__text-main;
+        padding-bottom: 1px;
+      }
+    @include desktop{
+      display: none;
+    }
+    }
+}
 .intern-wrapper-desktop {
+
   img {
     max-width: 430px;
     display: block;
@@ -51,11 +67,6 @@
         font-size: 1.1rem;
       }
     }
-    p:nth-child(4){
-      a{
-        text-decoration: underline;
-      }
-    }
   }
   .intern-text-wrapper {
     .visible-desktop {
@@ -69,12 +80,12 @@
     }
   }
 
-  .inten-desk-link {
-    text-decoration: underline;
-  }
+  // .inten-desk-link {
+  //   text-decoration: underline;
+  // }
 }
 
-.internship-contact {
+.internship-contact-end {
   h2 {
     margin-bottom: 3rem;
   }
@@ -87,10 +98,15 @@
     padding-bottom: 1px;
   }
   @include desktop {
-    display: none;
+    // display: none;
   }
 }
 .internship-why {
+  p:nth-child(5) {
+    a {
+      text-decoration: underline;
+    }
+  }
   text-align: center;
   @include desktop {
     h2 {
@@ -110,61 +126,62 @@
     margin: 0 auto;
     padding-bottom: 6rem;
     padding-top: 2rem;
-    // @include desktop{
-    //   display: none;
-    // }
   }
-  p.visible-desktop{
+  p.visible-desktop {
     max-width: 35rem;
+  }
+
+  .why-grid {
+    li {
+      h2 {
+        margin: 2rem 0;
+      }
+      img {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      p {
+        max-width: 35rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+      }
+    }
+    @include desktop {
+      display: flex;
+      justify-content: center;
+
+      li {
+        h2.title-no-bg {
+          font-size: 1.5rem;
+          margin: 2rem 0;
+        }
+        p {
+          font-size: 1.2rem;
+          text-align: left !important;
+          padding: 0;
+        }
+        margin: 4rem 4rem;
+        max-width: 350px;
+        img {
+          max-width: 150px;
+        }
+        &:nth-last-of-type(1) {
+          img {
+            max-width: 110px;
+          }
+        }
+        &:nth-child(1) p {
+          display: block;
+        }
+      }
+    }
   }
 }
 
-.why-grid {
-  li {
-    h2 {
-      margin: 2rem 0;
-    }
-    img {
-      max-width: 300px;
-      display: block;
-      margin: 0 auto;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    p {
-      max-width: 35rem;
-      margin: 0 auto;
-      padding-bottom: 2rem;
-      padding-top: 2rem;
-    }
-  }
-  @include desktop{
-    display: flex;
-    justify-content: center;
-    li{
-      h2.title-no-bg{
-        font-size: 1.5rem;
-      }
-      p{
-        font-size: 1.2rem;
-        text-align: left !important;
-      }
-      margin: 4rem 4rem;
-      max-width: 350px;
-      img{
-        max-width: 150px;
-      }
-      &:nth-last-of-type(1){
-        img{
-        max-width: 110px;
-        }
-      }
-      &:nth-child(1) p{
-        display: block;
-      }
-    }
-  }
-}
 .internship-requirements {
   p {
     margin: 0 auto;
@@ -181,6 +198,23 @@
   @include desktop {
     h2.section-title {
       display: none;
+    }
+    h2.visible-desktop{
+      font-size: 2.5rem;
+    }
+    .requirements-grid{
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      & li:nth-child(4){
+        grid-column: 1 / span 4;
+      }
+      & li:nth-child(5){
+        grid-column: 1 / span 4;
+      }
+      & li:nth-child(6){
+        grid-column: 1 / span 4;
+      }
+
     }
     .yellow-dots {
       display: none;
