@@ -70,9 +70,9 @@ get_header(); ?>
 								<!-- end of services fee wrapper -->
 				</div>
 				<!-- end of fee-service-container -->
-						<div class="visible-desktop">
+						<div class="visible-desktop no-turn-down">
 							<!-- hidden in mobile size -->
-							<h2>We turn no one down</h2>
+							<h2>We turn no one down!</h2>
 							<p>Can't afford counselling fees?<br>We offer free and low cost counselling with proof of income.</p>
 						</div>
 					</section>
@@ -81,15 +81,15 @@ get_header(); ?>
 				<!-- fourth section get counselling -->
 				<section class="services-get">
 					<h2 class="section-title">Get Counselling</h2>
-					<section class="visible-desktop">
+					<section class="visible-desktop councelling-wrapper">
 						<div class="counselling-download">
 							<!-- counselling content that should only be visible in desktop view -->
-							<img class="steps-image"src="#" alt="counseling steps">
+							<img class="steps-image"src="#" alt="counselling steps">
 							<div class="download-frm-btn-wrapper">
 								<p>Download and fill out the pre-intake form.</p>
 								<div class="form-btn-wrapper">
-									<a href="#">Download Form</a>
-									<a href="#">Terms of Service</a>
+									<a href="<?php echo CFS()->get( ‘mffs_services_pre_intake_form’, 15 )?>" download>Download Form</a>
+									<a href="<?php echo CFS()->get( ‘mffs_services_terms_of_service’, 15 )?>" download>Terms of Service</a>
 								</div>
 								<p>* by downloading this form you agree to our terms of service</p>
 							</div>
@@ -133,14 +133,14 @@ get_header(); ?>
 								<p class="mobile">Drop in</p>
                             	<p class="mobile">103 – 12827 76th Avenue, Surrey
 									Fri. & Sun. 12pm-2pm for</p>
-								<p class="visible-desktop">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
+								<p class="visible-desktop services-last-para">Come to an intake drop-in session (Fridays and Sundays from 12-2 PM at our main office: 103 – 12827 76th Avenue, Surrey) and you will have the opportunity to be seen immediately.</p>
 							</li>
 						</ul>
 					</div>
 
 				</section>
 				<!-- end fifth section services info -->
-				<section class="visible-desktop">
+				<section class="visible-desktop referrals-wrapper">
 					<!-- referral -->
 					<h2>Referrals</h2>
 					<p class="referral-form">Download and fill out the referral form, then fax to us. </p>
