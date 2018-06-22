@@ -27,7 +27,7 @@ get_header(); ?>
 
                         <div class="carousel-cell">
 							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
-							<div class="read-more-btn"><a href="<?php echo the_permalink() ?>" class="btn">Read More</a></div>
+							<a href="<?php echo the_permalink() ?>" class="btn mobile-read-more">Read More</a>
 							<div class="green-carousel-bar"></div>
                         </div>
 
@@ -45,6 +45,7 @@ get_header(); ?>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
 					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content') ?></p>
+					<a href="<?php echo the_permalink() ?>" class="desktop-read-more">More Sucess Stories</a>
 				</div>
 			</section> <!-- end stories -->
 

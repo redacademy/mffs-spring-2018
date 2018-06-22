@@ -27,6 +27,9 @@
       padding: 1rem 4rem;
     }
   }
+  @include desktop{
+    display: none;
+  }
 }
 .story-mffs {
   p:nth-child(3) {
@@ -47,3 +50,9 @@
 
   }
 }
+
+// .desktop-single-story-main{
+//     @include desktop{
+//     display: block;
+//   }
+// }

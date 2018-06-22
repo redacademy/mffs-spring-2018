@@ -55,22 +55,33 @@ ul {
         box-shadow: -1.5rem -1rem $color__button-yellow;
       }
     }
-    .carousel-cell a {
+  }
+
+  .story-info {
+    .desktop-read-more{
+      display: none;
       @include desktop {
-        position: absolute;
-        right: -31vw;
-        top: 70%;
-        border: 3px solid $color__button-yellow;
-        border-radius: 20px;
-        font-size: 2rem;
+        display: block;
+        height: 10vh;
+        width: 34vw;
+        min-width: 34vw;
+        color: $color__green_main;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: .25rem;
+        border: 4px solid $color__button-yellow;
+        border-radius: 15px;
+        margin: 0 auto;
         &:hover {
           background: lighten($color__button-yellow, 10%);
-          transition: 0.75s;
-        }
+          transition: 0.75s; 
       }
     }
+    a{
+      color: red;
+    }
   }
-  .story-info {
+
     @include desktop {
       border-bottom: none;
       position: absolute;
