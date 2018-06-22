@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area about">
 		<main id="main" class="site-main" role="main">
 
-		<?php 
+		<?php
 			if(have_posts()):
 			while ( have_posts() ) : the_post(); ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
 			<h2>About Us  |</h2>
 			<a href="<?php echo home_url("/reports") ?>">View Annual Reports</a>
 		</div>
-			
+
 		<!-- first section with carousel -->
 			<section class="about-carousel">
 				<div class="main-carousel">

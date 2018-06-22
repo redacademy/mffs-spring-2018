@@ -56,7 +56,7 @@ ul {
     .carousel-cell img{
       @include desktop{
       height: 25rem;
-      box-shadow: -1.5rem -1rem $color__button-yellow; 
+      box-shadow: -1.5rem -1rem $color__button-yellow;
     }
   }
     @include desktop{
@@ -87,7 +87,9 @@ ul {
     }
   }
 }
-
+.impact-title{
+  font-size:4vw;
+}
 
 .impact-grid {
   //grid for impact circles
@@ -99,7 +101,7 @@ ul {
   grid-template-columns: repeat(12, 1fr);
   font-size: 1.5rem;
   .impact-value {
-    font-size: 4rem;
+    font-size: 12vw;
     font-weight: 700;
   }
   & li:nth-of-type(1) {
@@ -337,8 +339,8 @@ ul {
 }
 
 .visible-desktop{
-  display: none !important;
+  display: none;
   @include desktop{
-    display: inline-block !important;
+    display:block;
   }
 }

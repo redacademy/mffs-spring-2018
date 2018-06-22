@@ -665,10 +665,55 @@ ul {
     max-width: 424px;
     font-weight: 400;
     font-size: 1.7rem; }
+    @media only screen and (min-width: 620px) {
+      .story-info p:nth-of-type(2) {
+        text-align: center; } }
+
+@media only screen and (min-width: 620px) {
+  .home .stories {
+    position: relative;
+    margin-top: 3rem; } }
+
+@media only screen and (min-width: 620px) {
+  .home .page-title {
+    display: none; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel {
+    width: 50%; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell {
+    height: 25rem; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell img {
+    height: 25rem;
+    -webkit-box-shadow: -1.5rem -1rem #f1d18a;
+            box-shadow: -1.5rem -1rem #f1d18a; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell a {
+    position: absolute;
+    right: -75%;
+    top: 60%;
+    border: 3px solid #f1d18a;
+    border-radius: 20px; } }
+
+@media only screen and (min-width: 620px) {
+  .home .story-info {
+    border-bottom: none;
+    position: absolute;
+    left: 59%;
+    top: 5%; } }
 
 @media only screen and (min-width: 620px) {
   .impact .section-title {
-    border-bottom: none; } }
+    border-bottom: none;
+    margin-left: 4rem; } }
+
+.impact-title {
+  font-size: 4vw; }
 
 .impact-grid {
   display: grid;
@@ -679,11 +724,11 @@ ul {
   grid-template-columns: repeat(12, 1fr);
   font-size: 1.5rem; }
   .impact-grid .impact-value {
-    font-size: 4rem;
+    font-size: 12vw;
     font-weight: 700; }
   .impact-grid li:nth-of-type(1) {
-    width: 200px;
-    height: 200px;
+    width: 38vw;
+    height: 38vw;
     overflow-wrap: break-word;
     grid-row: 1/span 5;
     grid-column: 2/span 6;
@@ -692,8 +737,8 @@ ul {
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(2) {
-    width: 200px;
-    height: 200px;
+    width: 38vw;
+    height: 38vw;
     overflow-wrap: break-word;
     grid-row: 1/span 5;
     grid-column: 8/span 12;
@@ -702,8 +747,8 @@ ul {
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(3) {
-    width: 200px;
-    height: 200px;
+    width: 38vw;
+    height: 38vw;
     overflow-wrap: break-word;
     grid-row: 5/span 9;
     grid-column: 5/span 9;
@@ -712,8 +757,8 @@ ul {
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(4) {
-    width: 200px;
-    height: 200px;
+    width: 38vw;
+    height: 38vw;
     overflow-wrap: break-word;
     grid-row: 9/span 13;
     grid-column: 2/span 6;
@@ -722,8 +767,8 @@ ul {
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff; }
   .impact-grid li:nth-of-type(5) {
-    width: 200px;
-    height: 200px;
+    width: 38vw;
+    height: 38vw;
     overflow-wrap: break-word;
     grid-row: 9/span 13;
     grid-column: 8/span 12;
@@ -758,7 +803,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto 5rem; } }
+    margin: auto 3rem; } }
 
 .section-title,
 .initiatives h2 {
@@ -779,15 +824,18 @@ ul {
     color: #0b2b34;
     border-bottom: 1px solid #0b2b34;
     font-size: 2.5rem;
-    margin-bottom: 0;
+    width: 35%;
+    margin-bottom: 2rem;
     margin-top: 0;
+    padding-bottom: 0;
     text-align: left; } }
 
 .initiatives img {
   -webkit-box-shadow: -1.5rem 1rem #f1d18a;
           box-shadow: -1.5rem 1rem #f1d18a;
-  margin-left: 3rem;
-  margin-right: 3rem; }
+  margin-left: 14%;
+  margin-right: 14%;
+  min-width: 40%; }
 
 .initiatives-content-wrapper {
   margin: 0 auto;
@@ -818,6 +866,18 @@ ul {
     display: -ms-flexbox;
     display: flex; } }
 
+@media only screen and (min-width: 620px) {
+  .desktop-mission-text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 65%;
+    margin: auto 0 auto 1rem; } }
+
 .mission-img {
   width: 250px;
   height: 250px;
@@ -829,9 +889,8 @@ ul {
     .mission-img {
       display: none;
       height: 100%;
-      width: 100%;
-      top: 0px;
-      text-align: right; } }
+      width: 35%;
+      top: 0px; } }
   @media only screen and (min-width: 620px) {
     .mission-img img {
       -webkit-box-shadow: 1rem 1rem #245865;
@@ -856,7 +915,11 @@ ul {
     padding: 0 1.5rem 1.5rem; }
     @media only screen and (min-width: 620px) {
       .mission p {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        margin: 0;
+        max-width: none;
+        width: 100%;
+        padding-left: 0; } }
 
 @media only screen and (min-width: 620px) {
   .languages {
@@ -867,7 +930,8 @@ ul {
 @media only screen and (min-width: 620px) {
   .languages h2 {
     font-size: 2.25rem;
-    margin-left: 0; } }
+    margin-left: 0;
+    width: 100%; } }
 
 .languages h3 {
   margin: 0 auto;
@@ -880,7 +944,8 @@ ul {
   margin: 2rem 0 6rem 0; }
   @media only screen and (min-width: 620px) {
     .language-img {
-      margin: 0; } }
+      margin: 0;
+      text-align: right; } }
   .language-img img {
     width: 40%;
     height: auto;
@@ -915,16 +980,16 @@ ul {
             flex-direction: column; } }
 
 .mobile {
-  display: block !important; }
+  display: inline-block !important; }
   @media only screen and (min-width: 620px) {
     .mobile {
       display: none !important; } }
 
 .visible-desktop {
-  display: none !important; }
+  display: none; }
   @media only screen and (min-width: 620px) {
     .visible-desktop {
-      display: block !important; } }
+      display: block; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
@@ -1468,26 +1533,66 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .about-refuse h2 {
     margin-top: 10rem; } }
 
-.internship {
-  font-size: 1.6rem;
+.internship .title-no-bg {
+  margin-top: 1rem;
+  font-size: 2rem;
   font-weight: 600; }
-  .internship h2 {
-    font-weight: 200; }
 
-.internship-title h2 {
-  margin-top: 1rem; }
+.internship .section-title {
+  font-size: 1.7rem;
+  font-weight: 600; }
 
-.internship-title img {
+.internship p {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.intern-wrapper-desktop img {
   max-width: 430px;
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
-.internship-title p {
-  text-align: center;
-  max-width: 33rem;
-  margin: 0 auto; }
+@media only screen and (min-width: 620px) {
+  .intern-wrapper-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5% 5%; }
+    .intern-wrapper-desktop img {
+      margin: 0;
+      height: 20vw; } }
+
+.internship-title .intern-text-wrapper p:nth-child(3),
+.internship-title .intern-text-wrapper p:nth-child(4) {
+  display: none; }
+
+@media only screen and (min-width: 620px) {
+  .internship-title .intern-text-wrapper p:nth-child(3),
+  .internship-title .intern-text-wrapper p:nth-child(4) {
+    display: block;
+    text-align: left;
+    line-height: 1.7rem;
+    font-size: 1.1rem; } }
+
+.internship-title .intern-text-wrapper p:nth-child(4) a {
+  text-decoration: underline; }
+
+.internship-title .intern-text-wrapper .visible-desktop {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem; }
+
+@media only screen and (min-width: 620px) {
+  .internship-title .intern-text-wrapper p:nth-child(6) {
+    display: none; } }
+
+.internship-title .inten-desk-link {
+  text-decoration: underline; }
 
 .internship-contact {
   margin-bottom: 6rem;
@@ -1498,9 +1603,20 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     color: #0b2b34;
     border-bottom: 1.2px solid #0b2b34;
     padding-bottom: 1px; }
+  @media only screen and (min-width: 620px) {
+    .internship-contact {
+      display: none; } }
 
 .internship-why {
   text-align: center; }
+  @media only screen and (min-width: 620px) {
+    .internship-why h2 {
+      background: none;
+      color: #0b2b34;
+      margin: 2rem 0; }
+    .internship-why p:nth-child(4),
+    .internship-why p:nth-child(5) {
+      display: none; } }
   .internship-why p:nth-last-of-type(1) {
     max-width: 33rem;
     margin: 0 auto;
@@ -1524,16 +1640,24 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   padding-top: 2rem; }
 
 .internship-requirements p {
-  max-width: 35rem;
   margin: 0 auto;
-  padding-bottom: 2rem;
-  padding-top: 2rem; }
+  padding: 2rem 0;
+  text-align: center;
+  max-width: 30rem; }
 
 .internship-requirements .yellow-dots {
   text-align: center;
   color: #f1d18a;
   font-size: 3rem;
   letter-spacing: -4px; }
+
+@media only screen and (min-width: 620px) {
+  .internship-requirements h2.section-title {
+    display: none; }
+  .internship-requirements .yellow-dots {
+    display: none; }
+  .internship-requirements p:nth-child(1) {
+    display: none; } }
 
 .requirements-grid li:nth-last-child(1) div {
   display: none; }

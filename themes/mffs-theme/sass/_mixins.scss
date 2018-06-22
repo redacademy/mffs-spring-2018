@@ -82,8 +82,8 @@
 
 @mixin impact-grid-circle($row, $col) {
   //using mixin for impact grid circles
-  width: 200px;
-  height: 200px;
+  width: 38vw;
+  height: 38vw;
   overflow-wrap: break-word;
   grid-row: $row;
   grid-column: $col;
