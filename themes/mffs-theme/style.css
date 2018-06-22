@@ -695,15 +695,15 @@ ul {
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell a {
     position: absolute;
-    right: -80%;
+    right: -31vw;
     top: 70%;
     border: 3px solid #f1d18a;
     border-radius: 20px;
     font-size: 2rem; }
     .home .main-carousel .carousel-cell a:hover {
       background: #f6e3b8;
-      -webkit-transition: .75s;
-      transition: .75s; } }
+      -webkit-transition: 0.75s;
+      transition: 0.75s; } }
 
 @media only screen and (min-width: 620px) {
   .home .story-info {
@@ -817,11 +817,17 @@ ul {
   margin-top: 6rem; }
 
 @media only screen and (min-width: 620px) {
-  .impact, .initiatives, .mission, .languages {
+  .impact,
+  .initiatives,
+  .mission,
+  .languages {
     margin: 5rem 2rem; } }
 
 @media only screen and (min-width: 620px) {
-  .impact h2, .initiatives h2, .mission h2, .languages h2 {
+  .impact h2,
+  .initiatives h2,
+  .mission h2,
+  .languages h2 {
     background: none;
     color: #0b2b34;
     border-bottom: 1px solid #0b2b34;
@@ -983,16 +989,16 @@ ul {
             flex-direction: column; } }
 
 .mobile {
-  display: inline-block !important; }
+  display: block; }
   @media only screen and (min-width: 620px) {
     .mobile {
-      display: none !important; } }
+      display: none; } }
 
 .visible-desktop {
-  display: none !important; }
+  display: none; }
   @media only screen and (min-width: 620px) {
     .visible-desktop {
-      display: inline-block !important; } }
+      display: block; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
