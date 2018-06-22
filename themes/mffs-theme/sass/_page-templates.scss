@@ -37,6 +37,7 @@ ul {
     @include desktop{
       position: relative;
       margin-top: 3rem;
+      
     }
   }
     .page-title{
@@ -59,13 +60,18 @@ ul {
       box-shadow: -1.5rem -1rem $color__button-yellow; 
     }
   }
-    @include desktop{
     .carousel-cell a{
+      @include desktop{
       position: absolute;
-      right: -75%;
-      top: 60%;
+      right: -80%;
+      top: 70%;
       border: 3px solid $color__button-yellow;
       border-radius: 20px;
+      font-size: 2rem;
+      &:hover{
+        background: lighten($color__button-yellow, 10%);
+        transition: .75s;
+      }
       }
     }
   }
@@ -161,8 +167,8 @@ ul {
       color: $color__text-main;
       border-bottom: 1px solid $color__text-main;
       font-size: 2.5rem;
-      width: 35%;
-      margin-bottom: 2rem;
+      width: 100%;
+      margin-bottom: 2%;
       margin-top: 0;
       padding-bottom: 0;
       text-align: left;
@@ -269,6 +275,7 @@ ul {
 .languages {
   @include desktop{
     display: flex;
+    width: 100%;
   }
   h2{
     @include desktop{

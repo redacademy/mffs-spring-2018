@@ -665,10 +665,57 @@ ul {
     max-width: 424px;
     font-weight: 400;
     font-size: 1.7rem; }
+    @media only screen and (min-width: 620px) {
+      .story-info p:nth-of-type(2) {
+        text-align: center; } }
+
+@media only screen and (min-width: 620px) {
+  .home .stories {
+    position: relative;
+    margin-top: 3rem; } }
+
+@media only screen and (min-width: 620px) {
+  .home .page-title {
+    display: none; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel {
+    width: 50%; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell {
+    height: 25rem; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell img {
+    height: 25rem;
+    -webkit-box-shadow: -1.5rem -1rem #f1d18a;
+            box-shadow: -1.5rem -1rem #f1d18a; } }
+
+@media only screen and (min-width: 620px) {
+  .home .main-carousel .carousel-cell a {
+    position: absolute;
+    right: -80%;
+    top: 70%;
+    border: 3px solid #f1d18a;
+    border-radius: 20px;
+    font-size: 2rem; }
+    .home .main-carousel .carousel-cell a:hover {
+      background: #f6e3b8;
+      -webkit-transition: .75s;
+      transition: .75s; } }
+
+@media only screen and (min-width: 620px) {
+  .home .story-info {
+    border-bottom: none;
+    position: absolute;
+    left: 59%;
+    top: 5%; } }
 
 @media only screen and (min-width: 620px) {
   .impact .section-title {
-    border-bottom: none; } }
+    border-bottom: none;
+    margin-left: 4rem; } }
 
 .impact-grid {
   display: grid;
@@ -758,7 +805,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto 5rem; } }
+    margin: auto 3rem; } }
 
 .section-title,
 .initiatives h2 {
@@ -779,15 +826,18 @@ ul {
     color: #0b2b34;
     border-bottom: 1px solid #0b2b34;
     font-size: 2.5rem;
-    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: 2%;
     margin-top: 0;
+    padding-bottom: 0;
     text-align: left; } }
 
 .initiatives img {
   -webkit-box-shadow: -1.5rem 1rem #f1d18a;
           box-shadow: -1.5rem 1rem #f1d18a;
-  margin-left: 3rem;
-  margin-right: 3rem; }
+  margin-left: 14%;
+  margin-right: 14%;
+  min-width: 40%; }
 
 .initiatives-content-wrapper {
   margin: 0 auto;
@@ -818,6 +868,18 @@ ul {
     display: -ms-flexbox;
     display: flex; } }
 
+@media only screen and (min-width: 620px) {
+  .desktop-mission-text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 65%;
+    margin: auto 0 auto 1rem; } }
+
 .mission-img {
   width: 250px;
   height: 250px;
@@ -829,9 +891,8 @@ ul {
     .mission-img {
       display: none;
       height: 100%;
-      width: 100%;
-      top: 0px;
-      text-align: right; } }
+      width: 35%;
+      top: 0px; } }
   @media only screen and (min-width: 620px) {
     .mission-img img {
       -webkit-box-shadow: 1rem 1rem #245865;
@@ -856,18 +917,24 @@ ul {
     padding: 0 1.5rem 1.5rem; }
     @media only screen and (min-width: 620px) {
       .mission p {
-        font-size: 1.5rem; } }
+        font-size: 1.5rem;
+        margin: 0;
+        max-width: none;
+        width: 100%;
+        padding-left: 0; } }
 
 @media only screen and (min-width: 620px) {
   .languages {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    width: 100%; } }
 
 @media only screen and (min-width: 620px) {
   .languages h2 {
     font-size: 2.25rem;
-    margin-left: 0; } }
+    margin-left: 0;
+    width: 100%; } }
 
 .languages h3 {
   margin: 0 auto;
@@ -880,7 +947,8 @@ ul {
   margin: 2rem 0 6rem 0; }
   @media only screen and (min-width: 620px) {
     .language-img {
-      margin: 0; } }
+      margin: 0;
+      text-align: right; } }
   .language-img img {
     width: 40%;
     height: auto;
@@ -915,7 +983,7 @@ ul {
             flex-direction: column; } }
 
 .mobile {
-  display: block !important; }
+  display: inline-block !important; }
   @media only screen and (min-width: 620px) {
     .mobile {
       display: none !important; } }
@@ -924,7 +992,7 @@ ul {
   display: none !important; }
   @media only screen and (min-width: 620px) {
     .visible-desktop {
-      display: block !important; } }
+      display: inline-block !important; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
