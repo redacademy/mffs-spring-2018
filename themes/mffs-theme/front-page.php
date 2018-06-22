@@ -128,9 +128,9 @@ get_header(); ?>
 			</section><!-- end languages -->
 
 				<?php endwhile;
-			else :
-		endif;
-		?>
+				else :
+				endif;
+				?>
 
 
 		</main><!-- #main -->

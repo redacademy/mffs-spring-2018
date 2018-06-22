@@ -4,6 +4,14 @@
     margin: 0 auto;
     max-width: 32rem;
     padding: 2rem 0;
+    @include desktop {
+      font-size: 2.5rem;
+      text-align: left;
+      margin-right: 0;
+      padding: 0;
+      max-width: 100%;
+      margin-bottom: 3rem;
+    }
   }
   select {
     color: $color__button-dark-green;
@@ -17,10 +25,39 @@
       right #fff;
     -webkit-appearance: none;
     background-position-x: 270px;
+    @include desktop {
+      transform: scale(1.7);
+      margin-top: 2rem;
+    }
+  }
+  a {
+    @include desktop {
+      margin-top: 2rem;
+    }
   }
 }
 
-.doate-where-grid {
+.donate-where {
+  .section-title {
+    @include desktop {
+      background: none;
+      margin: 0;
+      font-size: 3rem;
+      color: $color__text-main;
+    }
+  }
+  a {
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.donate-where-grid {
+  @include desktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
   .donate-where-single {
     margin: 8rem 0;
 
@@ -29,6 +66,9 @@
       text-align: center;
       margin: 2rem 3rem;
       font-weight: 600;
+      @include desktop {
+        font-size: 1.3rem;
+      }
     }
     &:nth-child(3) p {
       margin-bottom: 10rem;
@@ -43,21 +83,37 @@
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
   & li:nth-child(2) {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    @include desktop {
+      margin-bottom: 0;
+    }
   }
   & li:nth-child(3) {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+}
+.donate-help,
+.donate-info {
+  @include desktop {
+    display: none;
   }
 }
 .donate-help {
   text-align: center;
   border-bottom: 2px solid $color__button-yellow;
+
   & h2:nth-child(1) {
     margin: 10rem 0 5rem;
   }
@@ -96,4 +152,105 @@
 .donate-info-single h2 {
   margin-top: 5rem;
   margin-bottom: 1.5rem;
+}
+
+.page-id-23 {
+  .about-view-reports {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.donate-desktop-flex {
+  @include desktop {
+    display: flex;
+    margin-top: 4rem;
+    .donate-testimonials {
+      flex: 0 0 65%;
+      max-width: 50%;
+      .main-carousel {
+        overflow: hidden;
+      }
+    }
+    .donate-dropdown-button {
+      flex: 1;
+    }
+  }
+}
+
+.donate-redirect {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.donate-desktop-impact {
+  display: none;
+  @include desktop {
+    display: flex;
+    .impact {
+      width: 100%;
+      .section-title {
+        margin-left: 40%;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        width: auto;
+      }
+    }
+  }
+}
+
+.donate-desktop-help {
+  display: none;
+  @include desktop {
+    display: block;
+    h2 {
+      font-size: 3rem;
+      text-align: left;
+      margin-left: 3rem;
+    }
+  }
+}
+
+.donate-desktop-help-grid-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  p {
+    display: inline-block;
+    margin-left: 5rem;
+    max-width: 50%;
+    &:nth-last-child(3) {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+  }
+  img {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+  }
+}
+
+.donate-desktop-help-grid-bottom {
+  .donate-info-grid {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      width: 60%;
+      margin: 0;
+    }
+  }
 }
