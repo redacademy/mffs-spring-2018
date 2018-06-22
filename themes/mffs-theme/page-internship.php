@@ -75,7 +75,7 @@ get_header(); ?>
             </section>
 
             <!-- fifth contact section -->
-            <section class="internship-contact">
+            <section class="internship-contact-end">
                 <h2 class="section-title">How to apply</h2>
                 <p>Please cntact</p>
                 <a href="<?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?>"><?php echo CFS()->get( 'mffs_internship_contact', 19 ) ?></a>
