@@ -19,11 +19,15 @@ get_header(); ?>
 			<section class="stories">
 				<h2 class="story-title page-title">Moving Forward Family Services</h2>
 
-					<div class="main-carousel">
+					
 
                         <?php $args = array('post_type' => 'story'); ?>
                         <?php $loop = new WP_Query($args); ?>
-                        <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<?php if ( $loop->have_posts() ) : ?>
+
+						<div class="main-carousel">
+
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                         <div class="carousel-cell">
 							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
@@ -31,22 +35,24 @@ get_header(); ?>
 							<div class="green-carousel-bar"></div>
                         </div>
 
+                        <?php endwhile; ?>  
 
-
-                        <?php endwhile; ?>
-
-                        <?php else: ?>
-                            <h1>No posts here!</h1>
-                        <?php endif; ?>
-                        <?php wp_reset_postdata(); ?>
-
-                    </div>
+                    </div><!-- main-carousel -->
 
 				<div class="story-info">
-					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title') ?></h2>
-					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content') ?></p>
+					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title', 12) ?></h2>
+
+					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12) ?></p>
+
 					<a href="<?php echo the_permalink() ?>" class="desktop-read-more">More Sucess Stories</a>
+
 				</div>
+
+				 <?php else: ?>
+					<h1>No posts here!</h1>
+				<?php endif; ?>
+				<?php wp_reset_postdata(); ?>
+						
 			</section> <!-- end stories -->
 
 			<!-- second section with impact circles stats -->

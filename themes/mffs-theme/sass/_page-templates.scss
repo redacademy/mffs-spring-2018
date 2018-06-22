@@ -59,29 +59,29 @@ ul {
   }
 
   .story-info {
-    .desktop-read-more{
+    .desktop-read-more {
       display: none;
       @include desktop {
         display: block;
-        height: 10vh;
-        width: 34vw;
-        min-width: 34vw;
+        // height: 10vh;
+        // // width: 34vw;
+        // // min-width: 34vw;
         color: $color__green_main;
         font-size: 1.5rem;
         text-align: center;
-        padding-top: .25rem;
+        padding-top: 0.25rem;
         border: 4px solid $color__button-yellow;
         border-radius: 15px;
         margin: 0 auto;
         &:hover {
           background: lighten($color__button-yellow, 10%);
-          transition: 0.75s; 
+          transition: 0.75s;
+        }
+      }
+      a {
+        color: red;
       }
     }
-    a{
-      color: red;
-    }
-  }
 
     @include desktop {
       border-bottom: none;

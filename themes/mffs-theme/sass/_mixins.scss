@@ -82,17 +82,21 @@
 
 @mixin impact-grid-circle($row, $col) {
   //using mixin for impact grid circles
-  width: 38vw;
-  height: 38vw;
   overflow-wrap: break-word;
   grid-row: $row;
   grid-column: $col;
   background: $color__button-yellow;
   border-radius: 50%;
   box-shadow: inset 4px 6px 25px #fff; //inner shadow effect
+  width: 90%;
+  height: 96%;
+  @include desktop {
+    width: 25%;
+    height: auto;
+  }
 }
 
-@mixin reset-to-link{
+@mixin reset-to-link {
   color: $color__text-main;
   border-radius: 0;
   padding: 0;
