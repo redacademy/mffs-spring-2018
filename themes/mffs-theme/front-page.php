@@ -27,7 +27,7 @@ get_header(); ?>
 
                         <div class="carousel-cell">
 							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
-							<a href="<?php echo the_permalink() ?>" class="btn">Read More</a>
+							<div class="read-more-btn"><a href="<?php echo the_permalink() ?>" class="btn">Read More</a></div>
 							<div class="green-carousel-bar"></div>
                         </div>
 
