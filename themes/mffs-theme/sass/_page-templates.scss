@@ -26,6 +26,56 @@ ul {
     max-width: 424px;
     font-weight: 400;
     font-size: 1.7rem;
+      @include desktop{
+      text-align: center;
+      }
+  }
+}
+
+.home{
+  .stories{
+    @include desktop{
+      position: relative;
+      margin-top: 3rem;
+    }
+  }
+    .page-title{
+      @include desktop{
+      display: none;
+    }
+  }
+  .main-carousel{
+    @include desktop{
+      width: 50%;
+    }
+    .carousel-cell{
+    @include desktop{
+      height: 25rem;
+      }
+    }
+    .carousel-cell img{
+      @include desktop{
+      height: 25rem;
+      box-shadow: -1.5rem -1rem $color__button-yellow; 
+    }
+  }
+    @include desktop{
+    .carousel-cell a{
+      position: absolute;
+      right: -75%;
+      top: 60%;
+      border: 3px solid $color__button-yellow;
+      border-radius: 20px;
+      }
+    }
+  }
+  .story-info{
+    @include desktop{
+      border-bottom: none;
+      position: absolute;
+      left: 59%;
+      top: 5%;
+    }
   }
 }
 
@@ -33,6 +83,7 @@ ul {
   .section-title{
     @include desktop{
       border-bottom: none;
+      margin-left: 4rem;
     }
   }
 }
@@ -84,7 +135,7 @@ ul {
     @include desktop{
       display: flex;
       flex-direction: column;
-      margin: auto 5rem;
+      margin: auto 3rem;
     }
   }
 }
@@ -110,8 +161,10 @@ ul {
       color: $color__text-main;
       border-bottom: 1px solid $color__text-main;
       font-size: 2.5rem;
-      margin-bottom: 0;
+      width: 35%;
+      margin-bottom: 2rem;
       margin-top: 0;
+      padding-bottom: 0;
       text-align: left;
     }
   }
@@ -119,8 +172,9 @@ ul {
 
 .initiatives img{
   box-shadow: -1.5rem 1rem $color__button-yellow;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 14%;
+  margin-right: 14%;
+  min-width: 40%;
 }
 
 .initiatives-content-wrapper {
@@ -149,6 +203,16 @@ ul {
 .mission{
   @include desktop{
     display: flex;
+
+  }
+}
+
+.desktop-mission-text-wrapper{
+  @include desktop{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: auto 0 auto 1rem;
   }
 }
 
@@ -163,9 +227,8 @@ ul {
   @include desktop{
     display: none;
     height: 100%;
-    width: 100%;
+    width: 35%;
     top: 0px;
-    text-align: right;
   }
   img{
     @include desktop{
@@ -195,6 +258,10 @@ ul {
     padding:0 1.5rem 1.5rem;
     @include desktop{
       font-size: 1.5rem;
+      margin: 0;
+      max-width: none;
+      width: 100%;
+      padding-left: 0;
     }
   }
 }
@@ -207,6 +274,7 @@ ul {
     @include desktop{
       font-size: 2.25rem;
       margin-left: 0;
+      width: 100%;
     }
   }
   h3 {
@@ -223,6 +291,7 @@ ul {
   margin: 2rem 0 6rem 0;
   @include desktop{
     margin: 0;
+    text-align: right;
   }
   img {
     width: 40%;
@@ -261,7 +330,7 @@ ul {
 }
 
 .mobile{
-  display: block !important;
+  display: inline-block !important;
   @include desktop{
     display: none !important;
   }
@@ -270,6 +339,6 @@ ul {
 .visible-desktop{
   display: none !important;
   @include desktop{
-    display: block !important;
+    display: inline-block !important;
   }
 }

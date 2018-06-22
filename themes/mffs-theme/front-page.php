@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<!-- First section with testomonials carousel -->
 			<section class="stories">
-				<h2 class="story-title">Moving Forward Family Services</h2>
+				<h2 class="story-title page-title">Moving Forward Family Services</h2>
 
 					<div class="main-carousel">
 
@@ -85,16 +85,18 @@ get_header(); ?>
 
 			<!-- fourth section mission -->
 			<section class="mission">
-				<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title') ?></h2>
+				<div class="desktop-mission-text-wrapper">
+					<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title') ?></h2>
 
-				<div class="section-wrapper">
-					<div class="green-img-bar">
-						<div class="mission-img">
-							<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
+					<div class="section-wrapper">
+						<div class="green-img-bar">
+							<div class="mission-img">
+								<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
+							</div>
 						</div>
-					</div>
 
-					<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
+						<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
+					</div>
 				</div>
 				<div class="visible-desktop mission-img">
 					<img src="<?php echo CFS()->get( 'mffs_desktop_mission_image') ?>">
