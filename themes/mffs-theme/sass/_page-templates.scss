@@ -62,7 +62,7 @@ ul {
     .carousel-cell a {
       @include desktop {
         position: absolute;
-        right: -80%;
+        right: -31vw;
         top: 70%;
         border: 3px solid $color__button-yellow;
         border-radius: 20px;

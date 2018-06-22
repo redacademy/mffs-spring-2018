@@ -695,7 +695,7 @@ ul {
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell a {
     position: absolute;
-    right: -80%;
+    right: -31vw;
     top: 70%;
     border: 3px solid #f1d18a;
     border-radius: 20px;
