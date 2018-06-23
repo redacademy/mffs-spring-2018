@@ -26,14 +26,14 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text"><?php esc_html( single_post_title() ); ?></h1>
 				</header>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<?php get_template_part( 'template-parts/content' ); ?> <!-- TODO wp_kses-->
 
 			<?php endwhile; ?>
 
@@ -41,7 +41,7 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- TODO wp_kses-->
 
 		<?php endif; ?>
 
