@@ -30,8 +30,8 @@ get_header(); ?>
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                         <div class="carousel-cell">
-							<img class="carousel-image" src="<?php echo CFS()->get( 'mffs_success_image_top') ?>" alt="">
-							<a href="<?php echo the_permalink() ?>" class="btn mobile-read-more">Read More</a>
+							<img class="carousel-image" src="<?php echo esc_url( CFS()->get( 'mffs_success_image_top') ) ?>" alt="">
+							<a href="<?php echo esc_url( the_permalink() ) ?>" class="btn mobile-read-more">Read More</a>
 							<div class="green-carousel-bar"></div>
                         </div>
 
@@ -40,11 +40,11 @@ get_header(); ?>
                     </div><!-- main-carousel -->
 
 				<div class="story-info">
-					<h2 class="story-title"><?php echo CFS()->get( 'mffs_stories_section_title', 12) ?></h2>
+					<h2 class="story-title"><?php echo esc_html( CFS()->get( 'mffs_stories_section_title', 12) ) ?></h2>
 
-					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12) ?></p>
+					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12) ?></p> <!-- TODO wp_kses-->
 
-					<a href="<?php echo the_permalink() ?>" class="desktop-read-more">More Sucess Stories</a>
+					<a href="<?php echo esc_url( the_permalink() ) ?>" class="desktop-read-more">More Sucess Stories</a>
 
 				</div>
 
@@ -68,8 +68,8 @@ get_header(); ?>
 					$loop = CFS()->get( 'mffs_impact');
 						foreach ( $loop as $row ) { ?>
 						<li>
-							<span class='numscroller impact-value' data-min='1' data-max='<?php echo $row['mffs_stat_value'];?>' data-delay='10' data-increment='5'><?php echo $row['mffs_stat_value'];?></span>
-							<div class="impact-title"><?php echo $row['mffs_stat_title'];?></div>
+							<span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
+							<div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
 						</li>
 						<?php } ?>
 
@@ -80,12 +80,12 @@ get_header(); ?>
 			<!-- third section inititiaves-->
 			<section class="initiatives">
 				<div class="visible-desktop initiatives-img">
-					<img src="<?php echo CFS()->get( 'mffs_initiatives_img') ?>">
+					<img src="<?php echo esc_url( CFS()->get( 'mffs_initiatives_img') ) ?>">
 				</div>
 				<div class="desktop-initiatives-content-wrapper">
-					<h2 class="initiatives-title"><?php echo CFS()->get( 'mffs_initiatives_title') ?></h2>
+					<h2 class="initiatives-title"><?php echo esc_html( CFS()->get( 'mffs_initiatives_title') ) ?></h2>
 					<div class="initiatives-content-wrapper">
-						<p><?php echo CFS()->get( 'mffs_initiatives_content') ?></p>
+						<p><?php echo CFS()->get( 'mffs_initiatives_content' ) ?></p> <!-- TODO wp_kses-->
 					</div>
 				</div>
 			</section><!-- end inititiaves -->
@@ -93,20 +93,20 @@ get_header(); ?>
 			<!-- fourth section mission -->
 			<section class="mission">
 				<div class="desktop-mission-text-wrapper">
-					<h2 class="section-title"><?php echo CFS()->get( 'mffs_mission_title') ?></h2>
+					<h2 class="section-title"><?php echo esc_html( CFS()->get( 'mffs_mission_title') ) ?></h2>
 
 					<div class="section-wrapper">
 						<div class="green-img-bar">
 							<div class="mission-img">
-								<img src="<?php echo get_template_directory_uri();?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
+								<img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
 							</div>
 						</div>
 
-						<p><?php echo CFS()->get( 'mffs_mission_content') ?></p>
+						<p><?php echo CFS()->get( 'mffs_mission_content') ?></p> <!-- TODO wp_kses-->
 					</div>
 				</div>
 				<div class="visible-desktop mission-img">
-					<img src="<?php echo CFS()->get( 'mffs_desktop_mission_image') ?>">
+					<img src="<?php echo esc_url( CFS()->get( 'mffs_desktop_mission_image') ) ?>">
 				</div>
 			</section>	<!-- end mission -->
 
@@ -118,17 +118,17 @@ get_header(); ?>
 
 					<ul class="language-grid">
 					<?php
-						$loop = CFS()->get( 'mffs_languages_content');
+						$loop = CFS()->get( 'mffs_languages_content'); 
 							foreach ( $loop as $row ) { ?>
 							<li>
-								<?php echo $row['mffs_languages_single'];?>
+								<?php echo esc_html( $row['mffs_languages_single'] );?>
 							</li>
 							<?php } ?>
 
 					</ul>
 				</div>
 				<div class="language-img">
-					<img src="<?php echo CFS()->get( 'mffs_language_img') ?>" alt="">
+					<img src="<?php echo esc_url( CFS()->get( 'mffs_language_img') ) ?>" alt="">
 				</div>
 
 			</section><!-- end languages -->
