@@ -3,7 +3,7 @@
     max-width: 300px;
     display: block;
     margin: 0 auto;
-    padding: 1rem 0;
+    // padding: 1rem 0;
   }
   h2 {
     margin: 2rem 0;
@@ -27,16 +27,16 @@
       padding: 1rem 4rem;
     }
   }
-  @include desktop{
-    display: none;
+  @include desktop {
+    // display: none;
   }
 }
 .story-mffs {
   p:nth-child(3) {
     border-top: 2px solid $color__button-yellow;
     font-weight: 600;
-      font-size: 1.2rem;
-      padding: 2rem 4rem;
+    font-size: 1.2rem;
+    padding: 2rem 4rem;
   }
 }
 
@@ -47,7 +47,6 @@
     font-weight: 600;
     font-size: 1.2rem;
     padding: 2rem 4rem 8rem;
-
   }
 }
 
