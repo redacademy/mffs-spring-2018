@@ -34,13 +34,13 @@
                     <h2>Social Media</h2>
 						<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
 							<div  class="widget-area">
-								<?php dynamic_sidebar( 'sidebar-custom' ); ?>
+								<?php dynamic_sidebar( esc_html( 'sidebar-custom' ) ); ?>
 							</div>
 						<?php endif; ?>
 					</div>
                     <div class="news">
                         <p class="news-title">Newsletter</p>
-                        <a href="<?php echo home_url("/newsletter") ?>" class="news-subscribe">Click here to Subscribe!</a>
+                        <a href="<?php echo esc_url( home_url("/newsletter") ) ?>" class="news-subscribe">Click here to Subscribe!</a>
                     </div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
