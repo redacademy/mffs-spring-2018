@@ -31,7 +31,7 @@ get_header(); ?>
 						<li class="faq-section-single">
 
                             <!-- title for each faq section -->
-                            <h2 class="section-title"><?php echo $n++;?>. <?php echo $row['mffs_faq_section_title'];?></h2>
+                            <h2 class="section-title"><?php echo esc_html( $n++ );?>. <?php echo esc_html( $row['mffs_faq_section_title'] );?></h2>
 
                             <!-- list for single questions/ answers -->
                             <ul class="faq-single-grid">
@@ -48,15 +48,15 @@ get_header(); ?>
                                         
                                         <!-- yellow Q bubble Q1, Q2... -->
                                         <div class="faq-bubble">
-                                            <p>Q <?php echo $q++; ?></p>
+                                            <p>Q <?php echo esc_html( $q++ ); ?></p>
                                         </div>
 
                                         <!-- faq single question title -->
                                         <div class="faq-qest-ans-wrapper">
-                                        <h2 class="faq-question"><?php echo $row2['mffs_faq_question_single'];?></h2>
+                                        <h2 class="faq-question"><?php echo esc_html( $row2['mffs_faq_question_single'] );?></h2>
 
                                         <!-- faq single answer -->
-                                        <p class="faq-answer"><?php echo $row2['mffs_faq_answer_single'];?></p>
+                                        <p class="faq-answer"><?php echo esc_html( $row2['mffs_faq_answer_single'] );?></p>
                                         </div>
                                     </li> <!-- end faq single item -->
                                 <?php } ?>
