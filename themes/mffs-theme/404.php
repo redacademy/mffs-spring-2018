@@ -15,7 +15,7 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				
 				<header class="page-header">
-					<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/icons/MFFSLOGO.svg" alt=""></a>
+					<a href="<?php echo esc_url( get_home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/icons/MFFSLOGO.svg" alt=""></a>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
@@ -23,7 +23,7 @@ get_header(); ?>
 				</div><!-- .page-content -->
 
 				<div class="home-button">
-					<a href="<?php echo home_url() ?>">home</a>
+					<a href="<?php echo esc_url( home_url() ) ?>">home</a>
 				</div><!-- home button -->
 
 			</section><!-- .error-404 -->
