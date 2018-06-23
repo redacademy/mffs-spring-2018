@@ -63,7 +63,7 @@ get_header(); ?>
                         $loop = CFS()->get( 'mffs_impact', 12);
                             foreach ( $loop as $row ) { ?>
                             <li>
-                                <span class='numscroller impact-value' data-min='1' data-max='<?php esc_html( echo $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
+                                <span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
                                 <div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
                             </li>
                             <?php } ?>
