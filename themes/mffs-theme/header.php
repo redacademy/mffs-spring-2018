@@ -49,13 +49,13 @@
 
 				<!-- header middle logo -->
 				<div class="site-branding">
-					<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri()?>/assets/icons/leafs.svg" alt="">
+					<a href="<?php esc_url( echo get_home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() )?>/assets/icons/leafs.svg" alt="">
 					<p>mffs<span class="ca-tld">.ca</span></p></a>
 				</div><!-- .site-branding -->
 
 				<!-- donate button -->
 				<div class="donate-button">
-					<a href="<?php echo home_url("/donate") ?>">donate</a>
+					<a href="<?php echo esc_url( home_url("/donate") ) ?>">donate</a>
 				</div>
 
 
