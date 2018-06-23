@@ -18,23 +18,20 @@
   }
 }
 
-.internship{
-
-    .internship-contact
-    {
-      text-align: center;
-      a {
-        color: $color__text-main;
-        border-bottom: 1.2px solid $color__text-main;
-        padding-bottom: 1px;
-      }
-    @include desktop{
+.internship {
+  .internship-contact {
+    text-align: center;
+    a {
+      color: $color__text-main;
+      border-bottom: 1.2px solid $color__text-main;
+      padding-bottom: 1px;
+    }
+    @include desktop {
       display: none;
     }
-    }
+  }
 }
 .intern-wrapper-desktop {
-
   img {
     max-width: 430px;
     display: block;
@@ -167,11 +164,11 @@
         margin: 4rem 4rem;
         max-width: 350px;
         img {
-          max-width: 150px;
+          max-width: 200px;
         }
         &:nth-last-of-type(1) {
           img {
-            max-width: 110px;
+            max-width: 148px;
           }
         }
         &:nth-child(1) p {
@@ -199,22 +196,35 @@
     h2.section-title {
       display: none;
     }
-    h2.visible-desktop{
+    h2.visible-desktop {
       font-size: 2.5rem;
     }
-    .requirements-grid{
+    .requirements-grid {
       display: grid;
       grid-template-columns: repeat(3, auto);
-      & li:nth-child(4){
+      & li:nth-child(4) {
         grid-column: 1 / span 4;
       }
-      & li:nth-child(5){
+      & li:nth-child(5) {
         grid-column: 1 / span 4;
       }
-      & li:nth-child(6){
+      & li:nth-child(6) {
         grid-column: 1 / span 4;
       }
+      li {
 
+        h2{
+          font-size: 1.7rem;
+          font-weight: 800;
+          text-align: left;
+          margin: 0 0 0 2rem;
+        }
+        p {
+          max-width: 23vw;
+          text-align: left !important;
+          padding: 1rem 0 0 0;
+        }
+      }
     }
     .yellow-dots {
       display: none;
