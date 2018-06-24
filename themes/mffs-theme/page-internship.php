@@ -20,7 +20,7 @@ get_header(); ?>
                     <img src="<?php echo esc_url( CFS()->get( 'mffs_internship_img', 19 ) ) ?>" alt="">
                     <div class="intern-text-wrapper">
                         <h2 class="visible-desktop">Intern with us!</h2>
-                        <p><?php echo esc_html( CFS()->get( 'mffs_internship_description', 19 ) ) ?></p>
+                        <p><?php echo CFS()->get( 'mffs_internship_description', 19 ) ?></p>
                         <p><?php echo esc_html( CFS()->get( 'mffs_internship_text', 19 ) ) ?></p>
                     </div>
                 </div>
