@@ -1749,41 +1749,44 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     margin-left: 10%; }
     .internship-requirements .requirements-grid li:nth-child(4) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(4)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 164rem; }
       .internship-requirements .requirements-grid li:nth-child(4) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(4) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 2vw; }
       .internship-requirements .requirements-grid li:nth-child(4) h2 {
         margin: 6rem 0 0 25.5%;
         font-size: 2.8rem;
         font-weight: 600; }
     .internship-requirements .requirements-grid li:nth-child(5) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(5)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 173rem; }
       .internship-requirements .requirements-grid li:nth-child(5) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(5) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 3vw; }
     .internship-requirements .requirements-grid li:nth-child(6) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(6)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 183rem; }
       .internship-requirements .requirements-grid li:nth-child(6) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(6) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 4vw; }
     .internship-requirements .requirements-grid li:nth-child(1) {
       max-width: 22vw; }
     .internship-requirements .requirements-grid li:nth-child(2) {
