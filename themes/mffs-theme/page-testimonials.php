@@ -24,8 +24,8 @@ get_header(); ?>
 
                             <li class="testimonial-single">
                                 <i class="fas fa-quote-left"></i>
-                                <blockquote><?php echo $row['mffs_testimonial_text'];?></blockquote>
-                                <p><span class= "dash">&#8213;</span><?php echo $row['mffs_testimonial_author'];?></p>
+                                <blockquote><?php echo wp_kses( $row['mffs_testimonial_text'], wp_kses_allowed_html( 'post' ) );?></blockquote>
+                                <p><span class= "dash">&#8213;</span><?php echo esc_html( $row['mffs_testimonial_author'] );?></p>
                             </li>
 
 
