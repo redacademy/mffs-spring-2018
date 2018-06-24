@@ -53,10 +53,10 @@ get_header(); ?>
 
                                         <!-- faq single question title -->
                                         <div class="faq-qest-ans-wrapper">
-                                        <h2 class="faq-question"><?php echo esc_html( $row2['mffs_faq_question_single'] );?></h2>
+                                        <h2 class="faq-question"><?php echo wp_kses( $row2['mffs_faq_question_single'], wp_kses_allowed_html( 'post' ) );?></h2>
 
                                         <!-- faq single answer -->
-                                        <p class="faq-answer"><?php echo esc_html( $row2['mffs_faq_answer_single'] );?></p>
+                                        <p class="faq-answer"><?php echo wp_kses( $row2['mffs_faq_answer_single'], wp_kses_allowed_html( 'post' ) );?></p>
                                         </div>
                                     </li> <!-- end faq single item -->
                                 <?php } ?>
