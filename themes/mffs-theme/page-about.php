@@ -36,7 +36,7 @@ get_header(); ?>
 				</div>
 				<div class="desktop-about-quote">
 					<h2>An inclusive place for all of us</h2>
-					<?php echo CFS()->get( 'mffs_about_quotes') ?> <!-- TODO wp_kses-->
+					<?php echo wp_kses( CFS()->get( 'mffs_about_quotes'), wp_kses_allowed_html( 'post' ) ) ?>
 				</div>
 			</section> 	<!-- end about-arousel -->
 
@@ -62,7 +62,7 @@ get_header(); ?>
 			<!-- third section about-values -->
 			<section class="about-values">
 				<h2 class="section-title">Our Values</h2>
-				<p><?php echo esc_html( CFS()->get( 'mffs_our_values', 17 ) ) ?></p>
+				<p><?php echo wp_kses( CFS()->get( 'mffs_our_values', 17 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 			</section> <!-- end about-values -->
 
 			<!-- fourth section about-team -->
@@ -71,10 +71,10 @@ get_header(); ?>
 
 				<ul class="team-grid">
 				<?php
-					$loop = esc_html( CFS()->get( 'mffs_our_team', 17 ) );
+					$loop = CFS()->get( 'mffs_our_team', 17 ) ;
 					$i =1;
 						foreach ( $loop as $row ) { ?>
-						<li class="team-member-single team-single-<?php echo $i++; ?>">
+						<li class="team-member-single team-single-<?php echo esc_url( $i++ ); ?>">
 							<img src="<?php echo esc_url( $row['mffs_team_img'] );?>" alt="">
 							<p><?php echo esc_html( $row['mffs_team_position'] );?></p>
 							<P><?php echo esc_html( $row['mffs_team_member_name'] );?></P>
@@ -93,10 +93,10 @@ get_header(); ?>
 				</div>
 				<ul class="awards-grid">
 				<?php
-					$loop = esc_html( CFS()->get( 'mffs_about_awards', 17 ) );
+					$loop = CFS()->get( 'mffs_about_awards', 17 ) ;
 						foreach ( $loop as $row ) { ?>
 						<li>
-							<?php echo esc_html( $row['mffs_about_awards_single'] );?>
+							<?php echo wp_kses( $row['mffs_about_awards_single'], wp_kses_allowed_html( 'post' ) ); ?>
 						</li>
 				<?php } ?>
 				</ul>
@@ -107,7 +107,7 @@ get_header(); ?>
 				<h2 class="section-title">Disclaimer</h2>
 				<ol class="disclaimer-grid">
 				<?php
-					$loop = esc_html( CFS()->get( 'mffs_about_disclaimer', 17) );
+					$loop = CFS()->get( 'mffs_about_disclaimer', 17);
 						foreach ( $loop as $row ) { ?>
 						<li>
 							<?php echo esc_html( $row['mffs_about_disclaimer_single'] );?>
