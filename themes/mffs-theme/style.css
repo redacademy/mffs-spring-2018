@@ -1657,10 +1657,29 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   text-align: center; }
   .internship-contact-end h2 {
     margin-bottom: 3rem; }
+    @media only screen and (min-width: 620px) {
+      .internship-contact-end h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        background: none;
+        color: #0b2b34;
+        margin: 8rem 0 1rem; } }
+  @media only screen and (min-width: 620px) {
+    .internship-contact-end p {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem; } }
   .internship-contact-end a {
     color: #0b2b34;
-    border-bottom: 1.2px solid #0b2b34;
+    text-decoration: underline;
     padding-bottom: 1px; }
+    @media only screen and (min-width: 620px) {
+      .internship-contact-end a {
+        color: #62c0da;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 10rem;
+        display: block; } }
 
 .internship-why {
   text-align: center; }
@@ -1749,41 +1768,44 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     margin-left: 10%; }
     .internship-requirements .requirements-grid li:nth-child(4) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(4)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 164rem; }
       .internship-requirements .requirements-grid li:nth-child(4) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(4) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 2vw; }
       .internship-requirements .requirements-grid li:nth-child(4) h2 {
         margin: 6rem 0 0 25.5%;
         font-size: 2.8rem;
         font-weight: 600; }
     .internship-requirements .requirements-grid li:nth-child(5) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(5)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 173rem; }
       .internship-requirements .requirements-grid li:nth-child(5) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(5) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 3vw; }
     .internship-requirements .requirements-grid li:nth-child(6) {
       grid-column: 1 / span 4; }
-      .internship-requirements .requirements-grid li:nth-child(6)::after {
-        content: url("../../assets/icons/check.svg");
-        position: absolute;
-        right: 67rem;
-        top: 183rem; }
       .internship-requirements .requirements-grid li:nth-child(6) p {
         font-size: 1.5rem;
         max-width: 40vw;
-        margin: 2rem 0 0 23rem; }
+        margin: 2rem 0 0 23rem;
+        position: relative; }
+        .internship-requirements .requirements-grid li:nth-child(6) p::before {
+          content: url("../../assets/icons/check.svg");
+          position: absolute;
+          right: 45vw;
+          top: 4vw; }
     .internship-requirements .requirements-grid li:nth-child(1) {
       max-width: 22vw; }
     .internship-requirements .requirements-grid li:nth-child(2) {
@@ -3541,7 +3563,7 @@ p.faq-answer {
   .single-service .site-content nav a,
   .single-story .site-content nav a {
     font-size: 1.2rem;
-    color: #4a90e2; }
+    color: #62c0da; }
 
 .referrals-wrapper {
   text-align: center; }
@@ -3949,7 +3971,7 @@ p.faq-answer {
   .single-service .site-content nav a,
   .single-story .site-content nav a {
     font-size: 1.2rem;
-    color: #4a90e2; }
+    color: #62c0da; }
 
 .referrals-wrapper {
   text-align: center; }
