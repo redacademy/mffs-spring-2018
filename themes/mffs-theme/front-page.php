@@ -42,7 +42,7 @@ get_header(); ?>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo esc_html( CFS()->get( 'mffs_stories_section_title', 12) ) ?></h2>
 
-					<p class = "story-content"><?php echo CFS()->get( 'mffs_stories_section_content', 12) ?></p> <!-- TODO wp_kses-->
+					<p class = "story-content"><?php echo wp_kses( CFS()->get( 'mffs_stories_section_content', 12), wp_kses_allowed_html( 'post' )) ?></p>
 
 					<a href="<?php echo esc_url( the_permalink() ) ?>" class="desktop-read-more">More Sucess Stories</a>
 
@@ -85,7 +85,7 @@ get_header(); ?>
 				<div class="desktop-initiatives-content-wrapper">
 					<h2 class="initiatives-title"><?php echo esc_html( CFS()->get( 'mffs_initiatives_title') ) ?></h2>
 					<div class="initiatives-content-wrapper">
-						<p><?php echo CFS()->get( 'mffs_initiatives_content' ) ?></p> <!-- TODO wp_kses-->
+						<p><?php echo wp_kses( CFS()->get( 'mffs_initiatives_content' ), wp_kses_allowed_html( 'post' ) ) ?></p>
 					</div>
 				</div>
 			</section><!-- end inititiaves -->
@@ -102,7 +102,7 @@ get_header(); ?>
 							</div>
 						</div>
 
-						<p><?php echo CFS()->get( 'mffs_mission_content') ?></p> <!-- TODO wp_kses-->
+						<p><?php echo wp_kses( CFS()->get( 'mffs_mission_content'), wp_kses_allowed_html( 'post' ) ) ?></p>
 					</div>
 				</div>
 				<div class="visible-desktop mission-img">
