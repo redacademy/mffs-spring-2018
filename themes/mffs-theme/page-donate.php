@@ -83,7 +83,7 @@ get_header(); ?>
 						<li class="donate-where-single">
                             <img src="<?php echo esc_url( $row['mffs_donation_img_single'] );?>" alt="">
                             <h2 class="title-no-bg"><?php echo esc_html( $row['mffs_donation_single_title'] );?></h2>
-							<P><?php echo esc_html( $row['mffs_donation_single_text'] );?></P>
+							<P><?php echo wp_kses( $row['mffs_donation_single_text'], wp_kses_allowed_html( 'post' ) );?></P>
 						</li>
 						<?php } ?>
                 </ul>
