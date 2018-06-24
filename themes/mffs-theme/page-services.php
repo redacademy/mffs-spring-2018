@@ -25,7 +25,7 @@ get_header(); ?>
 								));
 								if (! empty( $service_posts) && ! is_wp_error( $service_posts )) : ?>
 								<?php foreach($service_posts as $term) : ?>
-										<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
+										<a href="<?php echo esc_url( get_the_permalink($term) ) ?>" class="btn"><?php echo esc_html( get_the_title($term) ) ?></a>
 							<?php endforeach; ?>
 
 							<?php  endif; ?>
@@ -45,7 +45,7 @@ get_header(); ?>
 								if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
 								<?php foreach($family_posts as $term) : ?>
 
-										<a href="<?php echo get_the_permalink($term) ?>" class="btn"><?php echo get_the_title($term) ?></a>
+										<a href="<?php echo esc_url( get_the_permalink($term) ) ?>" class="btn"><?php echo esc_html( get_the_title($term) ) ?></a>
 							<?php endforeach; ?>
 							<?php  endif; ?>
 							</section><!-- end family secion -->
@@ -60,11 +60,11 @@ get_header(); ?>
 									</h2>
 									<!-- asterisk that is going to be seen just in desktop size -->
 								<div class="fees-top">
-									<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
-									<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+									<div class="fees-single"><?php echo esc_html( CFS()->get( 'mffs_fees_individual', 15 ) ) ?></div>
+									<div class="fees-family"><?php echo esc_html( CFS()->get( 'mffs_fees_couples_family', 15 ) ) ?></div>
 								</div>
 								<div class="fees-bottom">
-									<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
+									<?php echo wp_kses( CFS()->get( 'mffs_fees_cant_afford', 15 ), wp_kses_allowed_html( 'post' ) ) ?>
 								</div>
 							</div>
 								<!-- end of services fee wrapper -->
@@ -88,8 +88,8 @@ get_header(); ?>
 							<div class="download-frm-btn-wrapper">
 								<p>Download and fill out the pre-intake form.</p>
 								<div class="form-btn-wrapper">
-									<a href="<?php echo CFS()->get( ‘mffs_services_pre_intake_form’, 15 )?>" download>Download Form</a>
-									<a href="<?php echo CFS()->get( ‘mffs_services_terms_of_service’, 15 )?>" download>Terms of Service</a>
+									<a href="<?php echo esc_url( CFS()->get( ‘mffs_services_pre_intake_form’, 15 ) )?>" download>Download Form</a>
+									<a href="<?php echo esc_url( CFS()->get( ‘mffs_services_terms_of_service’, 15 ) )?>" download>Terms of Service</a>
 								</div>
 								<p>* by downloading this form you agree to our terms of service</p>
 							</div>
@@ -100,7 +100,7 @@ get_header(); ?>
 					<!-- only visible in mobile -->
 					<div class="email-counseling mobile">
 						<input class="mobile" type="email" placeholder="example@gmail.com" onfocus="this.value=''" onblur="this.value=''">
-						<a class="mobile" href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 )?>" download>Submit</a>
+						<a class="mobile" href="<?php echo esc_url( CFS()->get( 'mffs_services_pre_intake_form', 15 ) )?>" download>Submit</a>
 					</div>
 					<p class="mobile">Next, fill out the form then proceed to choose one of the following</p>
 
