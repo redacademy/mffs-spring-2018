@@ -1657,10 +1657,25 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   text-align: center; }
   .internship-contact-end h2 {
     margin-bottom: 3rem; }
+    @media only screen and (min-width: 620px) {
+      .internship-contact-end h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        background: none;
+        color: #0b2b34;
+        margin: 8rem 0 3rem; } }
+  @media only screen and (min-width: 620px) {
+    .internship-contact-end p {
+      font-size: 2.2rem; } }
   .internship-contact-end a {
     color: #0b2b34;
-    border-bottom: 1.2px solid #0b2b34;
+    text-decoration: underline;
     padding-bottom: 1px; }
+    @media only screen and (min-width: 620px) {
+      .internship-contact-end a {
+        color: #62c0da;
+        font-size: 2.2rem;
+        font-weight: 600; } }
 
 .internship-why {
   text-align: center; }
@@ -3544,7 +3559,7 @@ p.faq-answer {
   .single-service .site-content nav a,
   .single-story .site-content nav a {
     font-size: 1.2rem;
-    color: #4a90e2; }
+    color: #62c0da; }
 
 .referrals-wrapper {
   text-align: center; }
@@ -3952,7 +3967,7 @@ p.faq-answer {
   .single-service .site-content nav a,
   .single-story .site-content nav a {
     font-size: 1.2rem;
-    color: #4a90e2; }
+    color: #62c0da; }
 
 .referrals-wrapper {
   text-align: center; }
