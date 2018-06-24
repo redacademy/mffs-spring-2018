@@ -13,14 +13,14 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 		<nav>
-			 <a href="<?php echo home_url("/services") ?>">Services</a>
+			 <a href="<?php echo esc_url( home_url("/services") ) ?>">Services</a>
 			 <i class="fas fa-caret-right"></i>
-			 <a href="<?php echo the_permalink() ?>"><?php echo the_title()?></a>
+			 <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html( the_title() )?></a>
 		</nav>
 
 		<section class="single-service-content">
-			<h2 class="section-title"><?php echo the_title() ?></h2>
-			<?php echo the_content()?>
+			<h2 class="section-title"><?php echo esc_html( the_title() ) ?></h2>
+			<?php echo esc_html( the_content() )?>
 		</section>
 
 				<!-- third section fees -->
@@ -28,11 +28,11 @@ get_header(); ?>
 					<h2 class="section-title">Fees</h2>
 
 					<div class="fees-top">
-						<div class="fees-single"><?php echo CFS()->get( 'mffs_fees_individual', 15 ) ?></div>
-						<div class="fees-family"><?php echo CFS()->get( 'mffs_fees_couples_family', 15 ) ?></div>
+						<div class="fees-single"><?php echo wp_kses( CFS()->get( 'mffs_fees_individual', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
+						<div class="fees-family"><?php echo wp_kses( CFS()->get( 'mffs_fees_couples_family', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
 					</div>
 					<div class="fees-bottom">
-						<?php echo CFS()->get( 'mffs_fees_cant_afford', 15 ) ?>
+						<?php echo wp_kses( CFS()->get( 'mffs_fees_cant_afford', 15 ), wp_kses_allowed_html( 'post' ) ) ?>
 					</div>
 
 				</section>
@@ -44,7 +44,7 @@ get_header(); ?>
 					<p>Provide us with your email and we’ll send you the pre-intake form.</p>
 					<div class="email-counseling">
 						<input type="email" placeholder="example@gmail.com" onfocus="this.value=''" onblur="this.value=''">
-						<a href="<?php echo CFS()->get( 'mffs_services_pre_intake_form', 15 ) ?>" download>Submit</a>
+						<a href="<?php echo esc_url( CFS()->get( 'mffs_services_pre_intake_form', 15 ) ) ?>" download>Submit</a>
 					</div>
 					<p>Next, fill out the form then proceed to choose one of the following</p>
 

@@ -82,7 +82,7 @@ get_header(); ?>
 						<?php } ?>
 				</ul>
 
-			  <p><?php echo esc_html( CFS()->get( 'mffs_team_description', 17 ) ) ?></p>
+			  <p><?php echo wp_kses( CFS()->get( 'mffs_team_description', 17 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 			</section><!-- end about-team -->
 
 			<!-- fifth section about-awards -->
@@ -110,7 +110,7 @@ get_header(); ?>
 					$loop = CFS()->get( 'mffs_about_disclaimer', 17);
 						foreach ( $loop as $row ) { ?>
 						<li>
-							<?php echo esc_html( $row['mffs_about_disclaimer_single'] );?>
+							<?php echo wp_kses( $row['mffs_about_disclaimer_single'], wp_kses_allowed_html( 'post' ) );?>
 						</li>
 				<?php } ?>
 				</ol>
@@ -119,7 +119,7 @@ get_header(); ?>
 			<!-- seventh section about-refuse -->
 			<section class="about-refuse">
 				<h2 class="section-title uppercase">Mffs right to refuse</h2>
-				<p><?php echo esc_html( CFS()->get( 'mffs_about_refuse', 17 ) ) ?></p>
+				<p><?php echo wp_kses( CFS()->get( 'mffs_about_refuse', 17 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 			</section> 	<!-- end about-refuse -->
 
 				<?php endwhile;
