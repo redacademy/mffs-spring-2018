@@ -19,7 +19,7 @@ get_header(); ?>
 
                 <div class="reports-info">
                     <h2 class="section-title">Annual Reports</h2>
-                    <p><?php echo esc_html( CFS()->get( 'mffs_reports_info', 99 ) ) ?></p>
+                    <p><?php echo wp_kses( CFS()->get( 'mffs_reports_info', 99 ), wp_kses_allowed_html( 'post' ) ) ?></p>
                 </div>
 
                 <div class="reports-img">
