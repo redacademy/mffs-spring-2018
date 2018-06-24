@@ -19,7 +19,7 @@ get_header(); ?>
 
                 <div class="reports-info">
                     <h2 class="section-title">Annual Reports</h2>
-                    <p><?php echo CFS()->get( 'mffs_reports_info', 99 ) ?></p>
+                    <p><?php echo esc_html( CFS()->get( 'mffs_reports_info', 99 ) ) ?></p>
                 </div>
 
                 <div class="reports-img">
@@ -28,7 +28,7 @@ get_header(); ?>
                         $loop = CFS()->get( 'reports_images', 99 );
                             foreach ( $loop as $row ) { ?>
                             <li class="reports-image-single">
-                                <img src="<?php echo $row['mffs_report_image_single'];?>" alt="">
+                                <img src="<?php echo esc_url( $row['mffs_report_image_single'] );?>" alt="">
                             </li>
                             <?php } ?>
                     </ul>
@@ -43,11 +43,11 @@ get_header(); ?>
                     <h2 class="section-title">Latest Version</h2>
                     <div class="reports-img-dl">
                        <div class="reports-image">
-                            <img src="<?php echo CFS()->get( 'mffs_reports_image', 99 ) ?>" alt="">
+                            <img src="<?php echo esc_url( CFS()->get( 'mffs_reports_image', 99 ) ) ?>" alt="">
                         </div>
                         <div class="reports-dl">
-                            <p><?php echo CFS()->get( 'mffs_reports_archive_info', 99 ) ?></p>
-                            <a href="<?php echo CFS()->get( 'mffs_annual_report', 99 ) ?>" download>Download</a>
+                            <p><?php echo esc_html( CFS()->get( 'mffs_reports_archive_info', 99 ) ) ?></p>
+                            <a href="<?php echo esc_url( CFS()->get( 'mffs_annual_report', 99 ) ) ?>" download>Download</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ get_header(); ?>
                         $loop = CFS()->get( 'mffs_report_archive', 99 );
                             foreach ( $loop as $row ) { ?>
                             <li class="reports-single">
-                                <a href="<?php echo $row['mffs_archive_report_single'];?>"></a>
+                                <a href="<?php echo esc_url( $row['mffs_archive_report_single'] );?>"></a>
                             </li>
                             <?php } ?>
                     </ul>
