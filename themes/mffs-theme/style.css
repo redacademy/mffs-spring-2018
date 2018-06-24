@@ -301,7 +301,7 @@ a {
   a:visited {
     color: #0b2b34; }
   a:hover, a:focus, a:active {
-    color: #0b2b34; }
+    color: #FFAF3F; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1640,7 +1640,9 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       text-decoration: underline; }
       .internship-title .intern-text-wrapper p:nth-child(3) a:hover,
       .internship-title .intern-text-wrapper p:nth-child(4) a:hover {
-        color: #819aa2; } }
+        color: #FFAF3F;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; } }
 
 .internship-title .intern-text-wrapper .visible-desktop {
   font-size: 3.5rem;
@@ -1743,22 +1745,57 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     margin: 0 0 2.5rem; }
   .internship-requirements .requirements-grid {
     display: grid;
-    grid-template-columns: repeat(3, auto); }
+    grid-template-columns: repeat(3, auto);
+    margin-left: 10%; }
     .internship-requirements .requirements-grid li:nth-child(4) {
       grid-column: 1 / span 4; }
+      .internship-requirements .requirements-grid li:nth-child(4)::after {
+        content: url("../../assets/icons/check.svg");
+        position: absolute;
+        right: 67rem;
+        top: 164rem; }
+      .internship-requirements .requirements-grid li:nth-child(4) p {
+        font-size: 1.5rem;
+        max-width: 40vw;
+        margin: 2rem 0 0 23rem; }
       .internship-requirements .requirements-grid li:nth-child(4) h2 {
-        margin: 0 0 0 39%; }
+        margin: 6rem 0 0 25.5%;
+        font-size: 2.8rem;
+        font-weight: 600; }
     .internship-requirements .requirements-grid li:nth-child(5) {
       grid-column: 1 / span 4; }
+      .internship-requirements .requirements-grid li:nth-child(5)::after {
+        content: url("../../assets/icons/check.svg");
+        position: absolute;
+        right: 67rem;
+        top: 173rem; }
+      .internship-requirements .requirements-grid li:nth-child(5) p {
+        font-size: 1.5rem;
+        max-width: 40vw;
+        margin: 2rem 0 0 23rem; }
     .internship-requirements .requirements-grid li:nth-child(6) {
       grid-column: 1 / span 4; }
+      .internship-requirements .requirements-grid li:nth-child(6)::after {
+        content: url("../../assets/icons/check.svg");
+        position: absolute;
+        right: 67rem;
+        top: 183rem; }
+      .internship-requirements .requirements-grid li:nth-child(6) p {
+        font-size: 1.5rem;
+        max-width: 40vw;
+        margin: 2rem 0 0 23rem; }
+    .internship-requirements .requirements-grid li:nth-child(1) {
+      max-width: 22vw; }
+    .internship-requirements .requirements-grid li:nth-child(2) {
+      max-width: 22vw; }
+    .internship-requirements .requirements-grid li:nth-child(3) {
+      max-width: 22vw; }
     .internship-requirements .requirements-grid li h2 {
       font-size: 1.5rem;
       font-weight: 800;
       text-align: left;
       margin: 0 0 0 2rem; }
     .internship-requirements .requirements-grid li p {
-      max-width: 23vw;
       text-align: left !important;
       padding: 1rem 0 0 0; }
   .internship-requirements .yellow-dots {
