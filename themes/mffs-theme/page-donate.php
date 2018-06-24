@@ -30,7 +30,7 @@ get_header(); ?>
 
                             <div class="carousel-cell">
                                 <img class="carousel-image" src="<?php echo esc_url( $row['mffs_donate_carousel_image'] );?>" alt="">
-                                <p><?php echo esc_html( $row['mffs_donate_carousel_text'] );?></p>
+                                <p><?php echo wp_kses( $row['mffs_donate_carousel_text'], wp_kses_allowed_html( 'post' ) );?></p>
                             </div>
 
                             <?php } ?>
