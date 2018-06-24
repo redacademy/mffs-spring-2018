@@ -100,7 +100,7 @@ get_header(); ?>
                 <a href="<?php echo esc_url( CFS()->get( 'mffs_donation_partner_url', 23 ) ) ?>" target="_blank">
                     <img src="<?php echo esc_url( CFS()->get( 'mffs_donation_partner_img', 23 ) ) ?>" alt=""/>
                 </a>
- <!-- TODO wp_kses--><?php echo CFS()->get( 'mffs_donation_partner_description_text', 23 ) ?>
+                <?php echo wp_kses( CFS()->get( 'mffs_donation_partner_description_text', 23 ), wp_kses_allowed_html( 'post' ) ) ?>
             </section><!-- end donate help -->
 
             <!-- fifthe section donation info -->
@@ -111,7 +111,7 @@ get_header(); ?>
 						foreach ( $loop as $row ) { ?>
 						<li class="donate-info-single">
                             <h2 class="title-no-bg"><?php echo esc_html( $row['mffs_donation_info_title'] );?></h2>
-		<!-- TODO wp_kses--><P><?php echo $row['mffs_donation_info_text'];?></P>
+		                    <P><?php echo wp_kses( $row['mffs_donation_info_text'], wp_kses_allowed_html( 'post' ) );?></P>
 						</li>
 						<?php } ?>
                 </ul>
@@ -121,7 +121,7 @@ get_header(); ?>
                 <h2 class="help-title">How else can you help?</h2>
                 <div class="donate-desktop-help-grid-top">
                     <h2 class="count">Donate while shopping for groceries!</h2>
-    <!-- TODO wp_kses--><?php echo CFS()->get( 'mffs_desktop_donation_partner_description_text', 23 ) ?>
+                    <?php echo wp_kses( CFS()->get( 'mffs_desktop_donation_partner_description_text', 23 ), wp_kses_allowed_html( 'post' ) ) ?>
                     <a href="<?php echo esc_url( CFS()->get( 'mffs_donation_partner_url', 23 ) ) ?>" target="_blank">
                         <img src="<?php echo esc_url( CFS()->get( 'mffs_donation_partner_img', 23 ) ) ?>" alt=""/>
                     </a>
@@ -133,7 +133,7 @@ get_header(); ?>
                             foreach ( $loop as $row ) { ?>
                             <li class="donate-info-single">
                                 <h2 class="title-no-bg count"><?php echo esc_html( $row['mffs_donation_info_title'] );?></h2>
-            <!-- TODO wp_kses--><?php echo $row['mffs_donation_info_text'];?>
+                                <?php echo wp_kses( $row['mffs_donation_info_text'], wp_kses_allowed_html( 'post' ));?>
                             </li>
                             <?php } ?>
                     </ul>
