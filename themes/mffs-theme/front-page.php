@@ -42,7 +42,7 @@ get_header(); ?>
 				<div class="story-info">
 					<h2 class="story-title"><?php echo esc_html( CFS()->get( 'mffs_stories_section_title', 12) ) ?></h2>
 
-					<p class = "story-content"><?php echo wp_kses( CFS()->get( 'mffs_stories_section_content', 12), wp_kses_allowed_html( 'post' )) ?></p>
+					<p class = "story-content"><?php echo wp_kses( CFS()->get( 'mffs_stories_section_content', 12), wp_kses_allowed_html( 'post' ) ) ?></p>
 
 					<a href="<?php echo esc_url( the_permalink() ) ?>" class="desktop-read-more">More Sucess Stories</a>
 
