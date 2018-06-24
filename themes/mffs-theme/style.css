@@ -1583,6 +1583,9 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
 .internship .section-title {
   font-size: 1.7rem;
   font-weight: 600; }
+  @media only screen and (min-width: 620px) {
+    .internship .section-title {
+      font-size: 3rem; } }
 
 .internship p {
   text-align: center;
@@ -1631,11 +1634,17 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     display: block;
     text-align: left;
     line-height: 2.5rem;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+    .internship-title .intern-text-wrapper p:nth-child(3) a,
+    .internship-title .intern-text-wrapper p:nth-child(4) a {
+      text-decoration: underline; }
+      .internship-title .intern-text-wrapper p:nth-child(3) a:hover,
+      .internship-title .intern-text-wrapper p:nth-child(4) a:hover {
+        color: #819aa2; } }
 
 .internship-title .intern-text-wrapper .visible-desktop {
   font-size: 3.5rem;
-  margin: 0 0 .4rem; }
+  margin: 0 0 0.4rem; }
 
 @media only screen and (min-width: 620px) {
   .internship-title .intern-text-wrapper p:nth-child(6) {
@@ -1671,7 +1680,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     padding-bottom: 6rem;
     padding-top: 2rem; }
   .internship-why p.visible-desktop {
-    max-width: 35rem; }
+    max-width: 53rem;
+    font-size: 2rem; }
   .internship-why .why-grid li h2 {
     margin: 2rem 0; }
   .internship-why .why-grid li img {
@@ -1698,11 +1708,14 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         max-width: 350px; }
         .internship-why .why-grid li h2.title-no-bg {
           font-size: 1.5rem;
-          margin: 2rem 0; }
+          margin: 2rem 0;
+          text-align: center; }
         .internship-why .why-grid li p {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           text-align: left !important;
           padding: 0; }
+        .internship-why .why-grid li p:nth-child(4) {
+          margin-top: 1.5rem; }
         .internship-why .why-grid li img {
           max-width: 200px; }
         .internship-why .why-grid li:nth-last-of-type(1) img {
@@ -1726,18 +1739,21 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .internship-requirements h2.section-title {
     display: none; }
   .internship-requirements h2.visible-desktop {
-    font-size: 2.5rem; }
+    font-size: 2.8rem;
+    margin: 0 0 2.5rem; }
   .internship-requirements .requirements-grid {
     display: grid;
     grid-template-columns: repeat(3, auto); }
     .internship-requirements .requirements-grid li:nth-child(4) {
       grid-column: 1 / span 4; }
+      .internship-requirements .requirements-grid li:nth-child(4) h2 {
+        margin: 0 0 0 39%; }
     .internship-requirements .requirements-grid li:nth-child(5) {
       grid-column: 1 / span 4; }
     .internship-requirements .requirements-grid li:nth-child(6) {
       grid-column: 1 / span 4; }
     .internship-requirements .requirements-grid li h2 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-weight: 800;
       text-align: left;
       margin: 0 0 0 2rem; }
