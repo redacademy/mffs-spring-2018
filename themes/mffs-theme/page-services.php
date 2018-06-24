@@ -60,8 +60,8 @@ get_header(); ?>
 									</h2>
 									<!-- asterisk that is going to be seen just in desktop size -->
 								<div class="fees-top">
-									<div class="fees-single"><?php echo esc_html( CFS()->get( 'mffs_fees_individual', 15 ) ) ?></div>
-									<div class="fees-family"><?php echo esc_html( CFS()->get( 'mffs_fees_couples_family', 15 ) ) ?></div>
+									<div class="fees-single"><?php echo wp_kses( CFS()->get( 'mffs_fees_individual', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
+									<div class="fees-family"><?php echo wp_kses( CFS()->get( 'mffs_fees_couples_family', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
 								</div>
 								<div class="fees-bottom">
 									<?php echo wp_kses( CFS()->get( 'mffs_fees_cant_afford', 15 ), wp_kses_allowed_html( 'post' ) ) ?>
