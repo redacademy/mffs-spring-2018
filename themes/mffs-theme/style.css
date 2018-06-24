@@ -1598,8 +1598,16 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   text-align: center; }
   .internship .internship-contact a {
     color: #0b2b34;
-    border-bottom: 1.2px solid #0b2b34;
-    padding-bottom: 1px; }
+    text-decoration: underline;
+    padding-bottom: 1px;
+    font-weight: 600;
+    font-size: 1.2rem; }
+    .internship .internship-contact a:hover {
+      color: #FFAF3F;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+  .internship .internship-contact p {
+    margin: 2rem 0; }
   @media only screen and (min-width: 620px) {
     .internship .internship-contact {
       display: none; } }
@@ -1664,15 +1672,23 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         background: none;
         color: #0b2b34;
         margin: 8rem 0 1rem; } }
-  @media only screen and (min-width: 620px) {
-    .internship-contact-end p {
-      font-size: 2.2rem;
-      margin-top: 1rem;
-      margin-bottom: 3rem; } }
+  .internship-contact-end p {
+    margin: 2rem 0; }
+    @media only screen and (min-width: 620px) {
+      .internship-contact-end p {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem; } }
   .internship-contact-end a {
     color: #0b2b34;
     text-decoration: underline;
-    padding-bottom: 1px; }
+    padding-bottom: 1px;
+    font-weight: 600;
+    font-size: 1.2rem; }
+    .internship-contact-end a:hover {
+      color: #FFAF3F;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
     @media only screen and (min-width: 620px) {
       .internship-contact-end a {
         color: #62c0da;
