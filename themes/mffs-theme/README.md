@@ -14,6 +14,9 @@ You'll need to run `npm install` **inside your theme directory** next to install
 
 ## Screenshots
 
+### Mobile View Homepage
+![Mobile Homepage](https://github.com/redacademy/mffs-spring-2018/blob/master/themes/mffs-theme/assets/readme_mffs_screenshots/mobile-homepage.png "Mobile Homepage")
 
-![homepage](https://github.com/redacademy/mffs-spring-2018/blob/master/themes/mffs-theme/assets/readme_mffs_screenshots/Desktop-home.png "Mobile Homepage")
+### Desktop View Homepage
 
+![Desktop Homepage](https://github.com/redacademy/mffs-spring-2018/blob/master/themes/mffs-theme/assets/readme_mffs_screenshots/desktop-homepage.png "Desktop Homepage")
