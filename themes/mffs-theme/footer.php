@@ -18,21 +18,21 @@
                         <a class = "donate-button" href="#">Donate</a>
                     </div>
                     <address class="contact">
-                    <h2>contact info</h2>
-						<?php if ( is_active_sidebar( 'sidebar-contact-info' ) ) : ?>
-							<div  class="widget-contact">
-								<?php dynamic_sidebar( esc_html( 'sidebar-contact-info' ) ); ?>
-							</div>
-						<?php endif; ?>
-					</div>
+						<h2>contact info</h2>
+							<?php if ( is_active_sidebar( 'sidebar-contact-info' ) ) : ?>
+								<div  class="widget-contact">
+									<?php dynamic_sidebar( esc_html( 'sidebar-contact-info' ) ); ?>
+								</div>
+							<?php endif; ?>
+
                     </address>
                     <div class="social-links">
-                    <h2>Social Media</h2>
-						<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
-							<div  class="widget-area">
-								<?php dynamic_sidebar( esc_html( 'sidebar-custom' ) ); ?>
-							</div>
-						<?php endif; ?>
+						<h2>Social Media</h2>
+							<?php if ( is_active_sidebar( 'sidebar-custom' ) ) : ?>
+								<div  class="widget-area">
+									<?php dynamic_sidebar( esc_html( 'sidebar-custom' ) ); ?>
+								</div>
+							<?php endif; ?>
 					</div>
                     <div class="news">
                         <p class="news-title">Newsletter</p>

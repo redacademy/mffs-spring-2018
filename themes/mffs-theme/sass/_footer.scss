@@ -12,16 +12,6 @@
     background: $color__green_main;
   }
 
-  .tel-info a,
-  .news a {
-    color: $color__background-body;
-    border-bottom: 1.2px solid white;
-    padding-bottom: 1px;
-  }
-  .supporter-title {
-    margin: 20px 0;
-    font-size: 1.5rem;
-  }
   //new widget area for contact
   .widget-contact {
     #custom_html-6{
@@ -29,6 +19,9 @@
         display: flex;
         justify-content: center;
         margin-top: .5rem;
+        @include desktop{
+          justify-content: flex-start;
+        }
       }
 
     }
@@ -60,8 +53,8 @@
       font-size: 1.5rem;
     }
     h2 {
-      // background: red;
       color: #fff;
+      font-weight: 400;
     }
     .fa-phone {
       -webkit-transform: rotateY(180deg);
@@ -70,17 +63,14 @@
       -ms-transform: rotateY(180deg);
       margin-right: 10px;
     }
-    .contact-address {
-      width: 13rem;
-      padding-top: 1rem;
-      display: inline-flex;
-      & > p {
-        width: 208px;
-      }
-      @include desktop {
-        display: flex;
-      }
-    }
+    // .contact-address {
+    //   width: 13rem;
+    //   padding-top: 1rem;
+    //   display: inline-flex;
+    //   & > p {
+    //     width: 208px;
+    //   }
+    // }
     .fa-map-marker-alt:before {
       padding-right: 0.3rem;
       display: inline-block;
@@ -92,29 +82,31 @@
       margin: 0 0 0 1.2rem;
     }
     @include desktop {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
       background: none;
       border: none;
       display: flex;
       flex-direction: column;
-      margin-top: 2rem;
-      padding: 0 1.5rem;
+      margin-top: 1rem;
+      padding-left: 3vw;
       text-align: left;
+      h2{
+        text-align: left;
+      }
+
     }
   }
 }
 .news {
   background: $color__green_main;
-  // margin: 2rem 0rem;
   padding: 2rem 0;
   color: #fff;
   p{
-    font-weight: 600;
+    font-weight: 400;
   }
   a{
-    color: #fff;
     text-decoration: underline;
+    color: $color__background-body;
+    padding-bottom: 1px;
     &:hover{
       color: $color__link-hover;
       transition: 0.2s ease-in-out;
@@ -130,7 +122,6 @@
     background: none;
     display: flex;
     flex-direction: column;
-    padding: 0 7rem;
     a {
       width: 12rem;
       margin: 0 auto;
@@ -138,6 +129,11 @@
   }
 }
 .support {
+  .supporter-title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
   @include desktop {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;

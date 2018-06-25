@@ -1143,14 +1143,6 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     .site-info {
       grid-template-columns: repeat(4, auto);
       background: #4c6f7b; } }
-  .site-info .tel-info a,
-  .site-info .news a {
-    color: #fff;
-    border-bottom: 1.2px solid white;
-    padding-bottom: 1px; }
-  .site-info .supporter-title {
-    margin: 20px 0;
-    font-size: 1.5rem; }
   .site-info .widget-contact #custom_html-6 .textwidget {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1159,6 +1151,11 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: .5rem; }
+    @media only screen and (min-width: 620px) {
+      .site-info .widget-contact #custom_html-6 .textwidget {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
   .site-info .widget-contact .textwidget a {
     color: #fff;
     text-decoration: underline;
@@ -1178,26 +1175,14 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     .site-info .contact > p {
       font-size: 1.5rem; }
     .site-info .contact h2 {
-      color: #fff; }
+      color: #fff;
+      font-weight: 400; }
     .site-info .contact .fa-phone {
       -webkit-transform: rotateY(180deg);
       -moz-transform: rotateY(180deg);
       -o-transform: rotateY(180deg);
       -ms-transform: rotateY(180deg);
       margin-right: 10px; }
-    .site-info .contact .contact-address {
-      width: 13rem;
-      padding-top: 1rem;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .site-info .contact .contact-address > p {
-        width: 208px; }
-      @media only screen and (min-width: 620px) {
-        .site-info .contact .contact-address {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; } }
     .site-info .contact .fa-map-marker-alt:before {
       padding-right: 0.3rem;
       display: inline-block; }
@@ -1207,8 +1192,6 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       margin: 0 0 0 1.2rem; }
     @media only screen and (min-width: 620px) {
       .site-info .contact {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
         background: none;
         border: none;
         display: -webkit-box;
@@ -1218,9 +1201,11 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-top: 2rem;
-        padding: 0 1.5rem;
-        text-align: left; } }
+        margin-top: 1rem;
+        padding-left: 3vw;
+        text-align: left; }
+        .site-info .contact h2 {
+          text-align: left; } }
 
 .news {
   background: #4c6f7b;
@@ -1228,10 +1213,11 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   color: #fff;
   text-align: center; }
   .news p {
-    font-weight: 600; }
+    font-weight: 400; }
   .news a {
+    text-decoration: underline;
     color: #fff;
-    text-decoration: underline; }
+    padding-bottom: 1px; }
     .news a:hover {
       color: #FFAF3F;
       -webkit-transition: 0.2s ease-in-out;
@@ -1249,11 +1235,15 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      padding: 0 7rem; }
+              flex-direction: column; }
       .news a {
         width: 12rem;
         margin: 0 auto; } }
+
+.support .supporter-title {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 400; }
 
 @media only screen and (min-width: 620px) {
   .support {
