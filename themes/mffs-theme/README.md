@@ -1,21 +1,19 @@
-# RED Starter
+# A Wordpress Site for Moving Forward Family Services.
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+## Authors: 
+### Stu Johnston
+### Daniel Hamidi
+### Jason Murphy
+======================================================
 
 ## Installation
 
-### 1. Download me (don't clone me!)
+### 1. Install the dev dependencies
 
-Then add me to your `wp-content` directory.
+You'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 2. Rename the `redstarter-master` directory
+## Screenshots
 
-Make sure that the theme directory name is project appropriate!
 
-### 3. Install the dev dependencies
+![homepage](https://github.com/redacademy/mffs-spring-2018/blob/master/themes/mffs-theme/assets/readme_mffs_screenshots/Desktop-home.png "Mobile Homepage")
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).

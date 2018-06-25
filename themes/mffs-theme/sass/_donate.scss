@@ -176,6 +176,11 @@
     .donate-dropdown-button {
       flex: 1;
       margin: 1rem;
+      select:focus{
+        outline: 4px solid $color__button-yellow;
+        border: 2px solid $color__button-yellow;
+        border-radius: 5px;
+      }
     }
   }
   .main-carousel {
