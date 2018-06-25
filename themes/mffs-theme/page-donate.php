@@ -42,13 +42,16 @@ get_header(); ?>
                 <section class="donate-dropdown-button">
                     <h2 class="title-no-bg">I want to give a helping hand to those in need of:</h2>
                     <select>
-                        <option value="substance use counselling">Substance use counselling</option>
-                        <option value="mental health counselling">Mental health counselling</option>
-                        <option value="trauma counselling">Trauma counselling</option>
-                        <option value="grief counselling">Grief counselling</option>
-                        <option value="body image counselling">Body image counselling</option>
+                        <ul>
+                            <?php
+                                $loop = CFS()->get( 'mffs_donation_drop_down_loop', 23);
+                                    foreach ( $loop as $row ) { ?>
+                                    <li>
+                                        <div class="donate-dropdown-menu"><option><?php echo esc_html( $row['mffs_donation_drop_down_selection'] );?></option></div>
+                                    </li>
+                            <?php } ?>
+                        </ul>
                     </select>
-
                     <a class ="donate-button" id="donate-redirect" href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Donate</a>
 
                     <p class="donate-redirect">You will be re-directd to Canadahelps.org</p>
