@@ -688,7 +688,7 @@ ul {
 
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell {
-    height: 25rem; } }
+    height: 24rem; } }
 
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell img {
@@ -1315,15 +1315,28 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 4rem; } }
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 @media only screen and (min-width: 620px) {
   .about-carousel .main-carousel {
-    width: 30%;
+    width: 50%;
     max-width: 100%;
     overflow: hidden; }
     .about-carousel .main-carousel .carousel-image {
       width: auto; } }
+
+@media only screen and (min-width: 620px) {
+  .about-carousel .carousel-cell {
+    height: 24rem; } }
+
+@media only screen and (min-width: 620px) {
+  .about-carousel .carousel-cell img {
+    height: 25rem;
+    margin-top: 1rem;
+    -webkit-box-shadow: 1.5rem -1rem #f1d18a;
+            box-shadow: 1.5rem -1rem #f1d18a; } }
 
 .desktop-about-quote {
   display: none; }
@@ -1339,12 +1352,14 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      width: 50%;
-      margin-left: 12rem; }
+      width: 50%; }
       .desktop-about-quote h2 {
         font-size: 3rem;
+        line-height: 1.25;
         width: 65%;
-        margin-bottom: 2rem; } }
+        margin-bottom: 1rem; }
+      .desktop-about-quote p {
+        padding: 0 2rem; } }
 
 @media only screen and (min-width: 620px) {
   .about-do h2,
@@ -1960,9 +1975,9 @@ p.faq-answer {
     background-position-x: 270px; }
     @media only screen and (min-width: 620px) {
       .donate-dropdown-button select {
-        -webkit-transform: scale(1.7);
-                transform: scale(1.7);
-        margin-top: 2rem; } }
+        width: 100%;
+        margin-top: 2rem;
+        background-position-x: right; } }
   @media only screen and (min-width: 620px) {
     .donate-dropdown-button a {
       margin-top: 2rem; } }
@@ -2077,18 +2092,55 @@ p.faq-answer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
     .donate-desktop-flex .donate-testimonials {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 65%;
               flex: 0 0 65%;
       max-width: 50%; }
-      .donate-desktop-flex .donate-testimonials .main-carousel {
-        overflow: hidden; }
     .donate-desktop-flex .donate-dropdown-button {
       -webkit-box-flex: 1;
           -ms-flex: 1;
-              flex: 1; } }
+              flex: 1;
+      margin: 1rem; } }
+
+@media only screen and (min-width: 620px) {
+  .donate-desktop-flex .main-carousel {
+    overflow: hidden;
+    height: 100%; } }
+
+.donate-desktop-flex .carousel-cell {
+  height: 100%; }
+  @media only screen and (min-width: 620px) {
+    .donate-desktop-flex .carousel-cell {
+      height: 100%;
+      left: -7%;
+      margin-right: 2rem; } }
+  .donate-desktop-flex .carousel-cell img {
+    height: 80%; }
+    @media only screen and (min-width: 620px) {
+      .donate-desktop-flex .carousel-cell img {
+        height: 90%;
+        width: 85%; } }
+  .donate-desktop-flex .carousel-cell p {
+    color: #4c6f7b;
+    font-size: 1.25rem;
+    margin: 1rem 5rem; }
+    @media only screen and (min-width: 620px) {
+      .donate-desktop-flex .carousel-cell p {
+        position: absolute;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        bottom: 1%;
+        left: 5%;
+        width: 80%;
+        height: 20%;
+        font-size: 100%;
+        color: #fff;
+        background: #4c6f7b;
+        padding: 1rem 2rem 1rem 1rem; } }
 
 .donate-redirect {
   display: none; }
