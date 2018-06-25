@@ -4424,10 +4424,10 @@ p.faq-answer {
   display: none;
   background: white;
   position: absolute;
-  height: 45rem;
-  width: 50vw;
-  top: 0;
-  left: 25%;
+  height: 48rem;
+  width: 75vw;
+  top: 7px;
+  left: 12%;
   right: 0;
   bottom: 0;
   border: 10px solid #98a8ad;
@@ -4447,6 +4447,12 @@ p.faq-answer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center; }
+  @media only screen and (min-width: 620px) {
+    .popup-inner {
+      height: 45rem;
+      width: 50vw;
+      top: 0;
+      left: 25%; } }
   .popup-inner i {
     -webkit-transform: scale(4);
             transform: scale(4);
