@@ -14,6 +14,6 @@ You'll need to run `npm install` **inside your theme directory** next to install
 
 ## Screenshots
 
-Inline-style: 
-![homepage](../assets/readme_mffs_screenshots/Desktop-home.png "Logo Title Text 1")
+
+![homepage](/assets/readme_mffs_screenshots/Desktop-home.png "Logo Title Text 1")
 
