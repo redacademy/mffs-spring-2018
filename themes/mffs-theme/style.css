@@ -578,6 +578,10 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
+      .social-links .widget-area .custom-html-widget:hover {
+        background: #FFAF3F;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
   @media only screen and (min-width: 620px) {
     .social-links {
       display: none; } }
@@ -1969,9 +1973,9 @@ p.faq-answer {
     background-position-x: 270px; }
     @media only screen and (min-width: 620px) {
       .donate-dropdown-button select {
-        -webkit-transform: scale(1.7);
-                transform: scale(1.7);
-        margin-top: 2rem; } }
+        width: 100%;
+        margin-top: 2rem;
+        background-position-x: right; } }
   @media only screen and (min-width: 620px) {
     .donate-dropdown-button a {
       margin-top: 2rem; } }
@@ -2086,18 +2090,55 @@ p.faq-answer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
     .donate-desktop-flex .donate-testimonials {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 65%;
               flex: 0 0 65%;
       max-width: 50%; }
-      .donate-desktop-flex .donate-testimonials .main-carousel {
-        overflow: hidden; }
     .donate-desktop-flex .donate-dropdown-button {
       -webkit-box-flex: 1;
           -ms-flex: 1;
-              flex: 1; } }
+              flex: 1;
+      margin: 1rem; } }
+
+@media only screen and (min-width: 620px) {
+  .donate-desktop-flex .main-carousel {
+    overflow: hidden;
+    height: 100%; } }
+
+.donate-desktop-flex .carousel-cell {
+  height: 100%; }
+  @media only screen and (min-width: 620px) {
+    .donate-desktop-flex .carousel-cell {
+      height: 100%;
+      left: -7%;
+      margin-right: 2rem; } }
+  .donate-desktop-flex .carousel-cell img {
+    height: 80%; }
+    @media only screen and (min-width: 620px) {
+      .donate-desktop-flex .carousel-cell img {
+        height: 90%;
+        width: 85%; } }
+  .donate-desktop-flex .carousel-cell p {
+    color: #4c6f7b;
+    font-size: 1.25rem;
+    margin: 1rem 5rem; }
+    @media only screen and (min-width: 620px) {
+      .donate-desktop-flex .carousel-cell p {
+        position: absolute;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        bottom: 1%;
+        left: 5%;
+        width: 80%;
+        height: 20%;
+        font-size: 100%;
+        color: #fff;
+        background: #4c6f7b;
+        padding: 1rem 2rem 1rem 1rem; } }
 
 .donate-redirect {
   display: none; }
