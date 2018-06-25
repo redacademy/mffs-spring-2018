@@ -80,20 +80,18 @@
   font-family: $font__title;
 }
 
-@mixin impact-grid-circle($row, $col) {
+@mixin impact-grid-circle{
   //using mixin for impact grid circles
   overflow-wrap: break-word;
-  grid-row: $row;
-  grid-column: $col;
   background: $color__button-yellow;
   border-radius: 50%;
   box-shadow: inset 4px 6px 25px #fff; //inner shadow effect
-  width: 90%;
-  height: 96%;
-  @include desktop {
-    width: 25%;
-    height: auto;
-  }
+  width: 200px;
+  height: 200px;
+  // @include desktop {
+  //   width: 25%;
+  //   height: auto;
+  // }
 }
 
 @mixin reset-to-link {
