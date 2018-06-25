@@ -684,7 +684,7 @@ ul {
 
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell {
-    height: 25rem; } }
+    height: 24rem; } }
 
 @media only screen and (min-width: 620px) {
   .home .main-carousel .carousel-cell img {
@@ -1309,15 +1309,28 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 4rem; } }
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 @media only screen and (min-width: 620px) {
   .about-carousel .main-carousel {
-    width: 30%;
+    width: 50%;
     max-width: 100%;
     overflow: hidden; }
     .about-carousel .main-carousel .carousel-image {
       width: auto; } }
+
+@media only screen and (min-width: 620px) {
+  .about-carousel .carousel-cell {
+    height: 24rem; } }
+
+@media only screen and (min-width: 620px) {
+  .about-carousel .carousel-cell img {
+    height: 25rem;
+    margin-top: 1rem;
+    -webkit-box-shadow: 1.5rem -1rem #f1d18a;
+            box-shadow: 1.5rem -1rem #f1d18a; } }
 
 .desktop-about-quote {
   display: none; }
@@ -1333,12 +1346,14 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      width: 50%;
-      margin-left: 12rem; }
+      width: 50%; }
       .desktop-about-quote h2 {
         font-size: 3rem;
+        line-height: 1.25;
         width: 65%;
-        margin-bottom: 2rem; } }
+        margin-bottom: 1rem; }
+      .desktop-about-quote p {
+        padding: 0 2rem; } }
 
 @media only screen and (min-width: 620px) {
   .about-do h2,
