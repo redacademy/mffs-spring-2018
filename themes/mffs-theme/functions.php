@@ -95,6 +95,8 @@ function red_starter_scripts() {
 
 	wp_enqueue_style('mffs-google-fonts', "https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Raleway:400,600,700");
 
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'mffs-flickity-js', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', null, null, true );
 
 	wp_enqueue_script( 'mffs-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );

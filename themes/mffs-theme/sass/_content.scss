@@ -70,9 +70,13 @@
       border-radius: 50%;
       text-align: center;
       box-shadow: 2px 2px #fff;
+      &:hover {
+        background: $color__link-hover;
+        box-shadow: none;
+      }
     }
   }
-  @include desktop{
+  @include desktop {
     display: none;
   }
 }
