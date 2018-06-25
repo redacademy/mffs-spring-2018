@@ -578,6 +578,10 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
+      .social-links .widget-area .custom-html-widget:hover {
+        background: #FFAF3F;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
   @media only screen and (min-width: 620px) {
     .social-links {
       display: none; } }
@@ -4376,3 +4380,46 @@ p.faq-answer {
 
 .reports-img-dl {
   display: inherit; }
+
+.popup-inner {
+  display: none;
+  background: white;
+  position: absolute;
+  height: 45rem;
+  width: 50vw;
+  top: 0;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  border: 10px solid #98a8ad;
+  border-radius: 20px;
+  background: #fbeecd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  .popup-inner i {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    padding-bottom: 3rem;
+    padding-top: 2rem; }
+  .popup-inner p {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .popup-inner a {
+    text-decoration: underline;
+    margin: 0; }
+
+.site-content {
+  position: relative; }
