@@ -15,5 +15,5 @@ You'll need to run `npm install` **inside your theme directory** next to install
 ## Screenshots
 
 
-![homepage](/assets/readme_mffs_screenshots/Desktop-home.png "Logo Title Text 1")
+![homepage](https://github.com/redacademy/mffs-spring-2018/blob/master/themes/mffs-theme/assets/readme_mffs_screenshots/Desktop-home.png "Mobile Homepage")
 
