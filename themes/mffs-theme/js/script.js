@@ -40,8 +40,8 @@
     var url = $(this).attr('href');
 
     setTimeout(function() {
-      console.log(url);
-      // window.location.href = url;
+      // console.log(url);
+      window.location.href = url;
     }, 2000);
 
     console.log('click');
