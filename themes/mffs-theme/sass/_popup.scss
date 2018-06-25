@@ -2,10 +2,16 @@
   display: none;
   background: white;
   position: absolute;
-  height: 45rem;
-  width: 50vw;
-  top: 0;
-  left: 25%;
+  height: 48rem;
+  width: 75vw;
+  top: 7px;
+  left: 12%;
+  @include desktop {
+    height: 45rem;
+    width: 50vw;
+    top: 0;
+    left: 25%;
+  }
   right: 0;
   bottom: 0;
   border: 10px solid #98a8ad;
