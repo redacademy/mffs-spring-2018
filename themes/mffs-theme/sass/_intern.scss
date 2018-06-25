@@ -32,8 +32,17 @@
     text-align: center;
     a {
       color: $color__text-main;
-      border-bottom: 1.2px solid $color__text-main;
+      text-decoration: underline;
       padding-bottom: 1px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      &:hover{
+        color: $color__link-hover;
+        transition: 0.2s ease-in-out;
+      }
+    }
+    p{
+      margin: 2rem 0;
     }
     @include desktop {
       display: none;
@@ -111,26 +120,32 @@
       margin: 8rem 0 1rem;
     }
   }
-p{
-  @include desktop {
-    font-size: 2.2rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+  p {
+    margin-bottom: 2rem;
+    @include desktop {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
   }
-}
   margin-bottom: 6rem;
   text-align: center;
   a {
     color: $color__text-main;
     text-decoration: underline;
     padding-bottom: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    &:hover {
+      color: $color__link-hover;
+      transition: 0.2s ease-in-out;
+    }
     @include desktop {
-color: $color__link-color;
+      color: $color__link-color;
       font-size: 2.2rem;
       font-weight: 600;
       margin-bottom: 10rem;
       display: block;
-
     }
   }
 }

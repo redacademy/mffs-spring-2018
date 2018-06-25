@@ -20,8 +20,8 @@ get_header(); ?>
                     <img src="<?php echo esc_url( CFS()->get( 'mffs_internship_img', 19 ) ) ?>" alt="">
                     <div class="intern-text-wrapper">
                         <h2 class="visible-desktop">Intern with us!</h2>
-                        <p><?php echo CFS()->get( 'mffs_internship_description', 19 ) ?></p>
-                        <p><?php echo esc_html( CFS()->get( 'mffs_internship_text', 19 ) ) ?></p>
+                        <p><?php echo wp_kses( CFS()->get( 'mffs_internship_description', 19 ), wp_kses_allowed_html( 'post' ) ) ?></p>
+                        <p><?php echo wp_kses( CFS()->get( 'mffs_internship_text', 19 ), wp_kses_allowed_html( 'post' ) ) ?></p>
                     </div>
                 </div>
             </section> <!-- end internship title -->
@@ -38,7 +38,7 @@ get_header(); ?>
                 <h2 class="section-title">Why intern with us?</h2>
                 <p class="visible-desktop">Flexible non-traditional hours and a variety of activities
                 </p>
-                <p><?php echo CFS()->get( 'mffs_internship_description', 19 ) ?></p> <!-- TODO wp_kses-->
+                <p><?php echo wp_kses( CFS()->get( 'mffs_internship_description', 19 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 
                 <ul class="why-grid">
 				<?php
@@ -47,7 +47,7 @@ get_header(); ?>
 						<li class="internship-quality-single">
 							<img src="<?php echo esc_url( $row['internship_icon'] );?>" alt="">
                             <h2 class="title-no-bg"><?php echo esc_html( $row['mffs_internship_quality_title'] );?></h2>
-                            <?php echo $row['mffs_internship_quality_text'];?> <!-- TODO wp_kses-->
+                            <?php echo wp_kses( $row['mffs_internship_quality_text'], wp_kses_allowed_html( 'post' ) );?>
 						</li>
 						<?php } ?>
 				</ul>
@@ -65,7 +65,7 @@ get_header(); ?>
 						foreach ( $loop as $row ) { ?>
 						<li class="requirements-single">
                             <h2 class="title-no-bg"><?php echo esc_html( $row['mffs_internship_requirement_title'] );?></h2>
-                            <?php echo $row['mffs_internship_requirement_text'];?><!-- TODO wp_kses-->
+                            <?php echo wp_kses( $row['mffs_internship_requirement_text'], wp_kses_allowed_html( 'post' ) );?>
                             <div class="yellow-dots"> &bull; &bull; &bull; </div>
                         </li>
 						<?php } ?>

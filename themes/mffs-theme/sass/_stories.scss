@@ -26,17 +26,80 @@
       font-size: 1.2rem;
       padding: 1rem 4rem;
     }
-  }
-  @include desktop {
-    // display: none;
+    @include desktop {
+      display: none;
+    }
   }
 }
+
+.desktop-story-main{
+  @include desktop{
+    display: flex;
+    .desktop-single-story-img{
+      width: 50%;
+    }
+    .desktop-single-story-new-beginning{
+      width: 50%;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .desktop-donate{
+      margin-top: 4rem;
+    }
+  }
+}
+
+.desktop-success-story-content{
+  display: none;
+  @include desktop{
+    display: block;
+    width: 50%;
+    h2{
+    font-weight: 700;
+    }
+    p{
+      font-weight: 600;
+      margin: 0 5rem;
+    }
+}
+}
+.success-story-help{
+  @include desktop{
+    display: none;
+  }
+}
+
+.desktop-success-story-help{
+  display: none;
+  @include desktop{
+    display: block;
+    width: 50%;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+    box-shadow: 1rem -1rem $color__button-yellow;
+    }
+  }
+}
+
 .story-mffs {
   p:nth-child(3) {
     border-top: 2px solid $color__button-yellow;
     font-weight: 600;
     font-size: 1.2rem;
     padding: 2rem 4rem;
+    @include desktop{
+    border-top: none;
+    border-left: 2px solid $color__text-main;
+    font-weight: 600;
+    }
+  }
+  @include desktop{
+    display: flex;
+    margin-top: 1rem;
   }
 }
 
@@ -50,8 +113,33 @@
   }
 }
 
-// .desktop-single-story-main{
-//     @include desktop{
-//     display: block;
-//   }
-// }
+.mobile-story-future{
+  @include desktop{
+      display:none;
+  }
+}
+
+.desktop-story-future{
+  display: none;
+  @include desktop{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    img{
+      width: 40%;
+      max-width: none;
+      height: 50%;
+      margin: 4rem;
+      box-shadow: -1rem -1rem $color__green_main;
+    }
+    .desktop-story-future-content{
+      width: 60%;
+      text-align: left;
+      p{
+        margin-left: 3rem;
+        margin-right: 5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
