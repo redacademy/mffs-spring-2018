@@ -18,17 +18,13 @@
                         <a class = "donate-button" href="#">Donate</a>
                     </div>
                     <address class="contact">
-                        <p>
-                        Contact us
-                        </p>
-                        <div class="tel-info">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:123456789">778-321-3054</a>
-                        </div>
-                        <div class="contact-address">
-                        <i class="fas fa-map-marker-alt"></i>
-                            <p class="address">103 – 12827 76th Avenue Surrey, BC</p>
-                        </div>
+                    <h2>contact info</h2>
+						<?php if ( is_active_sidebar( 'sidebar-contact-info' ) ) : ?>
+							<div  class="widget-contact">
+								<?php dynamic_sidebar( esc_html( 'sidebar-contact-info' ) ); ?>
+							</div>
+						<?php endif; ?>
+					</div>
                     </address>
                     <div class="social-links">
                     <h2>Social Media</h2>

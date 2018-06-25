@@ -578,6 +578,10 @@ a {
       text-align: center;
       -webkit-box-shadow: 2px 2px #fff;
               box-shadow: 2px 2px #fff; }
+      .social-links .widget-area .custom-html-widget:hover {
+        background: #FFAF3F;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
   @media only screen and (min-width: 620px) {
     .social-links {
       display: none; } }
@@ -727,95 +731,62 @@ ul {
 .impact-grid {
   display: grid;
   text-align: center;
-  max-width: 620px;
-  margin: 0 auto;
   grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   font-size: 1.5rem; }
   .impact-grid .impact-value {
     font-size: 4rem;
     font-weight: 700; }
   .impact-grid li:nth-of-type(1) {
     overflow-wrap: break-word;
-    grid-row: 1/span 5;
-    grid-column: 2/span 6;
     background: #f1d18a;
     border-radius: 50%;
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff;
-    width: 90%;
-    height: 96%; }
-    @media only screen and (min-width: 620px) {
-      .impact-grid li:nth-of-type(1) {
-        width: 25%;
-        height: auto; } }
+    width: 200px;
+    height: 200px;
+    grid-row: 1 / 5;
+    grid-column: 1 / 5; }
   .impact-grid li:nth-of-type(2) {
     overflow-wrap: break-word;
-    grid-row: 1/span 5;
-    grid-column: 8/span 12;
     background: #f1d18a;
     border-radius: 50%;
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff;
-    width: 90%;
-    height: 96%; }
-    @media only screen and (min-width: 620px) {
-      .impact-grid li:nth-of-type(2) {
-        width: 25%;
-        height: auto; } }
+    width: 200px;
+    height: 200px;
+    grid-row: 1 /  5;
+    grid-column: 7 / 11; }
   .impact-grid li:nth-of-type(3) {
     overflow-wrap: break-word;
-    grid-row: 5/span 9;
-    grid-column: 5/span 9;
     background: #f1d18a;
     border-radius: 50%;
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff;
-    width: 90%;
-    height: 96%; }
-    @media only screen and (min-width: 620px) {
-      .impact-grid li:nth-of-type(3) {
-        width: 25%;
-        height: auto; } }
+    width: 200px;
+    height: 200px;
+    grid-row: 5 / 8;
+    grid-column: 4 / 8; }
   .impact-grid li:nth-of-type(4) {
     overflow-wrap: break-word;
-    grid-row: 9/span 13;
-    grid-column: 2/span 6;
     background: #f1d18a;
     border-radius: 50%;
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff;
-    width: 90%;
-    height: 96%; }
-    @media only screen and (min-width: 620px) {
-      .impact-grid li:nth-of-type(4) {
-        width: 25%;
-        height: auto; } }
+    width: 200px;
+    height: 200px;
+    grid-row: 9 / 13;
+    grid-column: 1 / 5; }
   .impact-grid li:nth-of-type(5) {
     overflow-wrap: break-word;
-    grid-row: 9/span 13;
-    grid-column: 8/span 12;
     background: #f1d18a;
     border-radius: 50%;
     -webkit-box-shadow: inset 4px 6px 25px #fff;
             box-shadow: inset 4px 6px 25px #fff;
-    width: 90%;
-    height: 96%; }
-    @media only screen and (min-width: 620px) {
-      .impact-grid li:nth-of-type(5) {
-        width: 25%;
-        height: auto; } }
-  @media only screen and (min-width: 620px) {
-    .impact-grid {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 7rem; } }
+    width: 200px;
+    height: 200px;
+    grid-row: 9 / 13;
+    grid-column: 7 / 11; }
 
 @media only screen and (min-width: 620px) {
   .initiatives {
@@ -997,16 +968,17 @@ ul {
 
 .language-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   font-size: 1.5rem;
   font-weight: 600;
   color: #0b2b34;
   text-align: center; }
   @media only screen and (min-width: 620px) {
     .language-grid {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      grid-template-columns: auto auto auto auto; } }
   .language-grid li {
-    padding: 1rem; }
+    padding: 2vw; }
 
 @media only screen and (min-width: 620px) {
   .languages-info {
@@ -1179,6 +1151,25 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .site-info .supporter-title {
     margin: 20px 0;
     font-size: 1.5rem; }
+  .site-info .widget-contact #custom_html-6 .textwidget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: .5rem; }
+  .site-info .widget-contact .textwidget a {
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem; }
+    .site-info .widget-contact .textwidget a:hover {
+      color: #FFAF3F;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+  .site-info .widget-contact .address {
+    width: 12rem; }
   .site-info .contact {
     border-top: 2px solid #fff;
     width: 100%;
@@ -1186,6 +1177,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     border-bottom: 2px solid #fff; }
     .site-info .contact > p {
       font-size: 1.5rem; }
+    .site-info .contact h2 {
+      color: #fff; }
     .site-info .contact .fa-phone {
       -webkit-transform: rotateY(180deg);
       -moz-transform: rotateY(180deg);
@@ -1206,7 +1199,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
           display: -ms-flexbox;
           display: flex; } }
     .site-info .contact .fa-map-marker-alt:before {
-      padding-right: 0.3rem; }
+      padding-right: 0.3rem;
+      display: inline-block; }
     .site-info .contact .fas {
       padding-top: 0.4rem; }
     .site-info .contact > p {
@@ -1229,7 +1223,19 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         text-align: left; } }
 
 .news {
-  margin: 2rem 0rem; }
+  background: #4c6f7b;
+  padding: 2rem 0;
+  color: #fff;
+  text-align: center; }
+  .news p {
+    font-weight: 600; }
+  .news a {
+    color: #fff;
+    text-decoration: underline; }
+    .news a:hover {
+      color: #FFAF3F;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
   .news > p {
     font-size: 1.5rem; }
   @media only screen and (min-width: 620px) {

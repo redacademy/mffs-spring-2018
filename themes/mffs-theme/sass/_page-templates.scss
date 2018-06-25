@@ -103,10 +103,8 @@ ul {
   //grid for impact circles
   display: grid;
   text-align: center;
-  max-width: 620px;
-  margin: 0 auto;
   grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   font-size: 1.5rem;
   .impact-value {
     font-size: 4rem;
@@ -114,27 +112,38 @@ ul {
   }
   & li:nth-of-type(1) {
     //using mixin for impact grid circles
-    @include impact-grid-circle(1 / span 5, 2 / span 6);
+    @include impact-grid-circle;
+   grid-row: 1 / 5;
+   grid-column: 1 / 5;
+
   }
   & li:nth-of-type(2) {
-    @include impact-grid-circle(1 / span 5, 8 / span 12);
+    @include impact-grid-circle;
+    grid-row: 1 /  5;
+   grid-column: 7 / 11;
   }
   & li:nth-of-type(3) {
-    @include impact-grid-circle(5 / span 9, 5 / span 9);
+    @include impact-grid-circle;
+    grid-row: 5 / 8;
+   grid-column: 4 / 8;
   }
   & li:nth-of-type(4) {
-    @include impact-grid-circle(9 / span 13, 2 / span 6);
+    @include impact-grid-circle;
+    grid-row: 9 / 13;
+   grid-column: 1 / 5;
   }
   & li:nth-of-type(5) {
-    @include impact-grid-circle(9 / span 13, 8 / span 12);
+    @include impact-grid-circle;
+    grid-row: 9 / 13;
+   grid-column: 7 / 11;
   }
-  @include desktop {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 7rem;
-  }
+  // @include desktop {
+  //   display: flex;
+  //   justify-content: space-evenly;
+  //   max-width: 100%;
+  //   height: auto;
+  //   margin-bottom: 7rem;
+  // }
 }
 .initiatives {
   @include desktop {
@@ -310,16 +319,17 @@ ul {
 .language-grid {
   //languages grid
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   font-size: 1.5rem;
   font-weight: 600;
   color: $color__link-visited;
   text-align: center;
   @include desktop {
     font-size: 1.5rem;
+    grid-template-columns: auto auto auto auto;
   }
   li {
-    padding: 1rem;
+    padding: 2vw;
   }
 }
 .languages-info {
