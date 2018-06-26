@@ -56,7 +56,7 @@ add_action( 'after_setup_theme', 'mffs_content_width', 0 );
  */
 function mffs_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Sidebar' ),
+		'name'          => esc_html( 'Newsletter' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
