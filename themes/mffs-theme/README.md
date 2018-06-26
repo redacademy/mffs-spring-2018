@@ -5,55 +5,57 @@ This project was to create a website for Moving Forward Family Services. Which i
 
 
 ## Authors: 
-------------
+============
+
 *   Stu Johnston
 *   Daniel Hamidi
 *   Jason Murphy
-
+___________________
 
 ## Installation
-----------------
+================
 
 ### 1. Install the dev dependencies
 
 You'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+_________________________
 
 
 ## Wordpress Backend
-----------------------
+======================
 
 ### Dashboard
 
 Dashboard is a summary of your site. 
----
+______________________________________
 
 ### Services
 
 Services menu is where you modify the different types of services your company offers. Aswell as add possible extra services. It apprears in the Services & Fees section of the website.
----
+_____________________________________________________________________________________
 
 ### Stories
 
 Stories menu is where you add or modify the different success stories. It appears under the "read success stories" button of the website.
----
+______________________________________________________________________________________
 
 ### Media
 
 Media menu is where you must add/remove the media files (images/icons) for the website.
----
+_______________________________________________________________________________________
 
 ### Pages
 
 Pages menu is where the actual pages of the website are stored. All the information viewed on the webpages are to be modified here. Each section is properly labelled, as well as each piece of text/information.
----
+_______________________________________________________________________________________
 
 ### Comments
----
+____________
 
 ### Profile
 
 Profile menu is where you may alter your personal settings. Preferred colors as well as account information is modified here.
----
+________________________________________________________________________________________
 
 
 ## Screenshots
