@@ -725,6 +725,9 @@ ul {
     left: 59%;
     top: 5%; } }
 
+.impact .impact-title {
+  font-weight: 600; }
+
 @media only screen and (min-width: 620px) {
   .impact .section-title {
     border-bottom: none;
@@ -745,9 +748,22 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1000px) {
+    .impact-grid, .impact-grid li, .impact-grid .circle {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: initial;
+              flex-flow: initial; } }
 
 .impact-grid {
   min-height: 100vh; }
+  @media (min-width: 1000px) {
+    .impact-grid {
+      background: red;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: initial;
+              flex-flow: initial; } }
   .impact-grid .impact-value {
     font-size: 4rem;
     font-weight: 700; }
@@ -764,7 +780,7 @@ ul {
         .impact-grid li:nth-of-type(3) {
           width: 100%; }
           .impact-grid li:nth-of-type(3) .circle {
-            width: 45%; } }
+            width: 41%; } }
     @media (min-width: 500px) {
       .impact-grid li {
         width: 50%;
@@ -772,7 +788,13 @@ ul {
         .impact-grid li:nth-of-type(3) {
           width: 100%; }
           .impact-grid li:nth-of-type(3) .circle {
-            width: 30%; } }
+            width: 31%; } }
+    @media (min-width: 1000px) {
+      .impact-grid li:nth-of-type(3) {
+        background: #f059ca;
+        width: 60%; }
+        .impact-grid li:nth-of-type(3) .circle {
+          width: 50%; } }
   .impact-grid .circle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -795,12 +817,9 @@ ul {
     @media (min-width: 500px) {
       .impact-grid .circle {
         width: 60%;
-        height: 27vw;
+        height: 28vw;
         max-height: 30vh;
         max-width: 30vh; } }
-  @media (min-width: 1000px) {
-    .impact-grid {
-      background: red; } }
 
 @media only screen and (min-width: 620px) {
   .initiatives {
