@@ -1313,16 +1313,15 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         color: #fff;
         font-weight: 400; }
       .site-footer .social-links .widget-area {
-        margin: 0;
-        background: #4c6f7b; }
+        margin-top: 2rem; }
         .site-footer .social-links .widget-area .widget {
           width: 48px; } }
   @media only screen and (min-width: 620px) and (min-width: 1280px) {
     .site-footer .social-links {
       display: block;
-      margin-top: 2rem; }
-      .site-footer .social-links .widget-area {
-        padding: 2rem 2rem 4rem; } }
+      margin: 0; }
+      .site-footer .social-links h2 {
+        margin-top: 2rem; } }
 
 .about {
   font-size: 1.6rem;

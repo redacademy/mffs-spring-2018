@@ -1,6 +1,4 @@
-// .site-footer{
-//   background: $color__green_main;
-// }
+
 .site-info {
   font-family: 'Montserrat' sans-serif;
   display: grid;
@@ -54,7 +52,6 @@
       // margin: 0 auto;
     }
   }
-
   .contact {
     border-top: 2px solid $color__background-body;
     width: 100%;
@@ -96,7 +93,7 @@
         text-align: left;
       }
     }
-    @include desktop{
+    @include desktop {
       background: none;
       border: none;
     }
@@ -122,27 +119,25 @@
   & > p {
     font-size: 1.5rem;
   }
-  @include desktop{
+  @include desktop {
     padding: 0;
-}
-    @include desktop-lg {
-      padding: 2rem 0;
-      grid-column: 3 / span 1;
-      grid-row: 1 / span 1;
-      background: none;
-      display: flex;
-      flex-direction: column;
-      .news-title {
-        margin-bottom: 2rem;
-      }
-      a {
-        width: 12rem;
-        margin: 0 auto;
-      }
-
-    }
-
   }
+  @include desktop-lg {
+    padding: 2rem 0;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    .news-title {
+      margin-bottom: 2rem;
+    }
+    a {
+      width: 12rem;
+      margin: 0 auto;
+    }
+  }
+}
 .support {
   .supporter-title {
     margin: 20px 0;
@@ -157,7 +152,6 @@
     flex-direction: column;
     margin-top: 0.75rem;
   }
-
   .donate-button {
     @include desktop-lg {
       @include light-border-btn($bord-rad: 15px, $pad: 6px 9px);
@@ -166,32 +160,27 @@
       margin: 0 auto;
     }
   }
-
 }
 .site-footer .social-links {
   //showing social buttons for desktop-lg size
   display: none;
-
-  @include desktop{
+  @include desktop {
     h2 {
       color: #fff;
       font-weight: 400;
     }
     display: block;
     .widget-area {
-      margin: 0;
-      background: $color__green_main;
-
+      margin-top: 2rem;
       .widget {
         width: 48px;
       }
     }
     @include desktop-lg {
       display: block;
-      margin-top: 2rem;
-      .widget-area {
-        // margin-top: 2rem;
-        padding: 2rem 2rem 4rem;
+      margin: 0;
+      h2 {
+        margin-top: 2rem;
       }
     }
   }
