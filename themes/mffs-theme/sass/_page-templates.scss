@@ -96,6 +96,7 @@ ul {
     @include desktop {
       border-bottom: none;
       margin-left: 4rem;
+      max-width: 26rem;
     }
   }
 }

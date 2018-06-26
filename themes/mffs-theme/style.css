@@ -726,7 +726,8 @@ ul {
 @media only screen and (min-width: 620px) {
   .impact .section-title {
     border-bottom: none;
-    margin-left: 4rem; } }
+    margin-left: 4rem;
+    max-width: 26rem; } }
 
 .impact-grid {
   display: grid;
