@@ -277,10 +277,18 @@ ul {
   }
 }
 .languages {
-  @include desktop {
+  @include desktop{
     display: flex;
-    width: 100%;
-  }
+    flex-direction: column;
+    align-items: center;
+}
+@include desktop-lg {
+  display: flex;
+  width: 97%;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
   h2 {
     @include desktop {
       font-size: 2.25rem;
@@ -299,9 +307,14 @@ ul {
 .language-img {
   text-align: center;
   margin: 2rem 0 6rem 0;
-  @include desktop {
+  @include desktop-lg {
     margin: 0;
     text-align: right;
+    max-width: 500px;
+
+  }
+  @include desktop{
+    max-width: 500px;
   }
   img {
     width: 40%;
