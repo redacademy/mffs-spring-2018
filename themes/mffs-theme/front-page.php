@@ -19,7 +19,7 @@ get_header(); ?>
 			<section class="stories">
 				<h2 class="story-title page-title">Moving Forward Family Services</h2>
 
-					
+
 
                         <?php $args = array('post_type' => 'story'); ?>
                         <?php $loop = new WP_Query($args); ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 							<div class="green-carousel-bar"></div>
                         </div>
 
-                        <?php endwhile; ?>  
+                        <?php endwhile; ?>
 
                     </div><!-- main-carousel -->
 
@@ -52,7 +52,7 @@ get_header(); ?>
 					<h1>No posts here!</h1>
 				<?php endif; ?>
 				<?php wp_reset_postdata(); ?>
-						
+
 			</section> <!-- end stories -->
 
 			<!-- second section with impact circles stats -->
@@ -67,10 +67,14 @@ get_header(); ?>
 				<?php
 					$loop = CFS()->get( 'mffs_impact');
 						foreach ( $loop as $row ) { ?>
-						<li>
-							<span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
-							<div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
-						</li>
+
+							<li>
+								<div class= "circle">
+									<span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
+									<div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
+								</div>
+							</li>
+
 						<?php } ?>
 
 				</ul>
@@ -118,7 +122,7 @@ get_header(); ?>
 
 					<ul class="language-grid">
 					<?php
-						$loop = CFS()->get( 'mffs_languages_content'); 
+						$loop = CFS()->get( 'mffs_languages_content');
 							foreach ( $loop as $row ) { ?>
 							<li>
 								<?php echo esc_html( $row['mffs_languages_single'] );?>

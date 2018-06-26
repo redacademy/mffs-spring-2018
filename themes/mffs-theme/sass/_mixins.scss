@@ -4,6 +4,25 @@
   font-size: $sizeValue * 1rem;
 }
 
+//circle flex mixins******************************************************
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+//circle flex mixins******************************************************
 // Center block
 @mixin center-block {
   display: block;

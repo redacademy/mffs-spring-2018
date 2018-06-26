@@ -97,54 +97,109 @@ ul {
       border-bottom: none;
       margin-left: 4rem;
       max-width: 26rem;
-
     }
   }
 }
+
+%flex {
+  //used for circles*******************************************
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .impact-grid {
-  //grid for impact circles
-  display: grid;
-  text-align: center;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-  font-size: 1.5rem;
+  //grid for impact circles************************************************
+  @extend %flex;
+  min-height: 100vh;
   .impact-value {
     font-size: 4rem;
     font-weight: 700;
   }
-  & li:nth-of-type(1) {
-    //using mixin for impact grid circles
-    @include impact-grid-circle;
-   grid-row: 1 / 5;
-   grid-column: 1 / 5;
+  & li {
+    @extend %flex;
+    flex: 0 1 auto;
+    width: 100%;
+    height: 100vw;
 
+    @include sm {
+      width: 50%;
+      height: 30vh;
+      &:nth-of-type(3) {
+        width: 100%;
+        .circle {
+          width: 45%;
+        }
+      }
+    }
+    @include md {
+      width: 50%;
+      height: 30vh;
+      &:nth-of-type(3) {
+        width: 100%;
+        .circle {
+          width: 30%;
+        }
+      }
+    }
   }
-  & li:nth-of-type(2) {
-    @include impact-grid-circle;
-    grid-row: 1 /  5;
-   grid-column: 7 / 11;
+  .circle {
+    // overflow: scroll;
+    @extend %flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0.6rem;
+    width: 90%;
+    height: 90vw;
+    // background: gainsboro;
+    box-shadow: inset 4px 6px 25px #fff; //inner shadow effect
+    background: $color__button-yellow;
+    border-radius: 100%;
+
+    @include sm {
+      // background: royalblue;
+      width: 80%;
+      height: 39vw;
+    }
+    @include md {
+      width: 60%;
+      height: 27vw;
+      max-height: 30vh;
+      max-width: 30vh;
+      // background: mediumpurple;
+    }
   }
-  & li:nth-of-type(3) {
-    @include impact-grid-circle;
-    grid-row: 5 / 8;
-   grid-column: 4 / 8;
+  @include lg {
+    background: red;
   }
-  & li:nth-of-type(4) {
-    @include impact-grid-circle;
-    grid-row: 9 / 13;
-   grid-column: 1 / 5;
-  }
-  & li:nth-of-type(5) {
-    @include impact-grid-circle;
-    grid-row: 9 / 13;
-   grid-column: 7 / 11;
-  }
-  // @include desktop {
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   max-width: 100%;
-  //   height: auto;
-  //   margin-bottom: 7rem;
+  // & li:nth-of-type(1) {
+  //   //using mixin for impact grid circles
+  //   @include impact-grid-circle;
+  //  grid-row: 1 / 5;
+  //  grid-column: 1 / 5;
+
+  // }
+  // & li:nth-of-type(2) {
+  //   @include impact-grid-circle;
+  //   grid-row: 1 /  5;
+  //  grid-column: 7 / 11;
+  // }
+  // & li:nth-of-type(3) {
+  //   @include impact-grid-circle;
+  //   grid-row: 5 / 8;
+  //  grid-column: 4 / 8;
+  // }
+  // & li:nth-of-type(4) {
+  //   @include impact-grid-circle;
+  //   grid-row: 9 / 13;
+  //  grid-column: 1 / 5;
+  // }
+  // & li:nth-of-type(5) {
+  //   @include impact-grid-circle;
+  //   grid-row: 9 / 13;
+  //  grid-column: 7 / 11;
   // }
 }
 .initiatives {
@@ -279,18 +334,17 @@ ul {
   }
 }
 .languages {
-  @include desktop{
+  @include desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-@include desktop-lg {
-  display: flex;
-  width: 97%;
-  justify-content: space-around;
-  flex-direction: row;
-
-}
+  }
+  @include desktop-lg {
+    display: flex;
+    width: 97%;
+    justify-content: space-around;
+    flex-direction: row;
+  }
   h2 {
     @include desktop {
       font-size: 2.25rem;
@@ -313,9 +367,8 @@ ul {
     margin: 0;
     text-align: right;
     max-width: 500px;
-
   }
-  @include desktop{
+  @include desktop {
     max-width: 500px;
   }
   img {
