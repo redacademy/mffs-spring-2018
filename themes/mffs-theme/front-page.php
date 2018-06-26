@@ -83,6 +83,11 @@ get_header(); ?>
 
 			<!-- third section inititiaves-->
 			<section class="initiatives">
+				<div class="initiatives-content-wrapper">
+						<h2 class="initiatives-title"><?php echo esc_html( CFS()->get( 'mffs_initiatives_title') ) ?></h2>
+						<img src="<?php echo esc_url( CFS()->get( 'mffs_mobile_initiatives_img') ) ?>">
+						<p><?php echo wp_kses( CFS()->get( 'mffs_initiatives_content' ), wp_kses_allowed_html( 'post' ) ) ?></p>
+					</div>
 				<div class="visible-desktop initiatives-img">
 					<img src="<?php echo esc_url( CFS()->get( 'mffs_initiatives_img') ) ?>">
 				</div>
