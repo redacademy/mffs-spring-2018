@@ -156,12 +156,21 @@ ul {
       }
     }
     @include lg {
+      width: 20%;
       &:nth-of-type(3) {
-        background: rgb(240, 89, 202);
-        width: 60%;
+        // background: rgb(240, 89, 202);
+        width: 20%;
+        // height: 20vw;
         .circle {
-          width: 50%;
+          width: 90%;
+          height: 17vw;
         }
+      }
+      .circle {
+        width: 90%;
+        height: 17vw;
+        max-width: 20rem;
+        max-height: 20rem;
       }
     }
   }

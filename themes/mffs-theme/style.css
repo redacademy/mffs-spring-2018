@@ -789,11 +789,18 @@ ul {
           .impact-grid li:nth-of-type(3) .circle {
             width: 31%; } }
     @media (min-width: 1000px) {
-      .impact-grid li:nth-of-type(3) {
-        background: #f059ca;
-        width: 60%; }
-        .impact-grid li:nth-of-type(3) .circle {
-          width: 50%; } }
+      .impact-grid li {
+        width: 20%; }
+        .impact-grid li:nth-of-type(3) {
+          width: 20%; }
+          .impact-grid li:nth-of-type(3) .circle {
+            width: 90%;
+            height: 17vw; }
+        .impact-grid li .circle {
+          width: 90%;
+          height: 17vw;
+          max-width: 20rem;
+          max-height: 20rem; } }
   .impact-grid .circle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
