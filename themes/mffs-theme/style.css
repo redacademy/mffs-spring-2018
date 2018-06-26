@@ -1156,6 +1156,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
+<<<<<<< HEAD
   .site-info .widget-contact #custom_html-5 .textwidget {
     padding-top: 1rem; }
     @media only screen and (min-width: 620px) {
@@ -1163,6 +1164,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
+=======
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
   .site-info .widget-contact .textwidget a {
     color: #fff;
     text-decoration: underline;
@@ -1243,8 +1246,11 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+<<<<<<< HEAD
       .news .news-title {
         margin-bottom: 2rem; }
+=======
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
       .news a {
         width: 12rem;
         margin: 0 auto; } }
@@ -1294,7 +1300,11 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       display: block;
       margin-top: 2rem; }
       .site-footer .social-links .widget-area {
+<<<<<<< HEAD
         margin-top: 2rem; }
+=======
+        margin: 0; }
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
         .site-footer .social-links .widget-area .widget {
           width: 48px;
           margin: 1rem 0.2rem; }
@@ -3334,10 +3344,13 @@ p.faq-answer {
   margin-top: 1.5rem; }
 
 @media only screen and (min-width: 620px) {
+<<<<<<< HEAD
   .services-fees-container nav {
     display: none; } }
 
 @media only screen and (min-width: 620px) {
+=======
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
   .services-all-container .no-turn-down h2 {
     font-size: 2rem;
     margin: 7rem 0 1rem; }
@@ -3698,20 +3711,36 @@ p.faq-answer {
   margin-top: 1.5rem; }
 
 @media only screen and (min-width: 620px) {
+<<<<<<< HEAD
   .services-fees-container nav {
     display: none; } }
 
 @media only screen and (min-width: 620px) {
   .services-all-container main > h2 {
+=======
+  .services-all-container main > h2,
+  .single-service-desktop main > h2 {
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
     font-size: 2.5rem;
     text-align: left;
     margin-left: 6rem; }
   .services-all-container .mental-wb-wrapper h2,
   .services-all-container .family-serv-wrapper h2,
+<<<<<<< HEAD
   .services-all-container .services-fee-wrapper h2 {
     background: none;
     color: #0b2b34; }
   .services-all-container .services-fee-wrapper {
+=======
+  .services-all-container .services-fee-wrapper h2,
+  .single-service-desktop .mental-wb-wrapper h2,
+  .single-service-desktop .family-serv-wrapper h2,
+  .single-service-desktop .services-fee-wrapper h2 {
+    background: none;
+    color: #0b2b34; }
+  .services-all-container .services-fee-wrapper,
+  .single-service-desktop .services-fee-wrapper {
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
     border: 2px solid #f1d18a;
     border-radius: 20px;
     max-width: 26rem;
@@ -3720,7 +3749,12 @@ p.faq-answer {
     height: 31rem;
     margin-top: 3rem;
     margin-left: 6rem; }
+<<<<<<< HEAD
   .services-all-container .services-info h2 {
+=======
+  .services-all-container .services-info h2,
+  .single-service-desktop .services-info h2 {
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
     font-size: 1.5rem; } }
 
 .asterisk,
@@ -4109,6 +4143,50 @@ p.faq-answer {
       font-size: 1.5rem;
       font-weight: 600; }
 
+<<<<<<< HEAD
+=======
+.single-service-mobile {
+  display: block; }
+  @media only screen and (min-width: 620px) {
+    .single-service-mobile {
+      display: none; } }
+
+.single-service-desktop {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .single-service-desktop {
+      display: block; }
+      .single-service-desktop .left-title {
+        text-align: left;
+        background: none;
+        margin: 0;
+        color: black;
+        margin-left: 2rem; }
+      .single-service-desktop .section-title {
+        font-size: 2rem; }
+      .single-service-desktop .services-fee-wrapper {
+        margin-left: 60rem;
+        position: relative; }
+      .single-service-desktop .singleserviceinfo {
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        width: 50%; }
+        .single-service-desktop .singleserviceinfo p {
+          font-size: 2.5rem; }
+      .single-service-desktop .visible-desktop h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem; }
+      .single-service-desktop .visible-desktop p {
+        text-align: center;
+        font-size: 1.5rem; }
+      .single-service-desktop .fees-bottom p:first-child {
+        margin: 0;
+        margin-bottom: 1rem; } }
+
+>>>>>>> 347de1c15e137e7152031395e2b6702abe575ceb
 .single-story img {
   max-width: 300px;
   display: block;

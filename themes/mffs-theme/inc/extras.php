@@ -41,12 +41,14 @@ function remove_menus () {
 	global $menu;
 	$user = wp_get_current_user();
 		if (!current_user_can('administrator')) { // Is not administrator,
-			$restricted = array(__('Dashboard'), __('Posts'),__('Links'),__('Appearance'), __('Tools'), __('Users'), __('Settings'),__('Plugins'), __('Field_Groups'));
+			$restricted = array(__('Posts'), __('Links'),__('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Plugins'));
 			end ($menu);
 			while (prev($menu)){
 				$value = explode(' ',$menu[key($menu)][0]);
 				if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
 			}
 		}
+
+		remove_menu_page( 'edit.php?post_type=cfs' );
 	}
 	add_action('admin_menu', 'remove_menus');

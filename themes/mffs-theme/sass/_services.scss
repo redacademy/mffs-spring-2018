@@ -8,7 +8,7 @@
   @include desktop {
     //hiding nav for single-page services in desk
     nav {
-      display: none;
+      // display: none;
     }
   }
 }
@@ -19,7 +19,6 @@
       h2 {
         font-size: 2rem;
         margin: 7rem 0 1rem;
-
       }
       p {
         //We turn no one down
@@ -334,11 +333,12 @@
   @include desktop {
     //hiding nav for single-page services in desk
     nav {
-      display: none;
+      // display: none;
     }
   }
 }
-.services-all-container {
+.services-all-container,
+.single-service-desktop {
   @include desktop {
     //changing background for h2 services in desk
     & main > h2 {
@@ -364,7 +364,6 @@
     .services-info h2 {
       font-size: 1.5rem;
     }
-
   }
 }
 .asterisk,
@@ -709,6 +708,59 @@
     .fax-no {
       font-size: 1.5rem;
       font-weight: 600;
+    }
+  }
+}
+
+.single-service-mobile {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}
+
+.single-service-desktop {
+  display: none;
+  @include desktop {
+    display: block;
+    .left-title {
+      text-align: left;
+      background: none;
+      margin: 0;
+      color: black;
+      margin-left: 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+    }
+    .services-fee-wrapper {
+      margin-left: 60rem;
+      position: relative;
+    }
+    .singleserviceinfo {
+      position: absolute;
+      top: 8%;
+      left: 10%;
+      width: 50%;
+      p {
+        font-size: 2.5rem;
+      }
+    }
+    .visible-desktop {
+      h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+    .fees-bottom p:first-child {
+      margin: 0;
+      margin-bottom: 1rem;
     }
   }
 }
