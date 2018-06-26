@@ -23,7 +23,15 @@
           justify-content: flex-start;
         }
       }
+    }
+    #custom_html-5{
+      .textwidget{
+      padding-top: 1rem;
+      @include desktop{
+justify-content: flex-start;
+      }
 
+      }
     }
     .textwidget {
       // display: flex;
@@ -122,6 +130,9 @@
     background: none;
     display: flex;
     flex-direction: column;
+    .news-title{
+      margin-bottom: 2rem;
+    }
     a {
       width: 12rem;
       margin: 0 auto;
@@ -169,7 +180,7 @@
     display: block;
     margin-top: 2rem;
     .widget-area {
-      margin: 0;
+      margin-top: 2rem;
       .widget {
         width: 48px;
         margin: 1rem 0.2rem;
