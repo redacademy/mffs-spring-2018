@@ -73,6 +73,7 @@
       &:hover {
         background: $color__link-hover;
         box-shadow: none;
+        transition: 0.2s ease-in-out;
       }
     }
   }

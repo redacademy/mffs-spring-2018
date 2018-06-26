@@ -581,7 +581,9 @@ a {
       .social-links .widget-area .custom-html-widget:hover {
         background: #FFAF3F;
         -webkit-box-shadow: none;
-                box-shadow: none; }
+                box-shadow: none;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; }
   @media only screen and (min-width: 620px) {
     .social-links {
       display: none; } }
