@@ -122,12 +122,11 @@
   & > p {
     font-size: 1.5rem;
   }
-
   @include desktop{
-    .news-title {
-     margin: 0;
-    }
+    padding: 0;
+}
     @include desktop-lg {
+      padding: 2rem 0;
       grid-column: 3 / span 1;
       grid-row: 1 / span 1;
       background: none;
@@ -140,9 +139,10 @@
         width: 12rem;
         margin: 0 auto;
       }
+
     }
+
   }
-}
 .support {
   .supporter-title {
     margin: 20px 0;
