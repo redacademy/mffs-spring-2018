@@ -84,7 +84,7 @@ get_header(); ?>
 					<section class="visible-desktop councelling-wrapper">
 						<div class="counselling-download">
 							<!-- counselling content that should only be visible in desktop view -->
-							<img class="steps-image"src="#" alt="counselling steps">
+							<img class="steps-image" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/icons/Stepper.svg" alt="counselling steps">
 							<div class="download-frm-btn-wrapper">
 								<p>Download and fill out the pre-intake form.</p>
 								<div class="form-btn-wrapper">
@@ -145,8 +145,8 @@ get_header(); ?>
 					<h2>Referrals</h2>
 					<p class="referral-form">Download and fill out the referral form, then fax to us. </p>
 					<div class="download-btn-wrapper">
-						<a href="#" class="form-download">Download Form</a>
-						<a href="3" class="refrral-terms">Terms of Service</a>
+						<a href="<?php echo esc_url( CFS()->get( ‘mffs_services_pre_intake_form’, 15 ) )?>" class="form-download" download>Download Form</a>
+						<a href="<?php echo esc_url( CFS()->get( ‘mffs_services_terms_of_service’, 15 ) )?>" class="refrral-terms" download>Terms of Service</a>
 					</div>
 					<p class="fax-icon"><i class="fas fa-fax"></i><span class="fax-no">Fax to: 778-732-0448</span></p>
 					<p class="terms-service">* by downloading this form you agree to our terms of service</p>

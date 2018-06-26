@@ -208,9 +208,6 @@
     &::placeholder {
       font-size: 1.2rem;
     }
-    // &:focus{
-    //     color: transparent!important;
-    // }
   }
   a {
     @extend.donate-button;
@@ -225,11 +222,11 @@
 }
 .counselling-download {
   display: flex;
-  img {
-    height: 30rem;
-    background: $color__button-dark-green;
-    margin: 0 12rem;
-  }
+    img {
+      height: 30rem;
+      margin: 0 12rem;
+}
+
 
   .download-frm-btn-wrapper {
     & p:nth-child(1) {
@@ -592,14 +589,6 @@
   }
 }
 
-.counselling-download {
-  display: flex;
-  img {
-    height: 30rem;
-    background: $color__button-dark-green;
-    margin: 0 12rem;
-  }
-
   .download-frm-btn-wrapper {
     & p:nth-child(1) {
       font-size: 1.5rem;
@@ -631,12 +620,11 @@
       }
     }
   }
-}
+
 
 .services-last-para {
   //last paragraph only visible in desktop view
   width: 27rem;
-  // background: red;
   text-align: left;
 }
 

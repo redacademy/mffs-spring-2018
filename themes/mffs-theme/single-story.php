@@ -42,7 +42,7 @@ get_header(); ?>
                 <h2 class="desktop-title-no-bg"><?php echo esc_html( CFS()->get( 'mffs_success_story_name') ) ?>, a new beginning with the help from MFFS.</h2>
 
                 <p>Your donation will help us provide free and low cost counselling for someone like <?php echo esc_html( CFS()->get( 'mffs_success_story_name') ) ?> for a better life.</p>
-                <div class="desktop-donate"><a class="donate-button" href="#">Donate</a></div>
+                <div class="desktop-donate"><a class="donate-button" href="<?php echo esc_url( home_url("/donate") ) ?>">Donate</a></div>
             </div>
         </section> <!-- end desktop first section story main content -->
 
