@@ -10,10 +10,10 @@ get_header(); ?>
 	<div id="primary" class="content-area donate-page">
 		<main id="main" class="site-main" role="main">
 
-        <?php 
+        <?php
 			if(have_posts()):
             while ( have_posts() ) : the_post(); ?>
-            
+
             <div class="about-view-reports">
                 <h2>Donate  |</h2>
                 <a href="<?php echo esc_url( home_url("/reports") ) ?>">View Annual Reports</a>
@@ -79,8 +79,10 @@ get_header(); ?>
                         $loop = CFS()->get( 'mffs_impact', 12);
                             foreach ( $loop as $row ) { ?>
                             <li>
-                                <span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
-                                <div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
+                                <div class="circle">
+                                    <span class='numscroller impact-value' data-min='1' data-max='<?php echo esc_html( $row['mffs_stat_value'] );?>' data-delay='10' data-increment='5'><?php echo esc_html( $row['mffs_stat_value'] );?></span>
+                                    <div class="impact-title"><?php echo esc_html( $row['mffs_stat_title'] );?></div>
+                                </div>
                             </li>
                             <?php } ?>
                     </ul>

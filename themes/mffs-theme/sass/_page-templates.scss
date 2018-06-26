@@ -120,7 +120,6 @@ ul {
   @extend %flex;
   min-height: 100vh;
   @include lg {
-    background: red;
     flex-flow: initial;
   }
   .impact-value {

@@ -759,7 +759,6 @@ ul {
   min-height: 100vh; }
   @media (min-width: 1000px) {
     .impact-grid {
-      background: red;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-flow: initial;
