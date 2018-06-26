@@ -14,23 +14,24 @@
 
   //new widget area for contact
   .widget-contact {
-    #custom_html-6{
-      .textwidget{
+    #custom_html-6 {
+      .textwidget {
         display: flex;
         justify-content: center;
-        margin-top: .5rem;
-        @include desktop{
+        margin-top: 0.5rem;
+        @include desktop {
           justify-content: flex-start;
         }
       }
     }
-    #custom_html-5{
-      .textwidget{
-      padding-top: 1rem;
-      @include desktop{
-justify-content: flex-start;
-      }
-
+    #custom_html-5 {
+      .textwidget {
+        display: flex;
+        padding-top: 1rem;
+        justify-content: center;
+        @include desktop {
+          justify-content: start;
+        }
       }
     }
     .textwidget {
@@ -40,7 +41,7 @@ justify-content: flex-start;
         text-decoration: underline;
         font-family: $font__main;
         font-size: 1.1rem;
-        &:hover{
+        &:hover {
           color: $color__link-hover;
           transition: 0.2s ease-in-out;
         }
@@ -97,10 +98,9 @@ justify-content: flex-start;
       margin-top: 1rem;
       padding-left: 3vw;
       text-align: left;
-      h2{
+      h2 {
         text-align: left;
       }
-
     }
   }
 }
@@ -108,14 +108,14 @@ justify-content: flex-start;
   background: $color__green_main;
   padding: 2rem 0;
   color: #fff;
-  p{
+  p {
     font-weight: 400;
   }
-  a{
+  a {
     text-decoration: underline;
     color: $color__background-body;
     padding-bottom: 1px;
-    &:hover{
+    &:hover {
       color: $color__link-hover;
       transition: 0.2s ease-in-out;
     }
@@ -130,7 +130,7 @@ justify-content: flex-start;
     background: none;
     display: flex;
     flex-direction: column;
-    .news-title{
+    .news-title {
       margin-bottom: 2rem;
     }
     a {
