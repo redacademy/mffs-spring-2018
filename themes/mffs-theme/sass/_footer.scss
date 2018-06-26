@@ -7,11 +7,13 @@
   text-align: center;
   background: $color__green_main;
   color: $color__background-body;
-  @include desktop {
+  @include desktop-lg {
     grid-template-columns: repeat(4, auto);
     background: $color__green_main;
   }
-
+  @include desktop {
+    grid-template-columns: repeat(2, auto);
+  }
   //new widget area for contact
   .widget-contact {
     #custom_html-6 {
@@ -19,7 +21,7 @@
         display: flex;
         justify-content: center;
         margin-top: 0.5rem;
-        @include desktop {
+        @include desktop-lg {
           justify-content: flex-start;
         }
       }
@@ -29,7 +31,7 @@
         display: flex;
         padding-top: 1rem;
         justify-content: center;
-        @include desktop {
+        @include desktop-lg {
           justify-content: start;
         }
       }
@@ -72,14 +74,6 @@
       -ms-transform: rotateY(180deg);
       margin-right: 10px;
     }
-    // .contact-address {
-    //   width: 13rem;
-    //   padding-top: 1rem;
-    //   display: inline-flex;
-    //   & > p {
-    //     width: 208px;
-    //   }
-    // }
     .fa-map-marker-alt:before {
       padding-right: 0.3rem;
       display: inline-block;
@@ -90,7 +84,7 @@
     & > p {
       margin: 0 0 0 1.2rem;
     }
-    @include desktop {
+    @include desktop-lg {
       background: none;
       border: none;
       display: flex;
@@ -101,6 +95,10 @@
       h2 {
         text-align: left;
       }
+    }
+    @include desktop{
+      background: none;
+      border: none;
     }
   }
 }
@@ -124,18 +122,24 @@
   & > p {
     font-size: 1.5rem;
   }
-  @include desktop {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    background: none;
-    display: flex;
-    flex-direction: column;
+
+  @include desktop{
     .news-title {
-      margin-bottom: 2rem;
+     margin: 0;
     }
-    a {
-      width: 12rem;
-      margin: 0 auto;
+    @include desktop-lg {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      background: none;
+      display: flex;
+      flex-direction: column;
+      .news-title {
+        margin-bottom: 2rem;
+      }
+      a {
+        width: 12rem;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -145,7 +149,7 @@
     font-size: 1.5rem;
     font-weight: 400;
   }
-  @include desktop {
+  @include desktop-lg {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
     background: none;
@@ -155,7 +159,7 @@
   }
 
   .donate-button {
-    @include desktop {
+    @include desktop-lg {
       @include light-border-btn($bord-rad: 15px, $pad: 6px 9px);
       width: 12rem;
       border-width: 5px;
@@ -163,32 +167,32 @@
     }
   }
 
-  // @include desktop {
-  //   .social-links {
-  //     grid-column: 2 / span 1;
-  //     grid-row: 1 / span 1;
-  //     background: none;
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  // }
 }
 .site-footer .social-links {
-  //showing social buttons for desktop size
+  //showing social buttons for desktop-lg size
   display: none;
-  @include desktop {
-    display: block;
-    margin-top: 2rem;
-    .widget-area {
-      margin-top: 2rem;
-      .widget {
-        width: 48px;
-        margin: 1rem 0.2rem;
-      }
-    }
+
+  @include desktop{
     h2 {
       color: #fff;
-      font-weight: 200;
+      font-weight: 400;
+    }
+    display: block;
+    .widget-area {
+      margin: 0;
+      background: $color__green_main;
+
+      .widget {
+        width: 48px;
+      }
+    }
+    @include desktop-lg {
+      display: block;
+      margin-top: 2rem;
+      .widget-area {
+        // margin-top: 2rem;
+        padding: 2rem 2rem 4rem;
+      }
     }
   }
 }

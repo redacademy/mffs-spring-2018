@@ -1139,10 +1139,13 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   text-align: center;
   background: #4c6f7b;
   color: #fff; }
-  @media only screen and (min-width: 620px) {
+  @media only screen and (min-width: 1280px) {
     .site-info {
       grid-template-columns: repeat(4, auto);
       background: #4c6f7b; } }
+  @media only screen and (min-width: 620px) {
+    .site-info {
+      grid-template-columns: repeat(2, auto); } }
   .site-info .widget-contact #custom_html-6 .textwidget {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1151,7 +1154,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 0.5rem; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .site-info .widget-contact #custom_html-6 .textwidget {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
@@ -1164,7 +1167,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .site-info .widget-contact #custom_html-5 .textwidget {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
@@ -1203,7 +1206,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       padding-top: 0.4rem; }
     .site-info .contact > p {
       margin: 0 0 0 1.2rem; }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 1280px) {
       .site-info .contact {
         background: none;
         border: none;
@@ -1219,6 +1222,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
         text-align: left; }
         .site-info .contact h2 {
           text-align: left; } }
+    @media only screen and (min-width: 620px) {
+      .site-info .contact {
+        background: none;
+        border: none; } }
 
 .news {
   background: #4c6f7b;
@@ -1238,29 +1245,33 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .news > p {
     font-size: 1.5rem; }
   @media only screen and (min-width: 620px) {
-    .news {
-      grid-column: 3 / span 1;
-      grid-row: 1 / span 1;
-      background: none;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .news .news-title {
-        margin-bottom: 2rem; }
-      .news a {
-        width: 12rem;
-        margin: 0 auto; } }
+    .news .news-title {
+      margin: 0; } }
+
+@media only screen and (min-width: 620px) and (min-width: 1280px) {
+  .news {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .news .news-title {
+      margin-bottom: 2rem; }
+    .news a {
+      width: 12rem;
+      margin: 0 auto; } }
 
 .support .supporter-title {
   margin: 20px 0;
   font-size: 1.5rem;
   font-weight: 400; }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1280px) {
   .support {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
@@ -1274,7 +1285,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
             flex-direction: column;
     margin-top: 0.75rem; } }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1280px) {
   .support .donate-button, .support .email-counseling a, .email-counseling .support a, .support .error-404 .home-button, .error-404 .support .home-button, .support #mc_embed_signup input.button, #mc_embed_signup .support input.button, .support .site-main .mc-back, .site-main .support .mc-back {
     color: #4c6f7b;
     border: 2px solid #f1d18a;
@@ -1297,16 +1308,21 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   display: none; }
   @media only screen and (min-width: 620px) {
     .site-footer .social-links {
+      display: block; }
+      .site-footer .social-links h2 {
+        color: #fff;
+        font-weight: 400; }
+      .site-footer .social-links .widget-area {
+        margin: 0;
+        background: #4c6f7b; }
+        .site-footer .social-links .widget-area .widget {
+          width: 48px; } }
+  @media only screen and (min-width: 620px) and (min-width: 1280px) {
+    .site-footer .social-links {
       display: block;
       margin-top: 2rem; }
       .site-footer .social-links .widget-area {
-        margin-top: 2rem; }
-        .site-footer .social-links .widget-area .widget {
-          width: 48px;
-          margin: 1rem 0.2rem; }
-      .site-footer .social-links h2 {
-        color: #fff;
-        font-weight: 200; } }
+        padding: 2rem 2rem 4rem; } }
 
 .about {
   font-size: 1.6rem;
