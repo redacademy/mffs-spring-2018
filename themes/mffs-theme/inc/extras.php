@@ -49,6 +49,6 @@ function remove_menus () {
 			}
 		}
 
-		remove_menu_page( 'edit.php?post_type=cfs' );
+		// remove_menu_page( 'edit.php?post_type=cfs' );
 	}
 	add_action('admin_menu', 'remove_menus');
