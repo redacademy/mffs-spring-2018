@@ -699,6 +699,16 @@ ul {
     -webkit-box-shadow: -1.5rem -1rem #f1d18a;
             box-shadow: -1.5rem -1rem #f1d18a; } }
 
+.home .main-carousel .carousel-cell a {
+  font-size: 1.25rem;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem 0rem; }
+  .home .main-carousel .carousel-cell a:hover {
+    background: #f1d18a;
+    color: #000; }
+
 .home .story-info .desktop-read-more {
   display: none; }
   @media only screen and (min-width: 620px) {
@@ -710,7 +720,7 @@ ul {
       padding-top: 0.25rem;
       border: 4px solid #f1d18a;
       border-radius: 15px;
-      margin: 0 auto; }
+      margin: 1rem auto; }
       .home .story-info .desktop-read-more:hover {
         background: #f6e3b8;
         -webkit-transition: 0.75s;
@@ -724,6 +734,10 @@ ul {
     position: absolute;
     left: 59%;
     top: 5%; } }
+
+.impact .impact-title {
+  font-weight: 600;
+  word-wrap: break-word; }
 
 @media only screen and (min-width: 620px) {
   .impact .section-title {
@@ -745,9 +759,21 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1000px) {
+    .impact-grid, .impact-grid li, .impact-grid .circle {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: initial;
+              flex-flow: initial; } }
 
 .impact-grid {
-  min-height: 100vh; }
+  min-height: 40vh; }
+  @media (min-width: 1000px) {
+    .impact-grid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: initial;
+              flex-flow: initial; } }
   .impact-grid .impact-value {
     font-size: 4rem;
     font-weight: 700; }
@@ -764,7 +790,7 @@ ul {
         .impact-grid li:nth-of-type(3) {
           width: 100%; }
           .impact-grid li:nth-of-type(3) .circle {
-            width: 45%; } }
+            width: 41%; } }
     @media (min-width: 500px) {
       .impact-grid li {
         width: 50%;
@@ -772,7 +798,20 @@ ul {
         .impact-grid li:nth-of-type(3) {
           width: 100%; }
           .impact-grid li:nth-of-type(3) .circle {
-            width: 30%; } }
+            width: 31%; } }
+    @media (min-width: 1000px) {
+      .impact-grid li {
+        width: 20%; }
+        .impact-grid li:nth-of-type(3) {
+          width: 20%; }
+          .impact-grid li:nth-of-type(3) .circle {
+            width: 90%;
+            height: 17vw; }
+        .impact-grid li .circle {
+          width: 90%;
+          height: 17vw;
+          max-width: 20rem;
+          max-height: 20rem; } }
   .impact-grid .circle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -795,12 +834,9 @@ ul {
     @media (min-width: 500px) {
       .impact-grid .circle {
         width: 60%;
-        height: 27vw;
+        height: 28vw;
         max-height: 30vh;
         max-width: 30vh; } }
-  @media (min-width: 1000px) {
-    .impact-grid {
-      background: red; } }
 
 @media only screen and (min-width: 620px) {
   .initiatives {
@@ -850,12 +886,19 @@ ul {
     padding-bottom: 0;
     text-align: left; } }
 
+@media only screen and (min-width: 620px) {
+  .mobile-initiatives-img {
+    display: none; } }
+
 .initiatives img {
-  -webkit-box-shadow: -1.5rem 1rem #f1d18a;
-          box-shadow: -1.5rem 1rem #f1d18a;
-  margin-left: 14%;
-  margin-right: 14%;
-  min-width: 40%; }
+  margin-left: 15%; }
+  @media only screen and (min-width: 620px) {
+    .initiatives img {
+      -webkit-box-shadow: -1.5rem 1rem #f1d18a;
+              box-shadow: -1.5rem 1rem #f1d18a;
+      margin-left: 14%;
+      margin-right: 14%;
+      min-width: 40%; } }
 
 .initiatives-content-wrapper {
   margin: 0 auto;
@@ -4362,7 +4405,7 @@ p.faq-answer {
 .carousel-cell {
   width: 100%;
   /* full width */
-  height: 200px;
+  height: 100%;
   text-align: center; }
   .carousel-cell a {
     display: block;
@@ -4378,7 +4421,7 @@ p.faq-answer {
 .carousel-cell img {
   display: block;
   max-height: 100%;
-  height: 185px;
+  height: 70%;
   width: auto;
   margin-left: auto;
   margin-right: auto;
