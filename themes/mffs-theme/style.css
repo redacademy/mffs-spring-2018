@@ -3695,7 +3695,7 @@ p.faq-answer {
   display: flex; }
   .counselling-download img {
     height: 30rem;
-    margin: 0 12rem; }
+    margin: 2rem 12rem; }
   .counselling-download .download-frm-btn-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
