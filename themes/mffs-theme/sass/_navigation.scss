@@ -14,6 +14,7 @@ a {
   &:hover,
   &:focus,
   &:active {
+    transition: all 0.2s ease-in-out;
     color: $color__link-hover;
   }
   &:focus {

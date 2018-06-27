@@ -301,6 +301,8 @@ a {
   a:visited {
     color: #0b2b34; }
   a:hover, a:focus, a:active {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: #FFAF3F; }
   a:focus {
     outline: thin dotted; }
@@ -4006,7 +4008,7 @@ p.faq-answer {
         display: flex;
         padding: 0 2rem; } }
     .services-info-bubbles ul li a {
-      border-bottom: 1.5px solid #0b2b34; }
+      text-decoration: underline; }
       @media only screen and (min-width: 620px) {
         .services-info-bubbles ul li a {
           margin-top: 1rem;
