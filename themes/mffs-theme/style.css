@@ -726,7 +726,8 @@ ul {
     top: 5%; } }
 
 .impact .impact-title {
-  font-weight: 600; }
+  font-weight: 600;
+  word-wrap: break-word; }
 
 @media only screen and (min-width: 620px) {
   .impact .section-title {
