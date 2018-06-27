@@ -1216,7 +1216,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .donate-where a:hover {
-    color: #f6e3b8; }
+    color: #FFAF3F; }
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
@@ -3533,7 +3533,7 @@ p.faq-answer {
     width: 24rem; }
     .services-mwb .btn:hover,
     .services-family .btn:hover {
-      color: #f6e3b8; }
+      color: #FFAF3F; }
     @media only screen and (min-width: 620px) {
       .services-mwb .btn,
       .services-family .btn {
@@ -3736,7 +3736,7 @@ p.faq-answer {
         margin: 0 1rem;
         width: 18rem; }
         .counselling-download .download-frm-btn-wrapper .form-btn-wrapper a:hover {
-          color: #f6e3b8; }
+          color: #FFAF3F; }
         .counselling-download .download-frm-btn-wrapper .form-btn-wrapper a:hover {
           color: #f6e3b8;
           background: #ecbf5c; }
@@ -3793,7 +3793,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .referrals-wrapper .download-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .referrals-wrapper .download-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }
@@ -3856,64 +3856,6 @@ p.faq-answer {
   .services-all-container .councelling-wrapper p {
     text-align: center;
     font-size: 1.2rem; }
-
-.services-mwb,
-.services-family {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.8rem;
-  margin-top: -3rem; }
-  .services-mwb .btn,
-  .services-family .btn {
-    color: #0b2b34;
-    border-radius: 5px;
-    padding: 10px 16px;
-    text-transform: capitalize;
-    background: #f1d18a;
-    -webkit-box-shadow: 2px 2px #4c6f7b;
-            box-shadow: 2px 2px #4c6f7b;
-    display: block;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: #fff;
-    background: #245865;
-    margin: 0.5rem 0;
-    width: 24rem; }
-    .services-mwb .btn:hover,
-    .services-family .btn:hover {
-      color: #f6e3b8; }
-    @media only screen and (min-width: 620px) {
-      .services-mwb .btn,
-      .services-family .btn {
-        color: #0b2b34;
-        border-radius: 0;
-        padding: 0;
-        text-transform: capitalize;
-        text-align: left;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        display: block;
-        margin: 1rem;
-        text-decoration: underline;
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 600; } }
 
 @media only screen and (min-width: 620px) {
   .whole-service-grid {
@@ -4134,7 +4076,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .download-frm-btn-wrapper .form-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .download-frm-btn-wrapper .form-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }
@@ -4195,7 +4137,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .referrals-wrapper .download-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .referrals-wrapper .download-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }

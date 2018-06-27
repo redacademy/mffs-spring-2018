@@ -388,28 +388,6 @@
   }
 }
 
-.services-mwb,
-.services-family {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.8rem;
-  margin-top: -3rem;
-  .btn {
-    @include shadow-btn-bright(5px, 10px 16px, $color__green_main);
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: #fff;
-    background: $color__button-dark-green;
-    margin: 0.5rem 0;
-    width: 24rem;
-    @include desktop {
-      //takeing of the button format from links
-      @include reset-to-link();
-    }
-  }
-}
 @include desktop {
   .whole-service-grid {
     //flex container for the whole services in desk

@@ -78,7 +78,7 @@
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   &:hover {
-    color: lighten($color__button-yellow, 10%);
+    color: $color__link-hover;
   }
 }
 
@@ -124,8 +124,6 @@
   display: block;
   margin: 1rem;
   text-decoration: underline;
-  // width: auto;
-  // border-bottom: 2px solid $color__text-main;
   font-family: $font__title;
   font-size: 1.2rem;
   font-weight: 600;
