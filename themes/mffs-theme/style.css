@@ -2317,7 +2317,8 @@ p.faq-answer {
   .donate-desktop-help-grid-top p {
     display: inline-block;
     margin-left: 5rem;
-    max-width: 50%; }
+    max-width: 50%;
+    font-size: 1.2rem; }
     .donate-desktop-help-grid-top p:nth-last-child(3) {
       font-size: 1.2rem;
       font-weight: 600; }
@@ -2348,7 +2349,8 @@ p.faq-answer {
   .donate-desktop-help-grid-bottom .donate-info-grid p {
     width: 50%;
     margin: 0;
-    margin-left: 7rem; }
+    margin-left: 7rem;
+    font-size: 1.2rem; }
   .donate-desktop-help-grid-bottom .donate-info-grid li {
     width: 50%; }
 
