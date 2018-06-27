@@ -2185,6 +2185,10 @@ p.faq-answer {
 
 .donate-info-single a {
   color: #08b3f6; }
+  .donate-info-single a:hover {
+    color: #FFAF3F;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
 
 .donate-info-single h2 {
   margin-top: 5rem;

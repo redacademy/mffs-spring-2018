@@ -148,6 +148,10 @@
 
 .donate-info-single a {
   color: #08b3f6;
+  &:hover{
+    color: $color__link-hover;
+    transition: 0.2s ease-in-out;
+  }
 }
 
 .donate-info-single h2 {
