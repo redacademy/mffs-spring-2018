@@ -3461,15 +3461,6 @@ p.faq-answer {
     text-align: center;
     font-size: 1.2rem;
     margin: 1rem 0 5rem; }
-  .services-all-container main > h2 {
-    font-size: 2.5rem;
-    text-align: left;
-    margin-left: 6rem; }
-  .services-all-container .mental-wb-wrapper h2,
-  .services-all-container .family-serv-wrapper h2,
-  .services-all-container .services-fee-wrapper h2 {
-    background: none;
-    color: #0b2b34; }
   .services-all-container .services-fee-wrapper {
     border: 2px solid #f1d18a;
     border-radius: 20px;
@@ -3568,7 +3559,9 @@ p.faq-answer {
   .fee-service-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
@@ -3829,6 +3822,9 @@ p.faq-answer {
   .single-service-desktop .services-fee-wrapper h2 {
     background: none;
     color: #0b2b34; }
+  .services-all-container .family-serv-wrapper,
+  .single-service-desktop .family-serv-wrapper {
+    margin-left: 3vw; }
   .services-all-container .services-fee-wrapper,
   .single-service-desktop .services-fee-wrapper {
     border: 2px solid #f1d18a;
@@ -3863,21 +3859,17 @@ p.faq-answer {
   .whole-service-grid {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .whole-service-grid h2 {
       margin: 3.5rem 1rem;
       text-align: left;
       font-size: 2rem; } }
 
 @media only screen and (min-width: 620px) {
-  .fee-service-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
-
-@media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
-    margin-left: 5rem; } }
+    margin-left: 3vw; } }
 
 .fees-top {
   display: -webkit-box;
