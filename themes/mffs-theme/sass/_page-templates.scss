@@ -119,7 +119,7 @@ ul {
 .impact-grid {
   //grid for impact circles************************************************
   @extend %flex;
-  min-height: 100vh;
+  min-height: 40vh;
   @include lg {
     flex-flow: initial;
   }

@@ -757,7 +757,7 @@ ul {
               flex-flow: initial; } }
 
 .impact-grid {
-  min-height: 100vh; }
+  min-height: 40vh; }
   @media (min-width: 1000px) {
     .impact-grid {
       -webkit-box-orient: vertical;
