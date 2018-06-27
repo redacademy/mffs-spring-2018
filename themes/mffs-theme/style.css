@@ -1674,6 +1674,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
           border: none;
           -webkit-box-shadow: none;
                   box-shadow: none;
+          color: black !important;
           -webkit-transition: 0.1s ease-in-out;
           transition: 0.1s ease-in-out; } }
 
@@ -3668,6 +3669,9 @@ p.faq-answer {
       font-size: 1.2rem; }
   .email-counseling a {
     max-width: 15rem; }
+    @media only screen and (min-width: 620px) {
+      .email-counseling a {
+        display: none; } }
 
 .services-info > h2 {
   font-size: 1.2rem; }

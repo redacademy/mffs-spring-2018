@@ -212,7 +212,9 @@
   a {
     @extend.donate-button;
     max-width: 15rem;
-    // margin: 0 auto;
+    @include desktop {
+      display: none;
+    }
   }
 }
 .services-info {
@@ -222,11 +224,10 @@
 }
 .counselling-download {
   display: flex;
-    img {
-      height: 30rem;
-      margin: 0 12rem;
-}
-
+  img {
+    height: 30rem;
+    margin: 0 12rem;
+  }
 
   .download-frm-btn-wrapper {
     & p:nth-child(1) {
@@ -325,6 +326,10 @@
 }
 .services-fees-container .site-main h2:nth-child(2) {
   margin-top: 1.5rem;
+  // @include desktop {
+  //   margin-bottom: 4rem;
+  //   font-size: 2rem;
+  // }
 }
 .services-fees-container {
   @include desktop {
@@ -589,38 +594,37 @@
   }
 }
 
-  .download-frm-btn-wrapper {
-    & p:nth-child(1) {
-      font-size: 1.5rem;
-      width: 100%;
-      font-weight: 600;
-      margin: 3rem 0 6rem 0;
-    }
-    & p:nth-child(3) {
-      font-size: 1.2rem;
-      width: 100%;
-      margin-top: 6rem;
-      font-weight: 600;
-    }
+.download-frm-btn-wrapper {
+  & p:nth-child(1) {
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 600;
+    margin: 3rem 0 6rem 0;
+  }
+  & p:nth-child(3) {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 6rem;
+    font-weight: 600;
+  }
 
+  display: flex;
+  flex-direction: column;
+  .form-btn-wrapper {
     display: flex;
-    flex-direction: column;
-    .form-btn-wrapper {
-      display: flex;
-      a {
-        @include shadow-btn-bright(8px, 15px 5px, $color__green_main);
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin: 0 1rem;
-        width: 18rem;
-        &:hover {
-          color: lighten($color__button-yellow, 10%);
-          background: darken($color__button-yellow, 10%);
-        }
+    a {
+      @include shadow-btn-bright(8px, 15px 5px, $color__green_main);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 1rem;
+      width: 18rem;
+      &:hover {
+        color: lighten($color__button-yellow, 10%);
+        background: darken($color__button-yellow, 10%);
       }
     }
   }
-
+}
 
 .services-last-para {
   //last paragraph only visible in desktop view
