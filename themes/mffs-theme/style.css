@@ -675,7 +675,7 @@ ul {
       .story-info p:nth-of-type(2) {
         text-align: center; } }
 
-.home .stories h2 {
+.home .stories > h2 {
   margin: .8rem 0; }
 
 @media only screen and (min-width: 620px) {
