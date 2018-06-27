@@ -129,7 +129,7 @@ get_header(); ?>
 					<section class="visible-desktop councelling-wrapper">
 						<div class="counselling-download">
 							<!-- counselling content that should only be visible in desktop view -->
-							<img class="steps-image"src="#" alt="counselling steps">
+							<img class="steps-image" src="<?php echo esc_url( get_template_directory_uri() )?>/assets/icons/Stepper.svg" alt="counselling steps">
 							<div class="download-frm-btn-wrapper">
 								<p>Download and fill out the pre-intake form.</p>
 								<div class="form-btn-wrapper">
