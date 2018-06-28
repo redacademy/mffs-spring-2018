@@ -2082,12 +2082,11 @@ p.faq-answer {
     border-radius: 0.4rem;
     background: url(../../assets/icons/if_ExpandMore_1031518.svg) no-repeat right #fff;
     -webkit-appearance: none;
-    background-position-x: 270px; }
+    background-position-x: 97%; }
     @media only screen and (min-width: 620px) {
       .donate-dropdown-button select {
         width: 100%;
-        margin-top: 2rem;
-        background-position-x: right; } }
+        margin-top: 2rem; } }
   @media only screen and (min-width: 620px) {
     .donate-dropdown-button a {
       margin-top: 2rem; } }

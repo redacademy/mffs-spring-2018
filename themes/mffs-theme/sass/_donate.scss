@@ -24,11 +24,10 @@
     background: url(../../assets/icons/if_ExpandMore_1031518.svg) no-repeat
       right #fff;
     -webkit-appearance: none;
-    background-position-x: 270px;
+    background-position-x: 97%;
     @include desktop {
       width: 100%;
       margin-top: 2rem;
-      background-position-x: right;
     }
   }
   a {
