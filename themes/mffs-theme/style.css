@@ -374,7 +374,9 @@ a {
         font-weight: 200;
         letter-spacing: 1px; }
         .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-          border-bottom: 3px solid #979797; } }
+          border-bottom: 3px solid #979797;
+          color: #FFAF3F;
+          outline: none; } }
   .main-navigation .current_page_item a {
     border-bottom: 3px solid #979797; }
 

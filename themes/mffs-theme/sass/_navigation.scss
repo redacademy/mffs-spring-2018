@@ -103,8 +103,6 @@ a {
     }
   }
   li {
-    // float: left;
-    // position: relative;
     &:nth-child(1) {
       //dani: tomake menu items pushed down
       margin-top: 1rem;
@@ -134,6 +132,8 @@ a {
       &:focus,
       &:active {
         border-bottom: 3px solid #979797;
+        color: $color__link-hover;
+        outline: none;
       }
     }
   }
@@ -167,8 +167,6 @@ a {
     right: 0;
     bottom: 0;
     z-index: 99;
-    //  justify-content: start;//dani: making menu items move up
-    //  align-items: center;
     height: 28rem;
   }
 
