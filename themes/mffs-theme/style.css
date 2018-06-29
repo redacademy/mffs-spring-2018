@@ -4228,7 +4228,7 @@ p.faq-answer {
       .single-service-desktop .section-title {
         font-size: 2rem; }
       .single-service-desktop .services-fee-wrapper {
-        margin-left: 60rem;
+        margin-left: 75%;
         position: relative; }
       .single-service-desktop .singleserviceinfo {
         position: absolute;
@@ -4236,7 +4236,8 @@ p.faq-answer {
         left: 10%;
         width: 50%; }
         .single-service-desktop .singleserviceinfo p {
-          font-size: 2.5rem; }
+          font-size: 2.5rem;
+          width: 100%; }
       .single-service-desktop .visible-desktop h2 {
         text-align: center;
         font-size: 3rem;
