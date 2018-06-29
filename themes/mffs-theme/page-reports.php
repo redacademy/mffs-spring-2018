@@ -46,7 +46,7 @@ get_header(); ?>
                             <img src="<?php echo esc_url( CFS()->get( 'mffs_reports_image', 99 ) ) ?>" alt="">
                         </div>
                         <div class="reports-dl">
-                            <p><?php echo sp_kses( CFS()->get( 'mffs_reports_archive_info', 99 ), wp_kses_allowed_html( 'post' ) ) ?></p>
+                            <p><?php echo wp_kses( CFS()->get( 'mffs_reports_archive_info', 99 ), wp_kses_allowed_html( 'post' ) ) ?></p>
                             <a href="<?php echo esc_url( CFS()->get( 'mffs_annual_report', 99 ) ) ?>" download>Download</a>
                         </div>
                     </div>

@@ -7,9 +7,6 @@
 .services-fees-container {
   @include desktop {
     //hiding nav for single-page services in desk
-    nav {
-      // display: none;
-    }
   }
 }
 .services-all-container {
@@ -27,17 +24,17 @@
         margin: 1rem 0 5rem;
       }
     }
-    & main > h2 {
-      font-size: 2.5rem;
-      text-align: left;
-      margin-left: 6rem;
-    }
-    .mental-wb-wrapper h2,
-    .family-serv-wrapper h2,
-    .services-fee-wrapper h2 {
-      background: none;
-      color: $color__text-main;
-    }
+    // & main > h2 {
+    //   font-size: 2.5rem;
+    //   text-align: left;
+    //   margin-left: 6rem;
+    // }
+    // .mental-wb-wrapper h2,
+    // .family-serv-wrapper h2,
+    // .services-fee-wrapper h2 {
+    //   background: none;
+    //   color: $color__text-main;
+    // }
     .services-fee-wrapper {
       border: 2px solid $color__button-yellow;
       border-radius: 20px;
@@ -106,6 +103,7 @@
 @include desktop {
   .fee-service-container {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 @include desktop {
@@ -226,7 +224,7 @@
   display: flex;
   img {
     height: 30rem;
-    margin: 0 12rem;
+    margin: 2rem 12rem;
   }
 
   .download-frm-btn-wrapper {
@@ -354,6 +352,9 @@
       background: none;
       color: $color__text-main;
     }
+    .family-serv-wrapper{
+      margin-left: 3vw;
+    }
     .services-fee-wrapper {
       border: 2px solid $color__button-yellow;
       border-radius: 20px;
@@ -388,28 +389,6 @@
   }
 }
 
-.services-mwb,
-.services-family {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.8rem;
-  margin-top: -3rem;
-  .btn {
-    @include shadow-btn-bright(5px, 10px 16px, $color__green_main);
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: #fff;
-    background: $color__button-dark-green;
-    margin: 0.5rem 0;
-    width: 24rem;
-    @include desktop {
-      //takeing of the button format from links
-      @include reset-to-link();
-    }
-  }
-}
 @include desktop {
   .whole-service-grid {
     //flex container for the whole services in desk
@@ -419,17 +398,13 @@
       font-size: 2rem;
     }
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @include desktop {
-  .fee-service-container {
-    display: flex;
-  }
-}
-@include desktop {
   .mental-wb-wrapper {
-    margin-left: 5rem;
+    margin-left: 3vw;
   }
 }
 .fees-top {
@@ -527,14 +502,10 @@
     &::placeholder {
       font-size: 1.2rem;
     }
-    // &:focus{
-    //     color: transparent!important;
-    // }
   }
   a {
     @extend.donate-button;
     max-width: 15rem;
-    // margin: 0 auto;
   }
 }
 .services-info {
@@ -546,8 +517,6 @@
   //services circles styling
   display: grid;
   margin-top: 2rem;
-
-  // grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   li {
     font-weight: 600;
@@ -559,7 +528,7 @@
       padding: 0 2rem;
     }
     a {
-      border-bottom: 1.5px solid $color__text-main;
+      text-decoration: underline;
       @include desktop {
         margin-top: 1rem;
         margin-left: 0.5rem;

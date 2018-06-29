@@ -301,6 +301,8 @@ a {
   a:visited {
     color: #0b2b34; }
   a:hover, a:focus, a:active {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: #FFAF3F; }
   a:focus {
     outline: thin dotted; }
@@ -372,7 +374,9 @@ a {
         font-weight: 200;
         letter-spacing: 1px; }
         .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
-          border-bottom: 3px solid #979797; } }
+          border-bottom: 3px solid #979797;
+          color: #FFAF3F;
+          outline: none; } }
   .main-navigation .current_page_item a {
     border-bottom: 3px solid #979797; }
 
@@ -675,7 +679,7 @@ ul {
       .story-info p:nth-of-type(2) {
         text-align: center; } }
 
-.home .stories h2 {
+.home .stories > h2 {
   margin: .8rem 0; }
 
 @media only screen and (min-width: 620px) {
@@ -1216,7 +1220,7 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   .donate-where a:hover {
-    color: #f6e3b8; }
+    color: #FFAF3F; }
 
 .site-info {
   font-family: 'Montserrat' sans-serif;
@@ -2078,12 +2082,11 @@ p.faq-answer {
     border-radius: 0.4rem;
     background: url(../../assets/icons/if_ExpandMore_1031518.svg) no-repeat right #fff;
     -webkit-appearance: none;
-    background-position-x: 270px; }
+    background-position-x: 97%; }
     @media only screen and (min-width: 620px) {
       .donate-dropdown-button select {
         width: 100%;
-        margin-top: 2rem;
-        background-position-x: right; } }
+        margin-top: 2rem; } }
   @media only screen and (min-width: 620px) {
     .donate-dropdown-button a {
       margin-top: 2rem; } }
@@ -2185,6 +2188,10 @@ p.faq-answer {
 
 .donate-info-single a {
   color: #08b3f6; }
+  .donate-info-single a:hover {
+    color: #FFAF3F;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
 
 .donate-info-single h2 {
   margin-top: 5rem;
@@ -2216,10 +2223,12 @@ p.faq-answer {
         border: 2px solid #f1d18a;
         border-radius: 5px; } }
 
-@media only screen and (min-width: 620px) {
-  .donate-desktop-flex .main-carousel {
-    overflow: hidden;
-    height: 100%; } }
+.donate-desktop-flex .main-carousel {
+  height: 31rem; }
+  @media only screen and (min-width: 620px) {
+    .donate-desktop-flex .main-carousel {
+      overflow: hidden;
+      height: 100%; } }
 
 .donate-desktop-flex .carousel-cell {
   height: 100%; }
@@ -2243,11 +2252,12 @@ p.faq-answer {
         position: absolute;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        bottom: 1%;
+        bottom: -1%;
         left: 5%;
         width: 80%;
-        height: 20%;
-        font-size: 100%;
+        height: 23%;
+        font-size: 1.2rem;
+        font-weight: 600;
         color: #fff;
         background: #4c6f7b;
         padding: 1rem 2rem 1rem 1rem; } }
@@ -2285,15 +2295,20 @@ p.faq-answer {
         font-size: 3rem;
         text-align: left; }
       .donate-desktop-help .count:before {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: left;
-        margin-right: 3rem;
+        margin-right: 1rem;
         content: counter(help-counter);
         counter-increment: help-counter;
         background: #ffaf3f;
         border-radius: 50%;
-        padding: 1rem;
-        color: white; } }
+        padding: .7rem;
+        color: white;
+        display: inline-block;
+        width: 3.7rem;
+        text-align: center;
+        -webkit-box-shadow: 0px 2px 5px gray;
+                box-shadow: 0px 2px 5px gray; } }
 
 .donate-desktop-help-grid-top {
   display: -webkit-box;
@@ -2312,7 +2327,8 @@ p.faq-answer {
   .donate-desktop-help-grid-top p {
     display: inline-block;
     margin-left: 5rem;
-    max-width: 50%; }
+    max-width: 50%;
+    font-size: 1.2rem; }
     .donate-desktop-help-grid-top p:nth-last-child(3) {
       font-size: 1.2rem;
       font-weight: 600; }
@@ -2343,7 +2359,8 @@ p.faq-answer {
   .donate-desktop-help-grid-bottom .donate-info-grid p {
     width: 50%;
     margin: 0;
-    margin-left: 7rem; }
+    margin-left: 7rem;
+    font-size: 1.2rem; }
   .donate-desktop-help-grid-bottom .donate-info-grid li {
     width: 50%; }
 
@@ -3448,15 +3465,6 @@ p.faq-answer {
     text-align: center;
     font-size: 1.2rem;
     margin: 1rem 0 5rem; }
-  .services-all-container main > h2 {
-    font-size: 2.5rem;
-    text-align: left;
-    margin-left: 6rem; }
-  .services-all-container .mental-wb-wrapper h2,
-  .services-all-container .family-serv-wrapper h2,
-  .services-all-container .services-fee-wrapper h2 {
-    background: none;
-    color: #0b2b34; }
   .services-all-container .services-fee-wrapper {
     border: 2px solid #f1d18a;
     border-radius: 20px;
@@ -3522,7 +3530,7 @@ p.faq-answer {
     width: 24rem; }
     .services-mwb .btn:hover,
     .services-family .btn:hover {
-      color: #f6e3b8; }
+      color: #FFAF3F; }
     @media only screen and (min-width: 620px) {
       .services-mwb .btn,
       .services-family .btn {
@@ -3555,7 +3563,9 @@ p.faq-answer {
   .fee-service-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
@@ -3682,7 +3692,7 @@ p.faq-answer {
   display: flex; }
   .counselling-download img {
     height: 30rem;
-    margin: 0 12rem; }
+    margin: 2rem 12rem; }
   .counselling-download .download-frm-btn-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3725,7 +3735,7 @@ p.faq-answer {
         margin: 0 1rem;
         width: 18rem; }
         .counselling-download .download-frm-btn-wrapper .form-btn-wrapper a:hover {
-          color: #f6e3b8; }
+          color: #FFAF3F; }
         .counselling-download .download-frm-btn-wrapper .form-btn-wrapper a:hover {
           color: #f6e3b8;
           background: #ecbf5c; }
@@ -3782,7 +3792,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .referrals-wrapper .download-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .referrals-wrapper .download-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }
@@ -3816,6 +3826,9 @@ p.faq-answer {
   .single-service-desktop .services-fee-wrapper h2 {
     background: none;
     color: #0b2b34; }
+  .services-all-container .family-serv-wrapper,
+  .single-service-desktop .family-serv-wrapper {
+    margin-left: 3vw; }
   .services-all-container .services-fee-wrapper,
   .single-service-desktop .services-fee-wrapper {
     border: 2px solid #f1d18a;
@@ -3846,83 +3859,21 @@ p.faq-answer {
     text-align: center;
     font-size: 1.2rem; }
 
-.services-mwb,
-.services-family {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.8rem;
-  margin-top: -3rem; }
-  .services-mwb .btn,
-  .services-family .btn {
-    color: #0b2b34;
-    border-radius: 5px;
-    padding: 10px 16px;
-    text-transform: capitalize;
-    background: #f1d18a;
-    -webkit-box-shadow: 2px 2px #4c6f7b;
-            box-shadow: 2px 2px #4c6f7b;
-    display: block;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: #fff;
-    background: #245865;
-    margin: 0.5rem 0;
-    width: 24rem; }
-    .services-mwb .btn:hover,
-    .services-family .btn:hover {
-      color: #f6e3b8; }
-    @media only screen and (min-width: 620px) {
-      .services-mwb .btn,
-      .services-family .btn {
-        color: #0b2b34;
-        border-radius: 0;
-        padding: 0;
-        text-transform: capitalize;
-        text-align: left;
-        background: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        display: block;
-        margin: 1rem;
-        text-decoration: underline;
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 600; } }
-
 @media only screen and (min-width: 620px) {
   .whole-service-grid {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .whole-service-grid h2 {
       margin: 3.5rem 1rem;
       text-align: left;
       font-size: 2rem; } }
 
 @media only screen and (min-width: 620px) {
-  .fee-service-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
-
-@media only screen and (min-width: 620px) {
   .mental-wb-wrapper {
-    margin-left: 5rem; } }
+    margin-left: 3vw; } }
 
 .fees-top {
   display: -webkit-box;
@@ -4053,7 +4004,7 @@ p.faq-answer {
         display: flex;
         padding: 0 2rem; } }
     .services-info-bubbles ul li a {
-      border-bottom: 1.5px solid #0b2b34; }
+      text-decoration: underline; }
       @media only screen and (min-width: 620px) {
         .services-info-bubbles ul li a {
           margin-top: 1rem;
@@ -4123,7 +4074,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .download-frm-btn-wrapper .form-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .download-frm-btn-wrapper .form-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }
@@ -4184,7 +4135,7 @@ p.faq-answer {
       margin: 0 1rem;
       width: 18rem; }
       .referrals-wrapper .download-btn-wrapper a:hover {
-        color: #f6e3b8; }
+        color: #FFAF3F; }
       .referrals-wrapper .download-btn-wrapper a:hover {
         color: #f6e3b8;
         background: #ecbf5c; }

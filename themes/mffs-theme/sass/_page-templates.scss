@@ -30,7 +30,8 @@ ul {
 }
 .home {
   .stories {
-    h2{
+
+    &>h2{
       margin: .8rem 0;
     }
     @include desktop {

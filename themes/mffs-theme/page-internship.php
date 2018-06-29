@@ -78,7 +78,7 @@ get_header(); ?>
             <section class="internship-contact-end">
                 <h2 class="section-title">How to apply</h2>
                 <p>Please cntact</p>
-                <a href="<?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?>"><?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?></a>
+                <a href="mailto:<?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?>"><?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?></a>
             </section><!-- end internship contact -->
                   <?php endwhile;
 			else :
