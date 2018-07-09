@@ -18,7 +18,7 @@
                         <a class = "donate-button" href="<?php echo esc_url( home_url("/donate") ) ?>">Donate</a>
                     </div>
                     <address class="contact">
-						<h2>contact info</h2>
+						<h2>Contact Info</h2>
 							<?php if ( is_active_sidebar( 'sidebar-contact-info' ) ) : ?>
 								<div  class="widget-contact">
 									<?php dynamic_sidebar( esc_html( 'sidebar-contact-info' ) ); ?>

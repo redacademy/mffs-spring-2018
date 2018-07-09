@@ -36,7 +36,7 @@ get_header(); ?>
         <!-- third section internship why -->
             <section class="internship-why">
                 <h2 class="section-title">Why intern with us?</h2>
-                <p class="visible-desktop">Flexible non-traditional hours and a variety of activities
+                <p class="visible-desktop">Flexible non-traditional hours and diverse opportunities
                 </p>
                 <p><?php echo wp_kses( CFS()->get( 'mffs_internship_description', 19 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 
@@ -77,7 +77,7 @@ get_header(); ?>
             <!-- fifth contact section -->
             <section class="internship-contact-end">
                 <h2 class="section-title">How to apply</h2>
-                <p>Please cntact</p>
+                <p>Please contact</p>
                 <a href="mailto:<?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?>"><?php echo esc_html( CFS()->get( 'mffs_internship_contact', 19 ) ) ?></a>
             </section><!-- end internship contact -->
                   <?php endwhile;

@@ -35,7 +35,7 @@ get_header(); ?>
 
 				</div>
 				<div class="desktop-about-quote">
-					<h2>An inclusive place for all of us</h2>
+					<h2>Counselling for all</h2>
 					<?php echo wp_kses( CFS()->get( 'mffs_about_quotes'), wp_kses_allowed_html( 'post' ) ) ?>
 				</div>
 			</section> 	<!-- end about-arousel -->
@@ -46,15 +46,15 @@ get_header(); ?>
 				<ul class="about-do-grid">
 					<li>
 						<img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/icons/if_Child-balloons-mother-daughter_3272439.svg" alt="">
-						<p>Awesome internship program</p>
+						<p>Awesome Internship Program</p>
 					</li>
 					<li>
 						<img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/icons/down_woman.svg" alt="">
-						<p>Low fee counselling</p>
+						<p>Low-Barrier Counselling</p>
 					</li>
 					<li>
 						<img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/icons/if_Child-family-daughter-son-mother-fahter-grandfather-grandmother_3272468.svg" alt="">
-						<p>Awesome internship program</p>
+						<p>Services for Everyone</p>
 					</li>
 				</ul>
 			</section> <!-- end about-do -->
@@ -118,7 +118,7 @@ get_header(); ?>
 
 			<!-- seventh section about-refuse -->
 			<section class="about-refuse">
-				<h2 class="section-title uppercase">Mffs right to refuse</h2>
+				<h2 class="section-title">MFFS Right to Refuse</h2>
 				<p><?php echo wp_kses( CFS()->get( 'mffs_about_refuse', 17 ), wp_kses_allowed_html( 'post' ) ) ?></p>
 			</section> 	<!-- end about-refuse -->
 

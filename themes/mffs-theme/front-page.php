@@ -119,7 +119,7 @@ get_header(); ?>
 			<!-- fifth section languages -->
 			<section class="languages">
 				<div class="languages-info">
-					<h2 class="section-title">We Speak Your Languages</h2>
+					<h2 class="section-title">We Speak Your Language</h2>
 					<h3>Our services are offered in:</h3>
 
 					<ul class="language-grid">

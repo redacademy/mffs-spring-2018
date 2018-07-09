@@ -15,7 +15,7 @@ get_header(); ?>
             while ( have_posts() ) : the_post(); ?>
 
             <div class="about-view-reports">
-                <h2>Donate  |</h2>
+                <h2>Support Us  |</h2>
                 <a href="<?php echo esc_url( home_url("/reports") ) ?>">View Annual Reports</a>
 		    </div>
 
@@ -54,7 +54,7 @@ get_header(); ?>
                     </select>
                     <a class ="donate-button" id="donate-redirect" href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Donate</a>
 
-                    <p class="donate-redirect">You will be re-directd to Canadahelps.org</p>
+                    <p class="donate-redirect">You will be re-direcetd to CanadaHelps.org</p>
 
 
                     <div class="popup-inner">
