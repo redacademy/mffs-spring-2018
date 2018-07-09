@@ -2223,10 +2223,12 @@ p.faq-answer {
         border: 2px solid #f1d18a;
         border-radius: 5px; } }
 
-@media only screen and (min-width: 620px) {
-  .donate-desktop-flex .main-carousel {
-    overflow: hidden;
-    height: 100%; } }
+.donate-desktop-flex .main-carousel {
+  height: 31rem; }
+  @media only screen and (min-width: 620px) {
+    .donate-desktop-flex .main-carousel {
+      overflow: hidden;
+      height: 100%; } }
 
 .donate-desktop-flex .carousel-cell {
   height: 100%; }
@@ -2250,11 +2252,12 @@ p.faq-answer {
         position: absolute;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        bottom: 1%;
+        bottom: -1%;
         left: 5%;
         width: 80%;
-        height: 20%;
-        font-size: 100%;
+        height: 23%;
+        font-size: 1.2rem;
+        font-weight: 600;
         color: #fff;
         background: #4c6f7b;
         padding: 1rem 2rem 1rem 1rem; } }
@@ -4176,7 +4179,7 @@ p.faq-answer {
       .single-service-desktop .section-title {
         font-size: 2rem; }
       .single-service-desktop .services-fee-wrapper {
-        margin-left: 60rem;
+        margin-left: 75%;
         position: relative; }
       .single-service-desktop .singleserviceinfo {
         position: absolute;
@@ -4184,7 +4187,8 @@ p.faq-answer {
         left: 10%;
         width: 50%; }
         .single-service-desktop .singleserviceinfo p {
-          font-size: 2.5rem; }
+          font-size: 2.5rem;
+          width: 100%; }
       .single-service-desktop .visible-desktop h2 {
         text-align: center;
         font-size: 3rem;
