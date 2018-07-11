@@ -36,12 +36,12 @@
       padding-bottom: 1px;
       font-weight: 600;
       font-size: 1.2rem;
-      &:hover{
+      &:hover {
         color: $color__link-hover;
         transition: 0.2s ease-in-out;
       }
     }
-    p{
+    p {
       margin: 2rem 0;
     }
     @include desktop {
@@ -259,7 +259,9 @@
     .requirements-grid {
       display: grid;
       grid-template-columns: repeat(3, auto);
-      margin-left: 10%;
+      // margin-left: 10%;
+      justify-content: space-evenly;
+      margin-left: 5%;
 
       & li:nth-child(4) {
         // position: relative;

@@ -40,7 +40,7 @@ get_header(); ?>
 
                 <!-- second section donate button wth dropdown -->
                 <section class="donate-dropdown-button">
-                    <h2 class="title-no-bg">I want to give a helping hand to those in need of:</h2>
+                    <h2 class="title-no-bg">Hello What is going on here!!!</h2>
                     <select>
                         <ul>
                             <?php

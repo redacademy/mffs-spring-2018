@@ -147,7 +147,7 @@
 
 .donate-info-single a {
   color: #08b3f6;
-  &:hover{
+  &:hover {
     color: $color__link-hover;
     transition: 0.2s ease-in-out;
   }
@@ -179,7 +179,7 @@
     .donate-dropdown-button {
       flex: 1;
       margin: 1rem;
-      select:focus{
+      select:focus {
         outline: 4px solid $color__button-yellow;
         border: 2px solid $color__button-yellow;
         border-radius: 5px;
@@ -188,41 +188,41 @@
   }
   .main-carousel {
     height: 31rem;
-    @include desktop{
-    overflow: hidden;
-    height: 100%;
-  }
-}
-  .carousel-cell{
-    height: 100%;
-    @include desktop{
-    height: 100%;
-    left: -7%;
-    margin-right: 2rem;
+    @include desktop {
+      overflow: hidden;
+      height: 100%;
     }
-    img{
+  }
+  .carousel-cell {
+    height: 100%;
+    @include desktop {
+      height: 100%;
+      left: -7%;
+      margin-right: 2rem;
+    }
+    img {
       height: 80%;
-      @include desktop{
-      height: 90%;
-      width: 85%;
+      @include desktop {
+        height: 90%;
+        width: 85%;
+      }
     }
-  }
-    p{
+    p {
       color: $color__green_main;
       font-size: 1.25rem;
       margin: 1rem 5rem;
-      @include desktop{
-      position: absolute;
-      flex-wrap: wrap;
-      bottom: -1%;
-      left: 5%;
-      width: 80%;
-      height: 23%;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #fff;
-      background: $color__green_main;
-      padding: 1rem 2rem 1rem 1rem;
+      @include desktop {
+        position: absolute;
+        flex-wrap: wrap;
+        bottom: -1%;
+        left: 5%;
+        width: 80%;
+        height: 23%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        background: $color__green_main;
+        padding: 1rem 2rem 1rem 1rem;
       }
     }
   }
@@ -273,7 +273,7 @@
         counter-increment: help-counter;
         background: #ffaf3f;
         border-radius: 50%;
-        padding: .7rem;
+        padding: 0.7rem;
         color: white;
         display: inline-block;
         width: 3.7rem;
@@ -289,12 +289,12 @@
   flex-direction: column;
   position: relative;
   justify-content: space-evenly;
-  margin-left: 7rem;
+  margin-left: 5.6rem;
   margin-right: 2rem;
   p {
     display: inline-block;
-    margin-left: 5rem;
-    max-width: 50%;
+    margin-left: 6rem;
+    max-width: 35%;
     font-size: 1.2rem;
     &:nth-last-child(3) {
       font-size: 1.2rem;
@@ -313,7 +313,8 @@
     left: 60%;
     max-width: 100%;
     height: auto;
-    width: auto\9;
+    // width: auto\9;
+    width: 300px;
   }
 }
 
@@ -328,7 +329,7 @@
       font-size: 1.5rem;
     }
     p {
-      width: 50%;
+      width: 70%;
       margin: 0;
       margin-left: 7rem;
       font-size: 1.2rem;

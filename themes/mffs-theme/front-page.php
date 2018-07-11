@@ -31,7 +31,7 @@ get_header(); ?>
 
                         <div class="carousel-cell">
 							<img class="carousel-image" src="<?php echo esc_url( CFS()->get( 'mffs_success_image_top') ) ?>" alt="">
-							<a href="<?php echo esc_url( the_permalink() ) ?>" class="btn mobile-read-more">Read More</a>
+							<a href="<?php echo esc_url( home_url("/testimonials") ) ?>" class="btn mobile-read-more">Read More</a>
 							<div class="green-carousel-bar"></div>
                         </div>
 
@@ -44,7 +44,7 @@ get_header(); ?>
 
 					<p class= "story-content"><?php echo wp_kses( CFS()->get( 'mffs_stories_section_content', 12), wp_kses_allowed_html( 'post' ) ) ?>
 
-					<a href="<?php echo esc_url( the_permalink() ) ?>" class="desktop-read-more">More Sucess Stories</a>
+					<a href="<?php echo esc_url( home_url("/testimonials") ) ?>" class="desktop-read-more">More Sucess Stories</a>
 
 				</div>
 
@@ -57,7 +57,7 @@ get_header(); ?>
 
 			<!-- second section with impact circles stats -->
 			<section class="impact">
-				<h2 class="section-title">the<span> mffs </span> Impact</h2>
+				<h2 class="section-title">the<span> MFFS </span> Impact</h2>
 
 
 

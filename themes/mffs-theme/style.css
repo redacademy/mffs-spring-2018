@@ -367,7 +367,7 @@ a {
     font-weight: 600; }
     @media only screen and (min-width: 1280px) {
       .main-navigation a {
-        margin-right: 4rem;
+        margin-right: 2.5rem;
         color: white;
         border-bottom: 3px solid #4c6f7b;
         font-family: "Montserrat", sans-serif;
@@ -1912,7 +1912,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .internship-requirements .requirements-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    margin-left: 10%; }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 5%; }
     .internship-requirements .requirements-grid li:nth-child(4) {
       grid-column: 1 / span 4; }
       .internship-requirements .requirements-grid li:nth-child(4) p {
@@ -2302,7 +2305,7 @@ p.faq-answer {
         counter-increment: help-counter;
         background: #ffaf3f;
         border-radius: 50%;
-        padding: .7rem;
+        padding: 0.7rem;
         color: white;
         display: inline-block;
         width: 3.7rem;
@@ -2322,12 +2325,12 @@ p.faq-answer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 7rem;
+  margin-left: 5.6rem;
   margin-right: 2rem; }
   .donate-desktop-help-grid-top p {
     display: inline-block;
-    margin-left: 5rem;
-    max-width: 50%;
+    margin-left: 6rem;
+    max-width: 35%;
     font-size: 1.2rem; }
     .donate-desktop-help-grid-top p:nth-last-child(3) {
       font-size: 1.2rem;
@@ -2343,7 +2346,7 @@ p.faq-answer {
     left: 60%;
     max-width: 100%;
     height: auto;
-    width: auto\9; }
+    width: 300px; }
 
 .donate-desktop-help-grid-bottom .donate-info-grid {
   display: -webkit-box;
@@ -2357,12 +2360,29 @@ p.faq-answer {
   .donate-desktop-help-grid-bottom .donate-info-grid h2 {
     font-size: 1.5rem; }
   .donate-desktop-help-grid-bottom .donate-info-grid p {
-    width: 50%;
+    width: 70%;
     margin: 0;
     margin-left: 7rem;
     font-size: 1.2rem; }
   .donate-desktop-help-grid-bottom .donate-info-grid li {
     width: 50%; }
+
+@media only screen and (min-width: 620px) {
+  .testimonial-single {
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .testimonial-single p {
   margin-right: auto;
@@ -2388,11 +2408,17 @@ p.faq-answer {
   margin-bottom: 6rem; }
 
 .testimonial-single .dash {
-  margin-right: .5rem; }
+  margin-right: 0.5rem; }
 
 .testimonials h2 {
   font-weight: 600;
   margin-bottom: 4rem; }
+
+@media only screen and (min-width: 620px) {
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem 5rem; } }
 
 /*!
  * Hamburgers

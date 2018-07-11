@@ -1,11 +1,18 @@
 .testimonial-single {
-    // position: relative;
-    p{
-margin-right: auto;
-margin: 1rem 0;
-text-align: right;
-        // position: absolute;
-    }
+  // position: relative;
+  @include desktop {
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+  }
+  p {
+    margin-right: auto;
+    margin: 1rem 0;
+    text-align: right;
+    // position: absolute;
+  }
   &:nth-child(odd) {
     background: $color__button-yellow;
     max-width: 30rem;
@@ -21,14 +28,22 @@ text-align: right;
     font-weight: 200;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
-  &:nth-last-child(1){
-      margin-bottom: 6rem;
+  &:nth-last-child(1) {
+    margin-bottom: 6rem;
   }
-  .dash{
-      margin-right: .5rem;
+  .dash {
+    margin-right: 0.5rem;
   }
 }
-.testimonials h2{
-    font-weight: 600;
-    margin-bottom: 4rem;
+.testimonials h2 {
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.testimonials-grid {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem 5rem;
+  }
 }
