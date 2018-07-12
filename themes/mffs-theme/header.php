@@ -54,8 +54,13 @@
 				</div><!-- .site-branding -->
 
 				<!-- donate button -->
-				<div class="donate-button">
+				<div id="donate-embed" class="donate-button">
 					<a href="<?php echo esc_url( home_url("/donate") ) ?>">donate</a>
+				</div>
+				
+				<div class="donate-popup">					
+					<a class="donate-close-popup" href="">X</a>
+					<script id="ch_cdn_embed" type="text/javascript" data-page-id="36078" data-cfasync="false" data-formtype="1" src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js"></script>
 				</div>
 
 

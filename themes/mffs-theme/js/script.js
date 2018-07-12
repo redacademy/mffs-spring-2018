@@ -23,8 +23,34 @@
   //   '<div class="popup-inner"><i class="fas fa-heart"></i><p>Thank you very much for your support!</p><p>You will be redirected to canada helps.org page now.</p><img src="../../assets/gifs/loadingdots.gif" alt=""><a href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Click here if the browser does not refresh</a></div>';
 
   var popupTemplate = $('.popup-inner');
+  var donateTemplate = $('.donate-popup');
 
   $('.popup-inner').hide();
+  $('.donate-popup').hide();
+
+  // donate embed popup
+  $('#donate-embed').on('click', function(e) {
+    e.preventDefault();
+
+    $('html, body').animate(
+      {
+        scrollTop: 100
+      },
+      300
+    );
+
+    // $('body').addClass('popup-active');
+    $('.donate-popup').show();
+    $('.site-content').append(donateTemplate);
+    $('#main').css('filter', 'blur(10px)');
+    // $('#main').css('display', 'none');
+  });
+
+  $('.donate-close-popup').on('click', function(e) {
+    e.preventDefault();
+    $('.donate-popup').hide();
+    $('#main').css('filter', 'none');
+  });
 
   // donate leave page popup
   $('#donate-redirect').on('click', function(e) {
@@ -44,7 +70,7 @@
       window.location.href = url;
     }, 2000);
 
-    console.log('click');
+    // console.log('click');
     $('body').addClass('popup-active');
     $('.popup-inner').show();
     $('.site-content').append(popupTemplate);

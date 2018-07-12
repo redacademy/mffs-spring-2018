@@ -3483,6 +3483,17 @@ p.faq-answer {
 .services-fees-container .site-main h2:nth-child(2) {
   margin-top: 1.5rem; }
 
+.service-list-info-top p {
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 90%; }
+  @media only screen and (min-width: 620px) {
+    .service-list-info-top p {
+      max-width: 80%;
+      margin-left: 3rem;
+      margin-right: 50%;
+      margin-top: 4rem; } }
+
 @media only screen and (min-width: 620px) {
   .services-all-container .no-turn-down h2 {
     font-size: 2rem;
@@ -4227,6 +4238,14 @@ p.faq-answer {
         margin: 0;
         margin-bottom: 1rem; } }
 
+.service-info-bottom {
+  display: none; }
+  @media only screen and (min-width: 620px) {
+    .service-info-bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
 .single-story img {
   max-width: 300px;
   display: block;
@@ -4589,3 +4608,33 @@ p.faq-answer {
 
 .site-content {
   position: relative; }
+
+.donate-popup {
+  display: none;
+  position: absolute;
+  width: 75vw;
+  top: 7px;
+  left: 12%;
+  right: 0;
+  bottom: 0; }
+  @media only screen and (min-width: 620px) {
+    .donate-popup {
+      height: 1130px;
+      width: 50vw;
+      top: 0;
+      left: 25%; } }
+  .donate-popup iframe {
+    border: 10px solid #98a8ad !important;
+    border-radius: 20px; }
+  .donate-popup .donate-close-popup {
+    position: absolute;
+    right: -23px;
+    top: -23px;
+    border: 5px solid #98a8ad;
+    padding: 11px 30px 30px 21px;
+    background: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px; }
+    .donate-popup .donate-close-popup:hover {
+      background: #f7dc9d; }

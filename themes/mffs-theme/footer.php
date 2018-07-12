@@ -15,7 +15,7 @@
 					    <p class="supporter-title">
                         Become a Supporter
                         </p>
-                        <a class = "donate-button" href="<?php echo esc_url( home_url("/donate") ) ?>">Donate</a>
+                        <a class="donate-button" href="<?php echo esc_url( home_url("/donate") ) ?>">Donate</a>
                     </div>
                     <address class="contact">
 						<h2>Contact Info</h2>

@@ -12,62 +12,9 @@ get_header(); ?>
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 				<h2 class="title-no-bg">Services <span class = "index-service">Index</span></h2>
 
+
 				<div class="fee-service-container">
-					<!-- first section mental well being -->
-					<div class="whole-service-grid">
-						<div class="mental-wb-wrapper">
-						<h2 class="section-title">Mental well-being</h2>
-						<section class="services-mwb">
-								<?php $service_posts = get_posts(array(
-									'post_type' => 'service',
-									'service_type' => 'mental-well-being',
-									'posts_per_page' => 10
-								));
-								if (! empty( $service_posts) && ! is_wp_error( $service_posts )) : ?>
-								<?php foreach($service_posts as $term) : ?>
-										<a href="<?php echo esc_url( get_the_permalink($term) ) ?>" class="btn"><?php echo esc_html( get_the_title($term) ) ?></a>
-							<?php endforeach; ?>
-
-							<?php  endif; ?>
-
-						</section><!-- end section services -->
-						</div>
-						<!-- second section family -->
-						<div class="family-serv-wrapper">
-							<h2 class="section-title">Family Servies</h2>
-							<section class="services-family">
-								<?php $family_posts = get_posts(array(
-									'post_type' => 'service',
-									'service_type' => 'family-services',
-									'posts_per_page' => 10
-								));
-
-								if (! empty( $family_posts) && ! is_wp_error( $family_posts )) : ?>
-								<?php foreach($family_posts as $term) : ?>
-
-										<a href="<?php echo esc_url( get_the_permalink($term) ) ?>" class="btn"><?php echo esc_html( get_the_title($term) ) ?></a>
-							<?php endforeach; ?>
-							<?php  endif; ?>
-							</section><!-- end family secion -->
-						</div>
-						<!-- end of family services wrapper -->
-					</div>
-					<!-- end of whole services grid -->
-					<!-- third section fees -->
-					<div class="services-fee-wrapper">
-						<section class="services-fees">
-								<h2 class="section-title">Fees<span class= "asterisk">*</span>
-									</h2>
-									<!-- asterisk that is going to be seen just in desktop size -->
-								<div class="fees-top">
-									<div class="fees-single"><?php echo wp_kses( CFS()->get( 'mffs_fees_individual', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
-									<div class="fees-family"><?php echo wp_kses( CFS()->get( 'mffs_fees_couples_family', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
-								</div>
-								<div class="fees-bottom">
-									<?php echo wp_kses( CFS()->get( 'mffs_fees_cant_afford', 15 ), wp_kses_allowed_html( 'post' ) ) ?>
-								</div>
-							</div>
-								<!-- end of services fee wrapper -->
+		<!-- end of services fee wrapper -->
 				</div>
 				<!-- end of fee-service-container -->
 						<div class="visible-desktop no-turn-down">
