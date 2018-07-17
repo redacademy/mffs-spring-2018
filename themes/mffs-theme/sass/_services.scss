@@ -750,9 +750,30 @@
 
 .services-list {
   display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
   justify-content: space-evenly;
 }
 
 .services-fee-info {
-  text-align: center;
+  text-align: left;
+  p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+  }
+  ul {
+    list-style: circle !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.service-list-info-top {
+  margin-top: 3rem;
 }

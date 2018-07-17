@@ -4250,12 +4250,36 @@ p.faq-answer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
+  @media only screen and (min-width: 620px) {
+    .services-list {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .services-fee-info {
-  text-align: center; }
+  text-align: left; }
+  .services-fee-info p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.2rem; }
+  .services-fee-info ul {
+    list-style: circle !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-size: 1.2rem; }
+
+.service-list-info-top {
+  margin-top: 3rem; }
 
 .single-story img {
   max-width: 300px;

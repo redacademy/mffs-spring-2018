@@ -44,7 +44,7 @@ get_header(); ?>
 
 					<p class= "story-content"><?php echo wp_kses( CFS()->get( 'mffs_stories_section_content', 12), wp_kses_allowed_html( 'post' ) ) ?>
 
-					<a href="<?php echo esc_url( home_url("/testimonials") ) ?>" class="desktop-read-more">More Sucess Stories</a>
+					<a href="<?php echo esc_url( home_url("/testimonials") ) ?>" class="desktop-read-more">Testimonials</a>
 
 				</div>
 

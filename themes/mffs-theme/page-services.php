@@ -13,7 +13,7 @@ get_header(); ?>
 			<section class="services-fee-info">
 				<h2 class="title-no-bg">Services <span class = "index-service">Index</span></h2>
 
-				<div>
+				<div class="service-list-info-top">
 					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_top', 15), wp_kses_allowed_html( 'post' ) ) ?>
 				</div>
 				
