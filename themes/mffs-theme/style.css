@@ -4246,6 +4246,17 @@ p.faq-answer {
       display: -ms-flexbox;
       display: flex; } }
 
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
+.services-fee-info {
+  text-align: center; }
+
 .single-story img {
   max-width: 300px;
   display: block;
@@ -4628,6 +4639,7 @@ p.faq-answer {
     border-radius: 20px; }
   .donate-popup .donate-close-popup {
     position: absolute;
+    font-weight: bold;
     right: -23px;
     top: -23px;
     border: 5px solid #98a8ad;

@@ -34,16 +34,14 @@
 
     $('html, body').animate(
       {
-        scrollTop: 100
+        scrollTop: 180
       },
       300
     );
 
-    // $('body').addClass('popup-active');
     $('.donate-popup').show();
     $('.site-content').append(donateTemplate);
     $('#main').css('filter', 'blur(10px)');
-    // $('#main').css('display', 'none');
   });
 
   $('.donate-close-popup').on('click', function(e) {

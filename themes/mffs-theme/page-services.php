@@ -1,4 +1,4 @@
-<?php
+		<?php
 /**
  * The main template file.
  *
@@ -10,19 +10,70 @@ get_header(); ?>
 	<div id="primary" class="content-area services-all-container">
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
+			<section class="services-fee-info">
 				<h2 class="title-no-bg">Services <span class = "index-service">Index</span></h2>
 
+				<div>
+					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_top', 15), wp_kses_allowed_html( 'post' ) ) ?>
+				</div>
+				
+				<div>
+					<h2 class="section-title">On-site services</h2>
+					<?php echo wp_kses( CFS()->get( 'mffs_services_on_site_info', 15), wp_kses_allowed_html( 'post' ) ) ?>
+				</div>
+
+				<div class="services-list">
+					<div class="services-top-left">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_list_top_left', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+					<div class="servies-top-right">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_list_top_right', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+				</div>
+
+				<div>
+					<?php echo wp_kses( CFS()->get( 'mffs_services_on_site_info_mid', 15), wp_kses_allowed_html( 'post' ) ) ?>
+				</div>
+			
+				<div class="services-list">
+					<div class="services-mid-left">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_on_site_list_left', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+					<div class="servies-mid-right">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_on_site_list_right', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+				</div>
+
+				<div>
+					<?php echo wp_kses( CFS()->get( 'mffs_services_on_site_info_bot', 15), wp_kses_allowed_html( 'post' ) ) ?>
+				</div>
+
+				<div>
+					<h2 class="section-title">Off-site services</h2>
+					<?php echo wp_kses( CFS()->get( 'mffs_services_off_site_info', 15), wp_kses_allowed_html( 'post' ) ) ?>
+				</div>
+
+				<div class="services-list">
+					<div class="services-mid-left">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_bottom_left', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+					<div class="servies-mid-right">
+					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_bottom_right', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					</div>
+				</div>
+
+			
+			</section>
 
 				<div class="fee-service-container">
 		<!-- end of services fee wrapper -->
 				</div>
 				<!-- end of fee-service-container -->
-						<div class="visible-desktop no-turn-down">
-							<!-- hidden in mobile size -->
-							<h2>We turn no one down!</h2>
-							<p>Can't afford counselling fees?<br>We offer free and low cost counselling with proof of income.</p>
-						</div>
-					</section>
+				<div class="visible-desktop no-turn-down">
+					<!-- hidden in mobile size -->
+					<h2>We turn no one down!</h2>
+					<p>Can't afford counselling fees?<br>We offer free and low cost counselling with proof of income.</p>
+				</div>
 
 				<!-- end seciton fees -->
 				<!-- fourth section get counselling -->
