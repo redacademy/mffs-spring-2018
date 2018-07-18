@@ -54,7 +54,7 @@
       border-radius: 20px;
       max-width: 26rem;
       box-shadow: 3px 3px $color__button-yellow;
-      height: 31rem;
+      // height: 31rem;
       margin-top: 3rem;
       margin-left: 6rem;
     }
@@ -374,7 +374,7 @@
       border-radius: 20px;
       max-width: 26rem;
       box-shadow: 3px 3px $color__button-yellow;
-      height: 31rem;
+      // height: 31rem;
       margin-top: 3rem;
       margin-left: 6rem;
     }
@@ -451,6 +451,8 @@
       text-align: left;
       padding: 0 1rem;
       max-width: 30rem;
+      margin: 0;
+      width: 100%;
     }
   }
   & p:nth-child(2) {
@@ -458,6 +460,7 @@
     @include desktop {
       text-align: left !important;
       padding: 0 1rem;
+      margin-top: 2rem;
     }
   }
 }
@@ -751,8 +754,13 @@
 .services-list {
   display: flex;
   flex-direction: column;
+
   @include desktop {
     flex-direction: row;
+    margin: 0 15%;
+    div {
+      width: 50%;
+    }
   }
   justify-content: space-evenly;
 }
@@ -763,6 +771,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     font-size: 1.2rem;
+    // width: 50%;
   }
   ul {
     list-style: circle !important;
@@ -776,4 +785,10 @@
 
 .service-list-info-top {
   margin-top: 3rem;
+  @include desktop {
+    display: flex;
+    p {
+      width: 50%;
+    }
+  }
 }

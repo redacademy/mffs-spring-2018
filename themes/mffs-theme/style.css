@@ -3508,7 +3508,6 @@ p.faq-answer {
     max-width: 26rem;
     -webkit-box-shadow: 3px 3px #f1d18a;
             box-shadow: 3px 3px #f1d18a;
-    height: 31rem;
     margin-top: 3rem;
     margin-left: 6rem; } }
 
@@ -3873,7 +3872,6 @@ p.faq-answer {
     max-width: 26rem;
     -webkit-box-shadow: 3px 3px #f1d18a;
             box-shadow: 3px 3px #f1d18a;
-    height: 31rem;
     margin-top: 3rem;
     margin-left: 6rem; }
   .services-all-container .services-info h2,
@@ -3944,12 +3942,15 @@ p.faq-answer {
       border: none;
       text-align: left;
       padding: 0 1rem;
-      max-width: 30rem; } }
+      max-width: 30rem;
+      margin: 0;
+      width: 100%; } }
 
 @media only screen and (min-width: 620px) {
   .fees-bottom p:nth-child(2) {
     text-align: left !important;
-    padding: 0 1rem; } }
+    padding: 0 1rem;
+    margin-top: 2rem; } }
 
 .services-fees {
   font-size: 1.2rem; }
@@ -4262,7 +4263,10 @@ p.faq-answer {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      margin: 0 15%; }
+      .services-list div {
+        width: 50%; } }
 
 .services-fee-info {
   text-align: left; }
@@ -4280,6 +4284,13 @@ p.faq-answer {
 
 .service-list-info-top {
   margin-top: 3rem; }
+  @media only screen and (min-width: 620px) {
+    .service-list-info-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .service-list-info-top p {
+        width: 50%; } }
 
 .single-story img {
   max-width: 300px;

@@ -15,6 +15,18 @@ get_header(); ?>
 
 				<div class="service-list-info-top">
 					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_top', 15), wp_kses_allowed_html( 'post' ) ) ?>
+					<div class="services-fee-wrapper">
+						<section class="services-fees">
+								<h2 class="section-title">Fees<span class= "asterisk">*</span></h2>
+								<div class="fees-top">
+									<div class="fees-single"><?php echo wp_kses( CFS()->get( 'mffs_fees_individual', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
+									<div class="fees-family"><?php echo wp_kses( CFS()->get( 'mffs_fees_couples_family', 15 ), wp_kses_allowed_html( 'post' ) ) ?></div>
+								</div>
+								<div class="fees-bottom">
+									<?php echo wp_kses( CFS()->get( 'mffs_fees_cant_afford', 15 ), wp_kses_allowed_html( 'post' ) ) ?>
+								</div>
+						</section>
+					</div>
 				</div>
 				
 				<div>
