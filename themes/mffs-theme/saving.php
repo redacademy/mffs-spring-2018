@@ -63,3 +63,13 @@
 						</section>
 					</div>
 						
+
+
+
+						<div class="popup-inner">
+                        <i class="fas fa-heart"></i>
+                        <p>Thank you very much for your support!</p>
+                        <p>You will be redirected to canada helps.org page now.</p>
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/gifs/loadingdots.gif" alt="">
+                        <a href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Click here if the browser does not refresh</a>
+                    </div>

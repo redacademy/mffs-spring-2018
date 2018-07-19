@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 <!-- outputs the data from the custom post type services, category (taxonomy: mental-well-being) -->
 			<section class="services-fee-info">
-				<h2 class="title-no-bg">Services <span class = "index-service">Index</span></h2>
+				<h2 class="title-no-bg">Services & Fees</h2>
 
 				<div class="service-list-info-top">
 					<?php echo wp_kses( CFS()->get( 'mffs_services_list_info_top', 15), wp_kses_allowed_html( 'post' ) ) ?>

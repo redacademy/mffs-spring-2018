@@ -317,6 +317,51 @@
           }
         }
       }
+      & li:nth-child(7) {
+        grid-column: 1 / span 4;
+        p {
+          font-size: 1.5rem;
+          max-width: 40vw;
+          margin: 2rem 0 0 23rem;
+          position: relative;
+          &::before {
+            content: url('../../assets/icons/check.svg');
+            position: absolute;
+            right: 45vw;
+            top: 3vw;
+          }
+        }
+      }
+      & li:nth-child(8) {
+        grid-column: 1 / span 4;
+        p {
+          font-size: 1.5rem;
+          max-width: 40vw;
+          margin: 2rem 0 0 23rem;
+          position: relative;
+          &::before {
+            content: url('../../assets/icons/check.svg');
+            position: absolute;
+            right: 45vw;
+            top: 3vw;
+          }
+        }
+      }
+      & li:nth-child(9) {
+        grid-column: 1 / span 4;
+        p {
+          font-size: 1.5rem;
+          max-width: 40vw;
+          margin: 2rem 0 0 23rem;
+          position: relative;
+          &::before {
+            content: url('../../assets/icons/check.svg');
+            position: absolute;
+            right: 45vw;
+            top: 3vw;
+          }
+        }
+      }
       & li:nth-child(1) {
         max-width: 22vw;
       }

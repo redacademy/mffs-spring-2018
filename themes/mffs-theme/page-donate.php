@@ -52,18 +52,20 @@ get_header(); ?>
                             <?php } ?>
                         </ul>
                     </select>
-                    <a class ="donate-button" id="donate-redirect" href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Donate</a>
-
-                    <p class="donate-redirect">You will be re-direcetd to CanadaHelps.org</p>
-
-
-                    <div class="popup-inner">
-                        <i class="fas fa-heart"></i>
-                        <p>Thank you very much for your support!</p>
-                        <p>You will be redirected to canada helps.org page now.</p>
-                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/assets/gifs/loadingdots.gif" alt="">
-                        <a href="https://www.canadahelps.org/en/charities/Moving-Forward-Family-Services-Society/" target="_blank">Click here if the browser does not refresh</a>
+                    
+                    <div id="donate-embed" class="donate-button">
+					    <a href="<?php echo esc_url( home_url("/donate") ) ?>">donate</a>
                     </div>
+
+                    <div class="donate-popup">					
+					    <a class="donate-close-popup" href="">X</a>
+					    <script id="ch_cdn_embed" type="text/javascript" data-page-id="36078" data-cfasync="false" data-formtype="1" src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js"></script>
+				    </div>
+
+                    <p class="donate-redirect">Donations are processed through CanadaHelps.org</p>
+
+
+                    
 
 
                 </section> <!-- end donate dropdown button -->

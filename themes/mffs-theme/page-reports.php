@@ -61,7 +61,7 @@ get_header(); ?>
                         $loop = CFS()->get( 'mffs_report_archive', 99 );
                             foreach ( $loop as $row ) { ?>
                             <li class="reports-single">
-                                <a href="<?php echo esc_url( $row['mffs_archive_report_single'] );?>"></a>
+                                <a href="<?php echo esc_url( $row['mffs_archive_report_single'] );?>">- <?php echo esc_html( $row['mffa_archive_report_title'] );?></a>
                             </li>
                             <?php } ?>
                     </ul>

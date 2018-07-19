@@ -787,6 +787,10 @@
   margin-top: 3rem;
   @include desktop {
     display: flex;
+    p:first-child {
+      font-size: 1.6rem;
+      // color: red;
+    }
     p {
       width: 50%;
     }
