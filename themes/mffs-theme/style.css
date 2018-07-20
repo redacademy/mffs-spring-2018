@@ -2135,7 +2135,15 @@ p.faq-answer {
         margin-top: 2rem; } }
   @media only screen and (min-width: 620px) {
     .donate-dropdown-button a {
-      margin-top: 2rem; } }
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 1rem 4rem;
+      font-size: 2rem;
+      border-width: 5px;
+      font-weight: 600; } }
+  @media only screen and (min-width: 620px) {
+    .donate-dropdown-button .donate-button, .donate-dropdown-button .email-counseling a, .email-counseling .donate-dropdown-button a, .donate-dropdown-button .error-404 .home-button, .error-404 .donate-dropdown-button .home-button, .donate-dropdown-button #mc_embed_signup input.button, #mc_embed_signup .donate-dropdown-button input.button, .donate-dropdown-button .site-main .mc-back, .site-main .donate-dropdown-button .mc-back {
+      margin-bottom: 3rem; } }
 
 @media only screen and (min-width: 620px) {
   .donate-where .section-title {
@@ -3540,7 +3548,7 @@ p.faq-answer {
 @media only screen and (min-width: 620px) {
   .services-all-container .no-turn-down h2 {
     font-size: 2rem;
-    margin: 7rem 0 1rem; }
+    margin: 2rem 0 1rem; }
   .services-all-container .no-turn-down p {
     text-align: center;
     font-size: 1.2rem;
@@ -4066,12 +4074,24 @@ p.faq-answer {
     max-width: 15rem; }
 
 .services-info > h2 {
-  font-size: 1.2rem; }
+  margin-bottom: 3.4rem;
+  background: #819aa2;
+  padding: 3rem 0;
+  color: #0b2b34;
+  font-size: 2.5rem !important;
+  margin: 0; }
+
+@media only screen and (min-width: 620px) {
+  .services-info {
+    margin-top: -5rem; } }
 
 .services-info-bubbles ul {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (min-width: 620px) {
+    .services-info-bubbles ul {
+      margin-top: 4rem; } }
   .services-info-bubbles ul li {
     font-weight: 600;
     text-align: center;
@@ -4083,7 +4103,9 @@ p.faq-answer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding: 0 2rem; } }
+        padding: 0 2rem;
+        margin-left: 6%;
+        font-size: 1.2rem; } }
     .services-info-bubbles ul li a {
       text-decoration: underline; }
       @media only screen and (min-width: 620px) {
@@ -4163,6 +4185,9 @@ p.faq-answer {
 .services-last-para {
   width: 27rem;
   text-align: left; }
+  @media only screen and (min-width: 620px) {
+    .services-last-para {
+      margin-top: 0 !important; } }
 
 .single-service-content p {
   margin: 0 5rem;
@@ -4309,14 +4334,16 @@ p.faq-answer {
               flex-direction: row;
       margin: 0 15%; }
       .services-list div {
-        width: 50%; } }
+        width: 50%; }
+      .services-list li {
+        font-size: 1.3rem; } }
 
 .services-fee-info {
   text-align: left; }
   .services-fee-info p {
     margin-left: 3rem;
     margin-right: 3rem;
-    font-size: 1.2rem; }
+    font-size: 1.6rem; }
   .services-fee-info ul {
     list-style: circle !important;
     margin-left: 3rem;
@@ -4324,18 +4351,17 @@ p.faq-answer {
     margin-bottom: 3rem;
     margin-top: 2rem;
     font-size: 1.2rem; }
-
-.service-list-info-top {
-  margin-top: 3rem; }
   @media only screen and (min-width: 620px) {
-    .service-list-info-top {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .service-list-info-top p:first-child {
-        font-size: 1.6rem; }
-      .service-list-info-top p {
-        width: 50%; } }
+    .services-fee-info .title-no-bg {
+      font-size: 2.5rem; } }
+
+@media only screen and (min-width: 620px) {
+  .service-list-info-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .service-list-info-top p {
+      width: 50%; } }
 
 .single-story img {
   max-width: 300px;

@@ -53,7 +53,7 @@ get_header(); ?>
                         </ul>
                     </select>
                     
-                    <div id="donate-embed" class="donate-button">
+                    <div class="donate-button donate-embed">
 					    <a href="<?php echo esc_url( home_url("/donate") ) ?>">donate</a>
                     </div>
 

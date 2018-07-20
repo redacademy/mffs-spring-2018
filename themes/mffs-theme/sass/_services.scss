@@ -29,7 +29,7 @@
     .no-turn-down {
       h2 {
         font-size: 2rem;
-        margin: 7rem 0 1rem;
+        margin: 2rem 0 1rem;
       }
       p {
         //We turn no one down
@@ -527,7 +527,16 @@
 }
 .services-info {
   & > h2 {
-    font-size: 1.2rem;
+    // font-size: 1.6rem;
+    margin-bottom: 3.4rem;
+    background: #819aa2;
+    padding: 3rem 0;
+    color: #0b2b34;
+    font-size: 2.5rem !important;
+    margin: 0;
+  }
+  @include desktop {
+    margin-top: -5rem;
   }
 }
 .services-info-bubbles ul {
@@ -535,6 +544,9 @@
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
+  @include desktop {
+    margin-top: 4rem;
+  }
   li {
     font-weight: 600;
     text-align: center;
@@ -543,6 +555,8 @@
       text-align: left;
       display: flex;
       padding: 0 2rem;
+      margin-left: 6%;
+      font-size: 1.2rem;
     }
     a {
       text-decoration: underline;
@@ -616,6 +630,9 @@
   //last paragraph only visible in desktop view
   width: 27rem;
   text-align: left;
+  @include desktop {
+    margin-top: 0 !important;
+  }
 }
 
 .single-service-content p {
@@ -761,6 +778,9 @@
     div {
       width: 50%;
     }
+    li {
+      font-size: 1.3rem;
+    }
   }
   justify-content: space-evenly;
 }
@@ -770,7 +790,7 @@
   p {
     margin-left: 3rem;
     margin-right: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     // width: 50%;
   }
   ul {
@@ -781,16 +801,21 @@
     margin-top: 2rem;
     font-size: 1.2rem;
   }
+  @include desktop {
+    p:first-of-type {
+      // font-size: 1.6rem;
+      // color: red;
+    }
+    .title-no-bg {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .service-list-info-top {
-  margin-top: 3rem;
+  // margin-top: 3rem;
   @include desktop {
     display: flex;
-    p:first-child {
-      font-size: 1.6rem;
-      // color: red;
-    }
     p {
       width: 50%;
     }

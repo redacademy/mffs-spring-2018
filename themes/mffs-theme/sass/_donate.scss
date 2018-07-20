@@ -33,6 +33,16 @@
   a {
     @include desktop {
       margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 1rem 4rem;
+      font-size: 2rem;
+      border-width: 5px;
+      font-weight: 600;
+    }
+  }
+  .donate-button {
+    @include desktop {
+      margin-bottom: 3rem;
     }
   }
 }

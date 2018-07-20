@@ -29,7 +29,7 @@
   $('.donate-popup').hide();
 
   // donate embed popup
-  $('#donate-embed').on('click', function(e) {
+  $('.donate-embed').on('click', function(e) {
     e.preventDefault();
 
     $('html, body').animate(
