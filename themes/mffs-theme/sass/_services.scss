@@ -451,6 +451,7 @@
       text-align: left;
       padding: 0 1rem;
       max-width: 30rem;
+      font-size: 1.2rem;
       margin: 0;
       width: 100%;
     }
@@ -461,6 +462,8 @@
       text-align: left !important;
       padding: 0 1rem;
       margin-top: 2rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -807,7 +810,9 @@
       // color: red;
     }
     .title-no-bg {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      text-align: left;
+      margin-left: 3rem;
     }
   }
 }
@@ -816,6 +821,7 @@
   // margin-top: 3rem;
   @include desktop {
     display: flex;
+    margin-top: -2rem;
     p {
       width: 50%;
     }

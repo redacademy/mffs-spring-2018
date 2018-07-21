@@ -674,10 +674,11 @@ ul {
     margin: 0 auto;
     max-width: 424px;
     font-weight: 400;
-    font-size: 1.7rem; }
+    font-size: 1.3rem; }
     @media only screen and (min-width: 620px) {
       .story-info p:nth-of-type(2) {
-        text-align: center; } }
+        text-align: center;
+        font-size: 1.7rem; } }
 
 .home .stories > h2 {
   margin: 0.8rem 0; }
@@ -1091,9 +1092,11 @@ ul {
 
 .front-page-title {
   position: relative;
-  font-size: 3rem;
   max-width: 100%;
   max-width: 100% !important; }
+  @media only screen and (min-width: 620px) {
+    .front-page-title {
+      font-size: 3rem; } }
 
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
@@ -1447,12 +1450,14 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .about-carousel .carousel-cell {
     height: 24rem; } }
 
-@media only screen and (min-width: 620px) {
-  .about-carousel .carousel-cell img {
-    height: 25rem;
-    margin-top: 1rem;
-    -webkit-box-shadow: 1.5rem -1rem #f1d18a;
-            box-shadow: 1.5rem -1rem #f1d18a; } }
+.about-carousel .carousel-cell img {
+  margin-top: 3rem; }
+  @media only screen and (min-width: 620px) {
+    .about-carousel .carousel-cell img {
+      height: 25rem;
+      margin-top: 1rem;
+      -webkit-box-shadow: 1.5rem -1rem #f1d18a;
+              box-shadow: 1.5rem -1rem #f1d18a; } }
 
 .desktop-about-quote {
   display: none; }
@@ -1485,6 +1490,9 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     margin-top: 10rem;
     margin-bottom: 2rem; } }
 
+.about-do .section-title {
+  margin: 0 !important; }
+
 .about-do-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1514,7 +1522,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
       margin-bottom: 3rem; } }
 
 .team-member-single {
-  width: 265px; }
+  width: 265px;
+  margin: 0 auto; }
   .team-member-single p {
     margin-bottom: 0; }
     @media only screen and (min-width: 620px) {
@@ -1551,8 +1560,13 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   border-radius: 2rem;
   max-width: 95%;
   margin: 0 auto;
-  display: grid;
-  grid-template: 3fr/ 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center; }
   .team-grid li {
     margin-top: 3rem; }
@@ -1614,6 +1628,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 8rem; }
   .award-container h2 {
     text-align: left;
@@ -1621,7 +1639,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
   .award-container img {
     width: 300px;
     height: 300px;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    margin: 0 auto; }
     @media only screen and (min-width: 620px) {
       .award-container img {
         width: auto;
@@ -3994,6 +4013,7 @@ p.faq-answer {
       text-align: left;
       padding: 0 1rem;
       max-width: 30rem;
+      font-size: 1.2rem;
       margin: 0;
       width: 100%; } }
 
@@ -4001,7 +4021,9 @@ p.faq-answer {
   .fees-bottom p:nth-child(2) {
     text-align: left !important;
     padding: 0 1rem;
-    margin-top: 2rem; } }
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem; } }
 
 .services-fees {
   font-size: 1.2rem; }
@@ -4353,13 +4375,16 @@ p.faq-answer {
     font-size: 1.2rem; }
   @media only screen and (min-width: 620px) {
     .services-fee-info .title-no-bg {
-      font-size: 2.5rem; } }
+      font-size: 3rem;
+      text-align: left;
+      margin-left: 3rem; } }
 
 @media only screen and (min-width: 620px) {
   .service-list-info-top {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-top: -2rem; }
     .service-list-info-top p {
       width: 50%; } }
 

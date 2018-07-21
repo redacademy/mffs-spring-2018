@@ -22,9 +22,10 @@ ul {
     margin: 0 auto;
     max-width: 424px;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     @include desktop {
       text-align: center;
+      font-size: 1.7rem;
     }
   }
 }
@@ -434,7 +435,10 @@ ul {
 
 .front-page-title {
   position: relative;
-  font-size: 3rem;
+
+  @include desktop {
+    font-size: 3rem;
+  }
   max-width: 100%;
   // left: -8rem;
   max-width: 100% !important;

@@ -40,7 +40,7 @@ get_header(); ?>
 
                 <!-- second section donate button wth dropdown -->
                 <section class="donate-dropdown-button">
-                    <h2 class="title-no-bg">Hello What is going on here!!!</h2>
+                    <h2 class="title-no-bg">I want to give a helping hand in support of:</h2>
                     <select>
                         <ul>
                             <?php
@@ -62,7 +62,7 @@ get_header(); ?>
 					    <script id="ch_cdn_embed" type="text/javascript" data-page-id="36078" data-cfasync="false" data-formtype="1" src="https://www.canadahelps.org/services/wa/js/apps/donatenow/embed.min.js"></script>
 				    </div>
 
-                    <p class="donate-redirect">Donations are processed through CanadaHelps.org</p>
+                    <p class="donate-redirect">&#42;Donations are processed through CanadaHelps.org</p>
 
 
                     
