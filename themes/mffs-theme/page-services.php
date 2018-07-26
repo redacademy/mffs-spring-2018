@@ -135,8 +135,7 @@ get_header(); ?>
 							<li>
 								<i class="far fa-envelope"></i>
 								<p>Email us</p>
-                            	<a href="mailto:counsellor@
-									movingforwardfamilyservices.com" >counsellor@movingforwardfamily<br>services.com</a>
+                            	<a href="mailto:ounselling@mffs.ca" >counselling@mffs.ca</a>
 							</li>
 							<li>
 								<i class="fas fa-user"></i>

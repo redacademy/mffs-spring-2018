@@ -70,6 +70,10 @@
 .about-do {
   .section-title {
     margin: 0 !important;
+    @include desktop {
+      margin-top: 6rem !important;
+      margin-bottom: 6rem !important;
+    }
   }
 }
 .about-do-grid {
@@ -186,8 +190,8 @@
     .section-title {
       font-size: 3rem;
       position: absolute;
-      top: -225px;
-      left: 35%;
+      top: -235px;
+      left: 34%;
     }
     ul {
       width: 60%;
@@ -200,8 +204,15 @@
   flex-direction: column;
   margin-bottom: 8rem;
   h2 {
-    text-align: left;
-    margin-left: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    @include desktop {
+      text-align: left;
+      margin-left: 5rem;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
   img {
     width: 300px;

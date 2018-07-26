@@ -1098,6 +1098,9 @@ ul {
     .front-page-title {
       font-size: 3rem; } }
 
+.flickity-prev-next-button {
+  display: none !important; }
+
 header .donate-button a, header .email-counseling a a, .email-counseling header a a, header .error-404 .home-button a, .error-404 header .home-button a, header #mc_embed_signup input.button a, #mc_embed_signup header input.button a, header .site-main .mc-back a, .site-main header .mc-back a {
   margin-right: 1rem; }
 
@@ -1492,6 +1495,10 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
 
 .about-do .section-title {
   margin: 0 !important; }
+  @media only screen and (min-width: 620px) {
+    .about-do .section-title {
+      margin-top: 6rem !important;
+      margin-bottom: 6rem !important; } }
 
 .about-do-grid {
   display: -webkit-box;
@@ -1618,8 +1625,8 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
     .about-awards .section-title {
       font-size: 3rem;
       position: absolute;
-      top: -225px;
-      left: 35%; }
+      top: -235px;
+      left: 34%; }
     .about-awards ul {
       width: 60%;
       margin-right: 2rem; } }
@@ -1634,8 +1641,15 @@ a.donate-button, .email-counseling a, .error-404 a.home-button, .site-main a.mc-
           flex-direction: column;
   margin-bottom: 8rem; }
   .award-container h2 {
-    text-align: left;
-    margin-left: 5rem; }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem; }
+    @media only screen and (min-width: 620px) {
+      .award-container h2 {
+        text-align: left;
+        margin-left: 5rem;
+        margin-right: 0;
+        margin-bottom: 0; } }
   .award-container img {
     width: 300px;
     height: 300px;
@@ -3714,7 +3728,8 @@ p.faq-answer {
 @media only screen and (min-width: 620px) {
   .fees-bottom p:nth-child(2) {
     text-align: left !important;
-    padding: 0 1rem; } }
+    padding: 0 1rem;
+    width: 100%; } }
 
 .services-fees {
   font-size: 1.2rem; }
@@ -4023,7 +4038,8 @@ p.faq-answer {
     padding: 0 1rem;
     margin-top: 2rem;
     font-size: 1.2rem;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem;
+    width: 100%; } }
 
 .services-fees {
   font-size: 1.2rem; }
